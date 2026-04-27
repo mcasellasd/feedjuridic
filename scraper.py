@@ -71,6 +71,15 @@ FEEDS_ACTUALITAT = [
 
 # Comarques: mapa de keywords per detectar territori
 COMARQUES = {
+    "catalunya": [
+        "catalunya", "generalitat", "parlament", "govern de la generalitat",
+        "diari oficial de la generalitat de catalunya"
+    ],
+    "girona": [
+        "girona", "gironès", "salt", "sarrià de ter", "cassà de la selva",
+        "llagostera", "celrà", "diputació de girona", "ajuntament de girona",
+        "audiència provincial de girona"
+    ],
     "cerdanya": [
         "cerdanya", "puigcerdà", "llívia", "alp", "bellver de cerdanya",
         "das", "ger", "guils de cerdanya", "meranges", "prullans",

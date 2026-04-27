@@ -895,6 +895,8 @@
       <div class="nav-dropdown">
         <button class="nav-dropdown-btn" id="btn-territoris">📍 Territoris ▾</button>
         <div class="nav-dropdown-menu">
+          <button class="nav-dropdown-item" data-comarca="catalunya">Catalunya</button>
+          <button class="nav-dropdown-item" data-comarca="girona">Girona</button>
           <button class="nav-dropdown-item" data-comarca="cerdanya">La Cerdanya</button>
           <button class="nav-dropdown-item" data-comarca="berguedà">El Berguedà</button>
         </div>
@@ -1383,9 +1385,13 @@
         document.querySelectorAll('.nav-tema').forEach(b => b.classList.remove('on'));
         temaActual = 'tot';
         document.querySelector('.nav-tema[data-tema="tot"]').classList.add('on');
-        const nomComarca = comarcaActual
-          ? (comarcaActual === 'cerdanya' ? 'La Cerdanya' : 'El Berguedà')
-          : 'Totes les notícies';
+        const nomsComarca = {
+          'catalunya': 'Catalunya',
+          'girona': 'Girona',
+          'cerdanya': 'La Cerdanya',
+          'berguedà': 'El Berguedà'
+        };
+        const nomComarca = comarcaActual ? nomsComarca[comarcaActual] : 'Totes les notícies';
         document.getElementById('stream-title').textContent = comarcaActual
           ? `📍 ${nomComarca}` : 'Totes les notícies';
         const filtrades = comarcaActual
