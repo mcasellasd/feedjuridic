@@ -1,0 +1,288 @@
+Exception ignored while running getpath:
+Traceback (most recent call last):
+  File "<frozen getpath>", line 358, in <module>
+InterruptedError: [Errno 4] Interrupted system call
+Fatal Python error: error evaluating path
+Python runtime state: core initialized
+
+Current thread 0x0000000201c8b100 (most recent call first):
+  <no Python frame>
+
+==================================================
+  DretCat · Actualització 2026-04-23
+==================================================
+
+[DOGC] Descarregant entrades de 2026-04-23...
+[DOGC] 1 entrades trobades.
+[BOE] Descarregant entrades de 2026-04-23...
+[BOE] Error: 404 Client Error: Not Found for url: https://www.boe.es/datosabiertos/api/boe/dias/2026-04-23
+[Parlament] 10 entrades trobades.
+[EMAIL] Connectant a imap.gmail.com com feed@weedisplay.com...
+[EMAIL]   no-responder@boe.es: 5 entrada(es) de 'DOUE: Alertas legislativas (21/04/2026 a 22/04/202'
+[EMAIL] Total entrades des de correu: 5
+[Actualitat] Abogacía Española: 5 articles recents.
+[Actualitat] Legal Today: 0 articles recents.
+[Actualitat] vLex Blog: 0 articles recents.
+[Actualitat] Derecho Mercantil: 0 articles recents.
+[Actualitat] Economist & Jurist: 10 articles recents.
+[Actualitat] Error (Entre leyes): 404 Client Error: Not Found for url: https://www.leyesyjurisprudencia.com/feed/
+[Actualitat] Mundojuridico: 2 articles recents.
+[Actualitat] Error (Notarios y Registradores): 404 Client Error: Not Found for url: https://www.notariosyregistradores.com/feed/
+[Actualitat] Error (Civil Mercantil): 404 Client Error: Not Found for url: https://www.civil-mercantil.com/feed.xml
+[Actualitat] Error (Iustel): 404 Client Error: Not Found for url: http://feedproxy.google.com/Iustel/Diario_Del_Derecho
+[Actualitat] Almacén de Derecho: 4 articles recents.
+[Actualitat] Total: 21 articles d'actualitat.
+[EUR-Lex] Error (EUR-Lex): no element found: line 1, column 0
+[EUR-Lex] Error (TJUE): 404 Client Error:  for url: https://curia.europa.eu/jcms/jcms/rss_1023559/en/
+[COMARCA] Error (Regio7): 'dict' object has no attribute 'strip'
+[COMARCA] NacióDigital: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Meteorologia: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Olvan: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Guardiola: 0 articles rellevants.
+[COMARCA] AquíBerguedà-LaPobla: 0 articles rellevants.
+
+→ 2 entrades noves per analitzar.
+
+[1/2] Analitzant: Ordre EMT/65/2026, de 17 d'abril, per la qual s'aproven les bases regu...
+   ✓ Categoria: administratiu | Urgència: mitjana
+[2/2] Analitzant: Una nota sobre la agravación de las multas penales a las personas jurí...
+   ✓ Categoria: penal | Urgència: alta
+
+[RESUM] Generant resum diari del dia...
+[RESUM] ✓ Resum diari generat.
+
+[RESUM-CAT] Generant resums per categoria...
+[RESUM-CAT] ✓ administratiu (1 articles)
+[RESUM-CAT] ✓ penal (1 articles)
+
+==================================================
+  ✅ Fet! 2 novetats analitzades i guardades.
+     Fitxer: data/novetats.json
+==================================================
+
+
+==================================================
+  DretCat · Actualització 2026-04-24
+==================================================
+
+[DOGC] Descarregant entrades de 2026-04-24...
+[DOGC] Error: HTTPSConnectionPool(host='analisi.transparenciacatalunya.cat', port=443): Max retries exceeded with url: /resource/n6hn-rmy7.json?%24where=data_de_publicaci_del_diari+%3E%3D+%272026-04-24T00%3A00%3A00.000%27&%24limit=100&%24order=data_de_publicaci_del_diari+DESC (Caused by NameResolutionError("HTTPSConnection(host='analisi.transparenciacatalunya.cat', port=443): Failed to resolve 'analisi.transparenciacatalunya.cat' ([Errno 8] nodename nor servname provided, or not known)"))
+[BOE] Descarregant entrades de 2026-04-24...
+[BOE] Error: HTTPSConnectionPool(host='www.boe.es', port=443): Max retries exceeded with url: /datosabiertos/api/boe/dias/2026-04-24 (Caused by NameResolutionError("HTTPSConnection(host='www.boe.es', port=443): Failed to resolve 'www.boe.es' ([Errno 8] nodename nor servname provided, or not known)"))
+[Parlament] Error (https://www.parlament.cat/rss/RSS1_EXP_LLEIS.XML): HTTPSConnectionPool(host='www.parlament.cat', port=443): Max retries exceeded with url: /rss/RSS1_EXP_LLEIS.XML (Caused by NameResolutionError("HTTPSConnection(host='www.parlament.cat', port=443): Failed to resolve 'www.parlament.cat' ([Errno 8] nodename nor servname provided, or not known)"))
+[Parlament] Error (https://www.parlament.cat/rss/RSS1_EXP_DECRETS_LLEI.XML): HTTPSConnectionPool(host='www.parlament.cat', port=443): Max retries exceeded with url: /rss/RSS1_EXP_DECRETS_LLEI.XML (Caused by NameResolutionError("HTTPSConnection(host='www.parlament.cat', port=443): Failed to resolve 'www.parlament.cat' ([Errno 8] nodename nor servname provided, or not known)"))
+[Parlament] 0 entrades trobades.
+[EMAIL] Connectant a imap.gmail.com com feed@weedisplay.com...
+Traceback (most recent call last):
+  File "/Users/marccasellas/Desktop/docus2024/DOCUS 2026/rss legal cat/scraper.py", line 763, in <module>
+    main()
+    ~~~~^^
+  File "/Users/marccasellas/Desktop/docus2024/DOCUS 2026/rss legal cat/scraper.py", line 620, in main
+    entrades_email = fetch_from_email(dies_enrere=1)
+  File "/Users/marccasellas/Desktop/docus2024/DOCUS 2026/rss legal cat/email_parser.py", line 184, in fetch_from_email
+    mail = imaplib.IMAP4_SSL(IMAP_HOST, IMAP_PORT)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/imaplib.py", line 1641, in __init__
+    IMAP4.__init__(self, host, port, timeout)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/imaplib.py", line 208, in __init__
+    self.open(host, port, timeout)
+    ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/imaplib.py", line 1654, in open
+    IMAP4.open(self, host, port, timeout)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/imaplib.py", line 318, in open
+    self.sock = self._create_socket(timeout)
+                ~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/imaplib.py", line 1644, in _create_socket
+    sock = IMAP4._create_socket(self, timeout)
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/imaplib.py", line 308, in _create_socket
+    return socket.create_connection(address)
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 846, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.14/3.14.3_1/Frameworks/Python.framework/Versions/3.14/lib/python3.14/socket.py", line 983, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 8] nodename nor servname provided, or not known
+
+==================================================
+  DretCat · Actualització 2026-04-25
+==================================================
+
+[DOGC] Descarregant entrades de 2026-04-25...
+[DOGC] 0 entrades trobades.
+[BOE] Descarregant entrades de 2026-04-25...
+[BOE] Error: 404 Client Error: Not Found for url: https://www.boe.es/datosabiertos/api/boe/dias/2026-04-25
+[Parlament] 10 entrades trobades.
+[EMAIL] Connectant a imap.gmail.com com feed@weedisplay.com...
+[EMAIL]   no-responder@boe.es: 2 entrada(es) de 'BOE: Alertas legislativas (23/04/2026 a 24/04/2026'
+[EMAIL]   no-responder@boe.es: 5 entrada(es) de 'DOUE: Alertas legislativas (23/04/2026 a 24/04/202'
+[EMAIL] Total entrades des de correu: 7
+[Actualitat] Abogacía Española: 3 articles recents.
+[Actualitat] Legal Today: 0 articles recents.
+[Actualitat] vLex Blog: 0 articles recents.
+[Actualitat] Derecho Mercantil: 0 articles recents.
+[Actualitat] Economist & Jurist: 10 articles recents.
+[Actualitat] Error (Entre leyes): 404 Client Error: Not Found for url: https://www.leyesyjurisprudencia.com/feed/
+[Actualitat] Mundojuridico: 3 articles recents.
+[Actualitat] Error (Notarios y Registradores): 404 Client Error: Not Found for url: https://www.notariosyregistradores.com/feed/
+[Actualitat] Error (Civil Mercantil): 404 Client Error: Not Found for url: https://www.civil-mercantil.com/feed.xml
+[Actualitat] Error (Iustel): 404 Client Error: Not Found for url: http://feedproxy.google.com/Iustel/Diario_Del_Derecho
+[Actualitat] Error (Almacén de Derecho): HTTPConnectionPool(host='almacendederecho.org', port=80): Read timed out. (read timeout=15)
+[Actualitat] Total: 16 articles d'actualitat.
+[EUR-Lex] Error (EUR-Lex): no element found: line 1, column 0
+[EUR-Lex] Error (TJUE): 404 Client Error:  for url: https://curia.europa.eu/jcms/jcms/rss_1023559/en/
+[COMARCA] Error (Regio7): 'dict' object has no attribute 'strip'
+[COMARCA] NacióDigital: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Meteorologia: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Olvan: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Guardiola: 0 articles rellevants.
+[COMARCA] AquíBerguedà-LaPobla: 0 articles rellevants.
+
+→ 12 entrades noves per analitzar.
+
+[1/12] Analitzant: Reglamento de Ejecución (UE) 2026/892 de la Comisión, de 23 de abril d...
+   ✓ Categoria: administratiu | Urgència: mitjana
+[2/12] Analitzant: Reglamento (UE) 2026/506 del Consejo, de 23 de abril de 2026, por el q...
+   ✓ Categoria: administratiu | Urgència: alta
+[3/12] Analitzant: Recomendación (UE) 2026/917 de la Comisión, de 22 de abril de 2026, so...
+   ✓ Categoria: administratiu | Urgència: mitjana
+[4/12] Analitzant: Reglamento de Ejecución (UE) 2026/891 de la Comisión, de 23 de abril d...
+   ✓ Categoria: administratiu | Urgència: baixa
+[5/12] Analitzant: Reglamento nº 145 de las Naciones Unidas. Prescripciones uniformes rel...
+   ✓ Categoria: administratiu | Urgència: mitjana
+[6/12] Analitzant: El presidente de Abogacía Española se reúne con los colegiados de Gipu...
+   ✓ Categoria: administratiu | Urgència: mitjana
+[7/12] Analitzant: Hacia el dataísmo jurídico...
+   ✓ Categoria: civil | Urgència: mitjana
+[8/12] Analitzant: El ICAM retrasa a 2027 la apertura de CUICAM para reforzar la calidad ...
+   ✓ Categoria: administratiu | Urgència: mitjana
+[9/12] Analitzant: Un solo copropietario puede instalar el desahucio por precario...
+   ✓ Categoria: civil | Urgència: mitjana
+[10/12] Analitzant: La Audiencia Nacional frena la expansión de derechos sindicales: no to...
+   ✓ Categoria: laboral | Urgència: mitjana
+[11/12] Analitzant: “El abogado del siglo XXI que recurra ante el Tribunal Supremo y no ut...
+   ✓ Categoria: administratiu | Urgència: alta
+[12/12] Analitzant: Demanda de desahucio...
+   ✓ Categoria: civil | Urgència: alta
+
+[RESUM] Generant resum diari del dia...
+[RESUM] ✓ Resum diari generat.
+
+[RESUM-CAT] Generant resums per categoria...
+[RESUM-CAT] ✓ administratiu (8 articles)
+[RESUM-CAT] ✓ civil (3 articles)
+[RESUM-CAT] ✓ laboral (1 articles)
+
+==================================================
+  ✅ Fet! 12 novetats analitzades i guardades.
+     Fitxer: data/novetats.json
+==================================================
+
+
+==================================================
+  DretCat · Actualització 2026-04-26
+==================================================
+
+[DOGC] Descarregant entrades de 2026-04-26...
+[DOGC] 0 entrades trobades.
+[BOE] Descarregant entrades de 2026-04-26...
+[BOE] Error: 404 Client Error: Not Found for url: https://www.boe.es/datosabiertos/api/boe/dias/2026-04-26
+[Parlament] 10 entrades trobades.
+[EMAIL] Connectant a imap.gmail.com com feed@weedisplay.com...
+[EMAIL] Total entrades des de correu: 0
+[Actualitat] Abogacía Española: 1 articles recents.
+[Actualitat] Legal Today: 0 articles recents.
+[Actualitat] vLex Blog: 0 articles recents.
+[Actualitat] Derecho Mercantil: 0 articles recents.
+[Actualitat] Economist & Jurist: 10 articles recents.
+[Actualitat] Error (Entre leyes): 404 Client Error: Not Found for url: https://www.leyesyjurisprudencia.com/feed/
+[Actualitat] Mundojuridico: 2 articles recents.
+[Actualitat] Error (Notarios y Registradores): 404 Client Error: Not Found for url: https://www.notariosyregistradores.com/feed/
+[Actualitat] Error (Civil Mercantil): 404 Client Error: Not Found for url: https://www.civil-mercantil.com/feed.xml
+[Actualitat] Error (Iustel): 404 Client Error: Not Found for url: http://feedproxy.google.com/Iustel/Diario_Del_Derecho
+[Actualitat] Almacén de Derecho: 2 articles recents.
+[Actualitat] Total: 15 articles d'actualitat.
+[EUR-Lex] Error (EUR-Lex): no element found: line 1, column 0
+[EUR-Lex] Error (TJUE): 404 Client Error:  for url: https://curia.europa.eu/jcms/jcms/rss_1023559/en/
+[COMARCA] Error (Regio7): 'dict' object has no attribute 'strip'
+[COMARCA] NacióDigital: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Meteorologia: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Olvan: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Guardiola: 0 articles rellevants.
+[COMARCA] AquíBerguedà-LaPobla: 0 articles rellevants.
+
+→ 4 entrades noves per analitzar.
+
+[1/4] Analitzant: El origen del pijama que se come...
+   ✓ Categoria: administratiu | Urgència: baixa
+[2/4] Analitzant: Exonerado una deuda de casi 488.000 euros a un hombre arruinado tras l...
+   ✓ Categoria: mercantil | Urgència: mitjana
+[3/4] Analitzant: El  permiso por fuerza mayor por conciliación (art. 37.9 del ET) llega...
+   ✓ Categoria: laboral | Urgència: alta
+[4/4] Analitzant: El ICAM urge al Congreso a acelerar la pasarela al RETA para los mutua...
+   ✓ Categoria: laboral | Urgència: alta
+
+[RESUM] Generant resum diari del dia...
+[RESUM] ✓ Resum diari generat.
+
+[RESUM-CAT] Generant resums per categoria...
+[RESUM-CAT] ✓ administratiu (1 articles)
+[RESUM-CAT] ✓ mercantil (1 articles)
+[RESUM-CAT] ✓ laboral (2 articles)
+
+==================================================
+  ✅ Fet! 4 novetats analitzades i guardades.
+     Fitxer: data/novetats.json
+==================================================
+
+
+==================================================
+  DretCat · Actualització 2026-04-27
+==================================================
+
+[DOGC] Descarregant entrades de 2026-04-27...
+[DOGC] 0 entrades trobades.
+[BOE] Descarregant entrades de 2026-04-27...
+[BOE] Error: 404 Client Error: Not Found for url: https://www.boe.es/datosabiertos/api/boe/dias/2026-04-27
+[Parlament] 10 entrades trobades.
+[EMAIL] Connectant a imap.gmail.com com feed@weedisplay.com...
+[EMAIL] Total entrades des de correu: 0
+[Actualitat] Abogacía Española: 0 articles recents.
+[Actualitat] Legal Today: 0 articles recents.
+[Actualitat] vLex Blog: 0 articles recents.
+[Actualitat] Derecho Mercantil: 0 articles recents.
+[Actualitat] Economist & Jurist: 9 articles recents.
+[Actualitat] Error (Entre leyes): 404 Client Error: Not Found for url: https://www.leyesyjurisprudencia.com/feed/
+[Actualitat] Mundojuridico: 1 articles recents.
+[Actualitat] Error (Notarios y Registradores): 404 Client Error: Not Found for url: https://www.notariosyregistradores.com/feed/
+[Actualitat] Error (Civil Mercantil): 404 Client Error: Not Found for url: https://www.civil-mercantil.com/feed.xml
+[Actualitat] Error (Iustel): 404 Client Error: Not Found for url: http://feedproxy.google.com/Iustel/Diario_Del_Derecho
+[Actualitat] Error (Almacén de Derecho): 500 Server Error: Internal Server Error for url: http://almacendederecho.org/feed
+[Actualitat] Total: 10 articles d'actualitat.
+[EUR-Lex] Error (EUR-Lex): no element found: line 1, column 0
+[EUR-Lex] Error (TJUE): 404 Client Error:  for url: https://curia.europa.eu/jcms/jcms/rss_1023559/en/
+[COMARCA] Regio7: 0 articles rellevants.
+[COMARCA] NacióDigital: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Meteorologia: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Olvan: 0 articles rellevants.
+[COMARCA] AquíBerguedà-Guardiola: 0 articles rellevants.
+[COMARCA] AquíBerguedà-LaPobla: 0 articles rellevants.
+
+→ 1 entrades noves per analitzar.
+
+[1/1] Analitzant: Cuando la urgencia reduce la calidad: proteger el pensamiento jurídico...
+   ✓ Categoria: civil | Urgència: alta
+
+[RESUM] Generant resum diari del dia...
+[RESUM] ✓ Resum diari generat.
+
+[RESUM-CAT] Generant resums per categoria...
+[RESUM-CAT] ✓ civil (1 articles)
+
+==================================================
+  ✅ Fet! 1 novetats analitzades i guardades.
+     Fitxer: data/novetats.json
+==================================================
+
