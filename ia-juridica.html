@@ -1423,11 +1423,11 @@
       if (!comarca) return true;
 
       const aliasos = {
-        espanya: ['espanya', 'españa'],
-        catalunya: ['catalunya', 'cataluña', 'catala', 'catalan'],
+        espanya: ['espanya', 'espana'],
+        catalunya: ['catalunya', 'cataluna', 'catala', 'catalan'],
         girona: ['girona', 'provincia de girona', 'provincia girona'],
         cerdanya: ['cerdanya', 'la cerdanya'],
-        'berguedà': ['bergueda', 'berguedà', 'el bergueda', 'el berguedà']
+        'berguedà': ['bergueda', 'el bergueda']
       };
 
       const textNoticia = normalizeText([
@@ -1435,8 +1435,8 @@
         (Array.isArray(n.comarques) ? n.comarques.join(' ') : '')
       ].join(' '));
       const teComarca = Array.isArray(n.comarques) && n.comarques.length > 0;
-      const teIndicisLocals = /(?:generalitat|parlament de catalunya|dogc|ajuntament|diputacio|diputacio|consell comarcal|tsjc|barcelona|girona|lleida|tarragona|cerdanya|bergueda)/.test(textNoticia);
-      const teIndicisEstatals = /(?:espanya|españa|nacional|estat|estatal|boe|congreso|senado|ministerio|tribunal supremo|audiencia nacional|abogacia espanola)/.test(textNoticia);
+      const teIndicisLocals = /\b(?:generalitat|parlament de catalunya|dogc|ajuntament|diputacio|consell comarcal|tsjc|barcelona|girona|lleida|tarragona|cerdanya|bergueda)\b/.test(textNoticia);
+      const teIndicisEstatals = /\b(?:espanya|espana|nacional|estat|estatal|boe|congreso|senado|ministerio|tribunal supremo|audiencia nacional|abogacia espanola)\b/.test(textNoticia);
 
       if (comarca === 'espanya') {
         // Dret estatal / nacional (amb prioritat per fonts i institucions espanyoles)
@@ -1452,7 +1452,11 @@
       const comarques = Array.isArray(n.comarques) ? n.comarques : [];
       const comarquesNorm = comarques.map(normalizeText);
 
-      return objectiusNorm.some(o => comarquesNorm.includes(o) || textNoticia.includes(o));
+      return objectiusNorm.some(o => {
+        if (comarquesNorm.includes(o)) return true;
+        const regex = new RegExp(`\\b${o}\\b`, 'i');
+        return regex.test(textNoticia);
+      });
     }
 
     document.querySelectorAll('.nav-dropdown-item[data-comarca]').forEach(btn => {
