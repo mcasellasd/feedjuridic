@@ -220,7 +220,7 @@
       border: 1px solid var(--rule);
       border-top: 2px solid var(--black);
       min-width: 160px;
-      z-index: 200;
+      z-index: 1200;
       box-shadow: 0 4px 12px rgba(0,0,0,.1);
     }
     .nav-dropdown:hover .nav-dropdown-menu,
@@ -229,6 +229,11 @@
     }
     .nav-dropdown.open .nav-dropdown-menu {
       display: block;
+    }
+    .nav-dropdown.open .nav-dropdown-menu.menu-fixed {
+      position: fixed;
+      top: var(--menu-top, 72px);
+      left: var(--menu-left, 16px);
     }
     .nav-dropdown-item {
       display: block;
@@ -900,6 +905,7 @@
       <div class="nav-dropdown">
         <button class="nav-dropdown-btn" id="btn-territoris">📍 Territoris ▾</button>
         <div class="nav-dropdown-menu">
+          <button class="nav-dropdown-item" data-comarca="espanya">Espanya</button>
           <button class="nav-dropdown-item" data-comarca="catalunya">Catalunya</button>
           <button class="nav-dropdown-item" data-comarca="girona">Girona</button>
           <button class="nav-dropdown-item" data-comarca="cerdanya">La Cerdanya</button>
@@ -1381,11 +1387,22 @@
     // ── FILTRE COMARCA ────────────────────────────────────
     const territorisDropdown = document.querySelector('.nav-dropdown');
     const territorisBtn = document.getElementById('btn-territoris');
+    const territorisMenu = territorisDropdown ? territorisDropdown.querySelector('.nav-dropdown-menu') : null;
+
+    function placeTerritorisMenu() {
+      if (!territorisDropdown || !territorisBtn || !territorisMenu) return;
+      const rect = territorisBtn.getBoundingClientRect();
+      territorisDropdown.style.setProperty('--menu-top', `${rect.bottom + 2}px`);
+      territorisDropdown.style.setProperty('--menu-left', `${rect.left}px`);
+      territorisMenu.classList.add('menu-fixed');
+    }
 
     if (territorisDropdown && territorisBtn) {
       territorisBtn.addEventListener('click', (e) => {
         e.stopPropagation();
+        const willOpen = !territorisDropdown.classList.contains('open');
         territorisDropdown.classList.toggle('open');
+        if (willOpen) placeTerritorisMenu();
       });
 
       document.addEventListener('click', (e) => {
@@ -1393,24 +1410,49 @@
           territorisDropdown.classList.remove('open');
         }
       });
+
+      window.addEventListener('resize', () => {
+        if (territorisDropdown.classList.contains('open')) placeTerritorisMenu();
+      });
+      window.addEventListener('scroll', () => {
+        if (territorisDropdown.classList.contains('open')) placeTerritorisMenu();
+      }, true);
     }
 
     function coincideixComarca(n, comarca) {
       if (!comarca) return true;
-      if (comarca === 'catalunya') return true;
 
       const aliasos = {
+        espanya: ['espanya', 'españa'],
+        catalunya: ['catalunya', 'cataluña', 'catala', 'catalan'],
         girona: ['girona', 'provincia de girona', 'provincia girona'],
         cerdanya: ['cerdanya', 'la cerdanya'],
         'berguedà': ['bergueda', 'berguedà', 'el bergueda', 'el berguedà']
       };
+
+      const textNoticia = normalizeText([
+        n.titol, n.resum_executiu, n.impacte_practic, n.url, n.font, n.font_web, n.tipus,
+        (Array.isArray(n.comarques) ? n.comarques.join(' ') : '')
+      ].join(' '));
+      const teComarca = Array.isArray(n.comarques) && n.comarques.length > 0;
+      const teIndicisLocals = /(?:generalitat|parlament de catalunya|dogc|ajuntament|diputacio|diputacio|consell comarcal|tsjc|barcelona|girona|lleida|tarragona|cerdanya|bergueda)/.test(textNoticia);
+      const teIndicisEstatals = /(?:espanya|españa|nacional|estat|estatal|boe|congreso|senado|ministerio|tribunal supremo|audiencia nacional|abogacia espanola)/.test(textNoticia);
+
+      if (comarca === 'espanya') {
+        // Dret estatal / nacional (amb prioritat per fonts i institucions espanyoles)
+        return teIndicisEstatals;
+      }
+      if (comarca === 'catalunya') {
+        // Dret local / territorial català
+        return teComarca || teIndicisLocals;
+      }
 
       const objectius = aliasos[comarca] || [comarca];
       const objectiusNorm = objectius.map(normalizeText);
       const comarques = Array.isArray(n.comarques) ? n.comarques : [];
       const comarquesNorm = comarques.map(normalizeText);
 
-      return objectiusNorm.some(o => comarquesNorm.includes(o));
+      return objectiusNorm.some(o => comarquesNorm.includes(o) || textNoticia.includes(o));
     }
 
     document.querySelectorAll('.nav-dropdown-item[data-comarca]').forEach(btn => {
@@ -1433,6 +1475,7 @@
         temaActual = 'tot';
         document.querySelector('.nav-tema[data-tema="tot"]').classList.add('on');
         const nomsComarca = {
+          'espanya': 'Espanya',
           'catalunya': 'Catalunya',
           'girona': 'Girona',
           'cerdanya': 'La Cerdanya',
