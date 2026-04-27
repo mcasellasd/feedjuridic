@@ -146,6 +146,7 @@
       align-items: center;
       gap: 0;
       overflow-x: auto;
+      overflow-y: visible;
       scrollbar-width: none;
     }
     .nav-temes-inner::-webkit-scrollbar { display: none; }
@@ -185,6 +186,7 @@
     /* ── DROPDOWN TERRITORIS ─────────────────────────── */
     .nav-dropdown {
       position: relative;
+      flex: 0 0 auto;
     }
     .nav-dropdown-btn {
       font-size: 12.5px;
@@ -223,6 +225,9 @@
     }
     .nav-dropdown:hover .nav-dropdown-menu,
     .nav-dropdown:focus-within .nav-dropdown-menu {
+      display: block;
+    }
+    .nav-dropdown.open .nav-dropdown-menu {
       display: block;
     }
     .nav-dropdown-item {
@@ -1102,6 +1107,13 @@
       return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
     }
     function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
+    function normalizeText(s) {
+      return String(s || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .trim();
+    }
 
     function badgeClass(cat) {
       const m = { civil:'civil', penal:'penal', laboral:'laboral', administratiu:'admin', mercantil:'mercantil', fiscal:'fiscal', constitucional:'constitucional' };
@@ -1367,8 +1379,43 @@
     }
 
     // ── FILTRE COMARCA ────────────────────────────────────
+    const territorisDropdown = document.querySelector('.nav-dropdown');
+    const territorisBtn = document.getElementById('btn-territoris');
+
+    if (territorisDropdown && territorisBtn) {
+      territorisBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        territorisDropdown.classList.toggle('open');
+      });
+
+      document.addEventListener('click', (e) => {
+        if (!territorisDropdown.contains(e.target)) {
+          territorisDropdown.classList.remove('open');
+        }
+      });
+    }
+
+    function coincideixComarca(n, comarca) {
+      if (!comarca) return true;
+      if (comarca === 'catalunya') return true;
+
+      const aliasos = {
+        girona: ['girona', 'provincia de girona', 'provincia girona'],
+        cerdanya: ['cerdanya', 'la cerdanya'],
+        'berguedà': ['bergueda', 'berguedà', 'el bergueda', 'el berguedà']
+      };
+
+      const objectius = aliasos[comarca] || [comarca];
+      const objectiusNorm = objectius.map(normalizeText);
+      const comarques = Array.isArray(n.comarques) ? n.comarques : [];
+      const comarquesNorm = comarques.map(normalizeText);
+
+      return objectiusNorm.some(o => comarquesNorm.includes(o));
+    }
+
     document.querySelectorAll('.nav-dropdown-item[data-comarca]').forEach(btn => {
       btn.addEventListener('click', () => {
+        if (territorisDropdown) territorisDropdown.classList.remove('open');
         const comarca = btn.dataset.comarca;
         if (comarcaActual === comarca) {
           // Desactivar filtre comarca
@@ -1395,7 +1442,7 @@
         document.getElementById('stream-title').textContent = comarcaActual
           ? `📍 ${nomComarca}` : 'Totes les notícies';
         const filtrades = comarcaActual
-          ? TOTES.filter(n => n.comarques && n.comarques.includes(comarcaActual))
+          ? TOTES.filter(n => coincideixComarca(n, comarcaActual))
           : TOTES;
         renderTot(filtrades);
       });
