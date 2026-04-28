@@ -1,5 +1,329 @@
 [
   {
+    "id": "ACT-https://www.abogacia.es/?p=270497",
+    "data": "2026-04-28",
+    "titol": "Morris Eidelman: “Seguir aprendiendo no depende de la edad, sino de las ganas de no quedarse atrás”",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/noticias/morris-eidelman-seguir-aprendiendo-no-depende-de-la-edad-sino-de-las-ganas-de-no-quedarse-atras/",
+    "resum_executiu": "Morris Eidelman destaca la importància d'aprendre contínuament en la professió legal, independentment de l'edat. La unió entre l'experiència i els nous coneixements és fonamental per adaptar-se als canvis tecnològics del sector.",
+    "impacte_practic": "La formació contínua pot millorar les competències professionals dels advocats, permetent-los mantenir-se rellevants i eficients. Això beneficia tant als professionals com als clients en un entorn legal en constant evolució.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "formació contínua",
+      "advocacia",
+      "educació",
+      "competències digitals"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.abogacia.es/?p=270521",
+    "data": "2026-04-28",
+    "titol": "El presidente de la Abogacía Española y la fiscal general del Estado mantienen la primera reunión institucional",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/noticias/el-presidente-de-la-abogacia-espanola-y-la-fiscal-general-del-estado-mantienen-la-primera-reunion-institucional/",
+    "resum_executiu": "El president del Consell General de l'Advocacia Espanyola i la fiscal general del Estat han mantingut una reunió per abordar la col·laboració en la millora de la Justícia. S'ha acordat la creació de comissions mixtes de treball per desenvolupar formacions conjuntes i millorar protocols existents.",
+    "impacte_practic": "Aquesta iniciativa pot traduir-se en un sistema judicial més eficient, millorant la formació dels professionals i la seguretat dels processos. Ciutadans i empreses podrien beneficiar-se d'un sistema de Justícia més ràpid i fiable.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "Justícia",
+      "collaboració",
+      "protocols",
+      "formació"
+    ],
+    "urgencia": "alta",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244721",
+    "data": "2026-04-28",
+    "titol": "El límite temporal para denunciar cláusulas abusivas en ejecución hipotecaria",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/el-limite-temporal-para-denunciar-clausulas-abusivas-en-ejecucion-hipotecaria/",
+    "resum_executiu": "El Tribunal de Instància Civil de Logroño ha suspès l'execució hipotecària per un consumidor, possibilitant l'oposició a les clàusules abusives de la hipoteca malgrat haver-se superat el termini legal de 10 dies. La decisió es fonamenta en la disposició transitoria de la Llei 5/2019, que permet aquesta oposició extraordinària.",
+    "impacte_practic": "Aquesta resolució ofereix una via de defensa als consumidors que han estat afectats per clàusules abusives i que podrien haver perdut els seus béns immobles. Pot generar més demandes d'oposició extraordinària en situacions semblants.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "clàusules abusives",
+      "execució hipotecària",
+      "oportunitat legal",
+      "dret a l'oposició"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244703",
+    "data": "2026-04-28",
+    "titol": "El límite de pastiche en materia de derechos de autor a la luz de la sentencia del TJUE del 14 de abril de 2026 (C-590/23)",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/el-limite-de-pastiche-en-materia-de-derechos-de-autor-a-la-luz-de-la-sentencia-del-tjue-del-14-de-abril-de-2026-c-590-23/",
+    "resum_executiu": "La sentència del TJUE del 14 d'abril de 2026 clarifica els límits del pastiche en els drets d'autor, definint condicions específiques per a l'ús de fragments d'obres preexistents sense autorització. Aquest límit no és un permís general per a qualsevol tipus de reutilització creativa, sinó que exigeix un diàleg artístic amb l'obra original.",
+    "impacte_practic": "La sentència proporciona orientació als artistes i creadors sobre quan poden fer ús d'elements d'altres obres, així com protegeix els drets dels autors originals. Això pot influir en la producció musical i artística, augmentant la seguretat jurídica en la creació.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "drets d'autor",
+      "pastiche",
+      "sampling",
+      "TJUE"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244715",
+    "data": "2026-04-28",
+    "titol": "Mercadona lleva a los tribunales a una clienta por un lápiz de cejas de 3,50 euros: ha sido condenada por un delito leve de hurto",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/mercadona-lleva-a-los-tribunales-a-una-clienta-por-un-lapiz-de-cejas-de-350-euros-ha-sido-condenada-por-un-delito-leve-de-hurto/",
+    "resum_executiu": "La Audiencia Provincial de Córdoba ha confirmat la condemnació d'una clienta de Mercadona per un delicte lleu de furt d'un llapis de cejas valorat en 3,50 euros. Aquesta decisió destaca que, segons el dret penal espanyol, no hi ha 'hurtos insignificants', i que qualsevol furt, independentment del seu valor, pot portar a penalitzacions.",
+    "impacte_practic": "Els ciutadans han de ser conscients que qualsevol intent de furt, encara que sigui d'un producte de baix valor, pot resultar en conseqüències legals. Les empreses, per la seva banda, poden optar per judicialitzar aquests casos per protegir els seus interessos.",
+    "categoria": "penal",
+    "paraules_clau": [
+      "delicte lleu",
+      "hurto",
+      "Mercadona",
+      "condena"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244638",
+    "data": "2026-04-28",
+    "titol": "Modelo de contestación a la demanda de ejecución, pensiones impagadas",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/sala-2-0/modelo-de-contestacion-a-la-demanda-de-ejecucion-pensiones-impagadas/",
+    "resum_executiu": "La disposició presenta un model de contestació a demandes d'execució per pensions impagades, amb arguments que permeten oposar-se a l'execució per errors en el càlcul de la deute o prescripcions. Inclou detalls sobre la liquidació correcta que el deutor pot al·legar davant del tribunal.",
+    "impacte_practic": "Aquesta eina jurídica permet als deutors defensar-se millor contra demandes d'execució injustes, especialment en matèria de pensions, facilitant l'accés a la justícia i protegint els drets dels ciutadans. Això pot reduir l'impacte econòmic sobre persones que no són culpables de la deute reclamada.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "contenciós",
+      "pensions",
+      "execució",
+      "deute"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244694",
+    "data": "2026-04-28",
+    "titol": "De la montaña de papeles al ‘Advisory’: lo que aprendí al cambiar la asesoría por el ‘software’",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/la-firma/de-la-montana-de-papeles-al-advisory-lo-que-aprendi-al-cambiar-la-asesoria-por-el-software/",
+    "resum_executiu": "L'article destaca la necessitat de transformar els despatxos tradicionals en models d'assessorament estratègic per a afrontar la crisi de talent i l'ineficiència operativa. La digitalització i l'ús d'IA són fonamentals per millorar la rendibilitat i la qualitat del servei ofert.",
+    "impacte_practic": "Els ciutadans i empreses podran beneficiar-se d'un millor assessorament gràcies a la digitalització dels serveis legals, augmentant la seva eficiència i reduint costos. Aquesta transformació és essencial per a la supervivència de les pimes en l'actual context econòmic.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "transformació",
+      "assessorament",
+      "digitalització",
+      "IA"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244679",
+    "data": "2026-04-28",
+    "titol": "No vulnera la intimidad del trabajador el hecho de que la empresa acceda a su agenda a efectos de controlar el cumplimiento de sus obligaciones laborales",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/no-vulnera-la-intimidad-del-trabajador-el-hecho-de-que-la-empresa-acceda-a-su-agenda-a-efectos-de-controlar-el-cumplimiento-de-sus-obligaciones-laborales/",
+    "resum_executiu": "La pràctica d'accedir a l'agenda d'un treballador per controlar el compliment de les seves obligacions laborals no vulnera el dret a la intimitat del mateix. Això ha estat confirmat per una sentència del Tribunal Superior de Justicia de Galicia, que va rebutjar declarar nul un despido disciplinari per aquesta causa.",
+    "impacte_practic": "Els ciutadans i empreses poden veure un augment en la vigilància laboral sense que això es consideri una violació de drets, la qual cosa pot afectar la relació entre empleadors i treballadors. Això implica que les empreses tenen més marge per controlar el rendiment dels seus treballadors.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "intimitat",
+      "obligacions",
+      "control",
+      "despido"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244673",
+    "data": "2026-04-28",
+    "titol": "¿Mediar o pagar? La estrategia del Supremo que podría rozar la inconstitucionalidad",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/mediar-o-pagar-la-estrategia-del-supremo-que-podria-rozar-la-inconstitucionalidad/",
+    "resum_executiu": "El Tribunal Supremo impulsa la mediació en recursos per al cártel de camions com a resposta a l'excés de càrrega de treball, generant debat sobre la seva constitucionalitat. La mesura, tot i ser formalment voluntària, implica pressió econòmica a les parts que rebutgin la mediació.",
+    "impacte_practic": "Els ciutadans podrien veure's obligats a mediar en litigis importants, amb la possibilitat de veure repercutides les costes si no hi accedeixen. Això podria dissuadir els litigants de reclamar l'accés a la justícia.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "mediació",
+      "costes",
+      "constitucionalitat",
+      "litigis"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244665",
+    "data": "2026-04-28",
+    "titol": "La nómina deja de ser un trámite: transparencia y rigor en el centro del sistema laboral",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/la-nomina-deja-de-ser-un-tramite-transparencia-y-rigor-en-el-centro-del-sistema-laboral/",
+    "resum_executiu": "La recent sentència del Tribunal Suprem obliga les empreses a detallar com es calculen les nòmines, augmentant així la transparència retributiva. Això transforma la nòmina d'un document merament justificatiu a una eina d'informació comprensible per als treballadors.",
+    "impacte_practic": "Les empreses hauran d'adaptar els seus processos per oferir claredat i rigor en la confecció de nòmines, la qual cosa afectarà directament la seva gestió laboral. Això pot reduir el risc de conflictes laborals i augmentar la confiança en les relacions laborals.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "nòmina",
+      "transparència",
+      "laboral",
+      "drets"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244662",
+    "data": "2026-04-28",
+    "titol": "Tráfico de drogas y formas imperfectas de ejecución: delimitación actual del Tribunal Supremo",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/trafico-de-drogas-y-formas-imperfectas-de-ejecucion-delimitacion-actual-del-tribunal-supremo/",
+    "resum_executiu": "La recent STS 167/2026 determina que la tentativa en el delicte de tràfic de drogues és excepcional, admetent-la només quan el subjecte no ha participat en el pla delictiu ni té disponibilitat sobre la substància. Aquesta decisió reafirma un criteri restrictiu en la delimitació de la consumació del delicte segons l'article 368 del CP.",
+    "impacte_practic": "Els ciutadans poden veure un enduriment de les conseqüències legals en els casos de tràfic de drogues, ja que la jurisprudència restringeix les possibilitats d'argumentar la mera tentativa. Això implica un augment de responsabilitat penal per a aquells que estiguin implicats en activitats vinculades a aquestes substàncies.",
+    "categoria": "penal",
+    "paraules_clau": [
+      "tràfic de drogues",
+      "intenció criminal",
+      "jurisprudència",
+      "tendència restrictiva"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244650",
+    "data": "2026-04-28",
+    "titol": "Anulada una sanción de 90.000 euros impuesta a los propietarios de una vivienda por acoso inmobiliario",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/anulada-una-sancion-de-90-000-euros-impuesta-a-los-propietarios-de-una-vivienda-por-acoso-inmobiliario/",
+    "resum_executiu": "El Tribunal Superior de Justicia de Cataluña ha declarat nul·la una sanció de 90.001 euros a uns propietaris per acoso immobiliari, argumentant que no hi va haver una infracció real. La sentència destaca que les circumstàncies del contracte de lloguer i les obres realitzades pel propietari demostren la voluntat de mantenir la inquilina a la vivenda.",
+    "impacte_practic": "Aquesta decisió pot obrir la porta a altres propietaris que es trobin en situacions similars, reforçant la seva posició contra acusacions d'acoso immobiliari infundades. Els inquilins, per la seva banda, han de ser conscients dels requisits per demostrar accions d'aquest tipus.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "acoso immobiliari",
+      "sanció nul·la",
+      "propietaris",
+      "inquilins"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://almacendederecho.org/?p=59738",
+    "data": "2026-04-28",
+    "titol": "El precio de la información en los contratos de M&A",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://almacendederecho.org/el-precio-de-la-informacion-en-los-contratos-de-ma",
+    "resum_executiu": "Els contractes de M&A sovint substitueixen les responsabilitats legals per règims pactats entre les parts, amb limits a la responsabilitat del venedor. No obstant, l'article 1102 CC impõe limitacions importants en cas de dol, assegurant que les clàusules que exclouen la responsabilitat del venedor no són vàlides quan es prova dol.",
+    "impacte_practic": "Aquesta norma protegeix els compradors, garantint que el venedor no pugui evitar responsabilitats en casos de dol. Això proporciona una major seguretat en les transaccions comercials, especialment per a inversors i empreses implicades en M&A.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "M&A",
+      "responsabilitat",
+      "dolo",
+      "contractes"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Almacén de Derecho",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://almacendederecho.org/?p=59714",
+    "data": "2026-04-28",
+    "titol": "Vacunación recomendada y límites de la responsabilidad patrimonial por los daños cuasi expropiatorios",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://almacendederecho.org/vacunacion-recomendada-y-limites-de-la-responsabilidad-patrimonial-por-los-danos-cuasi-expropiatorios",
+    "resum_executiu": "La STS 61/2026 estableix que l'Administració autonòmica només ha de responsabilitzar-se per danys personals derivats de riscos molt rars de la vacunació, sempre que hi hagi actuació contrària a la lex artis. Es descarta la responsabilitat per danys cuasi expropiatoris, atès el caràcter voluntari de la vacunació i els riscos informats.",
+    "impacte_practic": "Els ciutadans no podran reclamar indemnitzacions per danys relacionats amb la vacunació recomanada, ja que aquesta és considerada voluntària. Les empreses públiques de salut poden veure's eximides de responsabilitat pels efectes adversos derivats de la vacunació.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "vaccinació",
+      "responsabilitat",
+      "danys",
+      "administració"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Almacén de Derecho",
+    "comarques": []
+  },
+  {
+    "id": "COM-5f6956a76030",
+    "data": "2026-04-28",
+    "titol": "Revista científica 'Querol': ara tan sols temàtiques de Cerdanya",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/cerdanya/2026/04/28/revista-cientifica-querol-ara-sols-129600299.html",
+    "resum_executiu": "La revista Querol s'especialitza ara en temàtiques exclusives de la Cerdanya, abandonant la seva anterior cobertura més àmplia del Pirineu. Aquesta nova etapa busca respondre a les necessitats dels lectors amb continguts més centrats en la història i cultura local.",
+    "impacte_practic": "Aquesta especialització pot augmentar l'interès i la participació dels ciutadans en assumptes locals. Les empreses i organitzacions culturals de la zona podrien veure un benefici en la visibilitat i promoció del patrimoni cerdà.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "Cerdanya",
+      "revista",
+      "cultura",
+      "història"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "cerdanya"
+    ]
+  },
+  {
+    "id": "COM-e101b74adc11",
+    "data": "2026-04-28",
+    "titol": "40 desnonaments en cascada a la Mina: embat contra les ocupacions d'uns pisos públics abandonats",
+    "font": "NacióDigital",
+    "tipus": "Premsa comarcal",
+    "url": "https://naciodigital.cat/societat/40-desnonaments-en-cascada-a-la-mina-embat-contra-les-ocupacions-duns-pisos-publics-abandonats.html",
+    "resum_executiu": "La present disposició tracta sobre un conjunt de desnonaments massius a la Mina, Sant Adrià del Besòs, on famílies ocupen pisos públics abandonats. L'Administració ha decidit prioritzar el reallotjament de veïns en situació de vulnerabilitat, argumentant que els pisos ocupats estan destinats a aquesta finalitat.",
+    "impacte_practic": "Els desnonaments afectaran a unes 60 famílies, generant un impacte significatiu en la comunitat local i la seva seguretat habitacional. Els afectats denuncien la falta de solucions d'habitatge alternatives davant de la situació de vulnerabilitat.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "desnonaments",
+      "ocupacions",
+      "habitatge",
+      "vulnerabilitat"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
     "id": "ACT-https://www.economistjurist.es/?p=244330",
     "data": "2026-04-27",
     "titol": "Cuando la urgencia reduce la calidad: proteger el pensamiento jurídico bajo presión",
