@@ -292,11 +292,12 @@ def fetch_actualitat_juridica(dies_enrere: int = 2):
 # ── 5. Obtenir entrades d'EUR-Lex i TJUE ─────────────────
 def detectar_comarques(text: str) -> list:
     """Retorna la llista de comarques detectades al text (en minúscules)."""
-    text_lower = text.lower()
     trobades = []
     for comarca, keywords in COMARQUES.items():
-        if any(kw in text_lower for kw in keywords):
-            trobades.append(comarca)
+        for kw in keywords:
+            if re.search(r'\b' + re.escape(kw) + r'\b', text, re.IGNORECASE):
+                trobades.append(comarca)
+                break
     return trobades
 
 

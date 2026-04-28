@@ -1128,7 +1128,7 @@
 
     // ── RENDER LEAD ───────────────────────────────────────
     function renderLead(n) {
-      if (!n) { document.getElementById('lead-container').innerHTML = ''; return; }
+      if (!n) { document.getElementById('lead-container').innerHTML = '<p class="no-interests-msg" style="padding: 2rem 0; font-size: 14px;">No s\'han trobat notícies per a aquest filtre.</p>'; return; }
       const isIa = esIA(n);
       document.getElementById('lead-container').innerHTML = `
         <div class="lead-story" onclick="toggleExpand('lead-exp', '${esc(n.id)}')">

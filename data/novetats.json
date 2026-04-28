@@ -17,9 +17,7 @@
     ],
     "urgencia": "alta",
     "font_web": "Economist & Jurist",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "ACT-https://www.economistjurist.es/?p=244603",
@@ -199,9 +197,7 @@
     ],
     "urgencia": "alta",
     "font_web": "",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "DOUE-email-ba128cd6bb",
@@ -241,9 +237,7 @@
     ],
     "urgencia": "baixa",
     "font_web": "",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "DOUE-email-a4ab7baef5",
@@ -263,9 +257,7 @@
     ],
     "urgencia": "mitjana",
     "font_web": "",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "ACT-https://www.abogacia.es/?p=270504",
@@ -405,9 +397,7 @@
     ],
     "urgencia": "alta",
     "font_web": "Mundojuridico",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "BOE-email-7cebb13bbb",
@@ -427,9 +417,7 @@
     ],
     "urgencia": "alta",
     "font_web": "",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "DOUE-email-207fbbea90",
@@ -449,9 +437,7 @@
     ],
     "urgencia": "mitjana",
     "font_web": "",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "DOUE-email-63483e8f62",
@@ -471,9 +457,7 @@
     ],
     "urgencia": "mitjana",
     "font_web": "",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "DOUE-email-001f94ec2a",
@@ -493,9 +477,7 @@
     ],
     "urgencia": "mitjana",
     "font_web": "",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "DOUE-email-3c0e6c0aa5",
@@ -615,9 +597,7 @@
     ],
     "urgencia": "alta",
     "font_web": "Economist & Jurist",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "ACT-https://www.economistjurist.es/?p=244322",
@@ -697,9 +677,7 @@
     ],
     "urgencia": "alta",
     "font_web": "Economist & Jurist",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "ACT-https://www.economistjurist.es/?p=244509",
@@ -759,9 +737,7 @@
     ],
     "urgencia": "alta",
     "font_web": "Economist & Jurist",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "ACT-https://www.economistjurist.es/?p=244502",
@@ -781,9 +757,7 @@
     ],
     "urgencia": "mitjana",
     "font_web": "Economist & Jurist",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "ACT-https://www.economistjurist.es/?p=241473",
@@ -905,7 +879,9 @@
     ],
     "urgencia": "mitjana",
     "font_web": "",
-    "comarques": []
+    "comarques": [
+      "catalunya"
+    ]
   },
   {
     "id": "ACT-https://almacendederecho.org/?p=59648",
@@ -945,9 +921,7 @@
     ],
     "urgencia": "mitjana",
     "font_web": "",
-    "comarques": [
-      "cerdanya"
-    ]
+    "comarques": []
   },
   {
     "id": "DOUE-email-c9cb2cdd29",
