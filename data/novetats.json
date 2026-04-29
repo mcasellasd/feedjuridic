@@ -1,5 +1,287 @@
 [
   {
+    "id": "26118065",
+    "data": "2026-04-29",
+    "titol": "Decret llei 4/2026, de 28 d'abril, de mesures urgents en l'àmbit de la dependència",
+    "font": "DOGC",
+    "tipus": "Decret llei",
+    "url": "https://portaljuridic.gencat.cat/eli/es-ct/dl/2026/04/28/4/dof/cat/html",
+    "resum_executiu": "El Decret llei 4/2026 estableix mesures urgents en l'àmbit de la dependència, amb l'objectiu de millorar l'atenció a les persones dependents i optimitzar els recursos disponibles. Aquestes mesures inclouen una revisió dels protocols d'atenció i una major col·laboració entre les administracions públiques.",
+    "impacte_practic": "Les noves mesures afectaran directament a persones en situació de dependència, assegurant una millor atenció i suport. També beneficiaran als professionals del sector, que podran treballar amb recursos més eficients.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "dependència",
+      "mesures urgents",
+      "atenció",
+      "Catalunya"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": []
+  },
+  {
+    "id": "26117033",
+    "data": "2026-04-29",
+    "titol": "Ordre ARP/69/2026, de 21 d'abril, sobre l'aprofitament forestal del llentiscle i del bruc amb finalitat comercial i del règim jurídic aplicable al boix grèvol",
+    "font": "DOGC",
+    "tipus": "Ordre",
+    "url": "https://portaljuridic.gencat.cat/eli/es-ct/o/2026/04/21/arp69/dof/cat/html",
+    "resum_executiu": "L'Ordre ARP/69/2026 regula l'aprofitament forestal del llentiscle i del bruc amb finalitat comercial, així com el règim jurídic aplicable al boix grèvol. Aquestes mesures busquen promoure un ús sostenible dels recursos forestals a Catalunya.",
+    "impacte_practic": "Els ciutadans i empreses en el sector forestal disposaran d'un marc legal clar per a l'explotació dels recursos, fomentant l'activitat econòmica i la sostenibilitat. Això pot traduir-se en noves oportunitats de negoci per a les empreses dedicades al sector.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "aprofittament forestal",
+      "llentiscle",
+      "bruc",
+      "boix grèvol"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
+    "id": "ACT-https://www.abogacia.es/?p=270548",
+    "data": "2026-04-29",
+    "titol": "Inteligencia artificial: la tentación de delegar el pensamiento",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/opinion-y-analisis/inteligencia-artificial-la-tentacion-de-delegar-el-pensamiento/",
+    "resum_executiu": "La intel·ligència artificial transforma els instruments de treball en el dret, però el veritable repte és mantenir el pensament crític i el judici professional. S'han d'utilitzar aquestes eines amb criteri per evitar la dependència i preservar la memòria jurídica.",
+    "impacte_practic": "Aquesta disposició pot incentivar els advocats a integrar la intel·ligència artificial en la seva pràctica, però amb la necessitat de no perdre les seves capacitats d'anàlisi i raonament. Això pot afectar com els professionals del dret aborden els casos i interactuen amb els clients.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "pensament crític",
+      "dret",
+      "advocacia"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244773",
+    "data": "2026-04-29",
+    "titol": "El Gobierno crea un caos en los contratos de alquileres: el error que deja a miles de inquilinos sin protección tras la caída del decreto",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/el-gobierno-crea-un-caos-en-los-contratos-de-alquileres-el-error-que-deja-a-miles-de-inquilinos-sin-proteccion-tras-la-caida-del-decreto/",
+    "resum_executiu": "La caiguda del decret llei que regulava les pròrrogues extraordinàries dels contractes d'arrendament ha provocat confusió en el dret d'alguns inquilins a exigir aquest dret. És essencial que l'inquilí hagi sol·licitat la pròrroga durant el període de vigència del decret, de no ser així, no s'adquireix cap dret.",
+    "impacte_practic": "Milers d'inquilins es poden trobar sense protecció jurídica si no van sol·licitar la pròrroga a temps. Els propietaris no estan obligats a acceptar pròrrogues després de la caiguda del decret.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "contractes d'arrendament",
+      "pròrrogues",
+      "incompatibilitat jurídica",
+      "confusió legal"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244762",
+    "data": "2026-04-29",
+    "titol": "Una mujer tendrá que indemnizar con casi 13.000 euros a su expareja por engañarle sobre la paternidad de su hija",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/una-mujer-tendra-que-indemnizar-con-casi-13-000-euros-a-su-expareja-por-enganarle-sobre-la-paternidad-de-su-hija/",
+    "resum_executiu": "La dona ha estat condemnada a indemnitzar la seva expareja amb gairebé 13.000 euros per haver-li enganyat sobre la paternitat de la seva filla, incloent 7.932 euros per danys materials i 5.000 euros per dany moral. La sentència es fonamenta en la comprovació de la falta de paternitat a través d'una prova d'ADN que va dur a la impugnació de la filiació.",
+    "impacte_practic": "Aquesta decisió judicial reconeix el dret a indemnització per danys morals en casos de paternitat enganyosa, afectant així les relacions de família i les responsabilitats econòmiques. Els ciutadans han d'estar atents a les implicacions legals de la filiació i els possibles enganys relacionats.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "indemnització",
+      "paternitat",
+      "danys morals",
+      "filiació"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244751",
+    "data": "2026-04-29",
+    "titol": "Lucía Garralda y Leonie Timmers, nuevas ‘Of Counsel’ de Herbert Smith Freehills Kramer en España",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/actualidad-de-los-despachos/lucia-garralda-y-leonie-timmers-nuevas-of-counsel-de-herbert-smith-freehills-kramer-en-espana/",
+    "resum_executiu": "Lucía Garralda i Leonie Timmers han estat nomenades com a 'Of Counsel' de Herbert Smith Freehills Kramer a Espanya, després d'haver exercit com a associades sénior. Amb una àmplia experiència en dret mercanti i iniciatives sostenibles, aportaran un valor afegit a la pràctica del despatx.",
+    "impacte_practic": "Aquest nomenament pot reforçar l'assessorament legal en matèria de fusiones, adquisicions i sostenibilitat, beneficiant directament les empreses clients. La seva especialització pot millorar la seva capacitat per tractar temes relatius a ESG, assolint un major nivell de compliment normatiu.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "nomenament",
+      "abogacia",
+      "ESG",
+      "mercantil"
+    ],
+    "urgencia": "baixa",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244754",
+    "data": "2026-04-29",
+    "titol": "El Supremo da un importante varapalo a la Inspección de Trabajo: entrar en el domicilio social sin autorización judicial ya no vale",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/si-el-centro-de-trabajo-y-el-domicilio-social-estan-juntos-la-inspeccion-de-trabajo-no-puede-entrar-sin-autorizacion-judicial/",
+    "resum_executiu": "El Tribunal Suprem estableix que la Inspecció de Treball necessita autorització judicial per entrar en els centres de treball que coincideixen amb el domicili social d'una empresa. Aquesta decisió reafirma la importància de les garanties constitucionals en el context de les actuacions d'inspecció administrativa.",
+    "impacte_practic": "Els ciutadans i empreses han de ser conscients que l'entrada de la Inspecció de Treball en el seu domicili social ara requerirà autorització, cosa que pot augmentar la seva seguretat jurídica. Aquesta decisió limita la capacitat de l'administració per actuar sense el corresponent control judicial.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "inspecció de treball",
+      "dret constitucional",
+      "autoritza judicial",
+      "domicili social"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244615",
+    "data": "2026-04-29",
+    "titol": "Cuando el expediente se cierra, pero la mente sigue abierta",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/cuando-el-expediente-se-cierra-pero-la-mente-sigue-abierta/",
+    "resum_executiu": "L'article aborda la dificultat que tenen els advocats per tancar emocionalment un cas, tot i que el procediment legal hagi conclòs. Això pot generar un desgast professional considerat una realitat poc visible en el sector jurídic.",
+    "impacte_practic": "Aquesta problemàtica pot afectar el benestar emocional dels advocats i, per tant, la seva eficàcia en la pràctica. A més, pot influir en la qualitat del servei ofert als clients.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "desgaste emocional",
+      "tancament de casos",
+      "benestar professional",
+      "gestió emocional"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244641",
+    "data": "2026-04-29",
+    "titol": "Modelo de contestación a la demanda de modificación de medidas con allanamiento parcial",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/sala-2-0/modelo-de-contestacion-a-la-demanda-de-modificacion-de-medidas-con-allanamiento-parcial/",
+    "resum_executiu": "Es presenta un model de contestació a la demanda de modificació de mesures amb allanament parcial en el context del dret de família. La documentació illustra la forma legal adequada per respondre a aquesta demanda davant el jutjat corresponent.",
+    "impacte_practic": "Els ciutadans que necessiten modificar mesures definitives en processos de custòdia o aliments poden utilitzar aquest model per defensar els seus drets. Això facilita l'accés a la justícia i la seguretat jurídica en aquests casos sensibles.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "modificació de mesures",
+      "dret de família",
+      "allanament parcial",
+      "custòdia"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244745",
+    "data": "2026-04-29",
+    "titol": "No cabe exigir un MASC para presentar una demanda de divorcio contencioso en los siguientes 30 días desde que se adoptaron las medidas provisionales",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/no-cabe-exigir-un-masc-para-presentar-una-demanda-de-divorcio-contencioso-en-los-siguientes-30-dias-desde-que-se-adoptaron-las-medidas-provisionales/",
+    "resum_executiu": "La sentència de l'Audiència Provincial de Navarra permet presentar una demanda de divorci contenciós sense haver realitzat prèviament un MASC, sempre i quan es presenti dins del termini de 30 dies posteriors a l'adopció de mesures provisionals. La decisió es fonamenta en que la norma no preveu la suspensió d'aquest termini, i forçar el MASC constitueix un obstacle per a l'accés a la jurisdicció.",
+    "impacte_practic": "Aquesta decisió facilita l'accés a la justícia per a les persones que es troben en processos de divorci, eliminant un requisit que podria retardar el procediment. Les empreses de mediació haurien d'adaptar la seva oferta als canvis en la llei.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "divorci",
+      "MASC",
+      "mesures provisionals",
+      "justícia"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244735",
+    "data": "2026-04-29",
+    "titol": "¿Quién responde cuando se equivoca la inteligencia artificial? La crisis del sistema clásico de responsabilidad",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/quien-responde-cuando-se-equivoca-la-inteligencia-artificial-la-crisis-del-sistema-clasico-de-responsabilidad/",
+    "resum_executiu": "La irrupció de la intel·ligència artificial (IA) desafia els paradigmes tradicionals de la responsabilitat civil, ja que la IA no pot ser considerada un subjecte legal responsable. Les noves directives europees busquen abordar aquesta problemàtica, imposant deures de seguretat i facilitant la responsabilitat dels desenvolupadors i usuaris de la tecnologia.",
+    "impacte_practic": "Les empreses que utilitzen IA hauran de gestionar millor la seva responsabilitat, ja que poden ser considerades corresponsables de qualsevol dany causat per sistemes d'IA. Això implica una major obligació de control i documentació per evitar presumptions de responsabilitat.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "responsabilitat civil",
+      "directives europees",
+      "corresponsabilitat"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244740",
+    "data": "2026-04-29",
+    "titol": "Del promotor a la plataforma de gestión: por qué un fondo puede multiplicar el negocio inmobiliario y mejorar la vida del inversor",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/la-firma/del-promotor-a-la-plataforma-de-gestion-por-que-un-fondo-puede-multiplicar-el-negocio-inmobiliario-y-mejorar-la-vida-del-inversor/",
+    "resum_executiu": "L'article analitza la transició dels promotors immobiliaris cap a una estructura basada en fons d'inversió, la qual optimitza la gestió del capital i responsabilitats legals. Sota aquesta nova configuració, la societat promocional es converteix en una plataforma de gestió, facilitant l'atracció d'inversors i millora l'eficiència fiscal.",
+    "impacte_practic": "La implementació d'aquesta estructura pot facilitar l'accés de ciutadans i empreses a inversions immobiliàries més flexibles i menys burocràtiques. A més, pot augmentar la viabilitat de projectes immobiliaris importants i generar ingressos més estables per a les empreses del sector.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "fons d'inversió",
+      "gestió immobiliària",
+      "promoció",
+      "societat"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244610",
+    "data": "2026-04-29",
+    "titol": "El éxito que nadie ve: la invisibilidad del buen trabajo jurídico",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/el-exito-que-nadie-ve-la-invisibilidad-del-buen-trabajo-juridico/",
+    "resum_executiu": "L'article analitza la paradoxa dins de la professió jurídica, on un bon treball sovint passa desapercebut. Subratlla la importància del treball preventiu i la invisibilitat del valor que aporta a la relació amb els clients i l'eficiència dels despatxos.",
+    "impacte_practic": "La invisibilitat del bon treball jurídic pot afectar la percepció dels clients sobre el valor real dels serveis legals. Això pot influir en com els despatxos comuniquen la seva eficàcia i estratègia de gestió.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "invisibilitat",
+      "treball jurídic",
+      "prevenció",
+      "clients"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://almacendederecho.org/?p=59719",
+    "data": "2026-04-29",
+    "titol": "Una crónica sobre jueces, ministros, epístolas y un futuro jurado",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://almacendederecho.org/una-cronica-sobre-jueces-ministros-epistolas-y-un-futuro-jurado",
+    "resum_executiu": "La crònica analitza un cas judicial on el jutge Peinado critica la influència política i fa referència a l'absolutisme, la qual cosa genera controvèrsia sobre la independència judicial. Les reaccions del ministre Bolaños evidencien la tensió entre els poders executiu i judicial, plantejant qüestions sobre el respecte a la imparcialitat judicial.",
+    "impacte_practic": "Aquesta situació pot afectar la confiança dels ciutadans en la justícia i la seva percepció sobre la imparcialitat del sistema. Les empreses podrien patir repercussions legals si es percep que la influència política afecta els processos judicials.",
+    "categoria": "constitucional",
+    "paraules_clau": [
+      "independència judicial",
+      "justícia",
+      "poder executiu",
+      "crítica institucional"
+    ],
+    "urgencia": "alta",
+    "font_web": "Almacén de Derecho",
+    "comarques": []
+  },
+  {
     "id": "ACT-https://www.abogacia.es/?p=270497",
     "data": "2026-04-28",
     "titol": "Morris Eidelman: “Seguir aprendiendo no depende de la edad, sino de las ganas de no quedarse atrás”",
