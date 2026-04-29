@@ -7,6 +7,13 @@ on:
   # Permet executar-ho manualment des d'un botó a la web de GitHub (a la pestanya "Actions")
   workflow_dispatch:
 
+permissions:
+  contents: write
+
+concurrency:
+  group: dretcat-actualitzar-dades
+  cancel-in-progress: false
+
 jobs:
   actualitzar-dades:
     runs-on: ubuntu-latest
@@ -14,6 +21,8 @@ jobs:
     steps:
       - name: Baixar el codi
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Preparar Python
         uses: actions/setup-python@v5
@@ -37,5 +46,11 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/
           # Comprova si hi ha hagut canvis. Si n'hi ha, fa el commit i els puja.
-          git diff --quiet && git diff --staged --quiet || git commit -m "Automated update: novetats.json i estadistiques.json"
-          git push
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No hi ha canvis per publicar"
+            exit 0
+          fi
+
+          git commit -m "Automated update: novetats.json i estadistiques.json"
+          git pull --rebase origin main
+          git push origin HEAD:main
