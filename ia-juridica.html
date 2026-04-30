@@ -3,1580 +3,702 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LexIA · Intel·ligència Artificial i Dret a Catalunya</title>
-  <meta name="description" content="El diari especialitzat en intel·ligència artificial i dret català. Legislació, jurisprudència i doctrina sobre IA per a juristes de Catalunya." />
+  <title>LexIA · Intel·ligència Artificial i Dret</title>
+  <meta name="description" content="Seguiment de novetats jurídiques sobre intel·ligència artificial i dret digital a Catalunya." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
-      --black:   #0a0a0a;
-      --ink:     #141414;
-      --ink-mid: #3d3d3d;
-      --ink-lt:  #7a7a7a;
-      --ink-xlt: #b0b0b0;
-      --paper:   #fafaf8;
-      --paper-mid: #f2f1ed;
-      --paper-dk:  #e8e6df;
-      --rule:    rgba(20,20,20,0.14);
-      --rule-dk: rgba(20,20,20,0.55);
-      --accent:  #1a1a1a;
-      --gold:    #B8860B;
-      --gold-lt: #FFF8E7;
-      --red:     #C0392B;
-      --blue:    #1a3a6e;
-      --blue-lt: #EBF0FA;
-      --serif:   'Playfair Display', Georgia, 'Times New Roman', serif;
-      --sans:    'Source Sans 3', system-ui, sans-serif;
-      --mono:    'SF Mono', 'Fira Code', monospace;
-      --col-gap: 1.5rem;
+      --sidebar-w: 220px;
+      --topbar-h: 52px;
+
+      /* Sidebar */
+      --s-bg:           #0f1929;
+      --s-border:       rgba(255,255,255,.07);
+      --s-text:         #7a8499;
+      --s-text-hover:   #b8c2d8;
+      --s-active:       #e2e7f4;
+      --s-accent:       #6366f1;
+
+      /* Content */
+      --bg:        #f4f5f7;
+      --surface:   #ffffff;
+      --border:    #e3e5ea;
+      --text:      #0e1118;
+      --text-mid:  #4a4f62;
+      --text-lt:   #8b8fa8;
+      --accent:    #4f46e5;
+      --accent-2:  #7c3aed;
+      --accent-lt: #ede9fe;
+      --accent-border: rgba(79,70,229,.25);
+
+      /* Hero gradient */
+      --hero-from: #0f1929;
+      --hero-to:   #1e1b4b;
+
+      /* Red urgency */
+      --red: #dc3535; --red-lt: #fef2f2;
+
+      /* Categories (shared) */
+      --cat-civil:          #e8f0fe; --cat-civil-text:          #1a3faa;
+      --cat-penal:          #fde8e8; --cat-penal-text:          #991b1b;
+      --cat-laboral:        #fef3e2; --cat-laboral-text:        #92400e;
+      --cat-administratiu:  #ede9fe; --cat-administratiu-text:  #4c1d95;
+      --cat-mercantil:      #ecfdf5; --cat-mercantil-text:      #065f46;
+      --cat-fiscal:         #fff7ed; --cat-fiscal-text:         #9a3412;
+      --cat-constitucional: #f0fdf4; --cat-constitucional-text: #14532d;
+      --cat-educatiu:       #fdf4ff; --cat-educatiu-text:       #701a75;
+
+      --font-ui:    'IBM Plex Sans', system-ui, sans-serif;
+      --font-serif: 'IBM Plex Serif', Georgia, serif;
+      --radius:     6px;
     }
 
     html { scroll-behavior: smooth; }
     body {
-      background: var(--paper);
-      color: var(--ink);
-      font-family: var(--sans);
-      font-size: 16px;
-      line-height: 1.6;
+      font-family: var(--font-ui);
+      font-size: 14px;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
       min-height: 100vh;
+      display: flex;
     }
 
-    /* ── MASTHEAD ───────────────────────────────────────── */
-    .masthead {
-      border-bottom: 3px solid var(--black);
-      background: var(--paper);
+    /* ── SIDEBAR ─────────────────────────────────────── */
+    .sidebar {
+      width: var(--sidebar-w); flex-shrink: 0;
+      background: var(--s-bg); height: 100vh;
+      position: sticky; top: 0;
+      display: flex; flex-direction: column;
+      overflow-y: auto; overflow-x: hidden;
+      z-index: 200; scrollbar-width: none;
     }
-    .masthead-top {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: .6rem 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      border-bottom: 0.5px solid var(--rule);
-      font-size: 11px;
-      color: var(--ink-lt);
-      letter-spacing: .05em;
-    }
-    .masthead-top a { color: var(--ink-lt); text-decoration: none; }
-    .masthead-top a:hover { color: var(--ink); }
-    .masthead-top .pill {
-      background: var(--black);
-      color: #fff;
-      font-size: 10px;
-      font-weight: 600;
-      letter-spacing: .08em;
-      text-transform: uppercase;
-      padding: 2px 8px;
-      border-radius: 2px;
-      margin-right: 6px;
-    }
-    .masthead-center {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 1.5rem 1.5rem 1.25rem;
-      text-align: center;
-      position: relative;
-    }
-    .masthead-eyebrow {
-      font-size: 11px;
-      font-weight: 600;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      color: var(--ink-lt);
-      margin-bottom: .4rem;
-    }
-    .masthead-logo {
-      font-family: var(--serif);
-      font-size: clamp(44px, 8vw, 82px);
-      font-weight: 700;
-      letter-spacing: -2px;
-      line-height: 1;
-      color: var(--ink);
-      margin-bottom: .25rem;
-    }
-    .masthead-logo em {
-      font-style: italic;
-      font-weight: 400;
-      color: var(--ink-mid);
-    }
-    .masthead-tagline {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 14px;
-      color: var(--ink-lt);
-      letter-spacing: .03em;
-    }
-    .masthead-rule {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin: 1rem 0 0;
-    }
-    .masthead-rule::before, .masthead-rule::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--rule-dk);
-    }
-    .masthead-rule span {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--ink-mid);
-      white-space: nowrap;
-    }
+    .sidebar::-webkit-scrollbar { display: none; }
 
-    /* ── NAV TEMES ─────────────────────────────────────── */
-    .nav-temes {
-      border-bottom: 0.5px solid var(--rule);
-      background: var(--paper);
-      position: sticky;
-      top: 0;
-      z-index: 100;
+    .sidebar-logo {
+      display: flex; align-items: center; gap: .6rem;
+      padding: 1.2rem 1.25rem 1rem;
+      text-decoration: none;
+      border-bottom: 1px solid var(--s-border);
     }
-    .nav-temes-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 0 1.5rem;
-      display: flex;
-      align-items: center;
-      gap: 0;
-      overflow-x: auto;
-      overflow-y: visible;
-      scrollbar-width: none;
+    .logo-icon {
+      width: 30px; height: 30px;
+      background: var(--s-accent);
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; flex-shrink: 0;
     }
-    .nav-temes-inner::-webkit-scrollbar { display: none; }
-    .nav-tema {
-      font-size: 12.5px;
-      font-weight: 500;
-      letter-spacing: .04em;
-      color: var(--ink-lt);
-      padding: .65rem 1rem;
-      border: none;
-      background: none;
-      cursor: pointer;
-      white-space: nowrap;
-      border-bottom: 2px solid transparent;
-      transition: color .15s, border-color .15s;
-      font-family: var(--sans);
+    .logo-text {
+      font-family: var(--font-serif);
+      font-size: 17px; font-weight: 600;
+      color: #e2e7f4; letter-spacing: -.3px;
     }
-    .nav-tema:hover { color: var(--ink); }
-    .nav-tema.on {
-      color: var(--ink);
-      font-weight: 600;
-      border-bottom-color: var(--black);
-    }
-    .nav-gear {
-      margin-left: auto;
-      font-size: 15px;
-      padding: .5rem .75rem;
-      border: none;
-      background: none;
-      cursor: pointer;
-      color: var(--ink-lt);
-      border-bottom: 2px solid transparent;
-      transition: color .15s;
-    }
-    .nav-gear:hover { color: var(--ink); }
+    .logo-text em { font-style: normal; color: var(--s-accent); }
 
-    /* ── DROPDOWN TERRITORIS ─────────────────────────── */
-    .nav-dropdown {
-      position: relative;
-      flex: 0 0 auto;
+    .sidebar-nav {
+      padding: .75rem 0;
+      border-bottom: 1px solid var(--s-border);
     }
-    .nav-dropdown-btn {
-      font-size: 12.5px;
-      font-weight: 500;
-      letter-spacing: .04em;
-      color: var(--ink-lt);
-      padding: .65rem 1rem;
-      border: none;
-      background: none;
-      cursor: pointer;
-      white-space: nowrap;
-      border-bottom: 2px solid transparent;
-      transition: color .15s, border-color .15s;
-      font-family: var(--sans);
-      display: flex;
-      align-items: center;
-      gap: .3rem;
-    }
-    .nav-dropdown-btn:hover { color: var(--ink); }
-    .nav-dropdown-btn.on {
-      color: var(--ink);
-      font-weight: 600;
-      border-bottom-color: var(--black);
-    }
-    .nav-dropdown-menu {
-      display: none;
-      position: absolute;
-      top: calc(100% + 2px);
-      left: 0;
-      background: var(--paper);
-      border: 1px solid var(--rule);
-      border-top: 2px solid var(--black);
-      min-width: 160px;
-      z-index: 1200;
-      box-shadow: 0 4px 12px rgba(0,0,0,.1);
-    }
-    .nav-dropdown:hover .nav-dropdown-menu,
-    .nav-dropdown:focus-within .nav-dropdown-menu {
-      display: block;
-    }
-    .nav-dropdown.open .nav-dropdown-menu {
-      display: block;
-    }
-    .nav-dropdown.open .nav-dropdown-menu.menu-fixed {
-      position: fixed;
-      top: var(--menu-top, 72px);
-      left: var(--menu-left, 16px);
-    }
-    .nav-dropdown-item {
-      display: block;
-      width: 100%;
-      text-align: left;
-      padding: .6rem 1rem;
-      font-size: 13px;
-      font-family: var(--sans);
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--ink-mid);
-      border-bottom: 0.5px solid var(--rule);
-      transition: background .1s;
-    }
-    .nav-dropdown-item:last-child { border-bottom: none; }
-    .nav-dropdown-item:hover { background: var(--bg); color: var(--ink); }
-    .nav-dropdown-item.on { font-weight: 600; color: var(--ink); }
-
-    /* ── MODAL INTERESSOS ───────────────────────────── */
-    .modal-overlay {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,.45);
-      z-index: 500;
-      align-items: flex-start;
-      justify-content: center;
-      padding-top: 80px;
-    }
-    .modal-overlay.open { display: flex; }
-    .modal-box {
-      background: var(--paper);
-      border: 1px solid var(--rule);
-      border-top: 3px solid var(--black);
-      width: 480px;
-      max-width: 95vw;
-      padding: 1.75rem 2rem 1.5rem;
-      box-shadow: 0 8px 32px rgba(0,0,0,.18);
-    }
-    .modal-title {
-      font-family: var(--serif);
-      font-size: 20px;
-      font-weight: 700;
-      margin-bottom: .25rem;
-    }
-    .modal-sub {
-      font-size: 12.5px;
-      color: var(--ink-lt);
-      margin-bottom: 1.25rem;
-    }
-    .interest-chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .5rem;
-      margin-bottom: 1.5rem;
-    }
-    .interest-chip {
-      font-size: 13px;
-      padding: .4rem .9rem;
-      border: 1.5px solid var(--rule);
-      border-radius: 2px;
-      background: none;
-      cursor: pointer;
-      font-family: var(--sans);
-      color: var(--ink-mid);
-      transition: all .12s;
-    }
-    .interest-chip.sel {
-      background: var(--black);
-      color: #fff;
-      border-color: var(--black);
-    }
-    .modal-actions {
-      display: flex;
-      gap: .75rem;
-      justify-content: flex-end;
-    }
-    .btn-modal {
-      font-size: 13px;
+    .nav-item {
+      display: flex; align-items: center; gap: .6rem;
       padding: .5rem 1.25rem;
-      border: 1px solid var(--rule);
-      background: none;
-      cursor: pointer;
-      font-family: var(--sans);
+      font-size: 13px; font-weight: 400;
+      color: var(--s-text); text-decoration: none;
+      transition: color .15s, background .15s;
     }
-    .btn-modal.primary {
-      background: var(--black);
-      color: #fff;
-      border-color: var(--black);
-    }
-    .btn-modal:hover { opacity: .8; }
+    .nav-item:hover { color: var(--s-text-hover); background: rgba(255,255,255,.04); }
+    .nav-item.active { color: var(--s-active); font-weight: 500; }
+    .ni-icon { font-size: 14px; width: 16px; text-align: center; flex-shrink: 0; }
 
-    /* ── RESUM PERSONALITZAT ───────────────────────── */
-    .personal-section {
-      border-top: 2px solid var(--rule);
-      margin-top: 1.75rem;
-      padding-top: 1.25rem;
-    }
-    .personal-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      color: var(--ink-lt);
-      margin-bottom: .75rem;
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-    }
-    .personal-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--rule);
-    }
-    .personal-cat-block {
-      margin-bottom: 1.25rem;
-    }
-    .personal-cat-hed {
-      font-family: var(--serif);
-      font-size: 14px;
-      font-weight: 700;
-      text-transform: capitalize;
-      margin-bottom: .35rem;
-      color: var(--ink);
-    }
-    .personal-cat-text {
-      font-size: 13.5px;
-      line-height: 1.75;
-      color: var(--ink-mid);
-      margin-bottom: .6rem;
-    }
-    .personal-cat-items {
-      display: flex;
-      flex-direction: column;
-      gap: .35rem;
-    }
-    .personal-item {
-      font-size: 13px;
-      color: var(--ink);
-      border-left: 2px solid var(--rule);
-      padding-left: .65rem;
-      line-height: 1.5;
-    }
-    .personal-item a {
-      color: inherit;
-      text-decoration: none;
-    }
-    .personal-item a:hover { text-decoration: underline; }
-    .personal-item-meta {
-      font-size: 11px;
-      color: var(--ink-lt);
-    }
-    .no-interests-msg {
-      font-size: 13.5px;
-      color: var(--ink-lt);
-      font-style: italic;
-      text-align: center;
-      padding: 1.5rem 0;
-    }
-
-    /* ── BREAKING TICKER ───────────────────────────────── */
-    .breaking-bar {
-      background: var(--black);
-      color: #fff;
-      padding: .45rem 1.5rem;
-      font-size: 12px;
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-      overflow: hidden;
-    }
-    .breaking-label {
-      font-weight: 700;
-      font-size: 10px;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: #FFD700;
-      white-space: nowrap;
-      flex-shrink: 0;
-    }
-    .breaking-text {
-      overflow: hidden;
-      white-space: nowrap;
-    }
-    .breaking-ticker {
-      display: inline-block;
-      animation: ticker 30s linear infinite;
-    }
-    @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-    .breaking-sep { color: #666; margin: 0 1rem; }
-
-    /* ── LAYOUT ────────────────────────────────────────── */
-    .page-wrap {
-      max-width: 1080px;
-      margin: 0 auto;
-      padding: 1.75rem 1.5rem 4rem;
-    }
-
-    /* Grid principal: hero | sidebar */
-    .front-grid {
-      display: grid;
-      grid-template-columns: 1fr 300px;
-      gap: 0 2rem;
-      align-items: start;
-    }
-    @media (max-width: 768px) {
-      .front-grid { grid-template-columns: 1fr; }
-      .right-col { display: none; }
-    }
-
-    /* ── LEAD STORY ────────────────────────────────────── */
-    .lead-story {
-      border-bottom: 0.5px solid var(--rule);
-      padding-bottom: 1.5rem;
-      margin-bottom: 1.5rem;
-      cursor: pointer;
-    }
-    .lead-kicker {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-      color: var(--red);
-      margin-bottom: .5rem;
-      display: flex;
-      align-items: center;
-      gap: .5rem;
-    }
-    .lead-kicker::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--red);
-      opacity: .3;
-    }
-    .lead-headline {
-      font-family: var(--serif);
-      font-size: clamp(22px, 3.5vw, 34px);
-      font-weight: 700;
-      line-height: 1.2;
-      letter-spacing: -.5px;
-      margin-bottom: .6rem;
-      color: var(--ink);
-      transition: color .15s;
-    }
-    .lead-story:hover .lead-headline { color: var(--blue); }
-    .lead-deck {
-      font-family: var(--serif);
-      font-style: italic;
-      font-size: 15px;
-      color: var(--ink-mid);
-      line-height: 1.6;
-      margin-bottom: .75rem;
-    }
-    .lead-byline {
-      font-size: 11px;
-      color: var(--ink-lt);
-      letter-spacing: .05em;
-      text-transform: uppercase;
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-    }
-    .lead-byline .dot { color: var(--rule-dk); }
-
-    /* ── STORY GRID (3 col) ────────────────────────────── */
-    .story-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 0 var(--col-gap);
-      border-bottom: 0.5px solid var(--rule);
-      padding-bottom: 1.5rem;
-      margin-bottom: 1.5rem;
-    }
-    @media (max-width: 600px) { .story-grid { grid-template-columns: 1fr; } }
-
-    .story {
-      border-left: 0.5px solid var(--rule);
-      padding-left: var(--col-gap);
-      cursor: pointer;
-    }
-    .story:first-child { border-left: none; padding-left: 0; }
-
-    .story-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-      color: var(--ink-lt);
-      margin-bottom: .35rem;
-    }
-    .story-label.ia { color: var(--blue); }
-    .story-label.urgent { color: var(--red); }
-
-    .story-hed {
-      font-family: var(--serif);
-      font-size: 16px;
-      font-weight: 600;
-      line-height: 1.3;
-      margin-bottom: .4rem;
-      color: var(--ink);
-      transition: color .15s;
-    }
-    .story:hover .story-hed { color: var(--blue); }
-
-    .story-dek {
-      font-size: 13px;
-      color: var(--ink-mid);
-      line-height: 1.55;
-      margin-bottom: .5rem;
-    }
-    .story-meta {
-      font-size: 11px;
-      color: var(--ink-lt);
-    }
-
-    /* ── SECTION RULE ──────────────────────────────────── */
-    .section-rule {
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-      margin-bottom: 1.25rem;
-    }
-    .section-rule h2 {
-      font-size: 11px;
-      font-weight: 700;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-      white-space: nowrap;
-      color: var(--ink);
-    }
-    .section-rule::after {
-      content: '';
-      flex: 1;
-      height: 2px;
-      background: var(--black);
-    }
-
-    /* ── STREAM (llista densa) ─────────────────────────── */
-    .stream { margin-bottom: 2rem; }
-    .stream-item {
-      display: grid;
-      grid-template-columns: 1fr 90px;
-      gap: .75rem;
-      padding: .9rem 0;
-      border-bottom: 0.5px solid var(--rule);
-      cursor: pointer;
-      transition: background .1s;
-    }
-    .stream-item:last-child { border-bottom: none; }
-    .stream-item:hover .si-hed { color: var(--blue); }
-    .si-cat {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--ink-lt);
-      margin-bottom: .2rem;
-    }
-    .si-cat.ia { color: var(--blue); }
-    .si-hed {
-      font-family: var(--serif);
-      font-size: 14.5px;
-      font-weight: 600;
-      line-height: 1.3;
-      color: var(--ink);
-      transition: color .15s;
-      margin-bottom: .2rem;
-    }
-    .si-dek {
-      font-size: 12.5px;
-      color: var(--ink-mid);
-      line-height: 1.5;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-    }
-    .si-meta {
-      font-size: 11px;
-      color: var(--ink-lt);
-      margin-top: .25rem;
-    }
-    .si-right {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-end;
-      justify-content: flex-start;
-      gap: .35rem;
-      flex-shrink: 0;
-    }
-    .si-badge {
-      font-size: 10px;
-      font-weight: 600;
-      padding: 2px 7px;
-      border-radius: 2px;
-      letter-spacing: .04em;
-      text-transform: uppercase;
-      white-space: nowrap;
-    }
-    .si-badge.ia      { background: var(--blue-lt); color: var(--blue); }
-    .si-badge.urgent  { background: #FDECEC; color: var(--red); }
-    .si-badge.civil   { background: #E6F1FB; color: #0C447C; }
-    .si-badge.penal   { background: #FCEBEB; color: #791F1F; }
-    .si-badge.laboral { background: #FAEEDA; color: #633806; }
-    .si-badge.admin   { background: #EEEDFE; color: #3C3489; }
-    .si-badge.mercantil { background: #EAF3DE; color: #27500A; }
-    .si-badge.fiscal  { background: #FAECE7; color: #993C1D; }
-    .si-badge.constitucional { background: #F0F7EE; color: #1A5C0A; border: 1px solid #C3E0BC; }
-    .si-fonte { font-size: 10px; color: var(--ink-xlt); }
-
-    /* ── EXPANDED PANEL ────────────────────────────────── */
-    .exp-panel {
-      display: none;
-      background: var(--paper-mid);
-      border-left: 3px solid var(--blue);
+    .sidebar-section {
       padding: 1rem 1.25rem;
-      margin: .25rem 0 .5rem;
-      font-size: 13.5px;
-      color: var(--ink-mid);
-      line-height: 1.7;
-      animation: fadeIn .2s ease;
+      border-bottom: 1px solid var(--s-border);
     }
-    @keyframes fadeIn { from { opacity:0; transform:translateY(-4px); } to { opacity:1; transform:translateY(0); } }
-    .exp-panel.open { display: block; }
-    .exp-section { margin-bottom: .75rem; }
-    .exp-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--ink-lt);
-      margin-bottom: .2rem;
+    .sidebar-label {
+      font-size: 10px; font-weight: 600;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--s-text); opacity: .6; margin-bottom: .65rem;
     }
-    .exp-kws { display: flex; flex-wrap: wrap; gap: 5px; margin-top: .35rem; }
-    .exp-kw {
-      font-size: 11px;
-      background: var(--paper-dk);
-      color: var(--ink-mid);
-      padding: 2px 8px;
-      border-radius: 20px;
+    .sb-info-row { padding: .25rem 0; }
+    .sb-info-title { font-size: 11.5px; color: var(--s-text-hover); line-height: 1.4; margin-bottom: .2rem; }
+    .sb-info-sub { font-size: 11px; color: var(--s-text); }
+    .sb-kw {
+      display: inline-block; font-size: 10px;
+      background: rgba(99,102,241,.18); color: #a5b4fc;
+      padding: 1px 7px; border-radius: 20px;
+      margin: 2px 2px 0 0;
     }
-    .exp-link {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      font-size: 12px;
-      color: var(--blue);
-      text-decoration: none;
-      margin-top: .5rem;
-      border: 1px solid rgba(26,58,110,.2);
-      padding: 4px 10px;
-      border-radius: 4px;
+
+    .sidebar-footer {
+      margin-top: auto;
+      padding: 1rem 1.25rem;
+      border-top: 1px solid var(--s-border);
+    }
+    .sidebar-footer-date { font-size: 11px; color: var(--s-text); opacity: .7; }
+    .sidebar-footer-ai { font-size: 10px; color: var(--s-accent); margin-top: .3rem; font-weight: 500; }
+
+    /* ── MAIN LAYOUT ─────────────────────────────────── */
+    .main-wrap { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+
+    /* ── TOPBAR ──────────────────────────────────────── */
+    .topbar {
+      height: var(--topbar-h);
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center;
+      padding: 0 1.5rem; gap: 1rem;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .topbar-menu-btn {
+      display: none; background: none; border: none;
+      cursor: pointer; color: var(--text-mid); font-size: 18px; padding: 4px;
+    }
+    .topbar-title { font-size: 14px; font-weight: 600; color: var(--text); }
+    .topbar-right { margin-left: auto; display: flex; align-items: center; gap: .75rem; }
+    .topbar-update { font-size: 12px; color: var(--text-lt); }
+    .topbar-home {
+      font-size: 12px; color: var(--accent); text-decoration: none;
+      border: 1px solid var(--accent-border);
+      padding: 4px 10px; border-radius: 20px;
       transition: background .15s;
     }
-    .exp-link:hover { background: var(--blue-lt); }
+    .topbar-home:hover { background: var(--accent-lt); }
 
-    /* ── RIGHT COLUMN ──────────────────────────────────── */
-    .right-col {
-      position: sticky;
-      top: 44px;
-      padding-left: 1.5rem;
-      border-left: 0.5px solid var(--rule);
-    }
-    .side-section { margin-bottom: 1.75rem; }
-    .side-head {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .15em;
-      text-transform: uppercase;
-      color: var(--ink);
-      padding-bottom: .5rem;
-      border-bottom: 2px solid var(--black);
-      margin-bottom: .85rem;
-    }
-    .side-item {
-      padding: .55rem 0;
-      border-bottom: 0.5px solid var(--rule);
-      cursor: pointer;
-    }
-    .side-item:last-child { border-bottom: none; }
-    .side-item-num {
-      font-family: var(--serif);
-      font-size: 22px;
-      font-weight: 700;
-      color: var(--rule-dk);
-      line-height: 1;
-      margin-bottom: .15rem;
-    }
-    .side-item-hed {
-      font-size: 13px;
-      font-weight: 600;
-      color: var(--ink);
-      line-height: 1.3;
-      transition: color .15s;
-    }
-    .side-item:hover .side-item-hed { color: var(--blue); }
-    .side-item-src { font-size: 11px; color: var(--ink-lt); margin-top: .1rem; }
+    /* ── CONTENT ─────────────────────────────────────── */
+    .content { padding: 0 1.75rem 4rem; max-width: 860px; }
 
-    /* Opinió / conceptes IA */
-    .concept-box {
-      background: var(--gold-lt);
-      border-left: 3px solid var(--gold);
-      padding: 1rem;
-      margin-bottom: 1.5rem;
-      font-size: 13px;
-      color: var(--ink-mid);
-      line-height: 1.6;
+    /* ── HERO ────────────────────────────────────────── */
+    .hero {
+      background: linear-gradient(135deg, var(--hero-from) 0%, var(--hero-to) 100%);
+      color: #fff;
+      padding: 2.5rem 2rem 2rem;
+      margin: 0 -1.75rem 1.5rem;
+      position: relative; overflow: hidden;
     }
-    .concept-box strong { color: var(--ink); font-weight: 600; }
-    .concept-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .12em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: .35rem;
-    }
-
-    /* Stats pill row */
-    .stats-strip {
-      display: flex;
-      gap: 1.5rem;
-      flex-wrap: wrap;
-      padding: .75rem 0 1.5rem;
-      border-bottom: 0.5px solid var(--rule);
-      margin-bottom: 1.5rem;
-    }
-    .stats-item { text-align: center; }
-    .stats-num {
-      font-family: var(--serif);
-      font-size: 26px;
-      font-weight: 700;
-      line-height: 1;
-      color: var(--ink);
-    }
-    .stats-lbl {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: var(--ink-lt);
-      margin-top: 2px;
-    }
-
-    /* ── RESUM DIARI ──────────────────────────────────── */
-    .resum-diari {
-      background: var(--paper);
-      border: 1px solid var(--rule);
-      border-top: 3px solid var(--black);
-      padding: 1.25rem 1.5rem 1rem;
-      margin-bottom: 1.75rem;
-    }
-    .resum-diari-label {
-      font-size: 10px;
-      font-weight: 700;
-      letter-spacing: .18em;
-      text-transform: uppercase;
-      color: var(--ink-lt);
-      margin-bottom: .5rem;
-      display: flex;
-      align-items: center;
-      gap: .75rem;
-    }
-    .resum-diari-label::after {
+    .hero::before {
       content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--rule);
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 70% 50%, rgba(99,102,241,.25) 0%, transparent 65%);
+      pointer-events: none;
     }
-    .resum-diari-hed {
-      font-family: var(--serif);
-      font-size: 18px;
-      font-weight: 700;
-      line-height: 1.3;
-      color: var(--ink);
-      margin-bottom: .65rem;
+    .hero-eyebrow {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: .2em; text-transform: uppercase;
+      color: #a5b4fc; margin-bottom: .6rem;
     }
-    .resum-diari-cos {
-      font-size: 14px;
-      color: var(--ink-mid);
-      line-height: 1.8;
-      column-count: 2;
-      column-gap: 2rem;
+    .hero-title {
+      font-family: var(--font-serif);
+      font-size: 2.25rem; font-weight: 600;
+      line-height: 1.15; margin-bottom: .6rem;
+      color: #f1f5f9;
     }
-    @media (max-width: 600px) { .resum-diari-cos { column-count: 1; } }
-    .resum-diari-cos p { margin-bottom: .6rem; }
-    .resum-diari-meta {
-      font-size: 11px;
-      color: var(--ink-lt);
-      margin-top: .75rem;
-      border-top: 0.5px solid var(--rule);
-      padding-top: .5rem;
+    .hero-title em { font-style: italic; color: #a5b4fc; }
+    .hero-desc {
+      font-size: 13.5px; color: rgba(255,255,255,.65);
+      max-width: 480px; line-height: 1.65;
     }
-
-    /* ── EMPTY / LOADING ───────────────────────────────── */
-    .status-msg {
-      padding: 2rem 0;
-      text-align: center;
-      color: var(--ink-lt);
-      font-size: 14px;
-      font-family: var(--serif);
-      font-style: italic;
+    .hero-meta {
+      margin-top: 1.25rem;
+      display: flex; gap: 1.5rem; flex-wrap: wrap;
+    }
+    .hero-stat { text-align: center; }
+    .hero-stat-n {
+      font-family: var(--font-serif);
+      font-size: 26px; font-weight: 600; color: #f1f5f9;
+      line-height: 1;
+    }
+    .hero-stat-l {
+      font-size: 10px; text-transform: uppercase;
+      letter-spacing: .08em; color: rgba(255,255,255,.45);
+      margin-top: 3px;
     }
 
-    /* ── FOOTER ────────────────────────────────────────── */
-    footer {
-      border-top: 3px solid var(--black);
-      padding: 1.5rem;
-      margin-top: 2rem;
-      background: var(--paper);
+    /* ── CONCEPTES CLAU ──────────────────────────────── */
+    .concept-section {
+      margin-bottom: 1.25rem;
     }
-    .footer-inner {
-      max-width: 1080px;
-      margin: 0 auto;
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
+    .concept-section-head {
+      font-size: 10px; font-weight: 700; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--text-lt);
+      margin-bottom: .6rem;
     }
-    .footer-brand { font-family: var(--serif); font-size: 22px; font-weight: 700; }
-    .footer-brand em { font-style: italic; font-weight: 400; }
-    .footer-note { font-size: 11px; color: var(--ink-lt); max-width: 420px; line-height: 1.6; }
-    .footer-links { font-size: 12px; color: var(--ink-lt); display: flex; gap: 1rem; }
-    .footer-links a { color: var(--ink-lt); text-decoration: none; }
-    .footer-links a:hover { color: var(--ink); text-decoration: underline; }
+    .concept-chips { display: flex; gap: .5rem; flex-wrap: wrap; }
+    .concept-chip {
+      font-size: 12px; font-weight: 500;
+      background: var(--surface); border: 1px solid var(--border);
+      color: var(--text-mid); padding: 4px 12px; border-radius: 20px;
+      cursor: pointer; transition: all .15s;
+      user-select: none;
+    }
+    .concept-chip:hover { border-color: var(--accent); color: var(--accent); }
+    .concept-chip.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* ── FEED ────────────────────────────────────────── */
+    .feed-header {
+      display: flex; align-items: center;
+      justify-content: space-between; margin-bottom: .75rem;
+    }
+    .feed-count { font-size: 12px; color: var(--text-lt); font-weight: 500; }
+    .feed-date-lbl { font-size: 12px; color: var(--text-lt); }
+
+    .feed-list {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+    }
+    .feed-item {
+      padding: .95rem 1.1rem;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer; transition: background .12s;
+      animation: fadeIn .3s ease both;
+    }
+    .feed-item:last-child { border-bottom: none; }
+    .feed-item:hover { background: #fafbfc; }
+    .feed-item.is-open { background: var(--accent-lt); }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
+
+    .fi-top { display: flex; align-items: flex-start; gap: .65rem; margin-bottom: .35rem; }
+    .fi-badges { display: flex; align-items: center; gap: .35rem; flex-shrink: 0; padding-top: .1rem; }
+    .cat-badge {
+      font-size: 10px; font-weight: 600; letter-spacing: .04em;
+      text-transform: uppercase; padding: 2px 7px; border-radius: 3px; white-space: nowrap;
+    }
+    .cat-badge.civil          { background: var(--cat-civil);          color: var(--cat-civil-text); }
+    .cat-badge.penal          { background: var(--cat-penal);          color: var(--cat-penal-text); }
+    .cat-badge.laboral        { background: var(--cat-laboral);        color: var(--cat-laboral-text); }
+    .cat-badge.administratiu  { background: var(--cat-administratiu);  color: var(--cat-administratiu-text); }
+    .cat-badge.mercantil      { background: var(--cat-mercantil);      color: var(--cat-mercantil-text); }
+    .cat-badge.fiscal         { background: var(--cat-fiscal);         color: var(--cat-fiscal-text); }
+    .cat-badge.constitucional { background: var(--cat-constitucional); color: var(--cat-constitucional-text); }
+    .cat-badge.educatiu       { background: var(--cat-educatiu);       color: var(--cat-educatiu-text); }
+    .ia-badge {
+      font-size: 10px; font-weight: 700;
+      padding: 2px 7px; border-radius: 3px;
+      background: var(--accent-lt); color: var(--accent);
+    }
+    .urgent-badge {
+      font-size: 10px; font-weight: 700; padding: 2px 7px; border-radius: 3px;
+      background: var(--red-lt); color: var(--red);
+    }
+    .fi-title {
+      font-family: var(--font-serif);
+      font-size: 14.5px; font-weight: 400;
+      line-height: 1.35; color: var(--text); flex: 1;
+    }
+    .feed-item.is-open .fi-title { color: var(--accent); }
+    .fi-summary {
+      font-size: 13px; color: var(--text-mid); line-height: 1.6;
+      margin-bottom: .45rem;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .fi-foot { display: flex; align-items: center; gap: .5rem; }
+    .fi-source {
+      font-size: 11px; font-weight: 500;
+      background: var(--bg); border: 1px solid var(--border);
+      color: var(--text-lt); padding: 1px 7px; border-radius: 3px;
+    }
+    .fi-ai { font-size: 11px; color: var(--accent); font-weight: 500; }
+
+    /* Expand */
+    .fi-expand { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .feed-item.is-open .fi-expand { max-height: 500px; }
+    .fi-expand-inner { margin-top: .75rem; padding-top: .75rem; border-top: 1px solid var(--border); }
+    .fi-section { margin-bottom: .65rem; }
+    .fi-section:last-child { margin-bottom: 0; }
+    .fi-section-lbl {
+      font-size: 10px; font-weight: 700; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--text-lt); margin-bottom: .25rem;
+    }
+    .fi-section-txt { font-size: 13.5px; color: var(--text-mid); line-height: 1.65; }
+    .fi-kws { display: flex; flex-wrap: wrap; gap: 4px; margin-top: .3rem; }
+    .fi-kw {
+      font-size: 11px; background: var(--bg);
+      border: 1px solid var(--border); color: var(--text-mid);
+      padding: 1px 8px; border-radius: 20px;
+    }
+    .fi-link {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 12px; color: var(--accent); text-decoration: none;
+      margin-top: .5rem; border: 1px solid var(--accent-border);
+      padding: 4px 10px; border-radius: var(--radius); transition: background .15s;
+    }
+    .fi-link:hover { background: var(--accent-lt); }
+
+    /* ── EMPTY ───────────────────────────────────────── */
+    .feed-empty { padding: 3rem; text-align: center; }
+    .feed-empty-icon { font-size: 2.5rem; margin-bottom: .75rem; }
+    .feed-empty-title {
+      font-family: var(--font-serif); font-size: 18px;
+      color: var(--text); margin-bottom: .5rem;
+    }
+    .feed-empty-desc { font-size: 13.5px; color: var(--text-lt); max-width: 380px; margin: 0 auto; line-height: 1.65; }
+
+    .feed-loading { padding: 2.5rem; text-align: center; color: var(--text-lt); font-size: 13px; }
+    .spinner {
+      display: inline-block; width: 20px; height: 20px;
+      border: 2px solid var(--border); border-top-color: var(--accent);
+      border-radius: 50%; animation: spin .7s linear infinite; margin-bottom: .75rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── RESUM PANEL ─────────────────────────────────── */
+    .resum-panel {
+      background: var(--surface);
+      border: 1px solid var(--border); border-left: 3px solid var(--accent);
+      border-radius: var(--radius); margin-bottom: 1.25rem; overflow: hidden;
+    }
+    .resum-toggle {
+      width: 100%; display: flex; align-items: center; gap: .6rem;
+      padding: .85rem 1.1rem;
+      background: none; border: none; cursor: pointer;
+      text-align: left; font-family: var(--font-ui);
+    }
+    .resum-toggle:hover { background: var(--bg); }
+    .resum-icon { color: var(--accent); font-size: 13px; }
+    .resum-title { font-size: 12.5px; font-weight: 600; color: var(--text); flex: 1; }
+    .resum-chevron { font-size: 12px; color: var(--text-lt); transition: transform .2s; }
+    .resum-panel.open .resum-chevron { transform: rotate(180deg); }
+    .resum-body { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .resum-panel.open .resum-body { max-height: 600px; }
+    .resum-inner {
+      padding: .85rem 1.1rem 1rem;
+      font-size: 13.5px; color: var(--text-mid);
+      line-height: 1.75; white-space: pre-wrap;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── MOBILE ──────────────────────────────────────── */
+    @media (max-width: 720px) {
+      body { flex-direction: column; }
+      .sidebar {
+        position: fixed; left: -270px; top: 0;
+        width: 260px; height: 100vh;
+        transition: left .25s ease; z-index: 500;
+      }
+      .sidebar.open { left: 0; box-shadow: 4px 0 24px rgba(0,0,0,.3); }
+      .sidebar-overlay {
+        display: none; position: fixed; inset: 0;
+        background: rgba(0,0,0,.45); z-index: 400;
+      }
+      .sidebar-overlay.open { display: block; }
+      .main-wrap { width: 100%; }
+      .topbar-menu-btn { display: block; }
+      .content { padding: 0 1rem 4rem; }
+      .hero { margin: 0 -1rem 1.25rem; padding: 1.75rem 1.25rem 1.5rem; }
+      .hero-title { font-size: 1.75rem; }
+      .topbar-update { display: none; }
+    }
   </style>
 </head>
 <body>
 
-  <!-- MASTHEAD -->
-  <div class="masthead">
-    <div class="masthead-top">
-      <div>
-        <span class="pill">Nou</span>
-        IA Jurídica · Dret Civil Català · Jurisprudència UE
-      </div>
-      <div>
-        <span id="masthead-date">—</span>
-        &ensp;·&ensp;
-        <a href="index.html">← DretCat general</a>
-      </div>
-    </div>
-    <div class="masthead-center">
-      <div class="masthead-eyebrow">El diari de</div>
-      <div class="masthead-logo">Lex<em>IA</em></div>
-      <div class="masthead-tagline">Intel·ligència artificial i dret a Catalunya — per a juristes</div>
-      <div class="masthead-rule">
-        <span id="sub-date">—</span>
-      </div>
-    </div>
-  </div>
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
 
-  <!-- NAV TEMES -->
-  <nav class="nav-temes">
-    <div class="nav-temes-inner">
-      <button class="nav-tema" data-tema="1minut">📋 1 Minut</button>
-      <button class="nav-tema on" data-tema="tot">Tot</button>
-      <button class="nav-tema" data-tema="ia">IA &amp; Dret</button>
-      <button class="nav-tema" data-tema="civil">Dret Civil Català</button>
-      <button class="nav-tema" data-tema="mercantil">Mercantil / Tech</button>
-      <button class="nav-tema" data-tema="administratiu">Administratiu</button>
-      <button class="nav-tema" data-tema="penal">Penal</button>
-      <button class="nav-tema" data-tema="laboral">Laboral</button>
-      <button class="nav-tema" data-tema="constitucional">Constitucional</button>
-      <button class="nav-tema" data-tema="urgent">🔴 Urgents</button>
-      <div class="nav-dropdown">
-        <button class="nav-dropdown-btn" id="btn-territoris">📍 Territoris ▾</button>
-        <div class="nav-dropdown-menu">
-          <button class="nav-dropdown-item" data-comarca="espanya">Espanya</button>
-          <button class="nav-dropdown-item" data-comarca="catalunya">Catalunya</button>
-          <button class="nav-dropdown-item" data-comarca="girona">Girona</button>
-          <button class="nav-dropdown-item" data-comarca="cerdanya">La Cerdanya</button>
-          <button class="nav-dropdown-item" data-comarca="berguedà">El Berguedà</button>
-        </div>
-      </div>
-      <button class="nav-gear" id="btn-interests" title="Configura els teus interessos">⚙️</button>
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <div class="logo-icon">✦</div>
+      <span class="logo-text">Lex<em>IA</em></span>
+    </a>
+
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-item">
+        <span class="ni-icon">📋</span> Feed jurídic
+      </a>
+      <a href="ia-juridica.html" class="nav-item active">
+        <span class="ni-icon">✦</span> IA i Dret
+      </a>
+    </nav>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Paraules clau vigilades</div>
+      <div id="sb-kws"></div>
     </div>
-  </nav>
 
-  <!-- MODAL INTERESSOS -->
-  <div class="modal-overlay" id="modal-interests">
-    <div class="modal-box">
-      <div class="modal-title">Configura els teus interessos</div>
-      <div class="modal-sub">Selecciona les àrees de dret que t'interessen per rebre un resum personalitzat</div>
-      <div class="interest-chips" id="interest-chips">
-        <button class="interest-chip" data-cat="civil">Civil</button>
-        <button class="interest-chip" data-cat="penal">Penal</button>
-        <button class="interest-chip" data-cat="laboral">Laboral</button>
-        <button class="interest-chip" data-cat="administratiu">Administratiu</button>
-        <button class="interest-chip" data-cat="mercantil">Mercantil</button>
-        <button class="interest-chip" data-cat="fiscal">Fiscal</button>
-        <button class="interest-chip" data-cat="constitucional">Constitucional</button>
+    <div class="sidebar-section" style="flex:1">
+      <div class="sidebar-label">Àmbits regulatoris</div>
+      <div class="sb-info-row">
+        <div class="sb-info-title">Reglament IA (UE) 2024/1689</div>
+        <div class="sb-info-sub">En vigor des del 2024 · Aplicació progressiva fins 2027</div>
       </div>
-      <div class="modal-actions">
-        <button class="btn-modal" id="btn-modal-cancel">Cancel·lar</button>
-        <button class="btn-modal primary" id="btn-modal-save">Desa</button>
-      </div>
-    </div>
-  </div>
-
-  <!-- BREAKING TICKER -->
-  <div class="breaking-bar" id="breaking-bar" style="display:none">
-    <span class="breaking-label">Últim hora</span>
-    <div class="breaking-text">
-      <span class="breaking-ticker" id="breaking-ticker"></span>
-    </div>
-  </div>
-
-  <div class="page-wrap">
-
-    <!-- STATS STRIP -->
-    <div class="stats-strip">
-      <div class="stats-item">
-        <div class="stats-num" id="s-ia">—</div>
-        <div class="stats-lbl">Notícies IA</div>
-      </div>
-      <div class="stats-item">
-        <div class="stats-num" id="s-total">—</div>
-        <div class="stats-lbl">Total avui</div>
-      </div>
-      <div class="stats-item">
-        <div class="stats-num" id="s-urgent">—</div>
-        <div class="stats-lbl">Urgents</div>
-      </div>
-      <div class="stats-item">
-        <div class="stats-num" id="s-fonts">—</div>
-        <div class="stats-lbl">Fonts</div>
-      </div>
-      <div class="stats-item" style="margin-left:auto; text-align:right">
-        <div style="font-size:11px; color:var(--ink-lt); margin-bottom:2px">Última actualització</div>
-        <div style="font-size:13px; font-weight:600; color:var(--ink)" id="s-update">—</div>
+      <div class="sb-info-row" style="margin-top:.6rem">
+        <div class="sb-info-title">Llei catalana IA (projecte)</div>
+        <div class="sb-info-sub">Parlament de Catalunya · Fase d'elaboració</div>
       </div>
     </div>
 
-    <!-- FRONT GRID -->
-    <div class="front-grid">
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-date" id="sb-date">—</div>
+      <div class="sidebar-footer-ai">✦ Analitzat per IA · DretCat</div>
+    </div>
+  </aside>
 
-      <!-- LEFT: FEED PRINCIPAL -->
-      <div class="left-col">
+  <!-- MAIN WRAP -->
+  <div class="main-wrap">
 
-        <!-- Resum diari (pestanya 1 Minut) -->
-        <div id="resum-panel" style="display:none">
-          <div class="resum-diari">
-            <div class="resum-diari-label">Actualitat legal en 1 minut</div>
-            <div class="resum-diari-hed" id="resum-diari-hed"></div>
-            <div class="resum-diari-cos" id="resum-diari-cos"></div>
-            <div class="resum-diari-meta" id="resum-diari-meta"></div>
+    <header class="topbar">
+      <button class="topbar-menu-btn" onclick="toggleSidebar()">☰</button>
+      <span class="topbar-title">LexIA · IA i Dret</span>
+      <div class="topbar-right">
+        <span class="topbar-update">Actualitzat: <span id="update-time">—</span></span>
+        <a href="index.html" class="topbar-home">← DretCat</a>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <!-- Hero -->
+      <div class="hero">
+        <div class="hero-eyebrow">Intel·ligència Artificial · Dret Digital · Catalunya</div>
+        <h1 class="hero-title">LexIA — <em>IA i Dret</em></h1>
+        <p class="hero-desc">
+          Monitoratge diari de novetats jurídiques relacionades amb la intel·ligència artificial,
+          l'automatització i la regulació tecnològica, analitzades per IA.
+        </p>
+        <div class="hero-meta">
+          <div class="hero-stat">
+            <div class="hero-stat-n" id="hero-ia-n">—</div>
+            <div class="hero-stat-l">Novetats IA avui</div>
           </div>
-          <!-- Bloc personalitzat -->
-          <div id="personal-panel"></div>
+          <div class="hero-stat">
+            <div class="hero-stat-n" id="hero-total-n">—</div>
+            <div class="hero-stat-l">Total jurídic</div>
+          </div>
         </div>
-
-        <!-- Lead story (primer resultat IA) -->
-        <div id="lead-container"></div>
-
-        <!-- Story grid 3 col -->
-        <div id="story-grid-container"></div>
-
-        <!-- Section rule -->
-        <div class="section-rule" style="margin-top:.25rem">
-          <h2 id="stream-title">Totes les notícies</h2>
-        </div>
-
-        <!-- Stream -->
-        <div class="stream" id="stream-container">
-          <div class="status-msg">Carregant notícies…</div>
-        </div>
-
       </div>
 
-      <!-- RIGHT: SIDEBAR -->
-      <aside class="right-col">
-
-        <div class="side-section">
-          <div class="side-head">Més llegits</div>
-          <div id="sidebar-top"></div>
+      <!-- Resum IA (si n'hi ha) -->
+      <div class="resum-panel" id="resum-panel" style="display:none">
+        <button class="resum-toggle" onclick="toggleResum()">
+          <span class="resum-icon">✦</span>
+          <span class="resum-title">Resum diari generat per IA</span>
+          <span class="resum-chevron">▾</span>
+        </button>
+        <div class="resum-body">
+          <div class="resum-inner" id="resum-text"></div>
         </div>
+      </div>
 
-        <div class="concept-box">
-          <div class="concept-label">Concepte clau</div>
-          <strong>Responsabilitat civil per IA (art. 68 CC Cat.)</strong><br>
-          El Codi Civil de Catalunya no preveu expressament la responsabilitat per sistemes d'IA. La doctrina aplica per analogia el règim de responsabilitat per activitats de risc (art. 68 i ss.) i el règim de productes defectuosos de la Directiva 85/374/CEE, pendent de revisió pel nou Reglament IA UE 2024/1689.
+      <!-- Filtres de concepte -->
+      <div class="concept-section">
+        <div class="concept-section-head">Filtra per concepte</div>
+        <div class="concept-chips" id="concept-chips">
+          <button class="concept-chip on" data-kw="tots">Tots</button>
+          <button class="concept-chip" data-kw="intel·ligència artificial">Intel·ligència artificial</button>
+          <button class="concept-chip" data-kw="algoritme">Algoritme</button>
+          <button class="concept-chip" data-kw="automatitzaci">Automatització</button>
+          <button class="concept-chip" data-kw="dades personals">Dades personals</button>
+          <button class="concept-chip" data-kw="plataforma">Plataformes digitals</button>
+          <button class="concept-chip" data-kw="ciberseguretat">Ciberseguretat</button>
+          <button class="concept-chip" data-kw="regulació">Regulació tecnol.</button>
         </div>
+      </div>
 
-        <div class="side-section">
-          <div class="side-head">Per àrea</div>
-          <div id="sidebar-cats"></div>
+      <!-- Feed -->
+      <div class="feed-header">
+        <span class="feed-count" id="feed-count">Carregant...</span>
+        <span class="feed-date-lbl" id="feed-date-lbl"></span>
+      </div>
+      <div id="feed-list" class="feed-list">
+        <div class="feed-loading">
+          <div class="spinner"></div><br>
+          Carregant novetats sobre IA i Dret...
         </div>
-
-        <div class="side-section">
-          <div class="side-head">Fonts actives</div>
-          <div id="sidebar-fonts" style="font-size:12px; color:var(--ink-mid); line-height:2"></div>
-        </div>
-
-      </aside>
+      </div>
 
     </div>
   </div>
-
-  <footer>
-    <div class="footer-inner">
-      <div>
-        <div class="footer-brand">Lex<em>IA</em></div>
-        <div class="footer-note" style="margin-top:.35rem">Part de DretCat · Especialitzat en IA i dret català</div>
-      </div>
-      <div class="footer-note">
-        Contingut analitzat automàticament per IA a partir de fonts oficials (DOGC, BOE, Parlament, EUR-Lex).
-        No constitueix assessorament jurídic professional.
-      </div>
-      <div>
-        <div class="footer-links">
-          <a href="index.html">DretCat General</a>
-          <a href="#" onclick="return false">Newsletter</a>
-        </div>
-        <div style="font-size:11px; color:var(--ink-lt); margin-top:.5rem">© 2026 DretCat</div>
-      </div>
-    </div>
-  </footer>
 
   <script>
-    // ── PARAULES CLAU IA ──────────────────────────────────
-    const PARAULES_IA = [
-      'intel·ligència artificial', 'intel.ligència artificial', 'inteligencia artificial',
-      'algorithme', 'algoritme', 'algorisme', 'algorítmic',
-      'machine learning', 'aprenentatge automàtic', 'deep learning', 'xarxa neuronal',
-      'neural network', 'chatgpt', 'gpt', 'llm', 'model de llenguatge', 'language model',
-      'deepfake', 'generatiu', 'generativa', 'reglament ia', 'ai act', 'reglament (ue) 2024/1689',
-      'sistemes d\'ia', 'sistema d\'ia', 'sistema de ia', 'decisió automatitzada',
-      'automated decision', 'decisión automatizada', 'perfilació', 'profiling',
-      'reconeixement facial', 'reconocimiento facial', 'biometria', 'biometría',
-      'robot', 'robòtica', 'robótica', 'vehicle autònom', 'vehículo autónomo',
-      'plataforma digital', 'economia de plataformes', 'economia platform', 'gig economy',
-      'dades personals', 'datos personales', 'gdpr', 'rgpd', 'protecció de dades',
-      'protección de datos', 'ciberseguretat', 'ciberseguridad', 'ciberatac', 'ciberataque',
-      'blockchain', 'contracte intel·ligent', 'smart contract', 'nft', 'criptomoneda',
-      'tokenització', 'metavers', 'realitat augmentada', 'realitat virtual',
-      'drets digitals', 'derechos digitales', 'evidència digital', 'prova digital',
-      'prueba digital', 'delicte informàtic', 'delito informático',
+    // Paraules clau IA que es busquen en títol + resum
+    const KW_IA = [
+      'intel·ligència artificial', 'intel·ligencia artificial',
+      'ia ', ' ia,', 'ia.', '(ia)', '/ia',
+      'algoritme', 'algorisme', 'algorítmic',
+      'automatitzaci', 'automatizaci',
+      'machine learning', 'aprenentatge automàtic',
+      'model de llenguatge', 'chatgpt', 'openai', 'llm',
+      'dades personals', 'rgpd', 'reglament general de protecci',
+      'plataforma digital', 'mercat digital', 'dsa', 'dma',
+      'ciberseguretat', 'ciberseguridad',
+      'regulació tecnol', 'regulacion tecnol',
+      'reglament ia', 'eu ai act', 'ai act',
+      'decisió automatitzada', 'decision automatizada',
+      'blockchain', 'contracte intel·ligent',
+      'deepfake', 'biometria',
     ];
 
-    function esIA(noveta) {
-      const text = [
-        noveta.titol, noveta.resum_executiu, noveta.impacte_practic,
-        (noveta.paraules_clau || []).join(' '),
-      ].join(' ').toLowerCase();
-      
-      const matchBasic = PARAULES_IA.some(p => text.includes(p));
-      const matchIA = /(?:^|[^a-z0-9àèéíïòóúüçñ·])ia(?:[^a-z0-9àèéíïòóúüçñ·]|$)/.test(text);
-      
-      return matchBasic || matchIA;
+    let totes = [];
+    let iaTotes = [];   // items IA filtrats del total
+    let kwActual = 'tots';
+
+    const dies = ['Diumenge','Dilluns','Dimarts','Dimecres','Dijous','Divendres','Dissabte'];
+    const mesos = ['gener','febrer','març','abril','maig','juny','juliol','agost','setembre','octubre','novembre','desembre'];
+    const ara = new Date();
+    document.getElementById('sb-date').textContent =
+      `${dies[ara.getDay()]}, ${ara.getDate()} de ${mesos[ara.getMonth()]} del ${ara.getFullYear()}`;
+
+    function esIA(n) {
+      const text = `${n.titol || ''} ${n.resum_executiu || ''} ${(n.paraules_clau || []).join(' ')}`.toLowerCase();
+      return KW_IA.some(kw => text.includes(kw.toLowerCase()));
     }
 
-    // ── FILTRE PER TEMA ───────────────────────────────────
-    function coincideixTema(n, tema) {
-      if (tema === 'tot') return true;
-      if (tema === 'ia') return esIA(n);
-      if (tema === 'urgent') return n.urgencia === 'alta';
-      if (tema === 'civil') return n.categoria === 'civil';
-      if (tema === 'mercantil') return n.categoria === 'mercantil';
-      if (tema === 'administratiu') return n.categoria === 'administratiu';
-      if (tema === 'penal') return n.categoria === 'penal';
-      if (tema === 'laboral') return n.categoria === 'laboral';
-      if (tema === 'constitucional') return n.categoria === 'constitucional';
-      return true;
-    }
-
-    // ── DADES ─────────────────────────────────────────────
-    let TOTES = [];
-    let temaActual = 'tot';
-    let comarcaActual = null;
-    let RESUM_DATA = null;
-
-    function esc(s) {
-      return String(s || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    }
-    function cap(s) { return s ? s[0].toUpperCase() + s.slice(1) : ''; }
-    function normalizeText(s) {
-      return String(s || '')
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .trim();
-    }
-
-    function badgeClass(cat) {
-      const m = { civil:'civil', penal:'penal', laboral:'laboral', administratiu:'admin', mercantil:'mercantil', fiscal:'fiscal', constitucional:'constitucional' };
-      return m[cat] || 'civil';
-    }
-
-    // ── RENDER LEAD ───────────────────────────────────────
-    function renderLead(n) {
-      if (!n) { document.getElementById('lead-container').innerHTML = '<p class="no-interests-msg" style="padding: 2rem 0; font-size: 14px;">No s\'han trobat notícies per a aquest filtre.</p>'; return; }
-      const isIa = esIA(n);
-      document.getElementById('lead-container').innerHTML = `
-        <div class="lead-story" onclick="toggleExpand('lead-exp', '${esc(n.id)}')">
-          <div class="lead-kicker">${isIa ? '⚡ IA &amp; Dret' : cap(n.categoria)} &nbsp;&nbsp; ${n.urgencia === 'alta' ? '<span style="color:var(--red)">URGENT</span>' : ''}</div>
-          <h2 class="lead-headline">${esc(n.titol)}</h2>
-          <p class="lead-deck">${esc(n.resum_executiu)}</p>
-          <div class="lead-byline">
-            <span>${esc(n.font)}</span>
-            <span class="dot">·</span>
-            <span>${esc(n.data)}</span>
-            ${isIa ? '<span class="dot">·</span><span style="color:var(--blue);font-weight:600">IA Jurídica</span>' : ''}
-          </div>
-        </div>
-        <div class="exp-panel" id="lead-exp">
-          ${panelHtml(n)}
-        </div>
-      `;
-    }
-
-    // ── RENDER STORY GRID ─────────────────────────────────
-    function renderStoryGrid(novetats) {
-      const tres = novetats.slice(0, 3);
-      if (!tres.length) { document.getElementById('story-grid-container').innerHTML = ''; return; }
-      document.getElementById('story-grid-container').innerHTML = `
-        <div class="story-grid">
-          ${tres.map(n => {
-            const isIa = esIA(n);
-            return `
-            <div class="story" onclick="toggleExpand('sg-${esc(n.id.replace(/[^a-z0-9]/gi,''))}', '${esc(n.id)}')">
-              <div class="story-label ${isIa ? 'ia' : ''}">${isIa ? 'IA &amp; Dret' : cap(n.categoria)}</div>
-              <h3 class="story-hed">${esc(n.titol)}</h3>
-              <p class="story-dek">${esc((n.resum_executiu||'').slice(0,120))}…</p>
-              <div class="story-meta">${esc(n.font)} · ${esc(n.data)}</div>
-            </div>
-            <div class="exp-panel" id="sg-${esc(n.id.replace(/[^a-z0-9]/gi,''))}">
-              ${panelHtml(n)}
-            </div>`;
-          }).join('')}
-        </div>
-      `;
-    }
-
-    // ── RENDER STREAM ─────────────────────────────────────
-    function renderStream(novetats) {
-      const container = document.getElementById('stream-container');
-      if (!novetats.length) {
-        container.innerHTML = '<div class="status-msg">Cap notícia per al filtre seleccionat.</div>';
-        return;
-      }
-      container.innerHTML = novetats.map(n => {
-        const isIa = esIA(n);
-        const eid = 'si-' + n.id.replace(/[^a-z0-9]/gi,'').slice(0,30);
-        return `
-          <div class="stream-item" onclick="toggleExpand('${eid}', '${esc(n.id)}')">
-            <div>
-              <div class="si-cat ${isIa ? 'ia' : ''}">${isIa ? 'IA &amp; Dret' : cap(n.categoria)}</div>
-              <div class="si-hed">${esc(n.titol)}</div>
-              <div class="si-dek">${esc(n.resum_executiu)}</div>
-              <div class="si-meta">${esc(n.font)} · ${esc(n.data)}</div>
-            </div>
-            <div class="si-right">
-              ${isIa ? '<span class="si-badge ia">IA</span>' : `<span class="si-badge ${badgeClass(n.categoria)}">${cap(n.categoria)}</span>`}
-              ${n.urgencia === 'alta' ? '<span class="si-badge urgent">Urgent</span>' : ''}
-              <span class="si-fonte">${esc(n.font)}</span>
-            </div>
-          </div>
-          <div class="exp-panel" id="${eid}">
-            ${panelHtml(n)}
-          </div>
-        `;
-      }).join('');
-    }
-
-    // ── PANEL EXPAND HTML ─────────────────────────────────
-    function panelHtml(n) {
-      const kws = (n.paraules_clau || []).map(k => `<span class="exp-kw">${esc(k)}</span>`).join('');
-      return `
-        <div class="exp-section">
-          <div class="exp-label">Impacte pràctic</div>
-          <div>${esc(n.impacte_practic)}</div>
-        </div>
-        ${kws ? `<div class="exp-section"><div class="exp-label">Paraules clau</div><div class="exp-kws">${kws}</div></div>` : ''}
-        <div class="exp-section">
-          <a href="${esc(n.url)}" class="exp-link" target="_blank" rel="noopener">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2h3v3M10 2L5 7M2 5v5h5"/></svg>
-            Llegir a ${esc(n.font)}
-          </a>
-        </div>
-      `;
-    }
-
-    // ── TOGGLE EXPAND ─────────────────────────────────────
-    function toggleExpand(eid, nid) {
-      const el = document.getElementById(eid);
-      if (!el) return;
-      const isOpen = el.classList.contains('open');
-      // Tanca tots
-      document.querySelectorAll('.exp-panel.open').forEach(p => p.classList.remove('open'));
-      if (!isOpen) el.classList.add('open');
-    }
-
-    // ── SIDEBAR ───────────────────────────────────────────
-    function renderSidebar(novetats) {
-      // Top 5 (les primeres IA, o totes)
-      const iaFirst = novetats.filter(esIA);
-      const top5 = (iaFirst.length >= 3 ? iaFirst : novetats).slice(0, 5);
-      document.getElementById('sidebar-top').innerHTML = top5.map((n, i) => `
-        <div class="side-item" onclick="window.open('${esc(n.url)}','_blank')">
-          <div class="side-item-num">${i+1}</div>
-          <div class="side-item-hed">${esc(n.titol.slice(0,80))}${n.titol.length>80?'…':''}</div>
-          <div class="side-item-src">${esc(n.font)}</div>
-        </div>
-      `).join('');
-
-      // Cats
-      const cats = {};
-      novetats.forEach(n => { cats[n.categoria] = (cats[n.categoria] || 0) + 1; });
-      document.getElementById('sidebar-cats').innerHTML = Object.entries(cats)
-        .sort((a,b) => b[1]-a[1])
-        .map(([cat, n]) => `
-          <div style="display:flex;justify-content:space-between;align-items:center;padding:.35rem 0;border-bottom:.5px solid var(--rule);font-size:13px;">
-            <span style="text-transform:capitalize;color:var(--ink-mid)">${cat}</span>
-            <span style="font-weight:600;font-size:12px;color:var(--ink)">${n}</span>
-          </div>
-        `).join('');
-
-      // Fonts
-      const fonts = {};
-      novetats.forEach(n => {
-        const f = n.font_web || n.font;
-        fonts[f] = (fonts[f] || 0) + 1;
-      });
-      document.getElementById('sidebar-fonts').innerHTML = Object.entries(fonts)
-        .sort((a,b) => b[1]-a[1]).slice(0,8)
-        .map(([f, c]) => `<span style="color:var(--ink-mid)">${esc(f)}</span> <span style="color:var(--ink-lt)">(${c})</span><br>`)
-        .join('');
-    }
-
-    // ── BREAKING TICKER ──────────────────────────────────
-    function renderTicker(novetats) {
-      const urgents = novetats.filter(n => n.urgencia === 'alta').slice(0, 5);
-      if (!urgents.length) return;
-      document.getElementById('breaking-bar').style.display = 'flex';
-      const text = urgents.map(n => n.titol).join(' ··· ') + ' · ';
-      const ticker = document.getElementById('breaking-ticker');
-      ticker.textContent = text + text; // doblar per a loop
-    }
-
-    // ── RENDER COMPLET ────────────────────────────────────
-    function renderResumPanel() {
-      if (!RESUM_DATA || !RESUM_DATA.resum_diari) {
-        document.getElementById('resum-diari-cos').innerHTML = '<p>Resum no disponible. Executa el scraper per generar-lo.</p>';
-        document.getElementById('resum-diari-hed').textContent = '';
-        document.getElementById('resum-diari-meta').textContent = '';
-      } else {
-        const paragraphs = RESUM_DATA.resum_diari.split('\n').filter(l => l.trim());
-        const hed = paragraphs[0].replace(/\*\*/g, '').trim();
-        const cos = paragraphs.slice(1)
-          .map(p => `<p>${p.replace(/\*\*/g, '')}</p>`)
-          .join('');
-        document.getElementById('resum-diari-hed').textContent = hed;
-        document.getElementById('resum-diari-cos').innerHTML = cos || `<p>${hed}</p>`;
-        document.getElementById('resum-diari-meta').textContent =
-          `Generat per IA · ${RESUM_DATA.data || ''} · ${RESUM_DATA.total_avui || 0} novetats analitzades · ${RESUM_DATA.urgents || 0} urgents`;
-      }
-      renderPersonalPanel();
-    }
-
-    function getInterests() {
-      try { return JSON.parse(localStorage.getItem('lexia_interests') || '[]'); }
-      catch(_) { return []; }
-    }
-
-    function renderPersonalPanel() {
-      const panel = document.getElementById('personal-panel');
-      const interests = getInterests();
-      if (!interests.length) {
-        panel.innerHTML = `<div class="personal-section">
-          <div class="no-interests-msg">Configura els teus interessos fent clic a ⚙️ per rebre un resum personalitzat.</div>
-        </div>`;
-        return;
-      }
-      const resums = (RESUM_DATA && RESUM_DATA.resums_categoria) || {};
-      let html = `<div class="personal-section">
-        <div class="personal-label">El teu resum personalitzat</div>`;
-
-      for (const cat of interests) {
-        const articles = TOTES.filter(n => n.categoria === cat);
-        if (!articles.length && !resums[cat]) continue;
-        html += `<div class="personal-cat-block">
-          <div class="personal-cat-hed">${cat.charAt(0).toUpperCase() + cat.slice(1)}</div>`;
-        if (resums[cat]) {
-          html += `<div class="personal-cat-text">${resums[cat].replace(/\n/g,'<br>')}</div>`;
-        }
-        if (articles.length) {
-          html += `<div class="personal-cat-items">`;
-          for (const n of articles.slice(0, 4)) {
-            const link = n.url ? `<a href="${n.url}" target="_blank" rel="noopener">${n.titol}</a>` : n.titol;
-            html += `<div class="personal-item">${link}
-              <div class="personal-item-meta">${n.font} · ${n.urgencia === 'alta' ? '🔴 ' : ''}${n.data || ''}</div>
-            </div>`;
-          }
-          html += `</div>`;
-        }
-        html += `</div>`;
-      }
-      html += `</div>`;
-      panel.innerHTML = html;
-    }
-
-    // ── MODAL INTERESSOS ──────────────────────────────────
-    (function initModal() {
-      const overlay = document.getElementById('modal-interests');
-      const chips   = document.querySelectorAll('.interest-chip');
-      let tempSel   = [];
-
-      document.getElementById('btn-interests').addEventListener('click', () => {
-        tempSel = [...getInterests()];
-        chips.forEach(c => c.classList.toggle('sel', tempSel.includes(c.dataset.cat)));
-        overlay.classList.add('open');
-      });
-      document.getElementById('btn-modal-cancel').addEventListener('click', () => overlay.classList.remove('open'));
-      overlay.addEventListener('click', e => { if (e.target === overlay) overlay.classList.remove('open'); });
-      chips.forEach(c => c.addEventListener('click', () => {
-        c.classList.toggle('sel');
-        const cat = c.dataset.cat;
-        if (tempSel.includes(cat)) tempSel = tempSel.filter(x => x !== cat);
-        else tempSel.push(cat);
-      }));
-      document.getElementById('btn-modal-save').addEventListener('click', () => {
-        localStorage.setItem('lexia_interests', JSON.stringify(tempSel));
-        overlay.classList.remove('open');
-        if (temaActual === '1minut') renderPersonalPanel();
-      });
-    })();
-
-    function renderTot(novetats) {
-      // Prioritzar novetats IA per al lead i story grid
-      const iaNovetats = novetats.filter(esIA);
-      const pool = iaNovetats.length ? iaNovetats : novetats;
-
-      renderLead(pool[0] || null);
-      renderStoryGrid(pool.slice(1, 4));
-      renderStream(novetats.slice(4));
-      renderSidebar(novetats);
-      renderTicker(novetats);
-
-      // Stats
-      document.getElementById('s-ia').textContent = novetats.filter(esIA).length;
-      document.getElementById('s-total').textContent = novetats.length;
-      document.getElementById('s-urgent').textContent = novetats.filter(n => n.urgencia === 'alta').length;
-      const fonts = new Set(novetats.map(n => n.font));
-      document.getElementById('s-fonts').textContent = fonts.size;
-    }
-
-    // ── FILTRE COMARCA ────────────────────────────────────
-    const territorisDropdown = document.querySelector('.nav-dropdown');
-    const territorisBtn = document.getElementById('btn-territoris');
-    const territorisMenu = territorisDropdown ? territorisDropdown.querySelector('.nav-dropdown-menu') : null;
-
-    function placeTerritorisMenu() {
-      if (!territorisDropdown || !territorisBtn || !territorisMenu) return;
-      const rect = territorisBtn.getBoundingClientRect();
-      territorisDropdown.style.setProperty('--menu-top', `${rect.bottom + 2}px`);
-      territorisDropdown.style.setProperty('--menu-left', `${rect.left}px`);
-      territorisMenu.classList.add('menu-fixed');
-    }
-
-    if (territorisDropdown && territorisBtn) {
-      territorisBtn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const willOpen = !territorisDropdown.classList.contains('open');
-        territorisDropdown.classList.toggle('open');
-        if (willOpen) placeTerritorisMenu();
-      });
-
-      document.addEventListener('click', (e) => {
-        if (!territorisDropdown.contains(e.target)) {
-          territorisDropdown.classList.remove('open');
-        }
-      });
-
-      window.addEventListener('resize', () => {
-        if (territorisDropdown.classList.contains('open')) placeTerritorisMenu();
-      });
-      window.addEventListener('scroll', () => {
-        if (territorisDropdown.classList.contains('open')) placeTerritorisMenu();
-      }, true);
-    }
-
-    function coincideixComarca(n, comarca) {
-      if (!comarca) return true;
-
-      const aliasos = {
-        espanya: ['espanya', 'espana'],
-        catalunya: ['catalunya', 'cataluna', 'catala', 'catalan'],
-        girona: ['girona', 'provincia de girona', 'provincia girona'],
-        cerdanya: ['cerdanya', 'la cerdanya'],
-        'berguedà': ['bergueda', 'el bergueda']
-      };
-
-      const textNoticia = normalizeText([
-        n.titol, n.resum_executiu, n.impacte_practic, n.url, n.font, n.font_web, n.tipus,
-        (Array.isArray(n.comarques) ? n.comarques.join(' ') : '')
-      ].join(' '));
-      const teComarca = Array.isArray(n.comarques) && n.comarques.length > 0;
-      const teIndicisLocals = /\b(?:generalitat|parlament de catalunya|dogc|ajuntament|diputacio|consell comarcal|tsjc|barcelona|girona|lleida|tarragona|cerdanya|bergueda)\b/.test(textNoticia);
-      const teIndicisEstatals = /\b(?:espanya|espana|nacional|estat|estatal|boe|congreso|senado|ministerio|tribunal supremo|audiencia nacional|abogacia espanola)\b/.test(textNoticia);
-
-      if (comarca === 'espanya') {
-        // Dret estatal / nacional (amb prioritat per fonts i institucions espanyoles)
-        return teIndicisEstatals;
-      }
-      if (comarca === 'catalunya') {
-        // Dret local / territorial català
-        return teComarca || teIndicisLocals;
-      }
-
-      const objectius = aliasos[comarca] || [comarca];
-      const objectiusNorm = objectius.map(normalizeText);
-      const comarques = Array.isArray(n.comarques) ? n.comarques : [];
-      const comarquesNorm = comarques.map(normalizeText);
-
-      return objectiusNorm.some(o => {
-        if (comarquesNorm.includes(o)) return true;
-        const regex = new RegExp(`\\b${o}\\b`, 'i');
-        return regex.test(textNoticia);
-      });
-    }
-
-    document.querySelectorAll('.nav-dropdown-item[data-comarca]').forEach(btn => {
-      btn.addEventListener('click', () => {
-        if (territorisDropdown) territorisDropdown.classList.remove('open');
-        const comarca = btn.dataset.comarca;
-        if (comarcaActual === comarca) {
-          // Desactivar filtre comarca
-          comarcaActual = null;
-          document.querySelectorAll('.nav-dropdown-item').forEach(b => b.classList.remove('on'));
-          document.getElementById('btn-territoris').classList.remove('on');
-        } else {
-          comarcaActual = comarca;
-          document.querySelectorAll('.nav-dropdown-item').forEach(b => b.classList.remove('on'));
-          btn.classList.add('on');
-          document.getElementById('btn-territoris').classList.add('on');
-        }
-        // Desactiva el filtre de tema i aplica comarca
-        document.querySelectorAll('.nav-tema').forEach(b => b.classList.remove('on'));
-        temaActual = 'tot';
-        document.querySelector('.nav-tema[data-tema="tot"]').classList.add('on');
-        const nomsComarca = {
-          'espanya': 'Espanya',
-          'catalunya': 'Catalunya',
-          'girona': 'Girona',
-          'cerdanya': 'La Cerdanya',
-          'berguedà': 'El Berguedà'
-        };
-        const nomComarca = comarcaActual ? nomsComarca[comarcaActual] : 'Totes les notícies';
-        document.getElementById('stream-title').textContent = comarcaActual
-          ? `📍 ${nomComarca}` : 'Totes les notícies';
-        const filtrades = comarcaActual
-          ? TOTES.filter(n => coincideixComarca(n, comarcaActual))
-          : TOTES;
-        renderTot(filtrades);
-      });
-    });
-
-    // ── FILTRE TEMA ───────────────────────────────────────
-    document.querySelectorAll('.nav-tema').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('.nav-tema').forEach(b => b.classList.remove('on'));
-        btn.classList.add('on');
-        temaActual = btn.dataset.tema;
-
-        const resPanel = document.getElementById('resum-panel');
-        const normalIds = ['lead-container','story-grid-container','stream-container'];
-        const sectionRule = document.querySelector('.section-rule');
-
-        if (temaActual === '1minut') {
-          resPanel.style.display = 'block';
-          normalIds.forEach(id => { const el = document.getElementById(id); if(el) el.style.display='none'; });
-          if(sectionRule) sectionRule.style.display='none';
-          document.getElementById('stream-title').textContent = 'Actualitat legal en 1 minut';
-          renderResumPanel();
-          return;
-        }
-
-        // Pestanya normal - reseteja comarca
-        comarcaActual = null;
-        document.querySelectorAll('.nav-dropdown-item').forEach(b => b.classList.remove('on'));
-        document.getElementById('btn-territoris').classList.remove('on');
-        resPanel.style.display = 'none';
-        normalIds.forEach(id => { const el = document.getElementById(id); if(el) el.style.display=''; });
-        if(sectionRule) sectionRule.style.display='';
-
-        const filtrades = TOTES.filter(n => coincideixTema(n, temaActual));
-
-        const labels = {
-          'tot': 'Totes les notícies',
-          'ia': '⚡ IA &amp; Dret',
-          'civil': 'Dret Civil Català',
-          'urgent': '🔴 Notícies urgents',
-        };
-        document.getElementById('stream-title').innerHTML = labels[temaActual] || cap(temaActual);
-
-        renderTot(filtrades);
-      });
-    });
-
-    // ── CARREGAR DADES ────────────────────────────────────
-    async function init() {
-      // Data
-      const ara = new Date();
-      const dies = ['Diumenge','Dilluns','Dimarts','Dimecres','Dijous','Divendres','Dissabte'];
-      const mesos = ['gener','febrer','març','abril','maig','juny','juliol','agost','setembre','octubre','novembre','desembre'];
-      const dataStr = `${dies[ara.getDay()]}, ${ara.getDate()} de ${mesos[ara.getMonth()]} de ${ara.getFullYear()}`;
-      document.getElementById('masthead-date').textContent = dataStr;
-      document.getElementById('sub-date').textContent = dataStr;
-
+    async function carregarDades() {
       try {
         const ts = Date.now();
-        const r = await fetch(`data/novetats.json?t=${ts}`);
-        if (!r.ok) throw new Error('novetats.json no disponible');
-        TOTES = await r.json();
+        const [rN, rS] = await Promise.all([
+          fetch(`data/novetats.json?t=${ts}`),
+          fetch(`data/estadistiques.json?t=${ts}`)
+        ]);
+        if (!rN.ok) throw new Error('Error carregant novetats.json');
+        totes = await rN.json();
+        iaTotes = totes.filter(esIA);
 
-        // Render inicial
-        renderTot(TOTES);
+        document.getElementById('hero-total-n').textContent = totes.length;
+        document.getElementById('hero-ia-n').textContent = iaTotes.length;
 
-        // Stats globals
-        try {
-          const rs = await fetch(`data/estadistiques.json?t=${ts}`);
-          if (rs.ok) {
-            const s = await rs.json();
-            document.getElementById('s-update').textContent = s.data || '—';
-
-            // Guardar dades del resum per a la pestanya
-            if (s.resum_diari) {
-              RESUM_DATA = s;
-            }
+        if (rS.ok) {
+          const s = await rS.json();
+          document.getElementById('update-time').textContent   = s.data ?? '—';
+          document.getElementById('feed-date-lbl').textContent = s.data ?? '';
+          if (s.resum_diari) {
+            document.getElementById('resum-text').textContent = s.resum_diari;
+            document.getElementById('resum-panel').style.display = '';
           }
-        } catch(_) {}
+        }
 
-      } catch(err) {
-        document.getElementById('stream-container').innerHTML =
-          `<div class="status-msg">No s'han pogut carregar les notícies.<br><small>${err.message}</small></div>`;
+        // Sidebar KWs
+        document.getElementById('sb-kws').innerHTML = KW_IA
+          .filter(kw => kw.length > 4 && !kw.includes('/'))
+          .slice(0, 10)
+          .map(kw => `<span class="sb-kw">${esc(kw)}</span>`)
+          .join('');
+
+        renderFeed();
+      } catch (err) {
+        document.getElementById('feed-list').innerHTML =
+          `<div class="feed-empty">
+            <div class="feed-empty-icon">⚠️</div>
+            <div class="feed-empty-title">No s'han pogut carregar les dades</div>
+            <div class="feed-empty-desc">
+              Executa el scraper per generar <code>data/novetats.json</code>.<br>
+              <small>${esc(err.message)}</small>
+            </div>
+          </div>`;
+        document.getElementById('feed-count').textContent = '0 resultats';
       }
     }
 
-    init();
+    function filtrades() {
+      if (kwActual === 'tots') return iaTotes;
+      return iaTotes.filter(n => {
+        const text = `${n.titol || ''} ${n.resum_executiu || ''} ${(n.paraules_clau || []).join(' ')}`.toLowerCase();
+        return text.includes(kwActual.toLowerCase());
+      });
+    }
+
+    function renderFeed() {
+      const items = filtrades();
+      const container = document.getElementById('feed-list');
+      document.getElementById('feed-count').textContent =
+        `${items.length} resultat${items.length !== 1 ? 's' : ''}`;
+
+      if (!iaTotes.length) {
+        container.innerHTML = `
+          <div class="feed-empty">
+            <div class="feed-empty-icon">⚖️</div>
+            <div class="feed-empty-title">Cap novetat sobre IA avui</div>
+            <div class="feed-empty-desc">
+              No s'han trobat novetats relacionades amb intel·ligència artificial
+              o dret digital a les fonts monitoritzades avui.
+              Torna demà o consulta el <a href="index.html" style="color:var(--accent)">feed jurídic complet</a>.
+            </div>
+          </div>`;
+        return;
+      }
+
+      if (!items.length) {
+        container.innerHTML = '<div class="feed-empty"><div class="feed-empty-desc">Cap novetat per al concepte seleccionat.</div></div>';
+        return;
+      }
+
+      container.innerHTML = items.map((n, i) => `
+        <div class="feed-item" style="animation-delay:${Math.min(i, 12) * 0.04}s" onclick="toggleItem(this)">
+          <div class="fi-top">
+            <div class="fi-badges">
+              <span class="ia-badge">IA</span>
+              <span class="cat-badge ${escAttr(n.categoria)}">${esc(capitalitza(n.categoria))}</span>
+              ${n.urgencia === 'alta' ? '<span class="urgent-badge">Urgent</span>' : ''}
+            </div>
+            <div class="fi-title">${esc(n.titol)}</div>
+          </div>
+          <div class="fi-summary">${esc(n.resum_executiu)}</div>
+          <div class="fi-foot">
+            <span class="fi-source">${esc(n.font_web || n.font)}</span>
+            <span class="fi-ai">✦ Resum IA</span>
+          </div>
+          <div class="fi-expand">
+            <div class="fi-expand-inner">
+              ${n.impacte_practic ? `
+                <div class="fi-section">
+                  <div class="fi-section-lbl">Impacte pràctic</div>
+                  <div class="fi-section-txt">${esc(n.impacte_practic)}</div>
+                </div>` : ''}
+              ${n.paraules_clau && n.paraules_clau.length ? `
+                <div class="fi-section">
+                  <div class="fi-section-lbl">Paraules clau</div>
+                  <div class="fi-kws">${n.paraules_clau.map(k => `<span class="fi-kw">${esc(k)}</span>`).join('')}</div>
+                </div>` : ''}
+              ${n.url ? `
+                <a href="${escAttr(n.url)}" class="fi-link" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+                  ↗ Veure al ${esc(n.font)}
+                </a>` : ''}
+            </div>
+          </div>
+        </div>`).join('');
+    }
+
+    function toggleItem(el) {
+      const wasOpen = el.classList.contains('is-open');
+      document.querySelectorAll('.feed-item.is-open').forEach(e => e.classList.remove('is-open'));
+      if (!wasOpen) el.classList.add('is-open');
+    }
+
+    document.getElementById('concept-chips').addEventListener('click', e => {
+      const chip = e.target.closest('.concept-chip');
+      if (!chip) return;
+      document.querySelectorAll('.concept-chip').forEach(c => c.classList.remove('on'));
+      chip.classList.add('on');
+      kwActual = chip.dataset.kw;
+      renderFeed();
+    });
+
+    function toggleResum() {
+      document.getElementById('resum-panel').classList.toggle('open');
+    }
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+      document.getElementById('sidebar-overlay').classList.toggle('open');
+    }
+    function closeSidebar() {
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('sidebar-overlay').classList.remove('open');
+    }
+
+    function esc(s) {
+      return String(s || '')
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+    }
+    function escAttr(s) { return esc(s); }
+    function capitalitza(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''; }
+
+    carregarDades();
   </script>
 </body>
 </html>

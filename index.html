@@ -3,475 +3,679 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DretCat · Novetats jurídiques catalanes</title>
+  <title>DretCat · Novetats jurídiques de Catalunya</title>
   <meta name="description" content="Novetats diàries en dret català analitzades per intel·ligència artificial." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     :root {
-      --green: #0F6E56; --green-mid: #1D9E75; --green-lt: #E1F5EE; --green-dk: #085041;
-      --ink: #1a1a18; --ink-mid: #44443f; --ink-lt: #8a8a82;
-      --paper: #faf9f5; --paper-mid: #f2f0ea; --paper-dk: #e8e5dd;
-      --border: rgba(26,26,24,0.12);
-      --serif: 'Playfair Display', Georgia, serif;
-      --sans: 'Source Sans 3', system-ui, sans-serif;
-      --radius: 10px;
+      --sidebar-w: 220px;
+      --topbar-h: 52px;
+
+      /* Sidebar */
+      --s-bg:           #1c1c28;
+      --s-border:       rgba(255,255,255,.07);
+      --s-text:         #8b8fa8;
+      --s-text-hover:   #c8cce0;
+      --s-active:       #e2e4f0;
+      --s-accent:       #5b6ef5;
+
+      /* Content */
+      --bg:        #f4f5f7;
+      --surface:   #ffffff;
+      --border:    #e3e5ea;
+      --text:      #111318;
+      --text-mid:  #4b4f60;
+      --text-lt:   #8b8fa8;
+      --accent:    #2b4aeb;
+      --accent-lt: #eef1fd;
+
+      /* Urgència */
+      --red:       #dc3535;
+      --red-lt:    #fef2f2;
+
+      /* Categories */
+      --cat-civil:          #e8f0fe; --cat-civil-text:          #1a3faa;
+      --cat-penal:          #fde8e8; --cat-penal-text:          #991b1b;
+      --cat-laboral:        #fef3e2; --cat-laboral-text:        #92400e;
+      --cat-administratiu:  #ede9fe; --cat-administratiu-text:  #4c1d95;
+      --cat-mercantil:      #ecfdf5; --cat-mercantil-text:      #065f46;
+      --cat-fiscal:         #fff7ed; --cat-fiscal-text:         #9a3412;
+      --cat-constitucional: #f0fdf4; --cat-constitucional-text: #14532d;
+      --cat-educatiu:       #fdf4ff; --cat-educatiu-text:       #701a75;
+
+      --font-ui:    'IBM Plex Sans', system-ui, sans-serif;
+      --font-serif: 'IBM Plex Serif', Georgia, serif;
+      --radius:     6px;
     }
+
     html { scroll-behavior: smooth; }
-    body { background: var(--paper); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.6; min-height: 100vh; }
-
-    /* Header */
-    header { position: sticky; top: 0; z-index: 100; background: rgba(250,249,245,0.92); backdrop-filter: blur(12px); border-bottom: 0.5px solid var(--border); }
-    .nav-inner { max-width: 900px; margin: 0 auto; padding: 0 1.5rem; height: 56px; display: flex; align-items: center; justify-content: space-between; }
-    .logo { font-family: var(--serif); font-size: 22px; font-weight: 600; color: var(--ink); text-decoration: none; }
-    .logo em { font-style: normal; color: var(--green-mid); }
-    .nav-right { display: flex; align-items: center; gap: 1rem; }
-    .nav-link { font-size: 13px; color: var(--ink-mid); text-decoration: none; transition: color .15s; }
-    .nav-link:hover { color: var(--ink); }
-    .btn-sub { font-size: 13px; font-weight: 500; font-family: var(--sans); padding: 6px 14px; border-radius: 20px; background: var(--green-dk); color: #fff; border: none; cursor: pointer; text-decoration: none; }
-
-    /* AI strip */
-    .ai-strip { background: var(--green-lt); border-bottom: 0.5px solid rgba(15,110,86,.15); padding: 6px 1.5rem; text-align: center; font-size: 12px; color: var(--green-dk); }
-    .ai-strip strong { font-weight: 500; }
-
-    /* Hero */
-    .hero { max-width: 900px; margin: 0 auto; padding: 3rem 1.5rem 2rem; border-bottom: 0.5px solid var(--border); }
-    .hero-date { font-size: 12px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--green-mid); margin-bottom: .75rem; }
-    .hero-title { font-family: var(--serif); font-size: clamp(26px,5vw,42px); font-weight: 400; line-height: 1.2; letter-spacing: -.5px; max-width: 640px; margin-bottom: 1rem; }
-    .hero-title em { font-style: italic; color: var(--green); }
-    .hero-sub { font-size: 15px; color: var(--ink-mid); max-width: 500px; line-height: 1.6; margin-bottom: 1.75rem; }
-    .hero-stats { display: flex; gap: 2rem; flex-wrap: wrap; }
-    .stat { display: flex; flex-direction: column; }
-    .stat-num { font-family: var(--serif); font-size: 28px; font-weight: 600; line-height: 1; }
-    .stat-label { font-size: 12px; color: var(--ink-lt); margin-top: 3px; }
-
-    /* Filters */
-    .filters-bar { max-width: 900px; margin: 0 auto; padding: 1rem 1.5rem; display: flex; align-items: center; gap: 8px; flex-wrap: wrap; border-bottom: 0.5px solid var(--border); }
-    .filter-label { font-size: 12px; color: var(--ink-lt); font-weight: 500; letter-spacing: .05em; text-transform: uppercase; margin-right: 4px; }
-    .chip { font-size: 12px; font-weight: 500; font-family: var(--sans); padding: 4px 13px; border-radius: 20px; border: 0.5px solid var(--border); background: transparent; color: var(--ink-mid); cursor: pointer; transition: all .15s; }
-    .chip:hover { background: var(--paper-mid); }
-    .chip.on { background: var(--green-lt); border-color: var(--green-mid); color: var(--green-dk); }
-
-    /* Layout */
-    .layout { max-width: 900px; margin: 0 auto; padding: 2rem 1.5rem 4rem; display: grid; grid-template-columns: 1fr 280px; gap: 2.5rem; align-items: start; }
-    @media (max-width: 700px) { .layout { grid-template-columns: 1fr; } .sidebar { display: none; } }
-
-    .section-head { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.25rem; }
-    .section-title { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-lt); }
-    .section-count { font-size: 12px; color: var(--ink-lt); }
-
-    /* Cards */
-    .card { background: var(--paper); border: 0.5px solid var(--border); border-radius: var(--radius); overflow: hidden; cursor: pointer; margin-bottom: 10px; transition: border-color .15s, box-shadow .15s; animation: fadeUp .4s ease both; }
-    @keyframes fadeUp { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
-    .card:hover { border-color: rgba(26,26,24,.22); box-shadow: 0 2px 12px rgba(26,26,24,.06); }
-    .card-main { padding: 1.1rem 1.25rem 1rem; }
-    .card-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: .5rem; }
-    .card-title { font-family: var(--serif); font-size: 15.5px; font-weight: 400; line-height: 1.35; color: var(--ink); flex: 1; }
-    .badge { font-size: 11px; font-weight: 500; padding: 3px 9px; border-radius: 20px; white-space: nowrap; flex-shrink: 0; }
-    .b-civil { background:#E6F1FB; color:#0C447C; }
-    .b-penal { background:#FCEBEB; color:#791F1F; }
-    .b-laboral { background:#FAEEDA; color:#633806; }
-    .b-administratiu { background:#EEEDFE; color:#3C3489; }
-    .b-mercantil { background:#EAF3DE; color:#27500A; }
-    .b-fiscal { background:#FAECE7; color:#993C1D; }
-    .b-constitucional { background:#F0F7EE; color:#1A5C0A; border: 1px solid #C3E0BC; }
-    .card-summary { font-size: 13.5px; color: var(--ink-mid); line-height: 1.6; margin-bottom: .85rem; }
-    .card-footer { display: flex; align-items: center; justify-content: space-between; }
-    .card-meta { display: flex; align-items: center; gap: 6px; }
-    .tag-source { font-size: 11px; background: var(--paper-mid); border: 0.5px solid var(--border); border-radius: 4px; padding: 2px 7px; color: var(--ink-lt); font-weight: 500; }
-    .tag-ai { font-size: 11px; background: var(--green-lt); color: var(--green); border-radius: 4px; padding: 2px 7px; font-weight: 500; }
-    .tag-urgent { font-size: 11px; background: #FCEBEB; color: #791F1F; border-radius: 4px; padding: 2px 7px; font-weight: 500; }
-    .expand-hint { font-size: 11px; color: var(--ink-lt); display: flex; align-items: center; gap: 4px; transition: color .15s; }
-    .card:hover .expand-hint { color: var(--green); }
-    .expand-hint svg { width:12px; height:12px; transition: transform .2s; }
-    .card.open .expand-hint svg { transform: rotate(180deg); }
-
-    /* Expanded */
-    .card-expanded { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
-    .card.open .card-expanded { max-height: 600px; }
-    .card-body { padding: 1rem 1.25rem 1.25rem; border-top: 0.5px solid var(--border); background: var(--paper-mid); font-size: 13.5px; color: var(--ink-mid); line-height: 1.65; }
-    .body-block { margin-bottom: .75rem; }
-    .body-block:last-child { margin-bottom: 0; }
-    .body-label { font-size: 11px; font-weight: 500; letter-spacing: .07em; text-transform: uppercase; color: var(--ink-lt); margin-bottom: .2rem; }
-    .body-text strong { color: var(--ink); font-weight: 500; }
-    .ref-link { display: inline-flex; align-items: center; gap: 5px; font-size: 12px; color: var(--green); text-decoration: none; margin-top: .5rem; border: 0.5px solid var(--green-mid); padding: 4px 10px; border-radius: 6px; transition: background .15s; }
-    .ref-link:hover { background: var(--green-lt); }
-    .keywords { display: flex; gap: 5px; flex-wrap: wrap; margin-top: .5rem; }
-    .kw { font-size: 11px; background: var(--paper-dk); color: var(--ink-mid); padding: 2px 8px; border-radius: 20px; }
-
-    /* Loading / error */
-    .loading { text-align: center; padding: 3rem; color: var(--ink-lt); font-size: 14px; }
-    .loading-dot { display: inline-block; animation: pulse 1.2s ease infinite; }
-    .loading-dot:nth-child(2) { animation-delay: .2s; }
-    .loading-dot:nth-child(3) { animation-delay: .4s; }
-    @keyframes pulse { 0%,80%,100% { opacity:.2; } 40% { opacity:1; } }
-    .error-msg { background: #FCEBEB; border: 0.5px solid rgba(162,45,45,.2); border-radius: var(--radius); padding: 1rem 1.25rem; font-size: 13.5px; color: #791F1F; }
-
-    /* Ask bar */
-    .ask-section { margin-top: 1.75rem; background: var(--paper); border: 0.5px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.25rem; }
-    .ask-label { font-size: 12px; font-weight: 500; color: var(--ink-lt); letter-spacing: .05em; text-transform: uppercase; margin-bottom: .65rem; }
-    .ask-row { display: flex; gap: 8px; }
-    .ask-input { flex: 1; font-size: 14px; font-family: var(--sans); padding: 9px 14px; border-radius: 8px; border: 0.5px solid rgba(26,26,24,.2); background: var(--paper-mid); color: var(--ink); outline: none; transition: border-color .15s; }
-    .ask-input:focus { border-color: var(--green-mid); }
-    .ask-input::placeholder { color: var(--ink-lt); }
-    .ask-btn { font-size: 13px; font-weight: 500; font-family: var(--sans); padding: 9px 16px; border-radius: 8px; background: var(--green-dk); color: #fff; border: none; cursor: pointer; white-space: nowrap; }
-    .ask-chips { display: flex; gap: 6px; flex-wrap: wrap; margin-top: .65rem; }
-    .ask-chip { font-size: 12px; font-family: var(--sans); padding: 3px 10px; border-radius: 20px; border: 0.5px solid var(--border); background: transparent; color: var(--ink-mid); cursor: pointer; }
-
-    /* Sidebar */
-    .sidebar { position: sticky; top: 72px; }
-    .side-block { background: var(--paper); border: 0.5px solid var(--border); border-radius: var(--radius); padding: 1.1rem 1.25rem; margin-bottom: 12px; }
-    .side-title { font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-lt); margin-bottom: .9rem; }
-    .source-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 6px; }
-    .source-name { font-size: 13px; color: var(--ink-mid); }
-    .source-count { font-size: 12px; font-weight: 500; color: var(--green); background: var(--green-lt); padding: 1px 8px; border-radius: 20px; }
-    .newsletter-form { display: flex; flex-direction: column; gap: 8px; }
-    .nl-input { font-size: 13px; font-family: var(--sans); padding: 8px 12px; border-radius: 7px; border: 0.5px solid rgba(26,26,24,.2); background: var(--paper-mid); color: var(--ink); outline: none; }
-    .nl-btn { font-size: 13px; font-weight: 500; font-family: var(--sans); padding: 8px; border-radius: 7px; background: var(--green-dk); color: #fff; border: none; cursor: pointer; }
-    .nl-note { font-size: 11px; color: var(--ink-lt); text-align: center; }
-
-    /* Resum diari */
-    .resum-diari {
-      background: var(--paper);
-      border: 0.5px solid var(--border);
-      border-left: 3px solid var(--green-mid);
-      border-radius: var(--radius);
-      padding: 1.1rem 1.25rem 1rem;
-      margin-bottom: 1.25rem;
-      animation: fadeUp .4s ease both;
-    }
-    .resum-diari-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: .6rem;
-    }
-    .resum-diari-label {
-      font-size: 11px;
-      font-weight: 500;
-      letter-spacing: .1em;
-      text-transform: uppercase;
-      color: var(--green-dk);
-      display: flex;
-      align-items: center;
-      gap: .4rem;
-    }
-    .resum-diari-label::before {
-      content: '✦';
-      font-size: 10px;
-    }
-    .resum-diari-data {
-      font-size: 11px;
-      color: var(--ink-lt);
-    }
-    .resum-diari-text {
+    body {
+      font-family: var(--font-ui);
       font-size: 14px;
-      color: var(--ink-mid);
-      line-height: 1.75;
-      white-space: pre-wrap;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+      min-height: 100vh;
+      display: flex;
     }
-    .resum-diari-text strong {
-      color: var(--ink);
-      font-weight: 600;
-    }
-    .resum-diari-toggle {
-      font-size: 12px;
-      color: var(--green);
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: .4rem 0 0;
-      display: block;
-    }
-    .resum-diari-toggle:hover { text-decoration: underline; }
 
-    /* Footer */
-    footer { border-top: 0.5px solid var(--border); padding: 1.5rem; }
-    .footer-inner { max-width: 900px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1rem; }
-    .footer-logo { font-family: var(--serif); font-size: 16px; color: var(--ink-mid); }
-    .footer-logo em { font-style: normal; color: var(--green-mid); }
-    .footer-note { font-size: 12px; color: var(--ink-lt); }
+    /* ── SIDEBAR ─────────────────────────────────────── */
+    .sidebar {
+      width: var(--sidebar-w);
+      flex-shrink: 0;
+      background: var(--s-bg);
+      height: 100vh;
+      position: sticky;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+      overflow-x: hidden;
+      z-index: 200;
+      scrollbar-width: none;
+    }
+    .sidebar::-webkit-scrollbar { display: none; }
+
+    .sidebar-logo {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: 1.2rem 1.25rem 1rem;
+      text-decoration: none;
+      border-bottom: 1px solid var(--s-border);
+    }
+    .logo-icon {
+      width: 30px; height: 30px;
+      background: var(--s-accent);
+      border-radius: 7px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; flex-shrink: 0;
+    }
+    .logo-text {
+      font-family: var(--font-serif);
+      font-size: 17px; font-weight: 600;
+      color: #e2e4f0; letter-spacing: -.3px;
+    }
+    .logo-text em { font-style: normal; color: var(--s-accent); }
+
+    .sidebar-nav {
+      padding: .75rem 0;
+      border-bottom: 1px solid var(--s-border);
+    }
+    .nav-item {
+      display: flex; align-items: center; gap: .6rem;
+      padding: .5rem 1.25rem;
+      font-size: 13px; font-weight: 400;
+      color: var(--s-text);
+      text-decoration: none;
+      transition: color .15s, background .15s;
+    }
+    .nav-item:hover { color: var(--s-text-hover); background: rgba(255,255,255,.04); }
+    .nav-item.active { color: var(--s-active); font-weight: 500; }
+    .ni-icon { font-size: 14px; width: 16px; text-align: center; flex-shrink: 0; }
+
+    .sidebar-section {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--s-border);
+    }
+    .sidebar-label {
+      font-size: 10px; font-weight: 600;
+      letter-spacing: .12em; text-transform: uppercase;
+      color: var(--s-text); opacity: .6;
+      margin-bottom: .65rem;
+    }
+    .sb-stat-row {
+      display: flex; align-items: baseline;
+      justify-content: space-between;
+      padding: .22rem 0;
+    }
+    .sb-stat-name { font-size: 12px; color: var(--s-text); }
+    .sb-stat-val  { font-size: 12px; font-weight: 600; color: var(--s-text-hover); }
+    .sb-cat-row {
+      display: flex; align-items: center;
+      justify-content: space-between;
+      padding: .2rem 0; cursor: pointer;
+    }
+    .sb-cat-name { font-size: 12px; color: var(--s-text); text-transform: capitalize; transition: color .15s; }
+    .sb-cat-row:hover .sb-cat-name { color: var(--s-text-hover); }
+    .sb-cat-n { font-size: 11px; font-weight: 600; color: var(--s-accent); }
+
+    .sidebar-footer {
+      margin-top: auto;
+      padding: 1rem 1.25rem;
+      border-top: 1px solid var(--s-border);
+    }
+    .sidebar-footer-date { font-size: 11px; color: var(--s-text); opacity: .7; }
+    .sidebar-footer-ai { font-size: 10px; color: var(--s-accent); margin-top: .3rem; font-weight: 500; }
+
+    /* ── MAIN LAYOUT ─────────────────────────────────── */
+    .main-wrap { flex: 1; min-width: 0; display: flex; flex-direction: column; }
+
+    /* ── TOPBAR ──────────────────────────────────────── */
+    .topbar {
+      height: var(--topbar-h);
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center;
+      padding: 0 1.5rem; gap: 1rem;
+      position: sticky; top: 0; z-index: 100;
+    }
+    .topbar-menu-btn {
+      display: none; background: none; border: none;
+      cursor: pointer; color: var(--text-mid); font-size: 18px; padding: 4px;
+    }
+    .topbar-search { flex: 1; max-width: 360px; position: relative; }
+    .topbar-search input {
+      width: 100%; height: 34px;
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 0 .85rem 0 2.25rem;
+      font-size: 13px; font-family: var(--font-ui); color: var(--text);
+      outline: none; transition: border-color .15s;
+    }
+    .topbar-search input:focus { border-color: var(--accent); background: var(--surface); }
+    .topbar-search input::placeholder { color: var(--text-lt); }
+    .topbar-search::before {
+      content: '🔍'; position: absolute;
+      left: .7rem; top: 50%; transform: translateY(-50%);
+      font-size: 12px; pointer-events: none;
+    }
+    .topbar-right { margin-left: auto; display: flex; align-items: center; gap: 1rem; }
+    .topbar-update { font-size: 12px; color: var(--text-lt); }
+    .topbar-ai-badge {
+      font-size: 11px; font-weight: 600;
+      background: var(--accent-lt); color: var(--accent);
+      padding: 3px 8px; border-radius: 20px;
+    }
+
+    /* ── CONTENT ─────────────────────────────────────── */
+    .content { padding: 1.5rem 1.75rem 4rem; max-width: 860px; }
+
+    /* ── STATS GRID ──────────────────────────────────── */
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: .85rem; margin-bottom: 1.25rem;
+    }
+    .stat-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: .9rem 1.1rem;
+    }
+    .stat-card.is-urgent { border-left: 3px solid var(--red); }
+    .stat-val {
+      font-family: var(--font-serif); font-size: 28px;
+      font-weight: 600; line-height: 1; color: var(--text); margin-bottom: .2rem;
+    }
+    .stat-card.is-urgent .stat-val { color: var(--red); }
+    .stat-lbl {
+      font-size: 11px; color: var(--text-lt);
+      font-weight: 500; text-transform: uppercase; letter-spacing: .06em;
+    }
+
+    /* ── RESUM PANEL ─────────────────────────────────── */
+    .resum-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--accent);
+      border-radius: var(--radius);
+      margin-bottom: 1.25rem; overflow: hidden;
+    }
+    .resum-toggle {
+      width: 100%; display: flex; align-items: center; gap: .6rem;
+      padding: .85rem 1.1rem;
+      background: none; border: none; cursor: pointer;
+      text-align: left; font-family: var(--font-ui);
+    }
+    .resum-toggle:hover { background: var(--bg); }
+    .resum-icon { color: var(--accent); font-size: 13px; }
+    .resum-title { font-size: 12.5px; font-weight: 600; color: var(--text); flex: 1; }
+    .resum-chevron { font-size: 12px; color: var(--text-lt); transition: transform .2s; }
+    .resum-panel.open .resum-chevron { transform: rotate(180deg); }
+    .resum-body { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .resum-panel.open .resum-body { max-height: 600px; }
+    .resum-inner {
+      padding: .85rem 1.1rem 1rem;
+      font-size: 13.5px; color: var(--text-mid); line-height: 1.75;
+      white-space: pre-wrap;
+      border-top: 1px solid var(--border);
+    }
+
+    /* ── FILTER TABS ─────────────────────────────────── */
+    .filter-tabs { display: flex; gap: 4px; flex-wrap: wrap; margin-bottom: 1rem; }
+    .filter-tab {
+      font-size: 12px; font-weight: 500; font-family: var(--font-ui);
+      padding: 5px 12px; border-radius: 20px;
+      border: 1px solid var(--border); background: var(--surface);
+      color: var(--text-mid); cursor: pointer; transition: all .15s;
+    }
+    .filter-tab:hover { border-color: var(--accent); color: var(--accent); }
+    .filter-tab.on { background: var(--accent); border-color: var(--accent); color: #fff; }
+
+    /* ── FEED ────────────────────────────────────────── */
+    .feed-header {
+      display: flex; align-items: center;
+      justify-content: space-between; margin-bottom: .75rem;
+    }
+    .feed-count { font-size: 12px; color: var(--text-lt); font-weight: 500; }
+    .feed-date-lbl { font-size: 12px; color: var(--text-lt); }
+
+    .feed-list {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius); overflow: hidden;
+    }
+    .feed-item {
+      padding: .95rem 1.1rem;
+      border-bottom: 1px solid var(--border);
+      cursor: pointer; transition: background .12s;
+      animation: fadeIn .3s ease both;
+    }
+    .feed-item:last-child { border-bottom: none; }
+    .feed-item:hover { background: #fafbfc; }
+    .feed-item.is-open { background: var(--accent-lt); }
+    @keyframes fadeIn { from { opacity:0; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
+
+    .fi-top {
+      display: flex; align-items: flex-start;
+      gap: .65rem; margin-bottom: .35rem;
+    }
+    .fi-badges { display: flex; align-items: center; gap: .35rem; flex-shrink: 0; padding-top: .1rem; }
+    .cat-badge {
+      font-size: 10px; font-weight: 600; letter-spacing: .04em;
+      text-transform: uppercase; padding: 2px 7px;
+      border-radius: 3px; white-space: nowrap;
+    }
+    .cat-badge.civil          { background: var(--cat-civil);          color: var(--cat-civil-text); }
+    .cat-badge.penal          { background: var(--cat-penal);          color: var(--cat-penal-text); }
+    .cat-badge.laboral        { background: var(--cat-laboral);        color: var(--cat-laboral-text); }
+    .cat-badge.administratiu  { background: var(--cat-administratiu);  color: var(--cat-administratiu-text); }
+    .cat-badge.mercantil      { background: var(--cat-mercantil);      color: var(--cat-mercantil-text); }
+    .cat-badge.fiscal         { background: var(--cat-fiscal);         color: var(--cat-fiscal-text); }
+    .cat-badge.constitucional { background: var(--cat-constitucional); color: var(--cat-constitucional-text); }
+    .cat-badge.educatiu       { background: var(--cat-educatiu);       color: var(--cat-educatiu-text); }
+    .urgent-badge {
+      font-size: 10px; font-weight: 700;
+      padding: 2px 7px; border-radius: 3px;
+      background: var(--red-lt); color: var(--red);
+    }
+    .fi-title {
+      font-family: var(--font-serif); font-size: 14.5px;
+      font-weight: 400; line-height: 1.35; color: var(--text); flex: 1;
+    }
+    .feed-item.is-open .fi-title { color: var(--accent); }
+    .fi-summary {
+      font-size: 13px; color: var(--text-mid); line-height: 1.6;
+      margin-bottom: .45rem;
+      display: -webkit-box; -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical; overflow: hidden;
+    }
+    .fi-foot { display: flex; align-items: center; gap: .5rem; }
+    .fi-source {
+      font-size: 11px; font-weight: 500;
+      background: var(--bg); border: 1px solid var(--border);
+      color: var(--text-lt); padding: 1px 7px; border-radius: 3px;
+    }
+    .fi-ai { font-size: 11px; color: var(--accent); font-weight: 500; }
+
+    /* Expand */
+    .fi-expand { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+    .feed-item.is-open .fi-expand { max-height: 500px; }
+    .fi-expand-inner {
+      margin-top: .75rem; padding-top: .75rem;
+      border-top: 1px solid var(--border);
+    }
+    .fi-section { margin-bottom: .65rem; }
+    .fi-section:last-child { margin-bottom: 0; }
+    .fi-section-lbl {
+      font-size: 10px; font-weight: 700;
+      letter-spacing: .1em; text-transform: uppercase;
+      color: var(--text-lt); margin-bottom: .25rem;
+    }
+    .fi-section-txt { font-size: 13.5px; color: var(--text-mid); line-height: 1.65; }
+    .fi-kws { display: flex; flex-wrap: wrap; gap: 4px; margin-top: .3rem; }
+    .fi-kw {
+      font-size: 11px; background: var(--bg);
+      border: 1px solid var(--border); color: var(--text-mid);
+      padding: 1px 8px; border-radius: 20px;
+    }
+    .fi-link {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: 12px; color: var(--accent); text-decoration: none;
+      margin-top: .5rem; border: 1px solid rgba(43,74,235,.25);
+      padding: 4px 10px; border-radius: var(--radius); transition: background .15s;
+    }
+    .fi-link:hover { background: var(--accent-lt); }
+
+    /* ── EMPTY / LOADING ─────────────────────────────── */
+    .feed-empty { padding: 3rem; text-align: center; color: var(--text-lt); font-size: 13.5px; }
+    .feed-loading { padding: 2.5rem; text-align: center; color: var(--text-lt); font-size: 13px; }
+    .spinner {
+      display: inline-block; width: 20px; height: 20px;
+      border: 2px solid var(--border); border-top-color: var(--accent);
+      border-radius: 50%; animation: spin .7s linear infinite; margin-bottom: .75rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── MOBILE ──────────────────────────────────────── */
+    @media (max-width: 720px) {
+      body { flex-direction: column; }
+      .sidebar {
+        position: fixed; left: -270px; top: 0;
+        width: 260px; height: 100vh;
+        transition: left .25s ease; z-index: 500;
+      }
+      .sidebar.open { left: 0; box-shadow: 4px 0 24px rgba(0,0,0,.3); }
+      .sidebar-overlay {
+        display: none; position: fixed; inset: 0;
+        background: rgba(0,0,0,.45); z-index: 400;
+      }
+      .sidebar-overlay.open { display: block; }
+      .main-wrap { width: 100%; }
+      .topbar-menu-btn { display: block; }
+      .content { padding: 1rem; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .topbar-update, .topbar-ai-badge { display: none; }
+    }
   </style>
 </head>
 <body>
 
-  <div class="ai-strip">
-    <strong>Contingut generat per IA</strong> · Analitzat automàticament a partir del DOGC i BOE ·
-    Última actualització: <span id="update-time">—</span>
+  <div class="sidebar-overlay" id="sidebar-overlay" onclick="closeSidebar()"></div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar" id="sidebar">
+    <a href="index.html" class="sidebar-logo">
+      <div class="logo-icon">⚖</div>
+      <span class="logo-text">Dret<em>Cat</em></span>
+    </a>
+
+    <nav class="sidebar-nav">
+      <a href="index.html" class="nav-item active">
+        <span class="ni-icon">📋</span> Feed jurídic
+      </a>
+      <a href="ia-juridica.html" class="nav-item">
+        <span class="ni-icon">✦</span> IA i Dret
+      </a>
+    </nav>
+
+    <div class="sidebar-section">
+      <div class="sidebar-label">Avui</div>
+      <div class="sb-stat-row">
+        <span class="sb-stat-name">DOGC</span>
+        <span class="sb-stat-val" id="sb-dogc">—</span>
+      </div>
+      <div class="sb-stat-row">
+        <span class="sb-stat-name">BOE</span>
+        <span class="sb-stat-val" id="sb-boe">—</span>
+      </div>
+      <div class="sb-stat-row">
+        <span class="sb-stat-name">Parlament</span>
+        <span class="sb-stat-val" id="sb-parlament">—</span>
+      </div>
+      <div class="sb-stat-row">
+        <span class="sb-stat-name">Urgents</span>
+        <span class="sb-stat-val" id="sb-urgents" style="color:var(--red)">—</span>
+      </div>
+    </div>
+
+    <div class="sidebar-section" style="flex:1">
+      <div class="sidebar-label">Per categoria</div>
+      <div id="sb-cats"></div>
+    </div>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-footer-date" id="sb-date">—</div>
+      <div class="sidebar-footer-ai">✦ Analitzat per IA · DretCat</div>
+    </div>
+  </aside>
+
+  <!-- MAIN WRAP -->
+  <div class="main-wrap">
+
+    <header class="topbar">
+      <button class="topbar-menu-btn" onclick="toggleSidebar()">☰</button>
+      <div class="topbar-search">
+        <input type="text" id="search-input" placeholder="Cerca novetats..." autocomplete="off" />
+      </div>
+      <div class="topbar-right">
+        <span class="topbar-update">Actualitzat: <span id="update-time">—</span></span>
+        <span class="topbar-ai-badge">✦ IA</span>
+      </div>
+    </header>
+
+    <div class="content">
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-val" id="stat-total">—</div>
+          <div class="stat-lbl">Novetats totals</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val" id="stat-dogc">—</div>
+          <div class="stat-lbl">Del DOGC</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val" id="stat-parlament">—</div>
+          <div class="stat-lbl">Parlament</div>
+        </div>
+        <div class="stat-card is-urgent">
+          <div class="stat-val" id="stat-urgents">—</div>
+          <div class="stat-lbl">Urgència alta</div>
+        </div>
+      </div>
+
+      <div class="resum-panel" id="resum-panel" style="display:none">
+        <button class="resum-toggle" onclick="toggleResum()">
+          <span class="resum-icon">✦</span>
+          <span class="resum-title">Resum diari generat per IA</span>
+          <span class="resum-chevron" id="resum-chev">▾</span>
+        </button>
+        <div class="resum-body" id="resum-body">
+          <div class="resum-inner" id="resum-text"></div>
+        </div>
+      </div>
+
+      <div class="filter-tabs" id="filter-tabs">
+        <button class="filter-tab on" data-cat="tots">Tots</button>
+        <button class="filter-tab" data-cat="administratiu">Administratiu</button>
+        <button class="filter-tab" data-cat="civil">Civil</button>
+        <button class="filter-tab" data-cat="penal">Penal</button>
+        <button class="filter-tab" data-cat="laboral">Laboral</button>
+        <button class="filter-tab" data-cat="mercantil">Mercantil</button>
+        <button class="filter-tab" data-cat="fiscal">Fiscal</button>
+        <button class="filter-tab" data-cat="constitucional">Constitucional</button>
+        <button class="filter-tab" data-cat="educatiu">Educatiu</button>
+      </div>
+
+      <div class="feed-header">
+        <span class="feed-count" id="feed-count">Carregant...</span>
+        <span class="feed-date-lbl" id="feed-date-lbl"></span>
+      </div>
+      <div id="feed-list" class="feed-list">
+        <div class="feed-loading">
+          <div class="spinner"></div><br>
+          Carregant novetats jurídiques...
+        </div>
+      </div>
+
+    </div>
   </div>
 
-  <header>
-    <div class="nav-inner">
-      <a href="#" class="logo">Dret<em>Cat</em></a>
-      <div class="nav-right">
-        <a href="ia-juridica.html" class="nav-link" style="font-weight:500">⚡ LexIA</a>
-        <a href="#newsletter" class="nav-link">Newsletter</a>
-        <a href="#newsletter" class="btn-sub">Subscriu-te</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-date" id="hero-date">—</div>
-      <h1 class="hero-title">Les novetats jurídiques de Catalunya, <em>explicades per IA</em></h1>
-      <p class="hero-sub">Cada matí analitzem el DOGC i el BOE perquè estiguis al dia sense perdre hores llegint butlletins.</p>
-      <div class="hero-stats">
-        <div class="stat"><span class="stat-num" id="stat-total">—</span><span class="stat-label">novetats totals</span></div>
-        <div class="stat"><span class="stat-num" id="stat-dogc">—</span><span class="stat-label">del DOGC</span></div>
-        <div class="stat"><span class="stat-num" id="stat-boe">—</span><span class="stat-label">del BOE</span></div>
-        <div class="stat"><span class="stat-num" id="stat-parlament">—</span><span class="stat-label">del Parlament</span></div>
-        <div class="stat"><span class="stat-num" id="stat-urgents">—</span><span class="stat-label">d'urgència alta</span></div>
-      </div>
-    </section>
-
-    <div class="filters-bar">
-      <span class="filter-label">Filtra:</span>
-      <button class="chip on" data-cat="tots">Tots</button>
-      <button class="chip" data-cat="administratiu">Administratiu</button>
-      <button class="chip" data-cat="civil">Civil</button>
-      <button class="chip" data-cat="penal">Penal</button>
-      <button class="chip" data-cat="laboral">Laboral</button>
-      <button class="chip" data-cat="mercantil">Mercantil</button>
-      <button class="chip" data-cat="fiscal">Fiscal</button>
-      <button class="chip" data-cat="constitucional">Constitucional</button>
-    </div>
-
-    <div class="layout">
-      <div class="feed-col">
-
-        <div class="section-head">
-          <span class="section-title">Novetats d'avui</span>
-          <span class="section-count" id="count-label">Carregant...</span>
-        </div>
-
-        <div id="cards-container">
-          <div class="loading">
-            <span class="loading-dot">●</span>
-            <span class="loading-dot">●</span>
-            <span class="loading-dot">●</span>
-            <br><br>Carregant novetats jurídiques...
-          </div>
-        </div>
-
-        <div class="ask-section">
-          <div class="ask-label">Pregunta a la IA sobre qualsevol novetat</div>
-          <div class="ask-row">
-            <input class="ask-input" type="text" id="ask-input" placeholder="Ex: Quins terminis apliquen al nou decret d'HPO?" />
-            <button class="ask-btn" onclick="handleAsk()">Preguntar ↗</button>
-          </div>
-          <div class="ask-chips">
-            <button class="ask-chip" onclick="fillAsk('Explica les diferències entre parella de fet i matrimoni en herències a Catalunya')">Herències i parelles de fet</button>
-            <button class="ask-chip" onclick="fillAsk('Quines obligacions té una empresa amb empleats en teletreball des de Catalunya?')">Teletreball transfronterer</button>
-          </div>
-        </div>
-      </div>
-
-      <aside class="sidebar">
-        <div class="side-block">
-          <div class="side-title">Fonts consultades avui</div>
-          <div id="stats-fonts">
-            <div class="source-row"><span class="source-name">DOGC</span><span class="source-count" id="sb-dogc">—</span></div>
-            <div class="source-row"><span class="source-name">BOE</span><span class="source-count" id="sb-boe">—</span></div>
-          </div>
-        </div>
-
-        <div class="side-block">
-          <div class="side-title">Per àrea del dret</div>
-          <div id="stats-categories"></div>
-        </div>
-
-        <div class="side-block" id="newsletter">
-          <div class="side-title">Rebre les novetats per correu</div>
-          <p style="font-size:13px;color:var(--ink-mid);margin-bottom:.85rem;line-height:1.5">Cada matí a les 8h, el resum jurídic del dia al teu inbox.</p>
-          <div class="newsletter-form">
-            <input class="nl-input" type="email" id="nl-email" placeholder="el-teu@email.cat" />
-            <button class="nl-btn" onclick="handleNewsletter()">Subscriure'm</button>
-            <div class="nl-note">Gratis · Sense spam · Cancel·la quan vulguis</div>
-          </div>
-        </div>
-      </aside>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-      <div class="footer-logo">Dret<em>Cat</em></div>
-      <div class="footer-note">Contingut generat amb IA per orientació informativa. No constitueix assessorament jurídic.</div>
-      <div class="footer-note">© 2026 DretCat</div>
-    </div>
-  </footer>
-
   <script>
-    // ── Data i hora ───────────────────────────────────────
+    let totes = [];
+    let catActual = 'tots';
+    let searchQ = '';
+
+    // Data
     const dies = ['Diumenge','Dilluns','Dimarts','Dimecres','Dijous','Divendres','Dissabte'];
     const mesos = ['gener','febrer','març','abril','maig','juny','juliol','agost','setembre','octubre','novembre','desembre'];
     const ara = new Date();
-    document.getElementById('hero-date').textContent =
-      `${dies[ara.getDay()]}, ${ara.getDate()} de ${mesos[ara.getMonth()]} de ${ara.getFullYear()}`;
-
-    // ── Carregar dades ────────────────────────────────────
-    let totes = [];
-    let catActual = 'tots';
+    document.getElementById('sb-date').textContent =
+      `${dies[ara.getDay()]}, ${ara.getDate()} de ${mesos[ara.getMonth()]} del ${ara.getFullYear()}`;
 
     async function carregarDades() {
       try {
-        // Carregar novetats
-        const _ts = Date.now();
-        const respN = await fetch(`data/novetats.json?t=${_ts}`);
-        if (!respN.ok) throw new Error('No s\'han pogut carregar les novetats');
-        totes = await respN.json();
+        const ts = Date.now();
+        const [rN, rS] = await Promise.all([
+          fetch(`data/novetats.json?t=${ts}`),
+          fetch(`data/estadistiques.json?t=${ts}`)
+        ]);
+        if (!rN.ok) throw new Error('Error carregant novetats.json');
+        totes = await rN.json();
         document.getElementById('stat-total').textContent = totes.length;
 
-        // Carregar estadístiques
-        try {
-          const respS = await fetch(`data/estadistiques.json?t=${_ts}`);
-          if (respS.ok) {
-            const stats = await respS.json();
-            document.getElementById('stat-dogc').textContent = stats.dogc ?? '—';
-            document.getElementById('stat-boe').textContent = stats.boe ?? '—';
-            document.getElementById('stat-parlament').textContent = stats.parlament ?? '—';
-            document.getElementById('stat-urgents').textContent = stats.urgents ?? '—';
-            document.getElementById('sb-dogc').textContent = stats.dogc ?? '—';
-            document.getElementById('sb-boe').textContent = stats.boe ?? '—';
-            document.getElementById('update-time').textContent = stats.data ?? '—';
+        if (rS.ok) {
+          const s = await rS.json();
+          document.getElementById('stat-dogc').textContent      = s.dogc      ?? '—';
+          document.getElementById('stat-parlament').textContent = s.parlament  ?? '—';
+          document.getElementById('stat-urgents').textContent   = s.urgents   ?? '—';
+          document.getElementById('sb-dogc').textContent        = s.dogc      ?? '—';
+          document.getElementById('sb-boe').textContent         = s.boe       ?? '—';
+          document.getElementById('sb-parlament').textContent   = s.parlament  ?? '—';
+          document.getElementById('sb-urgents').textContent     = s.urgents   ?? '—';
+          document.getElementById('update-time').textContent    = s.data      ?? '—';
+          document.getElementById('feed-date-lbl').textContent  = s.data      ?? '';
 
-            // Stats per categoria al sidebar
-            const cats = stats.per_categoria || {};
-            const catDiv = document.getElementById('stats-categories');
-            catDiv.innerHTML = Object.entries(cats)
-              .sort((a,b) => b[1]-a[1])
-              .map(([cat, n]) =>
-                `<div class="source-row">
-                  <span class="source-name" style="text-transform:capitalize">${cat}</span>
-                  <span class="source-count">${n}</span>
-                </div>`
-              ).join('');
+          if (s.resum_diari) {
+            document.getElementById('resum-text').textContent = s.resum_diari;
+            document.getElementById('resum-panel').style.display = '';
           }
-        } catch(e) { console.warn('Stats no disponibles'); }
 
-        renderCards(totes);
+          const cats = s.per_categoria || {};
+          document.getElementById('sb-cats').innerHTML =
+            Object.entries(cats)
+              .sort((a, b) => b[1] - a[1])
+              .map(([cat, n]) => `
+                <div class="sb-cat-row" onclick="filterByCat('${esc(cat)}')">
+                  <span class="sb-cat-name">${esc(capitalitza(cat))}</span>
+                  <span class="sb-cat-n">${n}</span>
+                </div>`).join('');
+        }
 
+        renderFeed();
       } catch (err) {
-        console.error(err);
-        document.getElementById('cards-container').innerHTML =
-          `<div class="error-msg">
-            No s'han pogut carregar les novetats. Si ets el propietari de la web,
-            executa el scraper per generar el fitxer <code>data/novetats.json</code>.
-            <br><br>Error: ${err.message}
+        document.getElementById('feed-list').innerHTML =
+          `<div class="feed-empty">
+            <strong>No s'han pogut carregar les novetats.</strong><br>
+            Executa el scraper per generar <code>data/novetats.json</code>.<br>
+            <small style="color:var(--text-lt);margin-top:.5rem;display:block">${esc(err.message)}</small>
           </div>`;
-        document.getElementById('count-label').textContent = '0 resultats';
+        document.getElementById('feed-count').textContent = '0 resultats';
       }
     }
 
-    function renderCards(novetats) {
-      const container = document.getElementById('cards-container');
-      if (!novetats.length) {
-        container.innerHTML = '<div class="loading">Cap novetat per al filtre seleccionat.</div>';
-        document.getElementById('count-label').textContent = '0 resultats';
+    function filtrades() {
+      let r = totes;
+      if (catActual !== 'tots') r = r.filter(n => n.categoria === catActual);
+      if (searchQ) {
+        const q = searchQ.toLowerCase();
+        r = r.filter(n =>
+          (n.titol || '').toLowerCase().includes(q) ||
+          (n.resum_executiu || '').toLowerCase().includes(q) ||
+          (n.font || '').toLowerCase().includes(q)
+        );
+      }
+      return r;
+    }
+
+    function renderFeed() {
+      const items = filtrades();
+      const container = document.getElementById('feed-list');
+      document.getElementById('feed-count').textContent =
+        `${items.length} resultat${items.length !== 1 ? 's' : ''}`;
+
+      if (!items.length) {
+        container.innerHTML = '<div class="feed-empty">Cap novetat per al filtre seleccionat.</div>';
         return;
       }
 
-      document.getElementById('count-label').textContent =
-        `${novetats.length} resultat${novetats.length !== 1 ? 's' : ''}`;
-
-      container.innerHTML = novetats.map((n, i) => `
-        <article class="card" data-cat="${n.categoria}" style="animation-delay:${Math.min(i,8)*0.05}s" onclick="toggleCard(this)">
-          <div class="card-main">
-            <div class="card-top">
-              <h2 class="card-title">${escHtml(n.titol)}</h2>
-              <span class="badge b-${n.categoria}">${capitalitza(n.categoria)}</span>
+      container.innerHTML = items.map((n, i) => `
+        <div class="feed-item" style="animation-delay:${Math.min(i, 12) * 0.04}s" onclick="toggleItem(this)">
+          <div class="fi-top">
+            <div class="fi-badges">
+              <span class="cat-badge ${escAttr(n.categoria)}">${esc(capitalitza(n.categoria))}</span>
+              ${n.urgencia === 'alta' ? '<span class="urgent-badge">Urgent</span>' : ''}
             </div>
-            <p class="card-summary">${escHtml(n.resum_executiu)}</p>
-            <div class="card-footer">
-              <div class="card-meta">
-                <span class="tag-source">${n.font}</span>
-                <span class="tag-ai">✦ IA</span>
-                ${n.urgencia === 'alta' ? '<span class="tag-urgent">Urgent</span>' : ''}
-              </div>
-              <div class="expand-hint">
-                <span>Ampliar</span>
-                <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M2 4l4 4 4-4"/></svg>
-              </div>
-            </div>
+            <div class="fi-title">${esc(n.titol)}</div>
           </div>
-          <div class="card-expanded">
-            <div class="card-body">
-              <div class="body-block">
-                <div class="body-label">Impacte pràctic</div>
-                <div class="body-text">${escHtml(n.impacte_practic)}</div>
-              </div>
+          <div class="fi-summary">${esc(n.resum_executiu)}</div>
+          <div class="fi-foot">
+            <span class="fi-source">${esc(n.font_web || n.font)}</span>
+            <span class="fi-ai">✦ Resum IA</span>
+          </div>
+          <div class="fi-expand">
+            <div class="fi-expand-inner">
+              ${n.impacte_practic ? `
+                <div class="fi-section">
+                  <div class="fi-section-lbl">Impacte pràctic</div>
+                  <div class="fi-section-txt">${esc(n.impacte_practic)}</div>
+                </div>` : ''}
               ${n.paraules_clau && n.paraules_clau.length ? `
-              <div class="body-block">
-                <div class="body-label">Paraules clau</div>
-                <div class="keywords">${n.paraules_clau.map(k => `<span class="kw">${escHtml(k)}</span>`).join('')}</div>
-              </div>` : ''}
-              <div class="body-block">
-                <div class="body-label">Font original</div>
-                <a href="${n.url}" class="ref-link" target="_blank" rel="noopener">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 2h3v3M10 2L5 7M2 5v5h5"/></svg>
-                  Veure al ${n.font}
-                </a>
-              </div>
+                <div class="fi-section">
+                  <div class="fi-section-lbl">Paraules clau</div>
+                  <div class="fi-kws">${n.paraules_clau.map(k => `<span class="fi-kw">${esc(k)}</span>`).join('')}</div>
+                </div>` : ''}
+              ${n.url ? `
+                <a href="${escAttr(n.url)}" class="fi-link" target="_blank" rel="noopener" onclick="event.stopPropagation()">
+                  ↗ Veure al ${esc(n.font)}
+                </a>` : ''}
             </div>
           </div>
-        </article>
-      `).join('');
+        </div>`).join('');
     }
 
-    // ── Filtres ───────────────────────────────────────────
-    document.querySelectorAll('.chip').forEach(chip => {
-      chip.addEventListener('click', () => {
-        document.querySelectorAll('.chip').forEach(c => c.classList.remove('on'));
-        chip.classList.add('on');
-        catActual = chip.dataset.cat;
-        const filtrades = catActual === 'tots' ? totes : totes.filter(n => n.categoria === catActual);
-        renderCards(filtrades);
+    function toggleItem(el) {
+      const wasOpen = el.classList.contains('is-open');
+      document.querySelectorAll('.feed-item.is-open').forEach(e => e.classList.remove('is-open'));
+      if (!wasOpen) el.classList.add('is-open');
+    }
+
+    document.getElementById('filter-tabs').addEventListener('click', e => {
+      const tab = e.target.closest('.filter-tab');
+      if (!tab) return;
+      document.querySelectorAll('.filter-tab').forEach(t => t.classList.remove('on'));
+      tab.classList.add('on');
+      catActual = tab.dataset.cat;
+      renderFeed();
+    });
+
+    function filterByCat(cat) {
+      catActual = cat;
+      document.querySelectorAll('.filter-tab').forEach(t => {
+        t.classList.toggle('on', t.dataset.cat === cat);
       });
+      renderFeed();
+    }
+
+    document.getElementById('search-input').addEventListener('input', e => {
+      searchQ = e.target.value.trim();
+      renderFeed();
     });
 
-    // ── Toggle cards ──────────────────────────────────────
-    function toggleCard(card) {
-      const isOpen = card.classList.contains('open');
-      document.querySelectorAll('.card').forEach(c => c.classList.remove('open'));
-      if (!isOpen) card.classList.add('open');
+    function toggleResum() {
+      document.getElementById('resum-panel').classList.toggle('open');
     }
 
-    // ── Ask bar ───────────────────────────────────────────
-    function fillAsk(text) {
-      document.getElementById('ask-input').value = text;
-      document.getElementById('ask-input').focus();
+    function toggleSidebar() {
+      document.getElementById('sidebar').classList.toggle('open');
+      document.getElementById('sidebar-overlay').classList.toggle('open');
+    }
+    function closeSidebar() {
+      document.getElementById('sidebar').classList.remove('open');
+      document.getElementById('sidebar-overlay').classList.remove('open');
     }
 
-    function handleAsk() {
-      const q = document.getElementById('ask-input').value.trim();
-      if (!q) return;
-      // En la versió amb backend, aquí cridaries l'API de Claude
-      alert('Funcionalitat de preguntes disponible en la versió completa amb backend.');
+    function esc(s) {
+      return String(s || '')
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;').replace(/"/g, '&quot;');
     }
+    function escAttr(s) { return esc(s); }
+    function capitalitza(s) { return s ? s.charAt(0).toUpperCase() + s.slice(1) : ''; }
 
-    document.getElementById('ask-input').addEventListener('keydown', e => {
-      if (e.key === 'Enter') handleAsk();
-    });
-
-    // ── Newsletter ────────────────────────────────────────
-    function handleNewsletter() {
-      const email = document.getElementById('nl-email').value.trim();
-      if (!email || !email.includes('@')) { alert('Introdueix un correu vàlid.'); return; }
-      alert(`Gràcies! El correu ${email} s'ha registrat. (Integra un servei com Mailchimp o Resend per activar-ho.)` );
-    }
-
-    // ── Utils ─────────────────────────────────────────────
-    function escHtml(str) {
-      return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-    }
-    function capitalitza(str) {
-      return str ? str.charAt(0).toUpperCase() + str.slice(1) : '';
-    }
-
-    // ── Iniciar ───────────────────────────────────────────
     carregarDades();
   </script>
 </body>
