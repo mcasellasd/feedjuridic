@@ -52,5 +52,10 @@ jobs:
           fi
 
           git commit -m "Automated update: novetats.json i estadistiques.json"
-          git pull --rebase origin main
-          git push origin HEAD:main
+
+          # Retry loop: fins a 3 intents per si hi ha race condition
+          for i in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && break
+            echo "Intent $i fallat, reintentant..."
+            sleep $((i * 5))
+          done
