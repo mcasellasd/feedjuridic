@@ -42,9 +42,13 @@ jobs:
         
       - name: Pujar els nous canvis a GitHub
         run: |
+          set -euo pipefail
+
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
+
           git add data/
+
           # Comprova si hi ha hagut canvis. Si n'hi ha, fa el commit i els puja.
           if git diff --quiet && git diff --staged --quiet; then
             echo "No hi ha canvis per publicar"
@@ -54,8 +58,18 @@ jobs:
           git commit -m "Automated update: novetats.json i estadistiques.json"
 
           # Retry loop: fins a 3 intents per si hi ha race condition
+          pushed=0
           for i in 1 2 3; do
-            git pull --rebase origin main && git push origin HEAD:main && break
+            if git pull --rebase origin main && git push origin HEAD:main; then
+              pushed=1
+              echo "Push completat a l'intent $i"
+              break
+            fi
             echo "Intent $i fallat, reintentant..."
             sleep $((i * 5))
           done
+
+          if [ "$pushed" -ne 1 ]; then
+            echo "No s'ha pogut publicar després de 3 intents"
+            exit 1
+          fi
