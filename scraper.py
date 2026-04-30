@@ -61,10 +61,7 @@ FEEDS_ACTUALITAT = [
     ("vLex Blog",               "https://spanish.vlexblog.com/feed/"),
     ("Derecho Mercantil",       "https://feeds.feedburner.com/DerechoMercantil"),
     ("Economist & Jurist",      "http://www.economistjurist.es/feed/"),
-    ("Entre leyes",             "https://www.leyesyjurisprudencia.com/feed/"),
     ("Mundojuridico",           "https://www.mundojuridico.info/feed/"),
-    ("Notarios y Registradores","https://www.notariosyregistradores.com/feed/"),
-    ("Civil Mercantil",         "https://www.civil-mercantil.com/feed.xml"),
     ("Iustel",                  "https://www.iustel.com/diario_del_derecho/rss.asp"),
     ("Almacén de Derecho",      "http://www.almacendederecho.org/feed/"),
 ]
@@ -320,12 +317,12 @@ def fetch_comarques(dies_enrere: int = 3) -> list:
             for item in items:
                 titol = (
                     item.findtext("title")
-                    or item.findtext("atom:title", ns)
+                    or item.findtext("atom:title", namespaces=ns)
                     or ""
                 ).strip()
                 link = (
                     item.findtext("link")
-                    or item.findtext("atom:link", ns)
+                    or item.findtext("atom:link", namespaces=ns)
                     or ""
                 ).strip()
                 if isinstance(link, str) and not link.startswith("http"):
@@ -334,13 +331,13 @@ def fetch_comarques(dies_enrere: int = 3) -> list:
                 guid = item.findtext("guid") or link or titol
                 desc_raw = (
                     item.findtext("description")
-                    or item.findtext("atom:summary", ns)
+                    or item.findtext("atom:summary", namespaces=ns)
                     or ""
                 ).strip()
                 pub_str = (
                     item.findtext("pubDate")
-                    or item.findtext("atom:updated", ns)
-                    or item.findtext("atom:published", ns)
+                    or item.findtext("atom:updated", namespaces=ns)
+                    or item.findtext("atom:published", namespaces=ns)
                     or ""
                 ).strip()
 
