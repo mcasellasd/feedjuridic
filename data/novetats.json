@@ -268,20 +268,18 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/68/dof/cat/html",
-    "resum_executiu": "El decret estableix el currículum del cicle formatiu de grau mitjà en arts plàstiques i disseny de Forja Artística, definint objectius i continguts per a la seva formació. Aquesta norma busca la qualitat educativa en el sector artístic d'escultura a Catalunya.",
-    "impacte_practic": "Afecta a estudiants i docents dels cicles formatius, assegurant una formació coherent i actualitzada en el camp de les arts plàstiques. Pot facilitar l'accés al mercat laboral per als graduats en aquest sector.",
+    "resum_executiu": "El Decret 68/2026 estableix el currículum per al cicle formatiu de grau mitjà en arts plàstiques i disseny de Forja Artística, dins de la família professional artística d'escultura. Aquesta norma busca fomentar la formació en tècniques artístiques específiques i assegurar la qualitat educativa en aquest àmbit.",
+    "impacte_practic": "Els ciutadans podran accedir a una formació professional més especialitzada, millorant les seves oportunitats laborals en l'àmbit de les arts plàstiques. Les empreses del sector es beneficiaran d'una plantilla més qualificada i preparada.",
     "categoria": "administratiu",
     "paraules_clau": [
       "currículum",
-      "formació",
       "arts plàstiques",
-      "forja artística"
+      "forja artística",
+      "formació"
     ],
     "urgencia": "mitjana",
     "font_web": "",
-    "comarques": [
-      "catalunya"
-    ]
+    "comarques": []
   },
   {
     "id": "26119005",
@@ -290,13 +288,13 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/65/dof/cat/html",
-    "resum_executiu": "El Decret 65/2026 estableix el currículum del cicle formatiu de grau superior d'arts plàstiques i disseny d'Escultura Aplicada a l'Espectacle. Això proporciona un marc regulador per a la formació d'especialistes en aquesta àrea artística.",
-    "impacte_practic": "Els ciutadans poden beneficiar-se d'una formació més estructurada i orientada al mercat laboral en el sector de l'espectacle. Les empreses del sector podran accedir a professionals millor formats i amb coneixements actualitzats.",
-    "categoria": "administratiu",
+    "resum_executiu": "El Decret 65/2026 estableix el currículum per al cicle formatiu de grau superior d'arts plàstiques i disseny d'Escultura Aplicada a l'Espectacle. Aquesta norma pretén regular i homogeneïtzar els continguts formatius dins d'aquesta especialització artística.",
+    "impacte_practic": "Els professionals del sector podran beneficiar-se d'una formació més estructurada, millorant la qualitat de l'ensenyament en arts plàstiques. Això pot facilitar l'adquisició de competències específiques i l'accés al mercat laboral.",
+    "categoria": "educatiu",
     "paraules_clau": [
       "currículum",
-      "formació",
       "arts plàstiques",
+      "disseny",
       "escultura"
     ],
     "urgencia": "mitjana",
@@ -310,14 +308,14 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/70/dof/cat/html",
-    "resum_executiu": "El Decret 70/2026 modifica disposicions anteriors relacionades amb l'Agència Catalana de Cooperació al Desenvolupament i la reestructuració del Departament d'Unió Europea i Acció Exterior. S'estableixen nous protocols i estructures per millorar la coordinació en aquestes àrees.",
-    "impacte_practic": "Aquesta modificació pot resultar en una major eficàcia en la gestió de projectes de cooperació i acció exterior. Això pot millorar la capacitat de resposta davant necessitats internacionals, beneficiant tant a la societat civil com a empreses implicades.",
+    "resum_executiu": "El Decret 70/2026 modifica els estatuts de l'Agència Catalana de Cooperació al Desenvolupament, i reestructura el Departament d'Unió Europea i Acció Exterior. Aquesta reforma busca millorar l'eficiència i la coordinació d'aquestes institucions davant els nous reptes globals.",
+    "impacte_practic": "La modificació pot facilitar una major efectivitat en la gestió de projectes de cooperació, beneficiant tant a les entitats implicades com als ciutadans que reben suporte. Això implica potencialment una millora en la qualitat de vida de les comunitats que són objecte d'assistència.",
     "categoria": "administratiu",
     "paraules_clau": [
       "cooperació",
-      "desenvolupament",
-      "restructuració",
-      "administració"
+      "administració",
+      "reestructuració",
+      "estatuts"
     ],
     "urgencia": "mitjana",
     "font_web": "",
@@ -330,16 +328,16 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/69/dof/cat/html",
-    "resum_executiu": "El Decret 69/2026 regula el currículum del cicle formatiu de grau mitjà d'arts plàstiques i disseny de Reproduccions Artístiques en Fusta, establint els continguts i competències necessàries per a la formació dels alumnes en aquesta especialitat. Aquesta normativa busca millorar la qualitat educativa i la preparació professional dels futurs dissenyadors en el camp de l'escultura.",
-    "impacte_practic": "El decret afecta directament a centres d'educació i alumnes que busquen una formació específica en disseny artístic, facilitant el seu accés al mercat laboral. Les empreses del sector podran beneficiar-se d'una mà d'obra més especialista i millor preparada.",
+    "resum_executiu": "El Decret 69/2026 estableix el currículum per al cicle formatiu de grau mitjà en arts plàstiques i disseny de Reproduccions Artístiques en Fusta. Aquesta norma pretén dotar als alumnes dels coneixements i competències necessàries per inserir-se al mercat laboral en el sector artístic.",
+    "impacte_practic": "Els ciutadans interessats en la formació artística podran accedir a un currículum regulat, millorant les seves oportunitats laborals. Les empreses del sector es beneficiaran d'una mà d'obra millor preparada.",
     "categoria": "administratiu",
     "paraules_clau": [
       "currículum",
-      "disseny artístic",
+      "arts plàstiques",
       "formació",
-      "Reproduccions Artístiques"
+      "qualificacions"
     ],
-    "urgencia": "baixa",
+    "urgencia": "mitjana",
     "font_web": "",
     "comarques": []
   },
@@ -350,14 +348,14 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/63/dof/cat/html",
-    "resum_executiu": "El Decret 63/2026 estableix el currículum del cicle formatiu de grau superior en Tècniques Escultòriques en Pell, en el marc de la formació artística d'escultura. Aquest decret busca adequar la formació acadèmica a les necessitats del sector professional i fomentar la qualitat educativa.",
-    "impacte_practic": "La implementació d'aquest currículum beneficiarà els estudiants que desitgin especialitzar-se en aquest àmbit, millorant les seves oportunitats laborals. Les empreses del sector artístic podran accedir a una formació més adaptada a les seves necessitats.",
-    "categoria": "educatiu",
+    "resum_executiu": "El Decret 63/2026 estableix el currículum per al cicle formatiu de grau superior d'arts plàstiques i disseny de Tècniques Escultòriques en Pell. Aquesta norma forma part del sistema educatiu català i busca garantir una formació adequada en el sector artístic.",
+    "impacte_practic": "L'aplicació d'aquest decret afavorirà la formació dels futurs professionals en tècniques escultòriques, millorant les oportunitats laborals en el sector artístic. Així mateix, pot impulsar l'industria local d'arts plàstiques.",
+    "categoria": "administratiu",
     "paraules_clau": [
       "currículum",
       "arts plàstiques",
-      "formació",
-      "Tècniques Escultòriques"
+      "Tècniques Escultòriques",
+      "formació"
     ],
     "urgencia": "mitjana",
     "font_web": "",
@@ -370,18 +368,20 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/61/dof/cat/html",
-    "resum_executiu": "El Decret 61/2026 modifica el Decret 166/2022, establint noves disposicions sobre el funcionament del Consell Català de Municipis Rurals. Aquesta modificació busca millorar la coordinació i la participació dels municipis en la presa de decisions rurals.",
-    "impacte_practic": "Aquesta modificació facilitarà una millor representació dels interessos dels municipis rurals, impactant positivament en la seva gestió administrativa. Els ciutadans i empreses d'aquestes zones podran beneficiar-se d'una resposta més àgil i segmentada a les seves necessitats locals.",
+    "resum_executiu": "El Decret 61/2026 modifica el Decret 166/2022 per a la creació del Consell Català de Municipis Rurals, amb l'objectiu de millorar la representativitat i la coordinació entre els municipis rurals de Catalunya. Aquesta modificació inclou actualitzacions en la composició i funció del Consell.",
+    "impacte_practic": "La modificació facilitarà una millor gestió i cooperació entre els municipis rurals, millorant així la qualitat de vida dels seus habitants. Les empreses locals podran beneficiar-se d'un entorn més propici per al desenvolupament econòmic.",
     "categoria": "administratiu",
     "paraules_clau": [
-      "consell",
-      "municipis",
-      "rurals",
-      "modificació"
+      "Consell Català",
+      "municipis rurals",
+      "modificació",
+      "decret"
     ],
     "urgencia": "mitjana",
     "font_web": "",
-    "comarques": []
+    "comarques": [
+      "catalunya"
+    ]
   },
   {
     "id": "26119004",
@@ -390,16 +390,16 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/64/dof/cat/html",
-    "resum_executiu": "El Decret 64/2026 estableix el currículum del cicle formatiu de grau superior en Tècniques Escultòriques, dins de la família professional artística d'escultura. Aquesta norma especifica els continguts formatius i les competències a adquirir pels alumnes d'aquest cicle.",
-    "impacte_practic": "L'aprovació d'aquest decret facilita la formació professional dels estudiants en el camp de les arts plàstiques, contribuint a millorar les competències laborals en un sector creatiu. Les empreses del sector s'hauran d'adaptar als nous perfils professionals formats.",
+    "resum_executiu": "El Decret 64/2026 estableix el currículum del cicle formatiu de grau superior en Tècniques Escultòriques dins de la família professional artística d'escultura, regulant les competències i continguts formatius necessaris. Aquest decret pretén adequar la formació a les necessitats del sector artístic i professional català.",
+    "impacte_practic": "L'efecte real pot millorar les perspectives laborals dels graduats i facilitar la seva inserció en un sector cada cop més competitiu. Les empreses del sector poden beneficiar-se d'unes formacions més ajustades a les seves necessitats.",
     "categoria": "administratiu",
     "paraules_clau": [
-      "cicle formatiu",
+      "currículum",
       "arts plàstiques",
-      "escultura",
-      "currículum"
+      "formació",
+      "escultura"
     ],
-    "urgencia": "baixa",
+    "urgencia": "mitjana",
     "font_web": "",
     "comarques": []
   },
@@ -410,14 +410,14 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/62/dof/cat/html",
-    "resum_executiu": "El Decret 62/2026 regula l'organització i el funcionament de l'Institut d'Estadística de Catalunya, establint criteris i protocols per millorar la qualitat i la transparència de les dades estadístiques. Aquesta normativa busca optimitzar la gestió de la informació i facilitar l'accés als usuaris.",
-    "impacte_practic": "Els ciutadans i les empreses podran accedir més fàcilment a dades estadístiques fiables, la qual cosa millorarà la presa de decisions. A més, la millora en la transparència pot fomentar una major confiança en les dades proporcionades per l'institut.",
+    "resum_executiu": "El Decret 62/2026 estableix l'organització i el funcionament de l'Institut d'Estadística de Catalunya, definint les seves funcions i competències. Aquesta normativa busca millorar la gestió i la qualitat de les estadístiques a Catalunya.",
+    "impacte_practic": "La implementació d'aquest decret facilitarà l'accés a dades estadístiques precises per a la ciutadania i les empreses, fomentant una millor presa de decisions basada en dades. Això pot influir en la planificació empresarial i en polítiques públiques més efectives.",
     "categoria": "administratiu",
     "paraules_clau": [
       "Institut d'Estadística",
-      "transparència",
       "organització",
-      "dades"
+      "funcionament",
+      "dades estadístiques"
     ],
     "urgencia": "mitjana",
     "font_web": "",
@@ -432,18 +432,20 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/66/dof/cat/html",
-    "resum_executiu": "El Decret 66/2026 estableix el currículum del cicle formatiu de grau superior en arts plàstiques i disseny de Fosa Artística, dins de la família professional d'escultura. Aquesta norma pretén dotar els estudiants de les competències necessàries per a la seva inserció laboral en el sector artístic.",
-    "impacte_practic": "Els ciutadans i empreses del sector artístic podran beneficiar-se de professionals millor formats i preparats per afrontar les necessitats del mercat. Això pot potenciar la qualitat i la competitivitat del sector de les arts plàstiques a Catalunya.",
+    "resum_executiu": "El Decret 66/2026 estableix el currículum del cicle formatiu de grau superior d'arts plàstiques i disseny de Fosa Artística dins de la família professional artística d'escultura a Catalunya. Aquesta normativa busca promoure la formació especialitzada i el desenvolupament professional en el sector artístic.",
+    "impacte_practic": "Aquest decret facilitarà l'accés a una formació adequada per a futurs professionals de l'escultura i el disseny, potenciant les seves oportunitats laborals. Les empreses del sector podràn beneficiar-se de professionals millor formats.",
     "categoria": "administratiu",
     "paraules_clau": [
       "currículum",
-      "arts plàstiques",
+      "arts",
       "formació",
-      "educació"
+      "escultura"
     ],
-    "urgencia": "baixa",
+    "urgencia": "mitjana",
     "font_web": "",
-    "comarques": []
+    "comarques": [
+      "catalunya"
+    ]
   },
   {
     "id": "26118095",
@@ -452,8 +454,8 @@
     "font": "DOGC",
     "tipus": "Decret llei",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/dl/2026/04/28/5/dof/cat/html",
-    "resum_executiu": "El Decret llei 5/2026 estableix mesures urgents per a millorar el transport públic interurbà de viatgers per carretera a Catalunya. Aquesta normativa s'inscriu en la necessitat de modernitzar i optimitzar els serveis de transport públic per garantir la seva eficàcia i accessibilitat.",
-    "impacte_practic": "Les mesures afecten directament a milers de ciutadans que depenen del transport públic per desplaçar-se, millorant la seva mobilitat. També beneficiaran les empreses de transport a través de noves regulacions més clares.",
+    "resum_executiu": "El Decret llei 5/2026 estableix mesures urgents per millorar el transport públic interurbà de viatgers per carretera a Catalunya. Aquestes mesures tenen l'objectiu de facilitar l'accés i la mobilitat dels ciutadans en el context de necessitats emergents.",
+    "impacte_practic": "L'aplicació d'aquest decret pot millorar la qualitat del servei de transport públic, beneficiant així als usuaris i contribuïnt a la reducció de l'ús dels vehicles particulars. Això pot repercutir en una millora de la sostenibilitat del transport a la regió.",
     "categoria": "administratiu",
     "paraules_clau": [
       "transport públic",
@@ -474,18 +476,42 @@
     "font": "DOGC",
     "tipus": "Decret",
     "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/04/28/67/dof/cat/html",
-    "resum_executiu": "El Decret 67/2026 estableix el currículum del cicle formatiu de grau superior en arts plàstiques i disseny de motlles i reproduccions escultòriques. Aquesta norma busca actualitzar i adequar els continguts formatius a les necessitats del sector artístic.",
-    "impacte_practic": "Els ciutadans i empreses del sector creatiu es beneficiaran d'una formació més alineada amb les exigències del mercat laboral. Això pot impulsar millors oportunitats laborals per als futurs professionals i la competitivitat de les empreses del sector.",
-    "categoria": "administratiu",
+    "resum_executiu": "El Decret 67/2026 estableix el currículum del cicle formatiu de grau superior en arts plàstiques i disseny de motlles i reproduccions escultòriques, definint competències, continguts i criteris d'avaluació. Aquesta norma busca adequar els ensenyaments a les necessitats del sector artístic i fomentar la qualitat formativa dels futurs professionals.",
+    "impacte_practic": "Els ciutadans i empreses del sector artístic es beneficiaran d'un millor formació tècnica i creativa dels alumnes, contribuint així a l'augment de la qualitat en els serveis i productes oferits. Es preveu una millora en l'ocupabilitat dels titulats en aquest àmbit.",
+    "categoria": "educatiu",
     "paraules_clau": [
       "currículum",
       "arts plàstiques",
       "formació",
-      "esculptura"
+      "escultura"
     ],
-    "urgencia": "baixa",
+    "urgencia": "mitjana",
     "font_web": "",
     "comarques": []
+  },
+  {
+    "id": "EMAIL-DOGC-36423cf2bc",
+    "data": "2026-04-30",
+    "titol": "Portal del DOGC: Avís de l'Alerta DOGC núm. 9656, de 30.04.2026, \"Cerdanya\"",
+    "font": "DOGC-email",
+    "tipus": "alerta",
+    "url": "https://dogc.gencat.cat",
+    "resum_executiu": "La disposició alerta sobre la necessitat de prendre precaucions en navegar per continguts del portal del DOGC per garantir la privadesa i la seguretat de l'usuari. S'inclouen recomanacions com l'ús de navegació privada i l'esborrat d'historial.",
+    "impacte_practic": "Els ciutadans i empreses hauran de seguir aquestes recomanacions per protegir la seva informació personal mentre accedeixen a serveis governamentals. Això pot afectar la seva experiència d'usuari i confiança en els serveis digitals.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "privadesa",
+      "seguretat",
+      "navegació",
+      "DOGC"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "catalunya",
+      "girona",
+      "cerdanya"
+    ]
   },
   {
     "id": "ACT-https://www.abogacia.es/?p=270573",
@@ -494,14 +520,14 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://www.abogacia.es/actualidad/noticias/abogacia-espanola-alerta-del-colapso-del-turno-de-oficio-y-reclama-una-reforma-urgente-de-la-ley/",
-    "resum_executiu": "L'Abogacía Española alertarà sobre el col·lapse del torn d'ofici i demana una reforma urgent de la legislació actual. La norma, vigent durant 30 anys, es considera obsoleta i ineficaç per garantir l'assistència jurídica gratuïta adequada.",
-    "impacte_practic": "La falta de recursos suficients afecta directament els professionals del torn d'ofici, que repten a amenaces i agressions. Aquesta situació perjudica l'accés a la justícia per a les persones sense recursos.",
+    "resum_executiu": "La Abogacía Española ha alertat sobre el col·lapse del sistema de torn d'ofici, reclamant una reforma urgent per a una llei considerada obsoleta després de 30 anys. Els recursos actuals són insuficients i les condicions laborals dels advocats necessiten millores urgents.",
+    "impacte_practic": "La reforma del torn d'ofici afectarà directament els advocats i les persones amb pocs recursos que necessiten assistència jurídica, millorant l'accés a la justícia. Això pot tenir conseqüències positives en la confiança dels ciutadans en el sistema legal.",
     "categoria": "administratiu",
     "paraules_clau": [
-      "assistència jurídica",
       "torn d'ofici",
       "reforma",
-      "col·lapse"
+      "assistència jurídica",
+      "accés a la justícia"
     ],
     "urgencia": "alta",
     "font_web": "Abogacía Española",
@@ -514,37 +540,17 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://www.abogacia.es/actualidad/noticias/ultima-jurisprudencia-en-materia-de-segunda-oportunidad-proxima-conferencia-de-los-lunes/",
-    "resum_executiu": "L'article informa sobre una propera conferència dedicada a l'última jurisprudència relativa a la segona oportunitat, amb experts que abordaran aspectes legals importants. La conferència, gratuita i accessible tant presencialment com en línia, servirà per formar professionals del dret en aquesta matèria.",
-    "impacte_practic": "Els ciutadans i empreses que es troben en situacions financeres complicades podran beneficiar-se dels coneixements compartits a la conferència. Aquesta formació pot influir positivament en les seves decisions legals i econòmiques.",
+    "resum_executiu": "La conferència tractarà sobre la darrera jurisprudència relacionada amb la segona oportunitat, un mecanisme legal per a la reabilitació econòmica de deutors. Aquesta iniciativa busca actualitzar els professionals del dret sobre els canvis i interpretacions recents en aquesta matèria.",
+    "impacte_practic": "Els ciutadans i empreses que s'enfronten a dificultats econòmiques podran beneficiar-se d'una millor comprensió dels seus drets i opcions legals. Això podria facilitar la seva recuperació financera i reinserció al mercat.",
     "categoria": "mercantil",
     "paraules_clau": [
       "jurisprudència",
       "segona oportunitat",
       "conferència",
-      "formació"
+      "abogacía"
     ],
-    "urgencia": "mitjana",
+    "urgencia": "baix",
     "font_web": "Abogacía Española",
-    "comarques": []
-  },
-  {
-    "id": "ACT-https://www.economistjurist.es/?p=244830",
-    "data": "2026-04-30",
-    "titol": "Las incapacidades permanentes más reconocidas en España",
-    "font": "Actualitat",
-    "tipus": "Article",
-    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/las-incapacidades-permanentes-mas-reconocidas-en-espana/",
-    "resum_executiu": "L'article analitza les incapacitats permanents reconegudes a Espanya i destaca la importància del procés administratiu i del dictamen mèdic en la seva valoració. Específicament, s'assenyalen les patologies més comunes que poden donar lloc a l'obtenció d'una pensió per incapacitat.",
-    "impacte_practic": "Els treballadors que pateixen malalties o lesions que impedeixen el seu treball poden beneficiar-se d'aquest sistema de seguretat social. L'accés a professionals legals pot ser crucial per garantir que els drets dels sol·licitants siguin respectats durant el procés.",
-    "categoria": "administratiu",
-    "paraules_clau": [
-      "incapacitat permanent",
-      "seguretat social",
-      "procediment administratiu",
-      "drets laborals"
-    ],
-    "urgencia": "mitjana",
-    "font_web": "Economist & Jurist",
     "comarques": []
   },
   {
@@ -554,11 +560,11 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/ryanair-gana-el-tribunal-supremo-frena-la-conversion-automatica-de-contratos-a-tiempo-parcial-en-jornadas-completas/",
-    "resum_executiu": "El Tribunal Suprem ha confirmat que la conversió automàtica de contractes a temps parcial en jornades completes no es fonamenta només en defectes formals. La prova real del treball, com les hores i la distribució, pot desvirtuar aquesta presumpció legal.",
-    "impacte_practic": "Aquesta decisió aporta seguretat jurídica als empresaris, evitant la conversió automàtica de contractes que no reflecteixen la realitat laboral. També protegeix els drets dels treballadors que combinen treball a temps parcial amb la realitat documentada d'un contracte.",
+    "resum_executiu": "El Tribunal Supremo ha confirmat la decisió que frena la conversió automàtica de contractes a temps parcial en jornades completes. Aquesta sentència destaca que, malgrat defectes formals en el contracte, si la realitat laboral és parcial, no es pot exigir la seva consideració com a jornada completa.",
+    "impacte_practic": "Aquesta decisió afecta els treballadors amb contractes a temps parcial que sol·liciten la conversió a jornada completa per defectes formals. Les empreses ara poden defensar-se millor contra demandes similars si poden demostrar que la realització del treball era realment parcial.",
     "categoria": "laboral",
     "paraules_clau": [
-      "contracte",
+      "contractes laborals",
       "jornada parcial",
       "Tribunal Suprem",
       "Ryanair"
@@ -574,14 +580,14 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://www.economistjurist.es/articulos-juridicos-destacados/aspectos-esenciales-de-la-nueva-directiva-ue-2026-799-de-30-de-marzo-de-2026-en-materia-de-insolvencia/",
-    "resum_executiu": "La Directiva (UE) 2026/799 introdueix novetats clau en la normativa sobre insolvència, incloent accions rescisòries i el rastreig d'actius. Estableix un marc harmonitzat per facilitar la recuperació de crèdits i reduir la inseguretat jurídica en transaccions internacionals.",
-    "impacte_practic": "Els ciutadans i empreses es beneficiaran d'un sistema més coherent que facilitarà la recuperació de crèdits en situacions d'insolvència. La responsabilitat dels administradors es veurà incrementada, promovent un comportament més diligent en la gestió empresarial.",
+    "resum_executiu": "La Directiva (UE) 2026/799 busca harmonitzar aspectes del dret concursal entre Estats membres, millorant així la seguretat jurídica i facilitant la recuperació de crèdits. Introduïx novetats en accions rescisòries, rastreig d'actius i responsabilitat dels administradors, entre altres.",
+    "impacte_practic": "Els ciutadans i empreses veuran facilitada la recuperació de crèdits i un major coneixement sobre els seus drets en situacions d'insolvència. La normativa també proporcionarà una major seguretat jurídica en les operacions transfrontereres.",
     "categoria": "mercantil",
     "paraules_clau": [
       "insolvència",
       "accions rescisòries",
-      "actius",
-      "administradors"
+      "seguretat jurídica",
+      "harmonització"
     ],
     "urgencia": "mitjana",
     "font_web": "Economist & Jurist",
@@ -594,14 +600,14 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://www.economistjurist.es/premium/sala-2-0/modelo-de-papeleta-de-conciliacion-por-despido-objetivo-nulo-por-estar-de-baja-medica-al-momento-del-despido-y-subsidiariamente-improcedente/",
-    "resum_executiu": "El model de papeleta de conciliació presentat aborda un acomiadament declarat nulo si es produeix durant una baixa mèdica, així com les circumstàncies d'un acomiadament improcedent. Aquesta disposició busca assegurar la protecció dels drets laborals dels treballadors en situació de vulnerabilitat.",
-    "impacte_practic": "Els treballadors que es troben de baixa mèdica tindran garantits els seus drets davant acomiadaments injustos, reduint la possibilitat de discriminació laboral per motius de salut. Les empreses hauran de ser més cauteloses al gestionar acomiadaments en aquestes circumstàncies.",
+    "resum_executiu": "La disposició jurídica analitzada aborda la creació d'un model de papeleta de conciliació per a casos de despido objectiu nul quan el treballador és a baixa mèdica. A més, estableix els fonaments legals per a casos subsidiaris de despido improcedent.",
+    "impacte_practic": "Els treballadors a qui se'ls acomiada durant una incapacitat temporal podran defensar millor els seus drets laborals. Les empreses hauran d'adaptar-se a aquesta nova normativa per evitar denúncies i possibles sancions.",
     "categoria": "laboral",
     "paraules_clau": [
-      "papeleta conciliació",
-      "despido nulo",
+      "despido",
       "baja médica",
-      "derechos laborales"
+      "conciliación",
+      "nulidad"
     ],
     "urgencia": "alta",
     "font_web": "Economist & Jurist",
@@ -614,14 +620,14 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/las-comunidades-de-propietarios-pueden-prohibir-la-tenencia-de-mascotas-en-el-edificio-sin-que-ello-resulte-contrario-a-la-ley-de-bienestar-animal/",
-    "resum_executiu": "Les comunitats de propietaris poden prohibir la tinença de mascotes a l'edifici sense que això sigui contrari a la Llei de Benestar Animal. Aquesta decisió es basa en raons de convivència i salubritat, validada per un jutjat de Vigo.",
-    "impacte_practic": "Aquesta norma permet a les comunitats de veïns mantenir un ambient de convivència, afectant directament els propietaris que desitgen tenir mascotes. Això pot generar conflictes legals per a aquells que decidissin incórrer en la prohibició existent.",
+    "resum_executiu": "Les comunitats de propietaris poden prohibir la tinença de mascotes en els edificis sense que sigui contrari a la Llei de Benestar Animal, sempre que es fonamenti en raons de convivència o salut. Una sentència de Vigo avala aquesta potestat, reafirmant la validesa d'un acord comunitari que manté aquesta prohibició.",
+    "impacte_practic": "Aquesta decisió permet a les comunitats gestionar la convivència en espais comuns i protegir l'interès general dels propietaris. Això pot afectar a aquells que desitgin tenir mascotes en edificis amb normatives restrictives.",
     "categoria": "civil",
     "paraules_clau": [
       "comunitats de propietaris",
-      "mascotes",
+      "prohibició mascotes",
       "convivència",
-      "prohibició"
+      "Llei Benestar Animal"
     ],
     "urgencia": "mitjana",
     "font_web": "Economist & Jurist",
@@ -634,74 +640,34 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://www.economistjurist.es/noticias-juridicas/mucho-mas-que-contratos-y-demandas-el-despacho-como-sistema-de-decisiones/",
-    "resum_executiu": "L'article qüestiona la visió tradicional del treball jurídic com una simple producció de documents, destacant la seva funció com a sistema de presa de decisions estratègiques. Sota aquesta perspectiva, l'abogado es converteix en un arquitecte de decisions, no només un tècnic normatiu.",
-    "impacte_practic": "Aquesta concepció pot transformar com els clients perceben i valoren els serveis jurídics, millorant la seva capacitat per afrontar escenaris complexos. Això pot afectar la seva decisió a l'hora de triar assessoria legal adequada.",
+    "resum_executiu": "L'article destaca la transició de la percepció del treball jurídic, que ha estat tradicionalment associat a la producció de documents, cap a un model on el focus està en el sistema de presa de decisions estratègiques. Aquesta nova visió destaca la importància de l'assessoria legal dinàmica davant situacions complexes i incertes.",
+    "impacte_practic": "Els ciutadans i empreses poden esperar un acompanyament més estratègic en la seva presa de decisions legals, millorant així la seva capacitat de gestionar riscos i oportunitats. Això pot resultar en una major optimització de recursos i en una millor adaptació a l'entorn legal.",
     "categoria": "civil",
     "paraules_clau": [
-      "despachos",
-      "decisions",
-      "estratègia",
-      "assessorament"
+      "assessoria legal",
+      "presa de decisions",
+      "gestió del risc",
+      "estratègia legal"
     ],
     "urgencia": "mitjana",
     "font_web": "Economist & Jurist",
     "comarques": []
   },
   {
-    "id": "ACT-https://www.economistjurist.es/?p=244790",
-    "data": "2026-04-30",
-    "titol": "Lo que la estadística judicial de 2025 no dice sobre los MASC",
-    "font": "Actualitat",
-    "tipus": "Article",
-    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/lo-que-la-estadistica-judicial-de-2025-no-dice-sobre-los-masc/",
-    "resum_executiu": "L'article analitza l'impacte de la Ley Orgánica 1/2025 sobre els mitjans adequats de solució de controvèrsies (MASC) a partir de les estadístiques judicials del 2025. Es destaca la inconsciència sobre l'eficàcia real dels MASC, ja que no hi ha dades sobre la seva aplicació efectiva ni sobre la resolució de conflictes derivats.",
-    "impacte_practic": "La manca de dades clares sobre el funcionament dels MASC pot afectar la confiança dels ciutadans i empreses en la resolució alternativa de conflictes. Això podria portar a una percepció negativa del sistema judicial i a un increment de càrrega als jutjats.",
-    "categoria": "civil",
-    "paraules_clau": [
-      "medis alternatius",
-      "solució de conflictes",
-      "estadístiques judicials",
-      "eficàcia"
-    ],
-    "urgencia": "alta",
-    "font_web": "Economist & Jurist",
-    "comarques": []
-  },
-  {
-    "id": "ACT-https://www.economistjurist.es/?p=244778",
-    "data": "2026-04-30",
-    "titol": "La justicia falla a favor de un padre y desahucia a una hija de la vivienda familiar",
-    "font": "Actualitat",
-    "tipus": "Article",
-    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/la-justicia-falla-a-favor-de-un-padre-y-desahucia-a-una-hija-de-la-vivienda-familiar/",
-    "resum_executiu": "El Tribunal Suprem ha dictat una sentència que permet a un pare desallotjar la seva filla, major d'edat, d'una propietat compartida amb la seva exdona. Aquesta decisió es fonamenta en la legitimació del progenitor per exercitar una acció de desahucio per precari, tot i que la filla tenia consentiment de la mare per residir allí.",
-    "impacte_practic": "La sentència pot afectar les dinàmiques familiars en casos de divorci i copropietat, així com la interpretació dels drets d'ús sobre immobles conjunts. Coneixements sobre aquest precedent poden ser crucials per a futurs litigis d'habitatge familiar.",
-    "categoria": "civil",
-    "paraules_clau": [
-      "desahucio",
-      "drets familiars",
-      "copropietat",
-      "habitatge"
-    ],
-    "urgencia": "alta",
-    "font_web": "Economist & Jurist",
-    "comarques": []
-  },
-  {
     "id": "ACT-https://almacendederecho.org/?p=59767",
     "data": "2026-04-30",
-    "titol": "Los límites del art. 6.1 Directiva 93/13",
+    "titol": "Los límites del Art. 6.1 Directiva 93/13",
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://almacendederecho.org/los-limites-del-art-6-1-directiva-93-13",
-    "resum_executiu": "L'article analitza les implicacions de la supressió de les clàusules abusives en els contractes a la llum de la jurisprudència europea, destacant la sentència STS 161/2026. Es discuteix la tension entre la restauració de l'equilibri contractual i la dissuasió d'usos abusius per part de les empreses.",
-    "impacte_practic": "Els ciutadans podran experimentar conseqüències significatives en els seus contractes hipotecaris, amb possibles préstecs sense interessos que poden perjudicar l'equilibri financer. Això pot afectar la manera en què les empreses redacten els contractes i el seu comportament enfront de clàusules abusives.",
+    "resum_executiu": "La recent STS 161/2026 aborda la nul·litat de la clàusula IRPH en préstecs hipotecaris, declarant que el mutu pot subsistir sense interessos. Aquesta decisió destaca els límits del Art. 6.1 de la Directiva 93/13, especialment pel que fa a la nul·litat de clàusules que afecten elements essencials del contracte.",
+    "impacte_practic": "Els consumidors poden beneficiar-se d'un préstec gratuït, però això podria dissuadir les entitats financeres d'utilitzar clàusules lícites per por a repercussions negatives. Això pot afectar la disponibilitat de crèdit i l'equilibri del mercat.",
     "categoria": "civil",
     "paraules_clau": [
+      "nul·litat",
       "clàusules abusives",
-      "préstecs",
-      "jurisprudència",
-      "Dret europeu"
+      "préstecs hipotecaris",
+      "drets del consumidor"
     ],
     "urgencia": "mitjana",
     "font_web": "Almacén de Derecho",
@@ -714,18 +680,332 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://almacendederecho.org/el-concepto-de-asociacion-en-derecho-aleman-y-en-derecho-espanol-el-fin-ideal-y-el-interes-publico",
-    "resum_executiu": "El dret alemany distingeix entre associacions ideals i aquelles amb activitat econòmica, requerint aquesta última una concessió estatal per adquirir capacitat jurídica. La jurisprudència recent reitera que una associació pot mantenir el seu caràcter ideal tot i operar comercialment si el seu objectiu primordial no és la generació de beneficis, sinó el servei públic.",
-    "impacte_practic": "Aquesta distinció afecta a entitats sense ànim de lucre que volen oferir serveis com guarderies, ja que poden operar com associacions sense perdre el seu estatus de utilitat pública. Això beneficia a les organitzacions que busquen proporcionar serveis socials sense objectius lucratius.",
+    "resum_executiu": "L'article analitza la distinció entre associacions ideals i associacions amb activitat econòmica en el dret alemany, amb particular èmfasi en com el Tribunal Suprem (BGH) reconeix la validesa d'associacions sense ànim de lucre que operen serveis econòmics per assolir fins ideals. Aquesta jurisprudència implica que l'ús de mitjans econòmics no desqualifica l'objectiu de l'associació si aquest continua sent altruista.",
+    "impacte_practic": "Els ciutadans i les empreses vinculades a associacions que gestionen serveis, com les guarderies, poden operar sense el temor de perdre la seva qualificació d'utilitat pública si els seus fins són altruistes. Això proporciona una major seguretat jurídica per a les associacions sense ànim de lucre en la seva gestió diària.",
     "categoria": "civil",
     "paraules_clau": [
       "associacions",
       "dret alemany",
-      "activitat econòmica",
-      "jurisprudència"
+      "fins ideals",
+      "utilitat pública"
     ],
-    "urgencia": "baixa",
+    "urgencia": "mitjana",
     "font_web": "Almacén de Derecho",
     "comarques": []
+  },
+  {
+    "id": "COM-02f818d19633",
+    "data": "2026-04-30",
+    "titol": "La Generalitat ha obert 529 expedients sancionadors des de l'aplicació de la llei de limitació dels lloguers",
+    "font": "NacióDigital",
+    "tipus": "Premsa comarcal",
+    "url": "https://naciodigital.cat/societat/la-generalitat-ha-obert-529-expedients-sancionadors-des-de-laplicacio-de-la-llei-de-limitacio-dels-lloguers.html",
+    "resum_executiu": "La Generalitat ha iniciat 529 expedients sancionadors des de l'entrada en vigor de la llei de limitació dels lloguers, amb la majoria dels casos resultant d'infraccions del màxim permès en preus. S'incideix en la fase d'investigació inicial de les denúncies i el 79% dels expedients estan relacionats amb el preu excessiu dels lloguers.",
+    "impacte_practic": "Aquestes inspeccions poden afectar tant arrendadors com llogaters, promovent una major regulació dels preus i buscant garantir l'accés a l'habitatge. Les irregularitats detectades poden portar a sancions per als propietaris que excedeixin els límits legals.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "lloguers",
+      "expedients",
+      "sancions",
+      "preus"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
+    "id": "EMAIL-DOGC-5c3abdbf0d",
+    "data": "2026-04-29",
+    "titol": "Portal del DOGC: Avís de l'Alerta DOGC núm. 9654, de 28.04.2026, \"Cerdanya\"",
+    "font": "DOGC-email",
+    "tipus": "alerta",
+    "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1042909>",
+    "resum_executiu": "L'Alerta DOGC núm. 9654 informa sobre recomanacions de navegació per garantir la seguretat en l'ús del portal del Diari Oficial de la Generalitat de Catalunya. Aquesta disposició advoca per la protecció de dades personals dels usuaris.",
+    "impacte_practic": "Els ciutadans i empreses que utilitzin el portal han de ser conscients de la importància de la seguretat en les seves navegacions. L'alerta ajuda a minimitzar riscos de pèrdua de informació sensible.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "seguretat",
+      "navegació",
+      "dades",
+      "alerta"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "catalunya",
+      "cerdanya"
+    ]
+  },
+  {
+    "id": "EMAIL-DOGC-7d13ed1daf",
+    "data": "2026-04-29",
+    "titol": "Portal del DOGC: Avís de l'Alerta DOGC núm. 9655, de 29.04.2026, \"Cerdanya\"",
+    "font": "DOGC-email",
+    "tipus": "alerta",
+    "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1043030>",
+    "resum_executiu": "L'alerta DOGC núm. 9655 informa sobre aspectes de seguretat en la navegació online. Es recomanen mesures per protegir la privacitat dels usuaris en accedir a documents oficials.",
+    "impacte_practic": "Les mesures suggerides afecten tant els ciutadans com les empreses que utilitzin la web del DOGC, millorant la seguretat de les seves dades. La implementació d'aquestes recomanacions pot reduir riscos de filtracions d'informació.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "seguretat",
+      "navegació",
+      "privacitat",
+      "DOGC"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "girona",
+      "cerdanya"
+    ]
+  },
+  {
+    "id": "COM-a3eb09e56a8e",
+    "data": "2026-04-29",
+    "titol": "El Parlament envia al Congrés la proposta de reforma de la llei d’eutanàsia per escurçar els recursos",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/arreu-catalunya-espanya-mon/2026/04/29/parlament-envia-congreso-propuesta-reforma-ley-eutanasia-129669892.html",
+    "resum_executiu": "El Parlament de Catalunya ha aprovat una proposta per reformar la llei d'eutanàsia amb l'objectiu d'escurçar els recursos judicials a un màxim de 20 dies. La iniciativa busca agilitzar l'accés a la mort digna, després de l'experiència de retards en casos anteriors.",
+    "impacte_practic": "Aquesta reforma pot facilitar que els ciutadans accedeixin a l'eutanàsia en un termini més curt, reduint la càrrega emocional i legal que impliquen els recursos judicials. Les empreses del sector sanitari també s'hauran d'adaptar a aquests canvis en la regulació.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "eutanàsia",
+      "reforma legal",
+      "recursos judicials",
+      "dignitat"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
+    "id": "BOE-email-e76636fa51",
+    "data": "2026-04-29",
+    "titol": "Resolución de 24 de abril de 2026, de la Subsecretaría, por la que se publica el Acuerdo de la Comisión para la determinación de tarifas de Tragsa, por el que se aprueban las tarifas 2026 aplicables a las actuaciones a realizar por Tragsa Y Tragsatec para aquellas entidades respecto de las cuales tenga la consideración de medio propio personificado y servicio técnico en los términos previstos en la disposición adicional vigésimo cuarta de la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público, y se revisan los coeficientes para la actualización de los precios simples en actuaciones no sujetas a impuestos.",
+    "font": "BOE-email",
+    "tipus": "Ministerio de Hacienda",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-9265",
+    "resum_executiu": "La Resolución de 24 de abril de 2026 aprova les tarifes per a Tragsa i Tragsatec per l'any 2026, així com la revisió dels coeficients per a l'actualització dels preus simples no subjectes a impostos. Aquesta disposició s'emmarca dins la normativa de contracts del sector públic.",
+    "impacte_practic": "Les noves tarifes influencien les entitats que utilitzen serveis de Tragsa i Tragsatec, afectant potencialment la seva planificació econòmica. Empreses que depenen d'aquests serveis hauran d'ajustar els seus pressupostos a les noves tarifes aprovades.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "tarifes",
+      "Tragsa",
+      "contractes",
+      "actualització"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": []
+  },
+  {
+    "id": "DOUE-email-10852bdab4",
+    "data": "2026-04-29",
+    "titol": "Reglamento de Ejecución (UE) 2026/916 de la Comisión, de 27 de abril de 2026, por el que se establece un derecho antidumping provisional sobre las importaciones de proteína de guisantes originaria de la República Popular China.",
+    "font": "DOUE-email",
+    "tipus": "Unión Europea",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-80631",
+    "resum_executiu": "El Reglament de Execució (UE) 2026/916 estableix un dret antidumping provisional per a les importacions de proteïna de guisants procedent de la República Popular de la Xina. Aquesta mesura es deveu a una investigació que va revelar pràctiques de dumping i danys a la indústria europea.",
+    "impacte_practic": "Les empreses que importen proteïna de guisants de la Xina poden veure's afectades per tarifes addicionals, la qual cosa pot influir en els costos i la competitivitat dels productes al mercat europeu. Els productors locals podrien beneficiar-se d'aquesta protecció.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "dret antidumping",
+      "importacions",
+      "proteïna de guisants",
+      "Xina"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": []
+  },
+  {
+    "id": "DOUE-email-2897c633d9",
+    "data": "2026-04-29",
+    "titol": "Reglamento (UE) 2026/909 de la Comisión, de 27 de abril de 2026, por el que se modifica el Reglamento (CE) nº 1223/2009 del Parlamento Europeo y del Consejo en lo que respecta al uso de Benzyl Salicylate, Triphenyl Phosphate, Ammonium Silver Zinc Aluminium Silicate, aluminio, sales de zinc hidrosolubles, aceite de vetiver acetilado, Citral, HC Blue Nº 18, HC Red Nº 18, HC Yellow Nº 16, Hydroxypropyl-p-phenylenediamine y su diclorhidrato, y DHHB en productos cosméticos.",
+    "font": "DOUE-email",
+    "tipus": "Unión Europea",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-80629",
+    "resum_executiu": "El reglament (UE) 2026/909 modifica el Reglament (CE) nº 1223/2009, regulant l'ús de diverses substàncies en productes cosmètics, incloent-hi limitacions per al Benzyl Salicylate i prohibicions per al Triphenyl Phosphate. Aquesta modificació busca protegir la salut pública amb l'avaluació de riscos dels ingredients cosmètics.",
+    "impacte_practic": "Els ciutadans veuran una major seguretat en els productes cosmètics gràcies a la regulació estricta dels ingredients potencialment perillosos. Les empreses del sector cosmètic hauran d'adaptar les seves fórmules per complir amb les noves normes.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "cosmètics",
+      "seguretat",
+      "substàncies",
+      "regulació"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": []
+  },
+  {
+    "id": "DOUE-email-6967b4f5fc",
+    "data": "2026-04-29",
+    "titol": "Reglamento Delegado (UE) 2026/314 de la Comisión, de 9 de febrero de 2026, por el que se modifican el Reglamento (CE) nº 273/2004 del Parlamento Europeo y del Consejo y el Reglamento (CE) nº 111/2005 del Consejo por lo que respecta a la inclusión de determinados precursores de catinonas sintéticas y de la anfetamina en la lista de sustancias catalogadas.",
+    "font": "DOUE-email",
+    "tipus": "Unión Europea",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-80628",
+    "resum_executiu": "El Reglament Delegat (UE) 2026/314 modifica els Reglaments (CE) n.º 273/2004 i (CE) n.º 111/2005 per incloure nou precursores de drogues sintètiques en la llista de substàncies catalogades. Aquest canvi busca reforçar el control del comerç de substàncies que poden ser utilitzades en la producció il·legal de drogues.",
+    "impacte_practic": "Aquesta normativa afectarà principalment les empreses que manipulen o comercialitzen aquestes substàncies, ja que hauran de complir amb mesures de control més estrictes. També contribuirà a la lluita contra el tràfic de drogues i a la millora de la salut pública.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "drogues",
+      "substances",
+      "comerç",
+      "control"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": []
+  },
+  {
+    "id": "DOUE-email-64b0bb8e9e",
+    "data": "2026-04-29",
+    "titol": "Reglamento de Ejecución (UE) 2026/911 de la Comisión, de 27 de abril de 2026, por el que se modifican las normas técnicas de ejecución establecidas en el Reglamento de Ejecución (UE) 2015/2011 en lo que respecta a la actualización de las listas de administraciones regionales y autoridades locales previstas en dicho Reglamento.",
+    "font": "DOUE-email",
+    "tipus": "Unión Europea",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-80630",
+    "resum_executiu": "El Reglament de Execució (UE) 2026/911 modifica el Reglament 2015/2011 per actualitzar les llistes d'administracions regionals i autoritats locals, afegint noves categories a França i Letònia i eliminant les del Regne Unit. Això garanteix que les exposicions davant aquestes entitats tinguin la mateixa consideració que les exposicions davant la administració central.",
+    "impacte_practic": "Aquesta modificació afecta les entitats asseguradores en l'accés al mercat i pot influir en les operacions gerencials de les administracions regionals. Citizens i empreses veuran un impacte en la regulació de les seves interaccions amb aquestes autoritats.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "reglament",
+      "assegurances",
+      "autoritats locals",
+      "Unió Europea"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": []
+  },
+  {
+    "id": "DOUE-email-c4b0731939",
+    "data": "2026-04-29",
+    "titol": "Reglamento Delegado (UE) 2026/339 de la Comisión, de 16 de febrero de 2026, por el que se deroga el Reglamento Delegado (UE) 2022/30.",
+    "font": "DOUE-email",
+    "tipus": "Unión Europea",
+    "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-80634",
+    "resum_executiu": "El reglament delegat (UE) 2026/339 deroga el reglament delegat (UE) 2022/30 amb efectes a partir de l'11 de desembre de 2027. Aquesta derogació busca evitar la duplicació de requisits de ciberseguretat per als equips radioeléctrics regulats sota el nou reglament 2024/2847.",
+    "impacte_practic": "Els ciutadans i empreses que utilitzin equips radioeléctrics hauran d'adaptar-se a un nou marc regulatori unificat, que pot afectar la comercialització d'aquests equips. Això podria millorar la seguretat dels products que entren al mercat.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "reglament",
+      "ciberseguretat",
+      "equipos radioeléctricos",
+      "comerç"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": []
+  },
+  {
+    "id": "BOE-email-5622a03d4a",
+    "data": "2026-04-29",
+    "titol": "BOE: Mis códigos (29/04/2026)",
+    "font": "BOE-email",
+    "tipus": "alerta",
+    "url": "",
+    "resum_executiu": "La disposició fa referència a una alerta publicada al BOE relacionada amb 'Mis códigos'. No proporciona informació específica sobre canvis legals directes.",
+    "impacte_practic": "Sense informació detallada, l'impacte real és incert per a ciutadans i empreses. Podria afectar aspectes de compliment normatiu.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "BOE",
+      "alerta",
+      "còdex",
+      "normativa"
+    ],
+    "urgencia": "baixa",
+    "font_web": "",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244790",
+    "data": "2026-04-29",
+    "titol": "Lo que la estadística judicial de 2025 no dice sobre los MASC",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/lo-que-la-estadistica-judicial-de-2025-no-dice-sobre-los-masc/",
+    "resum_executiu": "L'article analitza les dades judicials de 2025, destacant un descens del 7,7% en qüestions civils, cosa que s'interpreta amb cautela a causa de la nova normativa sobre MASC, que recentment s'ha aplicat. La manca de dades sobre l'efectivitat dels MASC genera incertesa sobre la seva impacte real en la resolució de conflictes.",
+    "impacte_practic": "Els ciutadans poden veure una variació en la manera com es gestionen els conflictes, encara que no estigui clar si els MASC han millorat realment la situació. Les empreses podrien trobar-se amb processos més llargs o ineficients a causa de la inadaptació del sistema judicial.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "MASC",
+      "estadístiques judicials",
+      "resolució de conflictes",
+      "llibertat d'informació"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244778",
+    "data": "2026-04-29",
+    "titol": "La justicia falla a favor de un padre y desahucia a una hija de la vivienda familiar",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/la-justicia-falla-a-favor-de-un-padre-y-desahucia-a-una-hija-de-la-vivienda-familiar/",
+    "resum_executiu": "El Tribunal Suprem ha autoritzat un pare a desallotjar la seva filla, major d'edat, d'una vivenda compartida, tot i que la mare és co-propietària. Aquesta decisió s'argumenta en la legitimació del progenitor per protegir la comunitat de béns davant d'un conflicte familiar.",
+    "impacte_practic": "Aquesta sentència pot afectar les dinàmiques familiars, especialment en situacions de separació i custòdia compartida. Els pares que comparteixen propietats hauran de ser conscients dels seus drets i de les possibilitats legals en situacions de conflicte.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "desahucio",
+      "vivenda",
+      "majors d'edat",
+      "comunitat de béns"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "COM-ca02cf4adcb3",
+    "data": "2026-04-29",
+    "titol": "Catalunya eliminarà impostos als ramaders afectats per crisis sanitàries i que no puguin treure els animals de la granja",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/economia/2026/04/29/catalunya-eliminara-impuestos-ganaderos-afectados-crisis-sanitarias-129664711.html",
+    "resum_executiu": "La nova llei aprovada per Catalunya elimina impostos per als ramaders afectats per crisis sanitàries i introdueix beneficis fiscals per facilitar el relleu generacional en el sector agrari. Aquesta normativa respon a la necessitat de suport a un sector vital que ha estat greument afectat per diverses crisis recents.",
+    "impacte_practic": "Els ramaders podran alleugerir la seva càrrega fiscal, millorant la seva situació econòmica en moments de dificultat. A més, els joves agricultors veuran reduïdes les taxes associades a la transmissió d'explotacions, fomentant l'entrada de noves generacions al sector.",
+    "categoria": "fiscal",
+    "paraules_clau": [
+      "impostos",
+      "ramaderia",
+      "beneficis fiscals",
+      "releu generacional"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
+    "id": "COM-430d4286b744",
+    "data": "2026-04-29",
+    "titol": "Junts tomba el consorci d'inversions i complica l'execució pressupostària",
+    "font": "NacióDigital",
+    "tipus": "Premsa comarcal",
+    "url": "https://naciodigital.cat/politica/junts-tomba-el-consorci-dinversions-i-complica-lexecucio-pressupostaria.html",
+    "resum_executiu": "El consorci d'inversions, que buscava facilitar la gestió d'inversions estatals a Catalunya, ha estat tombat pel partit Junts al Congrés. Aquest fet complica significativament l'execució del pressupost i afecta la capacitat de la Generalitat de prendre decisions sobre projectes d'inversió a la regió.",
+    "impacte_practic": "Aquesta decisió provoca una disminució en la capacitat de la Generalitat de gestionar les inversions necessàries, afectant tant les infraestructures públiques com els serveis que els ciutadans esperen. Les empreses podran veure's afectades per la falta de finançament per a projectes d'inversió.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "consorci d'inversions",
+      "pressupost",
+      "Catalunya",
+      "executiu"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
   },
   {
     "id": "26118065",

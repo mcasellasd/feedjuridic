@@ -30,7 +30,13 @@ IMAP_USER = os.getenv("IMAP_USER", "")
 IMAP_PASS = os.getenv("IMAP_PASS", "")
 
 # Remitents coneguts de butlletins normatius
-SENDERS_DOGC = ["dogc@gencat.cat", "butlleti@dogc.cat", "no-reply@dogc.gencat.cat", "m.casellas.deig@gencat.cat"]
+SENDERS_DOGC = [
+    "dogc@gencat.cat",
+    "butlleti@dogc.cat",
+    "no-reply@dogc.gencat.cat",
+    "m.casellas.deig@gencat.cat",
+    "m.casellas.deig@gmail.com",
+]
 SENDERS_BOE = ["no-responder@boe.es"]
 # Ampliar quan tinguem subscripció a BOPs
 
@@ -78,48 +84,32 @@ def _parse_dogc_email(subject: str, body: str, date_str: str) -> list[dict]:
       Títol de la norma
       https://portaldogc.gencat.cat/...
     """
-    entrades = []
+    resum = re.sub(r"\s+", " ", body).strip()[:1200]
+    titol = re.sub(r"^\s*Fwd:\s*", "", subject, flags=re.IGNORECASE).strip()
 
-    # Busca parelles títol + URL dins el cos del correu
-    # Pattern: línia de text seguida d'una URL del DOGC
-    lines = [l.strip() for l in body.splitlines() if l.strip()]
+    urls = re.findall(
+        r"https?://\S*(?:portaldogc|dogc|portaljuridic)\.gencat\.cat\S*",
+        body,
+    )
+    # Evitem links de gestió/subscripció que generen soroll.
+    urls_utils = [
+        u for u in urls
+        if "gestio-del-serveis-subscrits" not in u
+        and "unsubscribe" not in u.lower()
+    ]
+    url = urls_utils[0] if urls_utils else ""
 
-    i = 0
-    while i < len(lines):
-        line = lines[i]
-        # Detecta URL del DOGC
-        url_match = re.match(r"(https?://portaldogc\.gencat\.cat\S+)", line)
-        if url_match:
-            url = url_match.group(1)
-            # El títol sol estar a la línia anterior
-            titol = lines[i - 1] if i > 0 else subject
-            # Neteja títol de possibles prefixes numèrics o codis
-            titol = re.sub(r"^\d+[\.\-\s]+", "", titol).strip()
-            if titol:
-                entry_id = "EMAIL-DOGC-" + hashlib.md5(url.encode()).hexdigest()[:10]
-                entrades.append({
-                    "id": entry_id,
-                    "data": date_str,
-                    "titol": titol,
-                    "font": "DOGC-email",
-                    "tipus": "alerta",
-                    "url": url,
-                })
-        i += 1
-
-    # Si no hem trobat res estructurat, creem una entrada genèrica
-    if not entrades:
-        entry_id = "EMAIL-DOGC-" + hashlib.md5((subject + date_str).encode()).hexdigest()[:10]
-        entrades.append({
-            "id": entry_id,
-            "data": date_str,
-            "titol": subject,
-            "font": "DOGC-email",
-            "tipus": "alerta",
-            "url": "",
-        })
-
-    return entrades
+    base_id = url or (titol + date_str)
+    entry_id = "EMAIL-DOGC-" + hashlib.md5(base_id.encode()).hexdigest()[:10]
+    return [{
+        "id": entry_id,
+        "data": date_str,
+        "titol": titol or subject,
+        "resum": resum,
+        "font": "DOGC-email",
+        "tipus": "alerta",
+        "url": url,
+    }]
 
 
 def _parse_boe_email(subject: str, body: str, date_str: str) -> list[dict]:
