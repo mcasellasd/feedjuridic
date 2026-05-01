@@ -1,5 +1,267 @@
 [
   {
+    "id": "ACT-https://www.economistjurist.es/?p=244647",
+    "data": "2026-05-01",
+    "titol": "Modelo de escrito de acusación por delito de hurto y proposición de prueba",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/sala-2-0/modelo-de-escrito-de-acusacion-por-delito-de-hurto-y-proposicion-de-prueba/",
+    "resum_executiu": "Aquest article presenta un model de escrit d'acusació per un delicte de hurto, incloent la descripció dels fets, la qualificació jurídica i les sol·licituds de prova. Estableix que l'acusada hauria de ser condemnada per un delicte lleu amb una pena de multa i sense responsabilitat civil, atès que els béns sostrets han estat recuperats.",
+    "impacte_practic": "La disposició afecta a les persones acusades per hurto, ja que estableix un procediment clar per a la seva defensa i consecucions legals. Això pot influir en les decisions dels professionals del dret en la seva gestió d'aquest tipus de casos.",
+    "categoria": "penal",
+    "paraules_clau": [
+      "hurto",
+      "acusació",
+      "penal",
+      "prova"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244892",
+    "data": "2026-05-01",
+    "titol": "Condenada una magistrada por no dejar recurrir",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/condenada-una-magistrada-por-no-dejar-recurrir/",
+    "resum_executiu": "Una magistrada ha estat condemnada a dos anys d'inhabilitació per haver impedït la interposició de recursos a una empresa en concurs, malgrat que la llei ho preveia. La seva actuació es va considerar un error inexcusable i no dolós.",
+    "impacte_practic": "Aquesta condemna destaca la importància de garantir els drets processals de les empreses, evitant que errors judicials obstaculitzin el seu accés a recursos legals. Pot influir en la confiança dels ciutadans en el sistema judicial.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "inhabilitació",
+      "recurs",
+      "magistrada",
+      "error"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244868",
+    "data": "2026-05-01",
+    "titol": "Carlos Ruíz, CEO de SINCRO, al cargo de una de las Vocalías de la nueva Junta Directiva de CONPYMES",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/actualidad-de-los-despachos/carlos-ruiz-ceo-de-sincro-al-cargo-de-una-de-las-vocalias-de-la-nueva-junta-directiva-de-conpymes/",
+    "resum_executiu": "Carlos Ruíz, CEO de SINCRO, ha estat nomenat vocal de la nova Junta Directiva de CONPYMES. La seva incorporació busca fomentar un lideratge humanista en les pimes i contribuir a la seva competitivitat en un entorn globalitzat.",
+    "impacte_practic": "Aquesta designació pot resultar beneficiosa per a les pimes i autònoms, ja que implica un compromís per millorar el suport i assessorament que reben en la seva gestió i creixement. Podria facilitar l'adaptació dels negocis als reptes actuals, com la intel·ligència artificial.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "Carlos Ruíz",
+      "SINCRO",
+      "CONPYMES",
+      "lideratge humanista"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244885",
+    "data": "2026-05-01",
+    "titol": "18 meses de prisión por estafar con falsos alquileres a través de Milanuncios y Fotocasa",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/18-meses-de-prision-por-estafar-con-falsos-alquileres-a-traves-de-la-web-de-milanuncios-y-del-portal-fotocasa/",
+    "resum_executiu": "La Audiencia Provincial de Pontevedra ha condemnat a un home a 18 mesos de presó per estafar quatre persones amb falsos lloguers de pisos a Vigo, utilitzant les plataformes Milanuncios i Fotocasa. El tribunal ha reconegut un delicte continuat d'estafa agreujada, i el condemnat haurà d'indemnitzar les víctimes amb les quantitats estafades.",
+    "impacte_practic": "Aquesta resolució judicial protegeix les víctimes d'estafa en relació amb el mercat del lloguer, sent un avís per a futurs estafadors. Els ciutadans poden tenir més confiança en les transaccions immobiliàries a través d'Internet.",
+    "categoria": "penal",
+    "paraules_clau": [
+      "estafa",
+      "lloguers",
+      "Vigo",
+      "prisión"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244878",
+    "data": "2026-05-01",
+    "titol": "Reconocida la incapacidad permanente absoluta a una autónoma de 37 años por agotamiento físico y mental",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/reconocida-la-incapacidad-permanente-absoluta-a-una-autonoma-de-37-anos-por-agotamiento-fisico-y-mental/",
+    "resum_executiu": "El Tribunal Superior de Justicia ha confirmat la incapacitat permanent absoluta d'una treballadora autònoma de 37 anys a causa d'un esgotament físic i mental sever. La sentència ordena al INSS reconèixer la seva pensió vitalícia al 100% de la base reguladora.",
+    "impacte_practic": "Aquesta decisió estableix un precedent important per a treballadors autònoms amb condicions mèdiques no visibles. Millora el reconeixement de drets laborals i socials per a treballadors afectats per malalties cròniques.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "incapacitat permanent",
+      "estalvi social",
+      "treballadors autònoms",
+      "sentència"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244623",
+    "data": "2026-05-01",
+    "titol": "Cuando ganar deja de compensar: el desgaste emocional del éxito continuo en la abogacía",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/cuando-ganar-deja-de-compensar-el-desgaste-emocional-del-exito-continuo-en-la-abogacia/",
+    "resum_executiu": "L'article tracta sobre el fenomen del desgast emocional en la professió d'advocat, on l'èxit professional es converteix en un estàndard que no genera satisfacció. Les victòries són percebudes com a normals mentre que les derrotes impacten emocionalment de manera significativa.",
+    "impacte_practic": "Els advocats poden experimentar una disminució de la motivació i un augment de l'estrès, cosa que pot afectar el seu rendiment i salut mental. Les empreses legals han de gestionar aquest desgast per garantir el benestar dels seus professionals.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "desgaste emocional",
+      "èxit professional",
+      "advocat",
+      "salut mental"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244860",
+    "data": "2026-05-01",
+    "titol": "La caducidad del procedimiento de derivación de responsabilidad tributaria, ¿es motivo de oposición en apremio?",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/la-caducidad-del-procedimiento-de-derivacion-de-responsabilidad-tributaria-es-motivo-de-oposicion-en-apremio/",
+    "resum_executiu": "La caducitat del procediment de derivació de responsabilitat tributària pot determinar la invalidesa d'un acte d'imposició d'apremi. El Tribunal Suprem ha de decidir si aquesta caducitat pot ser utilitzada com a motiu d'oposició contra la providència d'apremio.",
+    "impacte_practic": "La decisió afectarà a persones i empreses que es trobin en situació d'apremi per deutes tributaris, permetent-los impugnar procediments si es prova la caducitat. Això podria conduir a una millora en la defensa dels drets dels contribuents.",
+    "categoria": "fiscal",
+    "paraules_clau": [
+      "caducitat",
+      "responsabilitat tributària",
+      "apremi",
+      "tribunal suprem"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244852",
+    "data": "2026-05-01",
+    "titol": "El TSJ de Aragón rechaza elevar una incapacidad total a absoluta por alterarse la pretensión formulada en vía administrativa",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/el-tsj-de-aragon-rechaza-elevar-una-incapacidad-total-a-absoluta-por-alterarse-la-pretension-formulada-en-via-administrativa/",
+    "resum_executiu": "El TSJ d'Aragó ha confirmat la denegació d'una incapacitat permanent absoluta a una treballadora, ja que en la seva reclamació administrativa només havia sol·licitat una incapacitat permanent total. El tribunal destaca la importància de la coherència entre les demandes administratives i judicials, i que un canvi en la pretensió no és admissible si no es presenten fets nous.",
+    "impacte_practic": "Aquesta decisió afecta els treballadors que busquen una avaluació diferent de la seva capacitat laboral, ja que imposa limitacions en les sol·licituds judicials posteriors a les administratives. Les empreses també es beneficien de la certesa en el procés de reclamació de capacitats.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "incapacitat permanent",
+      "TSJ d'Aragó",
+      "dret laboral",
+      "reclamació"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244844",
+    "data": "2026-05-01",
+    "titol": "Japón,1 abril 2026: el amanecer de la guardia compartida",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/japon1-abril-2026-el-amanecer-de-la-guardia-compartida/",
+    "resum_executiu": "El 1 d'abril de 2026, Japó va implementar una reforma històrica del Codi Civil que introdueix la custòdia compartida en els matrimonis divorciats, superant el model de custòdia exclusiva que abans generava la pèrdua de drets i vincles del progenitor no custodio amb els seus fills. Aquesta reforma es fonamenta en la necessitat de modernitzar el concepte d'unitat familiar i respon a pressions socials i diplomàtiques.",
+    "impacte_practic": "Els progenitors no custodis ara podran mantenir una relació més activa amb els seus fills després del divorci, la qual cosa millorarà els seus drets i la seva qualitat de vida. Això beneficiarà tant als ciutadans japonesos com als expatriats que haguessin patit el sistema anterior.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "custòdia compartida",
+      "divorci",
+      "Japó",
+      "Dret de Família"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244837",
+    "data": "2026-05-01",
+    "titol": "PenalTech se alía con la Universidad de Extremadura para impulsar el talento en Derecho tecnológico",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/actualidad-de-los-despachos/penaltech-se-alia-con-la-universidad-de-extremadura-para-impulsar-el-talento-en-derecho-tecnologico/",
+    "resum_executiu": "La col·laboració entre PenalTech i la Universitat d'Extremadura busca potenciar la formació en dret tecnològic, enfocant-se en la integració pràctica dels estudiants en l'àmbit professional. Aquesta iniciativa respon a l'augment de la ciberdelincuencia i les necessitats del sector jurídic actual.",
+    "impacte_practic": "Els estudiants podran adquirir competències mitjançant pràctiques i treballs vinculats a casos reals, millorant la seva preparació per afrontar els reptes del dret digital. Aquesta sinergia contribuirà al desenvolupament professional i a la investigació en temes emergents.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "dret tecnològic",
+      "ciberdelincència",
+      "formació",
+      "investigació"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://mundojuridico.info/?p=6619",
+    "data": "2026-05-01",
+    "titol": "Cerramiento de la plaza de garaje",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://mundojuridico.info/cerramiento-de-la-plaza-de-garaje/",
+    "resum_executiu": "El tancament de la plaça de garatge requereix autorització prèvia de la comunitat de propietaris, llevat que els estatuts contemplin el contrari. Les decisions sobre el tancament poden necessitar una majoria qualificada o unanimitat, depenent de la interpretació jurídica aplicada.",
+    "impacte_practic": "Els propietaris que desitgin tancar les seves places de garatge han de tenir en compte la normativa comunitària, la qual pot afectar la seva intenció d'ús privat. Això pot generar litigis si no es respecten les autoritzacions necessàries.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "tancament",
+      "garatge",
+      "autorització",
+      "comunitat"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Mundojuridico",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://almacendederecho.org/?p=59789",
+    "data": "2026-05-01",
+    "titol": "Gestión del conocimiento jurídico en la era de la IA (1)",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://almacendederecho.org/gestion-del-conocimiento-juridico-en-la-era-de-la-ia",
+    "resum_executiu": "L'article analitza com la intel·ligència artificial (IA) està transformant la gestió del coneixement jurídic, destacant la seva capacitat per millorar l'accessibilitat i l'ús del coneixement del sector legal. En un món amb IA avançada, els professionals hauran d'adaptar-se a aquesta nova dinàmica que pot reduir les desigualtats en l'experiència entre advocats.",
+    "impacte_practic": "Els ciutadans i empreses podran accedir a serveis legals més eficients i justos, ja que la IA nivella el terreny de joc entre advocats amb diferents nivells d'experiència. Això podria conduir a una millor representació legal per aquells amb menys recursos.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "coneixement jurídic",
+      "advocats",
+      "tecnologia"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Almacén de Derecho",
+    "comarques": []
+  },
+  {
+    "id": "COM-97bc8cecb859",
+    "data": "2026-05-01",
+    "titol": "\"Els catalans no faltem molt a la feina, hi anem malalts massa vegades\"",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/economia/2026/05/01/els-catalans-faltem-molt-feina-129733864.html",
+    "resum_executiu": "La informació destaca que els catalans no falten a la feina de manera excessiva, sinó que presenten baixes mèdiques en un percentatge molt baix. Això posa de manifest una cultura laboral en què els treballadors prioritzen el seu compromís laboral en detriment de la salut.",
+    "impacte_practic": "Aquesta percepció pot influir en la manera en què les empreses gestionen les baixes laborals i pot afectar les polítiques de salut laboral. Els treballadors podrien sentir-se pressionats a no absentar-se malgrat estar malalts.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "absentisme",
+      "salut laboral",
+      "sindicats",
+      "treballadors"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
     "id": "26119008",
     "data": "2026-04-30",
     "titol": "Decret 68/2026, de 28 d'abril, del currículum del cicle formatiu de grau mitjà d'arts plàstiques i disseny de Forja Artística de la família professional artística d'escultura",
