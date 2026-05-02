@@ -1,5 +1,69 @@
 [
   {
+    "id": "ACT-https://www.economistjurist.es/?p=244627",
+    "data": "2026-05-02",
+    "titol": "El escenario oculto de la abogacía: cuando el derecho también se interpreta",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/el-escenario-oculto-de-la-abogacia-cuando-el-derecho-tambien-se-interpreta/",
+    "resum_executiu": "L'article analitza la percepció del dret més enllà de les normes i la tècnica, ressaltant la importància de la comunicació, la narrativa i la presència en els procediments legals. La teatralitat invisible del dret pot influir significativament en la seva interpretació i valoració.",
+    "impacte_practic": "Els professionals del dret haurien de considerar aquests factors addicionals per millorar la seva efectivitat en els casos. Això pot impactar tant en la satisfacció del client com en l'èxit de les seves actuacions en els àmbits judicials i de negociació.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "teatralitat",
+      "comunicació",
+      "narrativa",
+      "abogacía"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "COM-1571b8b0ae5d",
+    "data": "2026-05-02",
+    "titol": "De quan no es disposa de pressupost",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/opinio/2026/05/02/quan-disposa-pressupost-129757436.html",
+    "resum_executiu": "La manca de pressupost, tant a nivell estatal com autonòmic, denota una debilitat política i institucionals dels governs. Aquesta situació, a més, impedeix la implementació de polítiques públiques efectives i respon al bloqueig del sistema parlamentari.",
+    "impacte_practic": "Els ciutadans i empreses haurien de patir les conseqüències d'una gestió pública dèbil i desorganitzada, la qual podria limitar inversions i reformes socials. A més, la falta de pressupost aprovat pot generar incertesa econòmica i debilitament de la confiança en el govern.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "pressupost",
+      "govern",
+      "bloqueig",
+      "política"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
+    "id": "COM-d8305976dca1",
+    "data": "2026-05-02",
+    "titol": "On som dos anys després de les eleccions al Parlament?",
+    "font": "NacióDigital",
+    "tipus": "Premsa comarcal",
+    "url": "https://naciodigital.cat/politica/on-som-dos-anys-despres-de-les-eleccions-al-parlament.html",
+    "resum_executiu": "L'article analitza el context polític de Catalunya dos anys després de les últimes eleccions al Parlament, centrant-se en el paper del PSC de Salvador Illa i les tensions amb els altres partits, com Junts i ERC. La legislatura es caracteritza pel debat sobre el finançament i la impossibilitat de validar nous pressupostos.",
+    "impacte_practic": "Els ciutadans i empreses es veuen afectats per la inestabilitat política i la falta de pressupostos, que poden comprometre els serveis públics i les inversions. Les vagues i protestes que esmenta l'article reflecteixen un augment de la tensió social.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "eleccions",
+      "Parlament",
+      "finançament",
+      "pressupostos"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
     "id": "ACT-https://www.economistjurist.es/?p=244647",
     "data": "2026-05-01",
     "titol": "Modelo de escrito de acusación por delito de hurto y proposición de prueba",
