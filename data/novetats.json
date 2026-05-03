@@ -1,5 +1,125 @@
 [
   {
+    "id": "ACT-https://www.economistjurist.es/?p=244907",
+    "data": "2026-05-03",
+    "titol": "Una confesión amarga en Sueca",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/una-confesion-amarga-en-sueca/",
+    "resum_executiu": "El cas del menor assassinat a Sueca il·lustra la importància del procés penal i la limitació de la confessió com a prova. La llei exigeix contrastar les declaracions d'un acusat amb proves objectives per garantir la veritat material del delicte.",
+    "impacte_practic": "Aquesta disposició reforça la necessitat d'una investigació exhaustiva i minuciosa en casos de violència. Això pot tenir implicacions significatives per a la comunitat i el sistema judicial davant casos de criminalitat extrema.",
+    "categoria": "penal",
+    "paraules_clau": [
+      "confessió",
+      "prova",
+      "homicidi",
+      "justícia"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244904",
+    "data": "2026-05-03",
+    "titol": "Iberia pretendía rebajar las condiciones de una trabajadora subrogada de Globalia",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/iberia-pretendia-rebajar-las-condiciones-de-una-trabajadora-subrogada-de-globalia-el-tsj-vasco-refuerza-la-intangibilidad-de-los-derechos-previos/",
+    "resum_executiu": "El Tribunal Superior de Justicia del País Vasco estableix que Iberia no pot reduir les condicions laborals d'una treballadora subrogada de Globalia, respectant els drets adquirits durant la subrogació. La resolució reafirma que la subrogació no permet perjudicar les condicions laborals del treballador.",
+    "impacte_practic": "La decisió garanteix que els treballadors subrogats mantinguin les seves condicions laborals, amb implicacions positives per a la seguretat laboral. Això evita que les empreses redueixin els salaris i drets després d'un canvi d'empresa.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "subrogació",
+      "drets laborals",
+      "condicions laborals",
+      "Iberia"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244900",
+    "data": "2026-05-03",
+    "titol": "Permiso parental de 8 semanas: ¿seguro que todo claro en 2026?",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/permiso-parental-de-8-semanas-seguro-que-todo-claro-en-2026/",
+    "resum_executiu": "El permís parental de vuit setmanes, introduït per la normativa recent, genera confusió sobre la seva naturalesa retribuïda o no. Una recent sentència del Tribunal Suprem aclareix que aquest permís s'ha de considerar temps de treball efectiu, afectant també el còmput de vacances.",
+    "impacte_practic": "Els treballadors tindran dret a un permís retribuït que es computa com a temps de treball, garantint així els seus drets laborals. Les empreses hauran d'assumir aquests costos i ajustar les seves polítiques de vacances en conseqüència.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "permís parental",
+      "Tribunal Suprem",
+      "drets laborals",
+      "vacances"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244897",
+    "data": "2026-05-03",
+    "titol": "Las leyes se han de entender sin la participación de la judicatura",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/la-firma/la-seguridad-juridica-y-el-problema-de-las-leyes-que-dependen-del-juez/",
+    "resum_executiu": "L'article planteja que les lleis han de ser clares i comprensibles sense necessitat d'intervenció judicial, per evitar la inseguretat jurídica. Això implica que els ciutadans han de poder entendre les conseqüències de les normes per si mateixos, sense recórrer a litigis que són costosos i lents.",
+    "impacte_practic": "Aquesta visió pot reduir la càrrega sobre la justícia i permetre als ciutadans una millor previsibilitat en l'aplicació de les lleis. Les empreses també podrien beneficiar-se d'un marc normatiu més clar i estable, facilitant la seva planificació i operativa.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "inseguretat jurídica",
+      "interpretació de lleis",
+      "normativa clara",
+      "participació jurídica"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244631",
+    "data": "2026-05-03",
+    "titol": "Cuando el caos se convierte en rutina: la adicción silenciosa a la urgencia en los despachos",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/cuando-el-caos-se-convierte-en-rutina-la-adiccion-silenciosa-a-la-urgencia-en-los-despachos/",
+    "resum_executiu": "L'article analitza com la urgència s'ha convertit en una rutina en els despatxos d'advocats, deixant de ser una excepció per fer-se habitual. Això pot provocar una normalització del caos i la percepció d'alta productivitat en contextos de pressió constant.",
+    "impacte_practic": "Aquesta dinàmica pot afectar negativament tant als professionals del dret com als seus clients, generant un ambient de treball tòxic i disminuint la qualitat del servei legal. Els advocats podrien experimentar desgast professional i estrès incrementat.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "urgència",
+      "advocats",
+      "productivitat",
+      "estrès"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://almacendederecho.org/?p=59825",
+    "data": "2026-05-03",
+    "titol": "The limits of article 6 Directive 93/13*",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://almacendederecho.org/the-limits-of-article-6-directive-93-13",
+    "resum_executiu": "L'article aborda els límits de l'article 6 de la Directiva 93/13 en relació amb la nul·litat de clàusules abusives en contractes de préstec. La recent sentència del Tribunal Suprem espanyol STS 161/2026 reconeix que l'eliminació d'una clàusula IRPH d'un préstec hipotecari resulta en un préstec sense interessos per al consumidor durant vint-i-cinc anys.",
+    "impacte_practic": "Aquesta decisió pot deixar els consumidors amb préstecs sense cap tipus d'interès, provocant desigualtats en el mercat financer. Les empreses podrien veure's desincentivades a incloure clàusules que, tot i ser legals, romanen en una zona gris pel temor a la nul·litat.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "préstecs",
+      "clàusules abusives",
+      "interessos",
+      "consumidors"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Almacén de Derecho",
+    "comarques": []
+  },
+  {
     "id": "ACT-https://www.economistjurist.es/?p=244627",
     "data": "2026-05-02",
     "titol": "El escenario oculto de la abogacía: cuando el derecho también se interpreta",
