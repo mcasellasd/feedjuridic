@@ -1,5 +1,127 @@
 [
   {
+    "id": "ACT-https://www.economistjurist.es/?p=244946",
+    "data": "2026-05-04",
+    "titol": "Condenado el Ayuntamiento de San Roque: el TSJ de Andalucía destapa la práctica de convertir trabajadores en “voluntarios”",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/condenado-el-ayuntamiento-de-san-roque-el-tsj-de-andalucia-destapa-la-practica-de-convertir-trabajadores-en-voluntarios/",
+    "resum_executiu": "El TSJ d'Andalusia ha condemnat l'Ajuntament de San Roque per disfressar una relació laboral com a voluntariat, ja que la treballadora complia funcions laborals i rebia una retribució fixa, fet que implica l'existència d'un contracte de treball. A més, el Tribunal considera que la suspensió de la treballadora després de reclamar els seus drets constitueix un acomiadament encobert i vulnera la garantia de indemnitat.",
+    "impacte_practic": "Els ciutadans poden veure com les administracions no poden eludir les seves responsabilitats laborals amagant relacions laborals sota la figura del voluntariat. Això podria provocar un augment de reclamacions legals per part de treballadors que busquen el reconeixement dels seus drets laborals.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "voluntariat",
+      "contracte de treball",
+      "indemnitat",
+      "repressalia"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244940",
+    "data": "2026-05-04",
+    "titol": "Nuevo sistema de facturación obligatorio: la Administración controlará hasta la sintaxis de las facturas",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/nuevo-sistema-de-facturacion-obligatorio-la-administracion-controlara-hasta-la-sintaxis-de-las-facturas/",
+    "resum_executiu": "La nova normativa imposa un sistema de facturació electrònica obligatori, amb terminis d'implementació diferenciats per empresaris segons el seu volum de negoci. La normativa especifica requisits tècnics per a la generació i enviament de les factures.",
+    "impacte_practic": "Aquesta llei afectarà substancialment la manera en què les empreses gestionen la facturació, facilitant el control administratiu i la traçabilitat. Els professionals hauran d'adaptar-se a un nou sistema que pot implicar costos addicionals.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "facturació electrònica",
+      "legislació",
+      "empresaris",
+      "contribuents"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=238717",
+    "data": "2026-05-04",
+    "titol": "Modelo de escrito de adhesión a recurso de apelación",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/sala-2-0/modelo-de-escrito-de-adhesion-a-recurso-de-apelacion-2/",
+    "resum_executiu": "El model de escrit de adhesió a recurs d'apel·lació permet a una part unir-se al recurs ja presentat per altra part. Aquest document ha de ser presentat davant del jutjat competent i inclou informació necessària sobre les parts implicades.",
+    "impacte_practic": "Permet a les parts afectades per una decisió judicial anterior fer sentir la seva veu en la fase d'apel·lació, millorant així l'accés a la justícia. Això pot influir en l'outcome del procediment i, per tant, en els drets dels ciutadans i empreses implicades.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "recurs d'apel·lació",
+      "adhesió",
+      "model",
+      "justícia"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244915",
+    "data": "2026-05-04",
+    "titol": "El abogado que nunca sale del despacho: cuando la desconexión deja de ser posible",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/el-abogado-que-nunca-sale-del-despacho-cuando-la-desconexion-deja-de-ser-posible/",
+    "resum_executiu": "La disposició analitza el fenomen de la desconexió dels advocats, assenyalant que el veritable problema és la constant ocupació mental per assumptes professionals, més enllà de les hores de treball. Aquesta càrrega mental dificulta la separació entre la vida laboral i personal.",
+    "impacte_practic": "La manca de desconexió pot tenir conseqüències negatives per al benestar dels advocats, afectant la seva salut mental. Això pot repercutir en la seva capacitat per oferir serveis legals de qualitat.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "desconexió",
+      "benestar",
+      "advocats",
+      "salut mental"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244912",
+    "data": "2026-05-04",
+    "titol": "La confusión madrileña sobre el bikini barcelonés",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/zestilo-de-vida/la-confusion-madrilena-sobre-el-bikini-barcelones/",
+    "resum_executiu": "L'article descriu l'evolució del 'croque-Monsieur' a Barcelona, que es va adaptar i nomenar com a 'bikini' en el context de la gastronomia local. També es critica la confusió en altres regions, com Madrid, sobre la preparació i ingredients d'aquest plat.",
+    "impacte_practic": "Els ciutadans i empreses de restauració es poden beneficiar d'una millor comprensió de les diferències gastronòmiques regionals, el que pot facilitar l'adequada promoció dels plats locals. Això pot influir positivament en la gastronomia catalana i la seva apreciació fora de Catalunya.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "gastronomia",
+      "bikini",
+      "Barcelona",
+      "culinària"
+    ],
+    "urgencia": "baixa",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "COM-d5ebe2051929",
+    "data": "2026-05-04",
+    "titol": "Berga licita el servei de barres sense alcohol per les festes de la Patum i Carnaval",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/bergueda/2026/05/04/berga-licita-servei-barres-sense-129817096.html",
+    "resum_executiu": "L'Ajuntament de Berga ha iniciat un procés de licitació per a un contracte administratiu de serveis que permetrà habilitar barres sense alcohol durant les festes de la Patum i el Carnaval. Aquesta iniciativa busca promoure un oci nocturn segur i responsables, reduint els riscos associats al consum d'alcohol.",
+    "impacte_practic": "Aquesta mesura busca oferir alternatives saludables durant les festes, millorant l'experiència dels assistents i prevenint conductes de risc. Les empreses que hi participin tindran l'oportunitat de contribuir a un model d'oci nocturn més responsable.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "festes",
+      "oci nocturn",
+      "barres sense alcohol",
+      "licitació"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "berguedà"
+    ]
+  },
+  {
     "id": "ACT-https://www.economistjurist.es/?p=244907",
     "data": "2026-05-03",
     "titol": "Una confesión amarga en Sueca",
