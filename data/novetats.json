@@ -1,5 +1,249 @@
 [
   {
+    "id": "ACT-https://www.economistjurist.es/?p=244964",
+    "data": "2026-05-05",
+    "titol": "Cómo usar inteligencia artificial en Derecho sin que se note: trucos para abogados",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/como-usar-inteligencia-artificial-en-derecho-sin-que-se-note-trucos-para-abogados/",
+    "resum_executiu": "L'ús de la intel·ligència artificial en el dret és cada cop més prevalent, tant per part d'advocats com de jutges. És fonamental mantenir el control sobre la redacció i evitar que la IA escrigui de forma autònoma, ja que això pot comprometre la qualitat i personalització del text jurídic.",
+    "impacte_practic": "Els advocats i professionals del dret poden beneficiar-se de l'ús estratègic de la IA per millorar la seva eficiència. No obstant això, cal ser cauts per evitar que textos generats per IA no es reconeguin com a tal i mantinguin un estil personal.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "dret",
+      "advocats",
+      "redacció"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245040",
+    "data": "2026-05-05",
+    "titol": "Jorge Sanz, nuevo socio de Laboral de Bird & Bird",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/actualidad-de-los-despachos/jorge-sanz-nuevo-socio-de-laboral-de-bird-bird/",
+    "resum_executiu": "Jorge Sanz ha estat nomenat nou soci del departament laboral de l'empresa jurídica Bird & Bird, reforçant així una de les àrees estratègiques del despatx. La seva trajectòria professional inclou més de 10 anys d'experiència en dret laboral i ha assessorat clients tant nacionals com internacionals.",
+    "impacte_practic": "Aquest nomenament pot millorar la qualitat dels serveis laborals oferits pel despatx, beneficiant així als clients que busquen assessorament en matèria laboral. La seva experiència contribuirà a la solució de conflictes laborals i a la gestió de personal.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "Jorge Sanz",
+      "laboral",
+      "Bird & Bird",
+      "nomenament"
+    ],
+    "urgencia": "baixa",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245029",
+    "data": "2026-05-05",
+    "titol": "El accidente sufrido por una autónoma en la rampa del garaje camino al trabajo es accidente laboral ‘in itinere’",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/el-accidente-sufrido-por-una-autonoma-en-la-rampa-del-garaje-camino-al-trabajo-es-accidente-laboral-in-itinere/",
+    "resum_executiu": "El Tribunal Superior de Justicia del País Basc ha confirmat que la caiguda d'una treballadora autònoma en la rampa del garatge s'ha de qualificar com a accident laboral 'in itinere', ja que es produí en el trajecte cap al seu establiment professional. Això reforça la interpretació que el concepte d'accident in itinere s'aplica de manera similar als autònoms i als treballadors per compte d'altri.",
+    "impacte_practic": "Aquesta decisió tanca la porta a exigir requisits probatoris més estrictes a autònoms per acreditar accidents laborals, millorant així la seva protecció en cas d'accident. Els autònoms podran tenir més garanties de cobertura en situacions d'accident durant el trajecte cap al seu lloc de treball.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "accident laboral",
+      "autònoms",
+      "in itinere",
+      "protecció"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=236841",
+    "data": "2026-05-05",
+    "titol": "Modelo de solicitud de inicio de negociación extrajudicial",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/sala-2-0/modelo-de-solicitud-de-inicio-de-negociacion-extrajudicial/",
+    "resum_executiu": "El model de sol·licitud per iniciar la negociació extrajudicial per reclamar despeses hipotecàries permet formalitzar reclamacions davant entitats financeres, especialment en relació amb despeses que s'han considerat indegudes. Això es fa conforme a la Ley Orgánica 1/2025, facilitant així la resolució de conflictes sense recórrer a la via judicial.",
+    "impacte_practic": "Els ciutadans que han pagat despeses excessives en préstecs hipotecaris poden utilitzar aquest model per iniciar reclamacions de manera més àgil i efficient. Això pot beneficiar tant a prestatàries com a entitats financeres, reduint la càrrega dels jutjats.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "negociació extrajudicial",
+      "despeses hipotecàries",
+      "reclamació",
+      "model de sol·licitud"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244918",
+    "data": "2026-05-05",
+    "titol": "El cliente que no quiere resolver: cuando el conflicto se convierte en objetivo",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/el-cliente-que-no-quiere-resolver-cuando-el-conflicto-se-convierte-en-objetivo/",
+    "resum_executiu": "En el context jurídic, alguns clients prefereixen mantenir el conflicte en comptes de resoldre'l, buscant validació emocional o perpetuar l'enfrontament. Aquesta dinàmica presenta un repte per als advocats a l'hora de gestionar les expectatives i objectius dels clients.",
+    "impacte_practic": "Els ciutadans poden experimentar un alargament innecessari dels litigis, augmentant així els costos i les tensions emocionals. Les empreses, igualment, poden veure afectades les seves relacions laborals o comercials per aquesta mena de conflictes.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "conflictes legals",
+      "clients conflictivos",
+      "estratègia jurídica",
+      "gestió emocional"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244997",
+    "data": "2026-05-05",
+    "titol": "El valor de referencia de los inmuebles prevalece sobre el de adquisición en subastas para calcular la base imponible del Impuesto sobre Transmisiones Patrimoniales",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/el-valor-de-referencia-de-los-inmuebles-prevalece-sobre-el-de-adquisicion-en-subastas-para-calcular-la-base-imponible-del-impuesto-sobre-transmisiones-patrimoniales/",
+    "resum_executiu": "El valor de referencia dels immobles és el criteri que preval per calcular la base imposable de l'Impost sobre Transmissions Patrimonials en acquisitions per subasta, deixant de costat el valor d'adquisició. Aquesta normativa ha estat confirmada pel Tribunal Superior de Justicia de Galicia en una recent sentència.",
+    "impacte_practic": "Els contribuents que adquireixen immobles per subhasta veuran modificades les seves bases imposables, el que pot influir en l'import a pagar. Això afecta tant ciutadans com empreses implicades en compres d'immobles a través de subhastes.",
+    "categoria": "fiscal",
+    "paraules_clau": [
+      "valor de referència",
+      "Impost Transmissions Patrimonials",
+      "subasta",
+      "base imposable"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244978",
+    "data": "2026-05-05",
+    "titol": "Condenada una comunidad de propietarios a indemnizar con 8.000 euros al dueño de un local por las filtraciones de agua provenientes de una terraza privativa",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/condenada-una-comunidad-de-propietarios-a-indemnizar-con-8-000-euros-al-dueno-de-un-local-por-las-filtraciones-de-agua-provenientes-de-una-terraza-privativa/",
+    "resum_executiu": "La Audiencia Provincial de Navarra ha condemnat una comunitat de propietaris a indemnitzar amb 8.000 euros el propietari d'un local pels danys ocasionats per filtracions d'aigua d'una terrassa privativa. La comunitat ha d'executar les solucions tècniques necessàries per solucionar les filtracions de manera definitiva.",
+    "impacte_practic": "Aquesta sentència estableix un precedent en la responsabilitat de la comunitat de propietaris en casos de danys per filtracions. Els ciutadans que pateixin danys similars podrien tenir més facilitat per reclamar compensacions.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "comunitat de propietaris",
+      "indemnització",
+      "filtracions",
+      "responsabilitat"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244961",
+    "data": "2026-05-05",
+    "titol": "Certificados de Hacienda sin deuda… y luego aparece la AEAT: ¿En qué quedamos?",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/certificados-de-hacienda-sin-deuda-y-luego-aparece-la-aeat-en-que-quedamos/",
+    "resum_executiu": "L'article analitza les contradiccions en la gestió de certificats d'absència de deute per part de l'AEAT i la TGSS en el marc de la Ley de la Segunda Oportunidad. La jurisprudència ens ensenya que la càrrega de la prova recau en l'AEAT quan el deudor presenta un certificat actualitzat que acredita estar al corrent de pagaments.",
+    "impacte_practic": "Aquesta situació genera inseguretat jurídica per als deudors, que poden veure's impedits d'accedir a la exoneració de deutes malgrat tenir certificats que indiquen que estan al corrent. Les empreses i ciutadans poden enfrontar-se a procediments prolongats i complicats.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "certificat de deutes",
+      "AEAT",
+      "Ley de la Segunda Oportunidad",
+      "càrrega de la prova"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244956",
+    "data": "2026-05-05",
+    "titol": "Ana Bernaola, nueva socia de Molins",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/actualidad-de-los-despachos/ana-bernaola-nueva-socia-de-molins/",
+    "resum_executiu": "Ana Bernaola ha estat promocionada a socia professional de Molins Defensa Penal, reconeixent la seva experiència de més de 20 anys en el dret penal, especialment en casos de complexitat elevada. La seva aportació ha estat clau per al creixement del despatx a Barcelona i Madrid.",
+    "impacte_practic": "Aquesta promoció no només reforça la reputació de Molins Defensa Penal com a firma referent en dret penal econòmic, sinó que també pot influir en la qualitat dels serveis legals per als clients que necessiten assistència en casos penals.",
+    "categoria": "penal",
+    "paraules_clau": [
+      "Ana Bernaola",
+      "molins",
+      "dret penal",
+      "promoció"
+    ],
+    "urgencia": "baixa",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://almacendederecho.org/?p=59827",
+    "data": "2026-05-05",
+    "titol": "El concepto de Derecho, el derecho internacional y los juicios de Núremberg",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://almacendederecho.org/el-concepto-de-derecho-el-derecho-internacional-y-los-juicios-de-nuremberg",
+    "resum_executiu": "L'article analitza la noció de Dret, en particular el Dret Internacional, a través de les reflexions sobre els juís de Núremberg. Argumenta que el Dret Internacional no constitueix un veritable Dret perquè no promou activament la justícia entre els Estats.",
+    "impacte_practic": "Aquesta anàlisi provoca interrogants sobre la legalitat i la moralitat dels judicis internacionals, la qual cosa podria influir en les decisions futures en matèria de Dret Internacional i drets humans.",
+    "categoria": "constitucional",
+    "paraules_clau": [
+      "Dret Internacional",
+      "justícia",
+      "juís de Núremberg",
+      "positivisme"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Almacén de Derecho",
+    "comarques": []
+  },
+  {
+    "id": "COM-192651e1d28f",
+    "data": "2026-05-05",
+    "titol": "La \"droga dels pobres\" a la Catalunya central guanya consumidors, aliens als seus mites i estigmes",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/successos/2026/05/05/droga-dels-pobres-catalunya-central-129857410.html",
+    "resum_executiu": "El consum de karkubi, una mescla de haixix i benzodiazepines, ha augmentat a Catalunya central, atraient nous consumidors i trencant estigmes associats. El seu preu baix i fàcil accessibilitat contribueixen a aquesta tendència entre la població jove.",
+    "impacte_practic": "L'increment en l'ús de karkubi pot tenir conseqüències sanitàries i socials per als ciutadans, a més de generar preocupacions legals i policials. Les autoritats han alertat sobre el tràfic il·lícit de medicaments relacionats amb aquesta droga.",
+    "categoria": "penal",
+    "paraules_clau": [
+      "consum",
+      "karkubi",
+      "benzodiazepines",
+      "tràfic"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
+    "id": "COM-221d4ff106ad",
+    "data": "2026-05-05",
+    "titol": "Crisi de l'habitatge a Cerdanya: Llívia construirà 39 pisos de lloguer social",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/cerdanya/2026/05/05/crisi-lhabitatge-cerdanya-llivia-construira-129853828.html",
+    "resum_executiu": "L'Ajuntament de Llívia ha aprovat la cessió d'un terreny per a la construcció de 39 pisos de lloguer social, responent a la manca d'habitatge assequible a la zona. El projecte preveu una renda de 6 a 8 euros per metre quadrat, amb l'objectiu d'ampliar l'oferta d'habitatge a la població local.",
+    "impacte_practic": "La construcció de pisos de lloguer social facilitarà l'accés a l'habitatge per als residents de Llívia, millorant així la qualitat de vida dels ciutadans. A més, pot tenir un efecte positiu en el mercat de lloguer de la Cerdanya.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "lloguer social",
+      "habitatge",
+      "Cerdanya",
+      "Llívia"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": [
+      "cerdanya"
+    ]
+  },
+  {
     "id": "ACT-https://www.economistjurist.es/?p=244946",
     "data": "2026-05-04",
     "titol": "Condenado el Ayuntamiento de San Roque: el TSJ de Andalucía destapa la práctica de convertir trabajadores en “voluntarios”",
