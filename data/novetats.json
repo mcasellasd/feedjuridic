@@ -1,5 +1,315 @@
 [
   {
+    "id": "26125106",
+    "data": "2026-05-07",
+    "titol": "Decret 72/2026, de 5 de maig, de modificació del Decret 106/2024, d'11 de juny, pel qual s'aprova el Reglament dels serveis jurídics de l'Administració de la Generalitat de Catalunya",
+    "font": "DOGC",
+    "tipus": "Decret",
+    "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/05/05/72/dof/cat/html",
+    "resum_executiu": "El Decret 72/2026 modifica el Decret 106/2024 referent al Reglament dels serveis jurídics de l'Administració de la Generalitat de Catalunya, buscant millorar l'eficiència i la qualitat en la prestació dels serveis jurídics. Aquesta modificació incideix en aspectes operatius i organitzatius clau per a la correcta funció dels serveis jurídics.",
+    "impacte_practic": "Els ciutadans i empreses veuran una millora en l'atenció i resolució de qüestions legals amb l'Administració. Això podrà repercutir en una major agilitat en la tramitació de processos administratius.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "serveis jurídics",
+      "Administració",
+      "Catalunya",
+      "modificació"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
+    "id": "ACT-https://www.abogacia.es/?p=270657",
+    "data": "2026-05-07",
+    "titol": "Abogacía Española desarrolla una nueva plataforma SIGA con tecnología de última generación",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/noticias/abogacia-espanola-desarrolla-una-nueva-plataforma-siga-con-tecnologia-de-ultima-generacion/",
+    "resum_executiu": "El nou Sistema Integral de Gestió de la Abogacía (SIGA) serà modernitzat amb tecnologia de darrera generació, millorant la seva eficiència i la experiència d'usuari. Aquest projecte inclou un desplegament progressiu, garantint una transició sense impacte per als usuaris actuals.",
+    "impacte_practic": "Els professionals de la llei podran accedir a serveis digitals més eficients i de més qualitat. Això beneficiarà tant als col·legis d'advocats com als seus usuaris, millorant la gestió i els costos operatius.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "SIGA",
+      "modernització",
+      "tecnologia",
+      "abogacía"
+    ],
+    "urgencia": "alta",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=232880",
+    "data": "2026-05-07",
+    "titol": "Escrito de subsanación de recurso de apelación en procedimiento de ejecución forzosa que por error se remitió al órgano de origen",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/sala-2-0/escrito-de-subsanacion-de-recurso-de-apelacion-en-procedimiento-de-ejecucion-forzosa-que-por-error-se-remitio-al-organo-de-origen/",
+    "resum_executiu": "La disposició aborda la subsanació d'un recurs d'apel·lació en un procediment d'execució forçosa que es va remetre erròniament al jutjat d'origen. Aquesta situació exigeix la correcció dels tràmits per garantir el correcte seguiment del procediment judicial.",
+    "impacte_practic": "Els ciutadans afectats per aquesta errada podran solucionar la seva situació legal sense retards addicionals. Les empreses implicades en processos d'execució forçosa han de ser atentes a les modificacions dels tràmits per evitar complicacions.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "subsanjación",
+      "recurs",
+      "execució",
+      "apel·lació"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245159",
+    "data": "2026-05-07",
+    "titol": "Derivación de responsabilidad en jaque: el Supremo exige defensa efectiva, no expedientes infinitos",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/derivacion-de-responsabilidad-en-jaque-el-supremo-exige-defensa-efectiva-no-expedientes-infinitos/",
+    "resum_executiu": "El Tribunal Suprem ha afirmat la importància de proveir una defensa efectiva en els procediments de derivació de responsabilitat tributària, exigint la incorporació de proves adequades al expedient. Això implica que els administradors que es vegin implicats en responsabilitats tributàries han de tenir accés a documentació clau per poder impugnar decisions administratives.",
+    "impacte_practic": "Els ciutadans i empreses podran defensar-se millor en casos de responsabilitat tributària, ja que s'exigirà una resposta més transparent de les autoritats fiscals. Això pot augmentar la responsabilitat de l'Agència Tributària a l'hora de presentar proves en aquests processos.",
+    "categoria": "fiscal",
+    "paraules_clau": [
+      "responsabilitat tributària",
+      "defensa efectiva",
+      "impugnació",
+      "documentació"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245170",
+    "data": "2026-05-07",
+    "titol": "La transformación del Colegio de Graduados Sociales de Barcelona, Girona y Lleida",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/la-firma/la-transformacion-del-colegio-de-graduados-sociales-de-barcelona-girona-y-lleida/",
+    "resum_executiu": "El Colegio de Graduados Sociales de Barcelona, Girona y Lleida ha renovat la seva junta de govern per al mandat 2026-2030, amb un enfocament en la modernització i la formació contínua. Han destacat acords com el servei d'orientació jurídica gratuïta i la promoció de la igualtat de gènere.",
+    "impacte_practic": "Aquesta transformació permetrà als graduats socials oferir serveis més eficients i adaptats a les necessitats del sistema laboral. Això beneficiarà tant els professionals com els ciutadans que requereixen assessorament legal.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "Colegio",
+      "graduats socials",
+      "transformació",
+      "formació"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": [
+      "girona"
+    ]
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245184",
+    "data": "2026-05-07",
+    "titol": "La cosa juzgada y sus efectos positivo y negativo",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/la-cosa-juzgada-y-sus-efectos-positivo-y-negativo/",
+    "resum_executiu": "La disposició analitza la cosa juzgada i els seus efectes positius i negatius en el dret processal català, establint que les sentències fermes exclouen processos posteriors sobre el mateix objecte. També detalla els efectes en relació amb les parts, els seus hereus i els drets de tercers, especialment en temes d'estat civil i acords societaris.",
+    "impacte_practic": "Els ciutadans i empreses veuen garantida la seguretat jurídica, ja que no poden reobrir qüestions ja decidides, evitant així litigis innecessaris. Això facilita la resolució de conflictes i contribueix a la estabilitat de les relacions socials i econòmiques.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "cosa juzgada",
+      "efectes",
+      "dret processal",
+      "sentències fermes"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245174",
+    "data": "2026-05-07",
+    "titol": "De la reclamación individual a la defensa colectiva: el consumidor ya no puede defenderse solo",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/de-la-reclamacion-individual-a-la-defensa-colectiva-el-consumidor-ya-no-puede-defenderse-solo/",
+    "resum_executiu": "La defensa del consumidor evoluciona d'una reclamació individual a una acció col·lectiva per abordar les desigualtats d'informació i recursos entre consumidors i empreses. Aquesta transformació busca garantir un accés efectiu a la justícia davant de les complexitats dels mercats actuals.",
+    "impacte_practic": "Aquesta nova perspectiva permet als consumidors organitzar-se i reclamar junts, millorant la seva capacitat per fer valer els seus drets. Això pot reduir les barreres d'entrada per a que els ciutadans i petites empreses no es vegin subordinades a grans corporacions.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "defensa col·lectiva",
+      "consumidor",
+      "acció col·lectiva",
+      "justícia"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244926",
+    "data": "2026-05-07",
+    "titol": "Cuando el orgullo entra en sala: la fina línea entre estrategia y ego en la abogacía",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/cuando-el-orgullo-entra-en-sala-la-fina-linea-entre-estrategia-y-ego-en-la-abogacia/",
+    "resum_executiu": "L'article analitza la difícil distinció entre la defensa d'una estratègia jurídica sòlida i el pes del factor ego en les decisions d'un advocat. Es destaca com l'orgull pot influir negativament en la resolució de conflictes legals, alterant la qualitat de les decisions preses.",
+    "impacte_practic": "Aquesta reflexió pot portar els professionals jurídics a reconsiderar les seves estratègies i millorar la seva pràctica, resultant en un servei més orientat al client. Això pot reduir litigis innecessaris i afavorir una gestió més eficient dels casos.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "estratègia jurídica",
+      "ego professional",
+      "decisions legals",
+      "litigis"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245114",
+    "data": "2026-05-07",
+    "titol": "Absuelto un hombre que fue utilizado como «mula bancaria» en una estafa",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/absuelto-un-hombre-que-fue-utilizado-como-mula-bancaria-por-una-red-de-estafadores/",
+    "resum_executiu": "El Tribunal de Daimiel ha absolt un acusat d'un delicte lleu d'estafa, argumentant que era víctima d'una estafa prèvia i no tenia control sobre les operacions de la seva compte. La defensa ha demostrat la seva condició de víctima dins d'un entramat de cibercriminals.",
+    "impacte_practic": "Aquesta sentència pot influir en futurs casos on individus innocentment implicats en activitats il·legals necessitin la seva defensa adequada. El reconeixement del concepte de 'mula bancaria' pot protegir els drets dels ciutadans que són manipulats per delinqüents.",
+    "categoria": "penal",
+    "paraules_clau": [
+      "mula bancaria",
+      "estafa",
+      "cibercrim",
+      "absensió"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245109",
+    "data": "2026-05-07",
+    "titol": "El Supremo confirma que los honorarios de la partición de la herencia deben pagarse según la cuota hereditaria de cada interesado y no al 50% entre las partes del procedimiento",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/el-supremo-confirma-que-los-honorarios-de-la-particion-de-la-herencia-deben-pagarse-segun-la-cuota-hereditaria-de-cada-interesado-y-no-al-50-entre-las-partes-del-procedimiento/",
+    "resum_executiu": "El Tribunal Suprem estableix que els honoraris de la partició d'una herència s'han de pagar segons la quota hereditària de cada hereu i no pel 50% entre les parts del procediment. Aquesta decisió busca resoldre conflictes freqüents entre hereus sobre la divisió de costos en la partició judicial de l'herència.",
+    "impacte_practic": "Les persones implicades en processos d'herència veuran que els costos derivats de la partició es distribueixen d'acord amb la seva aportació a l'herència, evitant així desacords sobre la repartició. Això proporciona una major claredat i equitat en els procediments de successió.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "herència",
+      "honoraris",
+      "quota",
+      "partició"
+    ],
+    "urgencia": "baix",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245139",
+    "data": "2026-05-07",
+    "titol": "Mercadona, condenada a optar entre readmitir a un trabajador que despidió por pasear a su Yorkshire estando de baja médica, o indemnizarle con casi 40.000 euros",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/mercadona-condenada-a-optar-entre-readmitir-a-un-trabajador-que-despidio-por-pasear-a-su-yorkshire-estando-de-baja-medica-o-indemnizarle-con-casi-40-000-euros/",
+    "resum_executiu": "El Tribunal Superior de Justicia de Castilla y León ha declarat improcedent el despido d'un treballador de Mercadona per realitzar activitats compatibles amb la seva incapacitat temporal. La sentència obliga l'empresa a readmetre'l o indemnitzar-lo amb gairebé 40.000 euros.",
+    "impacte_practic": "Aquesta decisió pot influir en com les empreses gestionen les baixes laborals i les sancions als treballadors. Els treballadors en situació de baixa es poden sentir més protegits davant d'acomiadaments arbitraris.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "despido improcedent",
+      "incapacitat temporal",
+      "indemnització",
+      "protecció laboral"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245137",
+    "data": "2026-05-07",
+    "titol": "Sancionado un juez por utilizar IA",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/sancionado-un-juez-por-utilizar-ia/",
+    "resum_executiu": "Un jutge ha estat sancionat per utilitzar intel·ligència artificial per redactar un borrador de sentència, considerant-se una falta greu. La sanció imposada és una multa de 1.000 euros, i no s'ha aplicat una suspensió per falta molt greu.",
+    "impacte_practic": "Aquesta decisió podria marcar un precedent sobre l'ús d'IA en l'àmbit judicial, influenciant la forma en què els jutges utilitzen aquestes eines en el futur. Els professionals del dret han d'estar atents a les implicacions d'aquesta tecnologia en la seva pràctica.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "jutge",
+      "sanció",
+      "sentència"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "COM-80f819279a34",
+    "data": "2026-05-07",
+    "titol": "Bagà vol batejar una quinzena de carrers i demana propostes als veïns",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/bergueda/2026/05/07/baga-vol-batejar-quinzena-carrers-129943011.html",
+    "resum_executiu": "L'Ajuntament de Bagà està recollint propostes dels veïns per batejar una quinzena de carrers sense nom. Aquesta iniciativa es realitza amb l'assessorament de la Comissió del Nomenclàtor, en compliment de la normativa vigent.",
+    "impacte_practic": "Els ciutadans poden participar activament en la denominació de les vies, promovent així la seva implicació en la vida comunitària. A més, es busca completar la retolació oficial del municipi.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "nomenclàtor",
+      "participació ciutadana",
+      "Bagà",
+      "carrers"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "berguedà"
+    ]
+  },
+  {
+    "id": "COM-344b61a075dd",
+    "data": "2026-05-07",
+    "titol": "La nova Cerdanya intercultural analitza el dol migratori",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/cerdanya/2026/05/07/nova-cerdanya-intercultural-analitza-dol-129900420.html",
+    "resum_executiu": "L'Àrea d'Igualtat del Consell Comarcal de la Cerdanya ha iniciat un taller per abordar el dol migratori, adreçat a persones migrades que busquen suport emocional i comunitari. Aquest taller pretén facilitar l'adaptació a noves identitats i relacions en un context multicultural.",
+    "impacte_practic": "Els ciutadans que han passat per processos de migració podran rebre suport emocional i social, ajudant-los a gestionar les pèrdues que comporta el canvi d'entorn. Això contribuirà a una millor integració i adaptació a la seva nova realitat.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "dol migratori",
+      "suport emocional",
+      "integració",
+      "Cerdanya"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "cerdanya"
+    ]
+  },
+  {
+    "id": "COM-68238e5ba6ff",
+    "data": "2026-05-07",
+    "titol": "Nou pacte per rehabilitar el Besòs: Generalitat i Ajuntament de Barcelona prometen 415 milions en 10 anys",
+    "font": "NacióDigital",
+    "tipus": "Premsa comarcal",
+    "url": "https://naciodigital.cat/politica/nou-pacte-per-rehabilitar-el-besos-generalitat-i-ajuntament-de-barcelona-prometen-415-milions-en-10-anys.html",
+    "resum_executiu": "La Generalitat de Catalunya i l'Ajuntament de Barcelona han acordat destinar 415 milions d'euros durant 10 anys per rehabilitar fins a 4.000 habitatges al barri del Besòs i el Maresme. Aquesta intervenció busca resoldre les deficiències estructurals greus d'alguns edificis i millorar les condicions de vida dels seus habitants.",
+    "impacte_practic": "Els ciutadans del Besòs i el Maresme veuran millorades les seves condicions d'habitatge, la qual cosa pot influir pozitivament en la seva qualitat de vida. Les empreses del sector de la construcció podrien beneficiar-se de les inversions assignades a aquestes rehabilitacions.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "rehabilitació",
+      "habitatges",
+      "Besòs",
+      "inversió"
+    ],
+    "urgencia": "alta",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
     "id": "26125096",
     "data": "2026-05-06",
     "titol": "Decret llei 6/2026, de 5 de maig, de mesures urgents en l'àmbit urbanístic i de la contractació en relació amb els municipis rurals",
