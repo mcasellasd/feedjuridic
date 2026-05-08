@@ -1,5 +1,305 @@
 [
   {
+    "id": "ACT-https://www.abogacia.es/?p=270669",
+    "data": "2026-05-08",
+    "titol": "Publicado el informe de la Ponencia sobre la Proposición de Ley de la Pasarela al RETA",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/noticias/publicado-el-informe-de-la-ponencia-sobre-la-proposicion-de-ley-de-la-pasarela-al-reta/",
+    "resum_executiu": "S'ha publicat l'informe de la Ponència sobre la Proposició de Llei de la Pasarela al RETA, que busca resoldre la situació previsional dels professionals de l'abogacía. El Consell General de l'Advocacia Espanyola demana millores tècniques abans de la votació definitiva.",
+    "impacte_practic": "Aquesta disposició pot beneficiar milers de treballadors autònoms en millorar les seves condicions laborals i socials. La reforma és urgent per resoldre reivindicacions històrico del col·lectiu.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "Pasarela",
+      "RETA",
+      "advocats",
+      "reforma"
+    ],
+    "urgencia": "alta",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.abogacia.es/?p=270667",
+    "data": "2026-05-08",
+    "titol": "Abogacía Española respalda la independencia de la profesión jurídica en EE.UU. ante medidas restrictivas contra despachos de abogados",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/noticias/abogacia-espanola-respalda-la-independencia-de-la-profesion-juridica-en-ee-uu-ante-medidas-restrictivas-contra-despachos-de-abogados/",
+    "resum_executiu": "La Abogacía Española ha presentat un escrit de suport davant les mesures restrictives contra despachos d'abogats als Estats Units, destacant la importància de la independència professional per al dret de defensa. Els tribunals federals ja han declarat inconstitucionals aquestes mesures, considerant que afecten negativament l'exercici de la professió.",
+    "impacte_practic": "Aquesta situació pot dificultar l'accés dels ciutadans a una defensa legal efectiva, afectant la confiança en el sistema judicial. La independència dels advocats és essencial per assegurar que els drets són protegits i respectats.",
+    "categoria": "constitucional",
+    "paraules_clau": [
+      "independència",
+      "abogacía",
+      "dret de defensa",
+      "Estats Units"
+    ],
+    "urgencia": "alta",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.abogacia.es/?p=270663",
+    "data": "2026-05-08",
+    "titol": "Abogacía Española destaca el papel clave de la profesión en la mejora de la Justicia y reclama más recursos y colaboración institucional",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/noticias/la-abogacia-espanola-destaca-el-papel-clave-de-la-profesion-en-la-mejora-de-la-justicia-y-reclama-mas-recursos-y-colaboracion-institucional/",
+    "resum_executiu": "L'Abogacía Española destaca la importància del paper dels advocats en la millora del sistema judicial i demana més recursos i coordinació institucional. Es subratlla la necessitat de garantir el dret de defensa i l'accessibilitat de la justícia per a tots els ciutadans.",
+    "impacte_practic": "L'augment de recursos i la millor coordinació institucional poden facilitar un accés més efectiu a la justícia per als ciutadans i empreses. Això pot fer que el sistema judicial sigui més eficient i equitatiu.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "justícia",
+      "abogacía",
+      "recursos",
+      "cooperació"
+    ],
+    "urgencia": "alta",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=232758",
+    "data": "2026-05-08",
+    "titol": "Modelo de recurso de reposición contra auto desestimatorio de medida cautelar en procedimiento laboral",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/sala-2-0/modelo-de-recurso-de-reposicion-contra-auto-desestimatorio-de-medida-cautelar-en-procedimiento-laboral/",
+    "resum_executiu": "El model de recurs de reposició contra un auto desestimatori de mesures cautelars en el procediment laboral permet als advocats desafiar decisions judicials que afecten a mesures provisionals sol·licitades. Aquesta disposició busca garantir els drets dels treballadors durant el transcurs d'un litigi.",
+    "impacte_practic": "El recurs proporciona una eina essencial per defensar els drets dels treballadors davant decisions desfavorables, augmentant la protecció legal durant el procés. Això pot influir en la velocitat i eficàcia de les resolucions judicials en casos de conflicte laboral.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "recurs de reposició",
+      "mesures cautelars",
+      "procediment laboral",
+      "drets laborals"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245234",
+    "data": "2026-05-08",
+    "titol": "La constitución de las servidumbres de paso",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/la-constitucion-de-las-servidumbres-de-paso/",
+    "resum_executiu": "Les servidumbres de pas constitueixen una figura jurídica important dins del dret civil que permeten l'accés a finques que otherwise estarien incomunicades. Es poden classificar com a servidumbres predials, discontinuas i positives, amb implicacions tant legals com voluntàries.",
+    "impacte_practic": "Aquesta figura permet als propietaris d'immobles garantir un accés adequat a les seves finques, trobant solucions efectives en casos d'enclavament. Això afecta directament a ciutadans i empreses, facilitant la utilització dels recursos immobiliaris.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "servitud",
+      "accés",
+      "dret civil",
+      "finques"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245229",
+    "data": "2026-05-08",
+    "titol": "Echevarría-Torres deja Madrid y apuesta por Zaragoza",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/actualidad-de-los-despachos/echevarria-torres-deja-madrid-y-apuesta-por-zaragoza/",
+    "resum_executiu": "El letrado José María Echevarría-Torres ha estat nomenat soci responsable del grup de Fiscal d'Aragó a Cuatrecasas, renunciant a la seva posició a Madrid. La seva experiència en assessoria fiscal i operacions empresarials.dynamic ajudarà a impulsar el creixement de la firma a Zaragoza.",
+    "impacte_practic": "La incorporació d'Echevarría-Torres a Zaragoza podria millorar l'assessorament fiscal i legal per a empreses de la regió. Això beneficiarà tant a empreses locals com a clients de fora que busquen serveis de qualitat.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "assessoria fiscal",
+      "Cuatrecasas",
+      "Zaragoza",
+      "creixement"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245250",
+    "data": "2026-05-08",
+    "titol": "La empresa no puede condicionar el disfrute del permiso de cinco días para cuidar familiares a la acreditación de que no hay otra persona que pueda hacerse cargo del enfermo",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/la-empresa-no-puede-condicionar-el-disfrute-del-permiso-de-cinco-dias-para-cuidar-familiares-a-la-acreditacion-de-que-no-hay-otra-persona-que-pueda-hacerse-cargo-del-enfermo/",
+    "resum_executiu": "El Tribunal Suprem ha declarat il·legítim que les empreses imposin requisits addicionals al gaudi del permís retribuït de cinc dies per cuidar familiars malalts, limitant-se a l'acreditació de parentesc. Aquesta decisió reafirma que el permís no pot ser condicionat per exigir documentació addicional sobre la necessitat de cures.",
+    "impacte_practic": "Els treballadors podran gaudir del permís de cinc dies sense haver de demostrar que no hi ha altres cuidadores disponibles, el que facilita la seva atenció familiar. Les empreses hauran d'adaptar les seves polítiques internes a aquesta normativa.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "permís retribuït",
+      "cuidat familiars",
+      "clàusules il·legítimes",
+      "drets laborals"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=244929",
+    "data": "2026-05-08",
+    "titol": "El peso invisible de escuchar conflictos ajenos cada día",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/noticias-juridicas/el-peso-invisible-de-escuchar-conflictos-ajenos-cada-dia/",
+    "resum_executiu": "L'article destaca l'impacte emocional que la pràctica del dret té sobre els advocats, exposant-los constantment a situacions de conflicte humà. Aquesta dimensió psicològica, sovint oblidada, pot provocar un desgast emocional significatiu en els professionals del dret.",
+    "impacte_practic": "Els advocats i les empreses legals poden experimentar un augment de l'estrès i la fatiga psicològica, afectant la seva salut mental i la qualitat del servei prestat. La reconeixença d'aquest fenomen podria conduir a millors pràctiques laborals i a la promoció del benestar professional.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "benestar legal",
+      "estrès emocional",
+      "desgast",
+      "advocats"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245200",
+    "data": "2026-05-08",
+    "titol": "¿Trabajos “simples” con menos derechos? El TSJ rechaza que limpiadoras tengan más difícil acceder a la incapacidad permanente",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/trabajos-simples-con-menos-derechos-el-tsj-rechaza-que-limpiadoras-tengan-mas-dificil-acceder-a-la-incapacidad-permanente/",
+    "resum_executiu": "El TSJ de Cantabria rebutja l'argument del INSS que sostenia que les professions menys exigents, com la neteja, dificultaven l'accés a la incapacitat permanent. La sentència subratlla que la valoració de la incapacitat ha de basar-se en la capacitat real del treballador, independentment de la complexitat de la seva feina.",
+    "impacte_practic": "Aquesta resolució garanteix que treballadors de sectors considerats 'simples' no siguin penalitzats en l'accés a prestacions per incapacitat permanent. Això podria beneficiar moltes persones amb treballs manuals o rutinaris que pateixen trastorns de salut mental.",
+    "categoria": "laboral",
+    "paraules_clau": [
+      "incapacitat permanent",
+      "salut mental",
+      "seguretat social",
+      "igualtat"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245205",
+    "data": "2026-05-08",
+    "titol": "La Justicia deniega a un letrado que pueda llevar a su mascota, un caniche llamado Chili, a las dependencias judiciales",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/jurisprudencia/la-justicia-deniega-a-un-letrado-que-pueda-llevar-a-su-mascota-un-caniche-llamado-chili-a-las-dependencias-judiciales/",
+    "resum_executiu": "El Tribunal Supremo ha denegat a un advocat l'accés al jutjat acompanyat de la seva mascota, un caniche, per garantir la seguretat i tranquil·litat dels ciutadans. La decisió es basa en un acord de la magistrada-jutgessa Decana i la recent llei de benestar animal.",
+    "impacte_practic": "Aquesta decisió afecta advocats que sol·liciten portar animals de companyia a dependències judicials. Els ciutadans que necessiten animals d'assistència poden continuar accedint als jutjats.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "accés jutjat",
+      "mascotes",
+      "benestar animal",
+      "drets"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245156",
+    "data": "2026-05-08",
+    "titol": "Los niños deberán ser escuchados en los juicios",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/los-ninos-deberan-ser-escuchados-en-los-juicios/",
+    "resum_executiu": "El 5 de maig de 2026, el Consell de Ministres va aprovar l'ampliació de la Llei de Protecció Integral a la Infància i l'Adolescència davant la Violència, que elimina el límit d'edat per a declarar en processos judicials. Això significa que tots els menors han de ser escoltats en els procediments que els afectin, reforçant el principi de l'interès superior del menor.",
+    "impacte_practic": "Aquesta reforma permet que tots els menors puguin expressar-se en els procediments judicials, millorant la seva protecció i benestar. També s'eliminen prácticas com el Síndrome d'Alienació Parental, millorant així el procés de reparació per a les víctimes.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "infància",
+      "justicia",
+      "menors",
+      "interès superior"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245217",
+    "data": "2026-05-08",
+    "titol": "Leonardo Fernández y Pablo Murcia, nuevos socios de Clifford Chance",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/actualidad-juridica/actualidad-de-los-despachos/leonardo-fernandez-y-pablo-murcia-nuevos-socios-de-clifford-chance/",
+    "resum_executiu": "Leonardo Fernández i Pablo Murcia han estat nomenats nous socis de Clifford Chance a Espanya. Fernández es especialitza en finançament estructurat i operacions complexes de deute, mentre que Murcia se centra en M&A i assessorament en el sector esportiu.",
+    "impacte_practic": "L'arribada de nous socis pot augmentar la capacitat de la firma per atraure clients importants, millorant així el servei ofert. Això podria beneficiar no només el sector legal, sinó també les empreses que busquen assessorament de qualitat.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "Clifford Chance",
+      "socis",
+      "finançament",
+      "M&A"
+    ],
+    "urgencia": "baixa",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://mundojuridico.info/?p=21190",
+    "data": "2026-05-08",
+    "titol": "Inicio del plazo para impugnar los acuerdos de la Comunidad",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://mundojuridico.info/inicio-del-plazo-para-impugnar-los-acuerdos-de-la-comunidad/",
+    "resum_executiu": "El termini per impugnar els acords de la comunitat de propietaris comença a comptar des de l'adopció de l'acord per als assistents o des de la comunicació per als absents. Segons la Llei de Propietat Horitzontal, el termini pot ser de 3 mesos o 1 any, depenent del tipus d'acord impugnat.",
+    "impacte_practic": "Aquesta disposició afecta directament els propietaris d'immobles, ja que determina els temps i les condicions sota les quals poden impugnar acords que considerin perjudicials. Les empreses que gestionen comunitats també han de tenir en compte aquests terminis per evitar litigis.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "impugnació",
+      "acords",
+      "comunitat",
+      "propietaris"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Mundojuridico",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://almacendederecho.org/?p=59853",
+    "data": "2026-05-08",
+    "titol": "Caso:  GITPA vs Aura Energía S.L. y Administración concursal de Aura Energía S.L.",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://almacendederecho.org/caso-gitpa-vs-aura-energia-s-l-y-administracion-concursal-de-aura-energia-s-l",
+    "resum_executiu": "El cas GITPA vs Aura Energía S.L. aborda la conflictuosa relació contractual entre una empresa pública i una empresa subministradora d'energia que va sol·licitar concurs davant l'incompliment de les seves obligacions. La controvèrsia es centra en la validesa de la resolució del contracte i l'impacte de l'augment dels preus de l'energia, considerat com a força major.",
+    "impacte_practic": "El resultat d'aquest cas pot afectar a empreses que depenen de contractes de subministrament, així com les seves responsabilitats en situacions d'augment imprevist de preus. A més, pot influenciar la gestió de concursos de creditors i l'impacte en les condicions de contractació pública.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "contractes",
+      "concurs",
+      "incepcion",
+      "energia"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Almacén de Derecho",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://almacendederecho.org/?p=59795",
+    "data": "2026-05-08",
+    "titol": "Gestión del conocimiento en la era de la IA (2)",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://almacendederecho.org/gestion-del-conocimiento-en-la-era-de-la-ia-2",
+    "resum_executiu": "L'article analitza com la intel·ligència artificial (IA) pot transformar la gestió del coneixement jurídic, diferenciant entre coneixements generals i idiosincràtics. Sosté que la IA pot millorar l'eficiència en tasques repetitives, però el valor real per als clients prové de la personalització del coneixement legal aplicat a cada cas concret.",
+    "impacte_practic": "Els advocats han de centrar la seva atenció en aspectes idiosincràtics dels casos per maximitzar el valor per als clients. Això pot conduir a una major satisfacció i resultats més favorables en litigis. ",
+    "categoria": "civil",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "coneixement jurídic",
+      "personalització",
+      "eficiència"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Almacén de Derecho",
+    "comarques": []
+  },
+  {
     "id": "26125106",
     "data": "2026-05-07",
     "titol": "Decret 72/2026, de 5 de maig, de modificació del Decret 106/2024, d'11 de juny, pel qual s'aprova el Reglament dels serveis jurídics de l'Administració de la Generalitat de Catalunya",
