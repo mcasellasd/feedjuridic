@@ -103,6 +103,36 @@ FEEDS_COMARCALS = [
     ("AquíBerguedà-LaPobla",      "https://www.aquibergueda.cat/category/pobles/alt_bergueda/lapobla/feed/"),
 ]
 
+# Paraules clau IA per filtrar el feed
+KW_IA = [
+    'intel·ligència artificial', 'intel·ligencia artificial',
+    r'\bia\b', r'\b(?:a\.i\.|ai)\b',
+    'algoritme', 'algorisme', 'algorítmic',
+    'automatitzaci', 'automatizaci',
+    'machine learning', 'aprenentatge automàtic',
+    'model de llenguatge', 'chatgpt', 'openai', 'llm',
+    'dades personals', 'rgpd', 'reglament general de protecci',
+    'plataforma digital', 'mercat digital', 'dsa', 'dma',
+    'ciberseguretat', 'ciberseguridad',
+    'regulació tecnol', 'regulacion tecnol',
+    'reglament ia', 'eu ai act', 'ai act',
+    'decisió automatitzada', 'decision automatizada',
+    'blockchain', 'contracte intel·ligent',
+    'deepfake', 'biometria'
+]
+
+def es_ia(titol: str, resum: str) -> bool:
+    """Detecta si l'entrada tracta sobre IA o dret digital."""
+    text = f"{titol} {resum}".lower()
+    for kw in KW_IA:
+        if kw.startswith(r'\b'):
+            if re.search(kw, text, re.IGNORECASE):
+                return True
+        else:
+            if kw in text:
+                return True
+    return False
+
 
 # ── 1. Obtenir entrades del DOGC ──────────────────────────
 def fetch_dogc():
@@ -154,37 +184,59 @@ def fetch_dogc():
 def fetch_boe():
     """Crida l'API del BOE filtrant per Catalunya."""
     print(f"[BOE] Descarregant entrades de {TODAY_STR}...")
-    url = f"https://www.boe.es/datosabiertos/api/boe/dias/{TODAY_STR}"
+    # Nova API: sumario/YYYYMMDD (sense guions)
+    date_nodash = TODAY_STR.replace("-", "")
+    url = f"https://www.boe.es/datosabiertos/api/boe/sumario/{date_nodash}"
     headers = {"Accept": "application/json"}
     try:
         resp = requests.get(url, headers=headers, timeout=15)
         resp.raise_for_status()
         data = resp.json()
-        # El BOE retorna una estructura anidada per seccions
+        # Nova estructura: diario és una llista de dicts
         entrades = []
-        seccions = data.get("data", {}).get("sumario", {}).get("diario", {}).get("seccion", [])
-        if isinstance(seccions, dict):
-            seccions = [seccions]
-        for seccio in seccions:
-            departaments = seccio.get("departamento", [])
-            if isinstance(departaments, dict):
-                departaments = [departaments]
-            for dep in departaments:
-                # Filtrar per departaments rellevants per Catalunya
-                nom_dep = dep.get("@nombre", "").lower()
-                if any(k in nom_dep for k in ["cataluña", "generalitat", "tribunal superior de justicia de cataluña"]):
-                    items = dep.get("item", [])
-                    if isinstance(items, dict):
-                        items = [items]
-                    for item in items:
-                        entrades.append({
-                            "id": item.get("@id", ""),
-                            "titol": item.get("titulo", ""),
-                            "resum": item.get("titulo", ""),
-                            "url": f"https://www.boe.es/diario_boe/txt.php?id={item.get('@id','')}",
-                            "font": "BOE",
-                            "tipus": dep.get("@nombre", "Disposició estatal"),
-                        })
+        diaris = data.get("data", {}).get("sumario", {}).get("diario", [])
+        if isinstance(diaris, dict):
+            diaris = [diaris]
+        for diari in diaris:
+            seccions = diari.get("seccion", [])
+            if isinstance(seccions, dict):
+                seccions = [seccions]
+            for seccio in seccions:
+                departaments = seccio.get("departamento", [])
+                if isinstance(departaments, dict):
+                    departaments = [departaments]
+                for dep in departaments:
+                    if not isinstance(dep, dict):
+                        continue
+                    nom_dep = dep.get("nombre", "").lower()
+                    if not any(k in nom_dep for k in ["cataluña", "generalitat", "tribunal superior de justicia de catal"]):
+                        continue
+                    # Nova estructura: items sota "epigrafe" → "item"
+                    epigrafes = dep.get("epigrafe", [])
+                    if isinstance(epigrafes, dict):
+                        epigrafes = [epigrafes]
+                    for ep in epigrafes:
+                        items = ep.get("item", [])
+                        if isinstance(items, dict):
+                            items = [items]
+                        for item in items:
+                            if not isinstance(item, dict):
+                                continue
+                            boe_id = item.get("identificador", "")
+                            # URL: preferir html, fallback pdf
+                            url_html_obj = item.get("url_html", {})
+                            url_html = (url_html_obj.get("texto", "") if isinstance(url_html_obj, dict) else url_html_obj) or ""
+                            url_pdf_obj = item.get("url_pdf", {})
+                            url_pdf = (url_pdf_obj.get("texto", "") if isinstance(url_pdf_obj, dict) else url_pdf_obj) or ""
+                            entrades.append({
+                                "id": boe_id,
+                                "titol": item.get("titulo", ""),
+                                "resum": item.get("titulo", ""),
+                                "url": url_html or f"https://www.boe.es/diario_boe/txt.php?id={boe_id}",
+                                "url_pdf": url_pdf,
+                                "font": "BOE",
+                                "tipus": dep.get("nombre", "Disposició estatal"),
+                            })
         print(f"[BOE] {len(entrades)} entrades catalanes trobades.")
         return entrades
     except Exception as ex:
@@ -604,7 +656,7 @@ Tipus: {entrada['tipus']}
         return None
 
 
-# ── 4. Pipeline principal ─────────────────────────────────
+# ── 6. Pipeline principal ─────────────────────────────────
 def main():
     print(f"\n{'='*50}")
     print(f"  DretCat · Actualització {TODAY_STR}")
@@ -638,8 +690,10 @@ def main():
         titol_norm = re.sub(r"\s+", " ", e["titol"]).strip().lower()[:120]
         if titol_norm not in titols_vistos:
             titols_vistos.add(titol_norm)
-            noves.append(e)
-    print(f"\n→ {len(noves)} entrades noves per analitzar.\n")
+            # Aplicar el filtre estricte per IA i Dret Digital
+            if es_ia(e["titol"], e.get("resum", "")):
+                noves.append(e)
+    print(f"\n→ {len(noves)} entrades noves sobre IA per analitzar.\n")
 
     novetats_analitzades = []
     for i, entrada in enumerate(noves, 1):

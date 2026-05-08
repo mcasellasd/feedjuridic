@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>LexIA · Portada</title>
-<meta name="description" content="Portada editorial de LexIA, alimentada pel feed jurídic i els resums diaris generats a partir de les novetats del dia." />
+<title>Dret al dIA · Portada</title>
+<meta name="description" content="Portada editorial de Dret al dIA, alimentada pel feed jurídic i els resums diaris generats a partir de les novetats del dia." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&family=DM+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -549,12 +549,6 @@
   }
   .digest .label,
   .kicker { color: #f09884; }
-  .digest h2 {
-    margin: 12px 0;
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: clamp(30px, 3vw, 40px);
-    line-height: 1.08;
-  }
   .digest-copy { color: rgba(255, 253, 248, 0.84); font-size: 15px; line-height: 1.7; }
   .digest-copy p { margin: 0 0 14px; }
   .digest-list {
@@ -588,6 +582,183 @@
     letter-spacing: 0.08em;
     text-transform: uppercase;
     color: rgba(255, 253, 248, 0.56);
+  }
+
+  /* Digest: capçalera i preferències */
+  .digest-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .digest-header-main { flex: 1; min-width: 0; }
+  .digest h2 {
+    margin: 12px 0 0;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: clamp(26px, 3vw, 38px);
+    line-height: 1.08;
+  }
+  .digest-active-filters {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    min-height: 22px;
+  }
+  .digest-filter-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 3px 8px;
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #f09884;
+  }
+  .digest-prefs-toggle {
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: transparent;
+    color: var(--paper-3);
+    border: 1px solid rgba(255, 255, 255, 0.32);
+    cursor: pointer;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .digest-prefs-toggle:hover,
+  .digest-prefs-toggle[aria-expanded="true"] {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+  .prefs-icon { font-size: 13px; }
+
+  .digest-prefs-panel {
+    margin-bottom: 24px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0.05);
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 20px 28px;
+    align-items: start;
+  }
+  .digest-prefs-panel[hidden] { display: none; }
+  .prefs-section { display: flex; flex-direction: column; gap: 10px; }
+  .prefs-label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #f09884;
+  }
+  .prefs-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .pref-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.12s, border-color 0.12s;
+    color: rgba(255, 253, 248, 0.8);
+    user-select: none;
+  }
+  .pref-chip:has(input:checked),
+  .pref-chip.is-active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .pref-chip input { position: absolute; opacity: 0; pointer-events: none; width: 0; height: 0; }
+  .prefs-geo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pref-radio {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    cursor: pointer;
+    color: rgba(255, 253, 248, 0.8);
+  }
+  .pref-radio input[type="radio"] { accent-color: #f09884; cursor: pointer; }
+  .pref-radio--select { flex-wrap: wrap; gap: 6px; }
+  #prefs-comarca-select {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.22);
+    color: rgba(255, 253, 248, 0.8);
+    padding: 4px 8px;
+    font-family: "DM Sans", system-ui, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  #prefs-comarca-select:disabled { opacity: 0.45; cursor: not-allowed; }
+  .prefs-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-self: end;
+    padding-bottom: 2px;
+  }
+  .prefs-save {
+    padding: 9px 20px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: opacity 0.15s;
+  }
+  .prefs-save:hover { opacity: 0.85; }
+  .prefs-reset {
+    padding: 7px 20px;
+    background: transparent;
+    color: rgba(255, 253, 248, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    transition: border-color 0.15s, color 0.15s;
+  }
+  .prefs-reset:hover { border-color: rgba(255, 255, 255, 0.5); color: rgba(255, 253, 248, 0.9); }
+
+  .digest-no-content {
+    padding: 20px 0;
+    font-size: 14px;
+    color: rgba(255, 253, 248, 0.55);
+    font-style: italic;
+  }
+
+  @media (max-width: 720px) {
+    .digest-prefs-panel {
+      grid-template-columns: 1fr;
+    }
+    .prefs-actions {
+      flex-direction: row;
+    }
   }
 
   .ticker-item {
@@ -797,12 +968,12 @@
   <div class="masthead-top">
     <div class="masthead-top-inner">
       <span class="left">Portada editorial connectada al feed</span>
-      <span class="center">La capa LexIA sobre les novetats jurídiques del dia</span>
+      <span class="center">La capa Dret al dIA sobre les novetats jurídiques del dia</span>
       <span class="right" id="masthead-stats">—</span>
     </div>
   </div>
   <div class="wordmark-wrap">
-    <a class="wordmark" href="index.html" aria-label="LexIA portada">Le<span>x</span>IA</a>
+    <a class="wordmark" href="index.html" aria-label="Dret al dIA portada">Dret al d<span>IA</span></a>
   </div>
   <div class="tagline">Dret <span class="sep">·</span> Intel·ligència artificial <span class="sep">·</span> Actualitat jurídica catalana</div>
   <nav class="primary-nav" aria-label="Principal">
@@ -820,7 +991,7 @@
   <section class="hero-grid">
     <article class="hero-card" id="hero-card">
       <span class="pillar-tag tone-civil" id="hero-tag">Carregant</span>
-      <h1 class="hero-title"><a id="hero-title" href="ia-juridica.html">Preparant la portada de LexIA</a></h1>
+      <h1 class="hero-title"><a id="hero-title" href="ia-juridica.html">Preparant la portada de Dret al dIA</a></h1>
       <p class="hero-deck" id="hero-deck">S'estan carregant les novetats del feed per convertir-les en una portada editorial usable.</p>
       <div class="hero-meta" id="hero-meta">
         <span>Font <strong>—</strong></span>
@@ -853,6 +1024,61 @@
 
   <div class="layout">
     <div class="main-column">
+
+      <section class="digest digest--top" id="digest" aria-labelledby="digest-title">
+        <div class="digest-header">
+          <div class="digest-header-main">
+            <div class="label">Resum diari personalitzat</div>
+            <h2 id="digest-title">Context, no només titulars.</h2>
+            <div class="digest-active-filters" id="digest-active-filters"></div>
+          </div>
+          <button class="digest-prefs-toggle" id="digest-prefs-toggle" aria-expanded="false" aria-controls="digest-prefs-panel">
+            <span class="prefs-icon">⚙</span> Personalitza
+          </button>
+        </div>
+
+        <div class="digest-prefs-panel" id="digest-prefs-panel" hidden>
+          <div class="prefs-section">
+            <div class="prefs-label">Categories jurídiques</div>
+            <div class="prefs-chips" id="prefs-categories">
+              <label class="pref-chip"><input type="checkbox" value="civil" /> Civil</label>
+              <label class="pref-chip"><input type="checkbox" value="penal" /> Penal</label>
+              <label class="pref-chip"><input type="checkbox" value="laboral" /> Laboral</label>
+              <label class="pref-chip"><input type="checkbox" value="administratiu" /> Administratiu</label>
+              <label class="pref-chip"><input type="checkbox" value="mercantil" /> Mercantil</label>
+              <label class="pref-chip"><input type="checkbox" value="fiscal" /> Fiscal</label>
+              <label class="pref-chip"><input type="checkbox" value="constitucional" /> Constitucional</label>
+              <label class="pref-chip"><input type="checkbox" value="educatiu" /> Educatiu</label>
+            </div>
+          </div>
+          <div class="prefs-section">
+            <div class="prefs-label">Àmbit geogràfic</div>
+            <div class="prefs-geo">
+              <label class="pref-radio"><input type="radio" name="comarca" value="" /> Tota Catalunya</label>
+              <label class="pref-radio pref-radio--select">
+                <input type="radio" name="comarca" value="__specific__" /> Comarca específica:
+                <select id="prefs-comarca-select" disabled>
+                  <option value="">— selecciona —</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="prefs-actions">
+            <button class="prefs-save" id="prefs-save">Guardar</button>
+            <button class="prefs-reset" id="prefs-reset">Restablir</button>
+          </div>
+        </div>
+
+        <div class="digest-grid">
+          <div>
+            <div class="digest-copy" id="digest-copy">
+              <p>Quan es carregui estadistiques.json, aquí apareixerà el resum narratiu del dia.</p>
+            </div>
+          </div>
+          <ol class="digest-list" id="digest-list"></ol>
+        </div>
+      </section>
+
       <section id="feed">
         <header class="section-rule">
           <h2>Últimes novetats</h2>
@@ -869,19 +1095,6 @@
 
         <div class="article-grid" id="article-grid"></div>
         <div class="empty-state hidden" id="empty-state">Cap novetat coincideix amb el filtre seleccionat.</div>
-      </section>
-
-      <section class="digest" id="digest" aria-labelledby="digest-title">
-        <div class="digest-grid">
-          <div>
-            <div class="label">Digest del dia</div>
-            <h2 id="digest-title">Context, no només titulars.</h2>
-            <div class="digest-copy" id="digest-copy">
-              <p>Quan es carregui estadistiques.json, aquí apareixerà el resum narratiu del dia.</p>
-            </div>
-          </div>
-          <ol class="digest-list" id="digest-list"></ol>
-        </div>
       </section>
 
       <section id="radar">
@@ -916,7 +1129,7 @@
 
       <section class="side-block newsletter">
         <div class="kicker">Cada actualització</div>
-        <h3>LexIA, ara com a portada</h3>
+        <h3>Dret al dIA, ara com a portada</h3>
         <p>Aquesta home ja no és una maqueta: es nodreix del feed jurídic real i et deixa saltar al detall quan cal.</p>
         <form onsubmit="return fakeSubmit(event, this)">
           <input type="email" placeholder="el-teu@correu.cat" required />
@@ -936,7 +1149,7 @@
 <footer class="site">
   <div class="footer-inner">
     <div class="footer-brand">
-      <div class="word">Le<span>x</span>IA</div>
+      <div class="word">Dret al d<span>IA</span></div>
       <p>Portada editorial feta a partir del feed jurídic de Catalunya, amb jerarquia visual, context i accés directe a les fonts originals.</p>
     </div>
     <div>
@@ -951,7 +1164,7 @@
       <h5>Canals</h5>
       <ul>
         <li><a href="ia-juridica.html">IA i Dret</a></li>
-        <li><a href="LexIA.html">Entrada LexIA</a></li>
+        <li><a href="LexIA.html">Entrada Dret al dIA</a></li>
         <li><a href="data/novetats.json">JSON del feed</a></li>
       </ul>
     </div>
@@ -965,17 +1178,21 @@
     </div>
   </div>
   <div class="footer-bottom">
-    <span id="footer-copy">LexIA · Portada connectada al feed</span>
+    <span id="footer-copy">Dret al dIA · Portada connectada al feed</span>
     <span>Feta a Sabadell · Pensada en català</span>
   </div>
 </footer>
 
 <script>
+  const ALL_CATEGORIES = ["civil","penal","laboral","administratiu","mercantil","fiscal","constitucional","educatiu"];
+  const PREFS_KEY = "lexia_preferences";
+
   const state = {
     items: [],
     stats: {},
     activeCategory: "tots",
     query: "",
+    userPreferences: { categories: [...ALL_CATEGORIES], comarca: "" },
   };
 
   const LABELS = {
@@ -1085,7 +1302,7 @@
     document.getElementById("utility-date").textContent = formatToday();
     document.getElementById("utility-update").textContent = state.stats.data || "sense data";
     document.getElementById("masthead-stats").textContent = `${state.items.length} peces · ${state.stats.urgents || 0} urgents · ${Object.keys(categoryCounts(state.items)).length} àmbits`;
-    document.getElementById("footer-copy").textContent = `LexIA · ${state.items.length} peces indexades · actualitzat ${state.stats.data || "avui"}`;
+    document.getElementById("footer-copy").textContent = `Dret al dIA · ${state.items.length} peces indexades · actualitzat ${state.stats.data || "avui"}`;
   }
 
   function renderHero() {
@@ -1203,19 +1420,128 @@
       </article>`).join("");
   }
 
-  function renderDigest() {
-    document.getElementById("digest-copy").innerHTML = state.stats.resum_diari
-      ? markdownParagraphs(state.stats.resum_diari)
-      : "<p>Encara no hi ha resum narratiu disponible per a aquest dia.</p>";
+  // --- Preferències d'usuari ---
+  function loadUserPreferences() {
+    try {
+      const saved = JSON.parse(localStorage.getItem(PREFS_KEY) || "null");
+      if (saved && Array.isArray(saved.categories) && saved.categories.length > 0) {
+        state.userPreferences = {
+          categories: saved.categories.filter(c => ALL_CATEGORIES.includes(c)),
+          comarca: typeof saved.comarca === "string" ? saved.comarca : "",
+        };
+      }
+    } catch (_) {}
+  }
 
-    const digestItems = state.items.slice(0, 5);
-    document.getElementById("digest-list").innerHTML = digestItems.map((item) => `
-      <li>
-        <div>
-          <strong>${esc(item.titol)}</strong>
-          <span class="src">${esc(item.font_web || item.font || "Font")} · ${esc(labelFor(item.categoria))}</span>
-        </div>
-      </li>`).join("");
+  function saveUserPreferences() {
+    try {
+      localStorage.setItem(PREFS_KEY, JSON.stringify(state.userPreferences));
+    } catch (_) {}
+  }
+
+  function getComarcas() {
+    const set = new Set();
+    state.items.forEach(item => {
+      (item.comarques || []).forEach(c => {
+        const norm = c.trim().toLowerCase();
+        if (norm && norm !== "catalunya") set.add(norm);
+      });
+    });
+    return Array.from(set).sort((a, b) => a.localeCompare(b, "ca"));
+  }
+
+  function initDigestPreferences() {
+    const panel = document.getElementById("digest-prefs-panel");
+    const toggle = document.getElementById("digest-prefs-toggle");
+    const { categories, comarca } = state.userPreferences;
+
+    // Marcar checkboxes
+    panel.querySelectorAll("#prefs-categories input[type=checkbox]").forEach(cb => {
+      cb.checked = categories.includes(cb.value);
+    });
+
+    // Emplenar selector de comarques
+    const select = document.getElementById("prefs-comarca-select");
+    const existingOpts = Array.from(select.options).map(o => o.value);
+    getComarcas().forEach(c => {
+      if (!existingOpts.includes(c)) {
+        const opt = document.createElement("option");
+        opt.value = c;
+        opt.textContent = c.charAt(0).toUpperCase() + c.slice(1);
+        select.appendChild(opt);
+      }
+    });
+
+    // Seleccionar ràdio
+    if (comarca) {
+      panel.querySelector("input[type=radio][value=\"__specific__\"]").checked = true;
+      select.disabled = false;
+      select.value = comarca;
+    } else {
+      panel.querySelector("input[type=radio][value=\"\"]").checked = true;
+      select.disabled = true;
+    }
+  }
+
+  function renderDigestActiveFilters() {
+    const { categories, comarca } = state.userPreferences;
+    const container = document.getElementById("digest-active-filters");
+    const tags = [];
+    if (categories.length < ALL_CATEGORIES.length) {
+      categories.forEach(c => {
+        tags.push(`<span class="digest-filter-tag">${esc(labelFor(c))}</span>`);
+      });
+    } else {
+      tags.push(`<span class="digest-filter-tag">Totes les categories</span>`);
+    }
+    if (comarca) {
+      tags.push(`<span class="digest-filter-tag">${esc(comarca.charAt(0).toUpperCase() + comarca.slice(1))}</span>`);
+    }
+    container.innerHTML = tags.join("");
+  }
+
+  // --- Render digest personalitzat ---
+  function renderDigest() {
+    renderDigestActiveFilters();
+    initDigestPreferences();
+
+    const { categories, comarca } = state.userPreferences;
+    const resums = state.stats.resums_categoria || {};
+
+    // Narrativa filtrada per categories
+    const narratives = categories
+      .filter(c => resums[c])
+      .map(c => resums[c]);
+
+    if (narratives.length === 0) {
+      document.getElementById("digest-copy").innerHTML =
+        state.stats.resum_diari
+          ? markdownParagraphs(state.stats.resum_diari)
+          : "<p class=\"digest-no-content\">Encara no hi ha resum narratiu disponible per a aquest dia.</p>";
+    } else {
+      document.getElementById("digest-copy").innerHTML = narratives
+        .map(txt => markdownParagraphs(txt))
+        .join("<hr style=\"border:none;border-top:1px solid rgba(255,255,255,0.12);margin:18px 0\">");
+    }
+
+    // Llista d'items filtrada per categories i comarca
+    let digestItems = state.items
+      .filter(item => categories.includes(item.categoria))
+      .filter(item => {
+        if (!comarca) return true;
+        return (item.comarques || []).some(c => c.trim().toLowerCase() === comarca.toLowerCase());
+      })
+      .slice(0, 5);
+
+    document.getElementById("digest-list").innerHTML = digestItems.length
+      ? digestItems.map((item) => `
+          <li>
+            <div>
+              <strong>${esc(item.titol)}</strong>
+              <span class="src">${esc(item.font_web || item.font || "Font")} · ${esc(labelFor(item.categoria))}</span>
+            </div>
+          </li>`).join("")
+      : `<li style="list-style:none;padding:14px 0;color:rgba(255,253,248,0.45);font-size:13px;">Cap entrada coincideix amb les preferències actuals.</li>`;
   }
 
   function renderTicker() {
@@ -1266,7 +1592,46 @@
     renderSidebar();
   }
 
+  // --- Event listeners del panell de preferències ---
+  function setupDigestPrefsListeners() {
+    const toggle = document.getElementById("digest-prefs-toggle");
+    const panel = document.getElementById("digest-prefs-panel");
+    const select = document.getElementById("prefs-comarca-select");
+
+    toggle.addEventListener("click", () => {
+      const open = panel.hasAttribute("hidden");
+      if (open) { panel.removeAttribute("hidden"); toggle.setAttribute("aria-expanded", "true"); }
+      else { panel.setAttribute("hidden", ""); toggle.setAttribute("aria-expanded", "false"); }
+    });
+
+    panel.querySelectorAll("input[type=radio][name=comarca]").forEach(radio => {
+      radio.addEventListener("change", () => {
+        select.disabled = radio.value !== "__specific__";
+        if (select.disabled) select.value = "";
+      });
+    });
+
+    document.getElementById("prefs-save").addEventListener("click", () => {
+      const cats = Array.from(panel.querySelectorAll("#prefs-categories input:checked")).map(cb => cb.value);
+      const radioSpecific = panel.querySelector("input[type=radio][value=\"__specific__\"]");
+      const comarca = radioSpecific && radioSpecific.checked ? (select.value || "") : "";
+      state.userPreferences = { categories: cats.length ? cats : [...ALL_CATEGORIES], comarca };
+      saveUserPreferences();
+      panel.setAttribute("hidden", "");
+      toggle.setAttribute("aria-expanded", "false");
+      renderDigest();
+    });
+
+    document.getElementById("prefs-reset").addEventListener("click", () => {
+      state.userPreferences = { categories: [...ALL_CATEGORIES], comarca: "" };
+      saveUserPreferences();
+      initDigestPreferences();
+      renderDigest();
+    });
+  }
+
   async function loadData() {
+    loadUserPreferences();
     try {
       const cacheBust = Date.now();
       const [itemsResponse, statsResponse] = await Promise.all([
@@ -1290,6 +1655,7 @@
         if (todayItems.length > 0) state.items = todayItems;
       }
       renderAll();
+      setupDigestPrefsListeners();
     } catch (error) {
       document.getElementById("article-grid").innerHTML = "";
       document.getElementById("empty-state").classList.remove("hidden");
@@ -1297,6 +1663,7 @@
       document.getElementById("feed-status").textContent = "Sense dades";
       document.getElementById("digest-copy").innerHTML = "<p>No s'ha pogut carregar el resum diari.</p>";
       document.getElementById("ticker-list").innerHTML = "";
+      setupDigestPrefsListeners();
     }
   }
 
