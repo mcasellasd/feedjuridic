@@ -1,27 +1,15 @@
 {
-  "data": "2026-05-08",
-  "total_avui": 15,
+  "data": "2026-05-09",
+  "total_avui": 0,
   "dogc": 0,
   "boe": 0,
   "doue": 0,
   "parlament": 0,
   "email": 0,
-  "actualitat": 15,
+  "actualitat": 0,
   "eurlex": 0,
-  "per_categoria": {
-    "laboral": 5,
-    "constitucional": 1,
-    "administratiu": 3,
-    "civil": 3,
-    "mercantil": 3
-  },
-  "urgents": 7,
-  "resum_diari": "**Novetats jurídiques del 8 de maig de 2026: Un dia marcat per l'actualitat laboral i la protecció dels drets infantils**\n\nAvui, el panorama jurídic català ha estat marcat per diverses novetats legislatives i judicials, amb un focus destacat en el dret laboral i la protecció dels drets dels menors. D'una banda, la publicació de l'informe de la Ponència sobre la Proposició de Llei de la Pasarela al RETA busca assegurar la correcta regulació i accés dels treballadors autònoms a les prestacions socials, un tema que ha generat debat i expectatives dins del sector. Alhora, el Tribunal Suprem ha declarat il·legítim que les empreses imposin requisits addicionals per gaudir del permís retribuït de cinc dies per cuidar familiars, en un pas important per garantir els drets laborals.\n\nEn el mentre, les mesures preses pel Tribunal Suprem en altres àmbits també han tingut un ressò considerable. La denegació d'un advocat d'accedir al jutjat amb la seva mascota, per motius de seguretat, ha estat un tema de controvèrsia que podria obrir un debat sobre la humanització del sistema judicial. A més, la nova norma aprovada pel Consell de Ministres que garanteix que els nens siguin escoltats durant els judicis representa un avanç significatiu en la protecció dels drets dels menors, reforçant l'empat i la comprensió en els processos judicials.\n\nEn el context del dret civil, s'ha iniciat el termini per impugnar els acords de la comunitat de propietaris, un aspecte clau per assegurar la participació i transparència en la gestió de les comunitats. En l'àmbit mercantil, les noves incorporacions a firmes reconegudes com Clifford Chance també subratllen la dinàmica canviant del sector i les oportunitats emergents per als professionals del dret. Les decisions d'avui i les novetats legislatives exposen una realitat en què les qüestions laborals i la defensa dels drets individuals continuen ocupant un lloc central en l'agenda jurídica de Catalunya.",
-  "resums_categoria": {
-    "laboral": "El dia 8 de maig de 2026, es va fer público l'informe de la Ponència sobre la Proposició de Llei de la Pasarela al RETA, una iniciativa que busca abordar la situació dels treballadors autònoms i millorar la seva protecció social. Aquesta proposta podria representar un canvi significatiu en el marc laboral català, posant l'accent en la necessitat d'una cobertura més àmplia per a aquest col·lectiu.\n\nA més, el Tribunal Suprem ha dictat que les empreses no poden condicionar el gaudi d'un permís retribuït de cinc dies per cuidar familiars a la demostració que no hi hagi una altra persona disponible per fer-se'n càrrec, reforçant així els drets laborals dels treballadors. També s'ha publicat un model de recurs de reposició contra autos desestimadors de mesures cautelars en procediments laborals, proporcionant una eina útil per garantir la defensa dels drets laborals. El TSJ de Cantàbria ha rebutjat l'argument del INSS que dificultava l'accés a la incapacitat permanent a treballadors de professions considerades menys exigents, com les net",
-    "constitucional": "El 8 de maig de 2026, la Abogacía Española ha manifestat el seu suport a la independència de la professió jurídica als Estats Units davant de mesures restrictives que amenacen la llibertat i el funcionament dels despatxos d'advocats. Aquesta acció destaca la importància de la defensa de l'Estat de Dret i la necessitat d'una advocacia independent per garantir els drets i llibertats fonamentals.\n\nAquesta declaració s’inscriu en un context més ampli de defensa de la llibertat professional del dret en àmbits globals, i podria tenir implicacions sobre la manera en què es perceben i gestionen les noves regulacions en els sistemes jurídics de tot el món, incloent-hi el català. La posició de la Abogacía Española podria influir en la relació entre la professió jurídica i les autoritats reguladores tant a escala nacional com internacional.",
-    "administratiu": "El passat 5 de maig de 2026, el Consell de Ministres va aprovar una important ampliació de la Llei de Protecció Integral a la Infància, que estableix que els nens han de ser escoltats en els processos judicials que els afecten. Aquesta novetat representa un pas significatiu en el reconeixement dels drets dels infants en el sistema judicial, garantint que les seves opinions siguin tingudes en compte durant el desenllaç de casos que els involucren.\n\nA més, l'Abogacía Española ha destacat el rol fonamental dels advocats en la millora del sistema de justícia, requerint una major dotació de recursos i una col·laboració institucional més efectiva. En un altre ordre de coses, recentment el Tribunal Suprem ha denegat a un lletrat l'autorització per accedir al jutjat amb la seva mascota, argumentant la necessitat de mantenir l'ordre i la seriositat en les dependències judicials.",
-    "civil": "El dia 8 de maig de 2026, destaca la nova normativa sobre la constitució de les servidumbres de pas, que reforça l'accés legal a finques mitjançant la regularització dels drets de pas. Aquesta figura jurídica, fonamental en el dret civil, proporciona garanties als propietaris afectats, facilitant la seva utilització d'una manera més eficient i clara. \n\nA més, comença el termini per impugnar els acords de la comunitat de propietaris, que ara s'inicia des de l'adopció de l'acord, millorant així la transparència i la protecció dels drets dels propietaris. Alhora, l'impacte de la intel·ligència artificial en la gestió del coneixement jurídic continua sent un tema d'interès, amb un article que analitza les seves implicacions per al futur de la pràctica legal.",
-    "mercantil": "El 8 de maig de 2026, destaca el nomenament de José María Echevarría-Torres com a soci responsable del grup de Fiscal d'Aragó a Cuatrecasas, un moviment que podria influir en la dinàmica del dret fiscal i mercantil a la regió. Això ve acompanyat de les recent nomenaments de Leonardo Fernández i Pablo Murcia com a nous socis de Clifford Chance a Espanya, amb especialitzacions que podrien aportar noves perspectives al sector legal.\n\nD'altra banda, el cas GITPA vs Aura Energía S.L. i la seva administració concursal posa de manifest les complexitats de les relacions contractuals entre empreses públiques i privades, un aspecte que pot derivar en preguntes clau sobre la responsabilitat contractual i les possibles solucions en àmbits concusals. Aquest cas pot servir d'orientació per a futurs litigis en el marc del dret mercantil."
-  }
+  "per_categoria": {},
+  "urgents": 0,
+  "resum_diari": "",
+  "resums_categoria": {}
 }
