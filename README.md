@@ -138,6 +138,33 @@ Edita `index.html` — és un fitxer HTML estàndard, sense frameworks complicat
 
 ---
 
+## 🤖 Integració de Resums Diaris (Cowork)
+
+El scraper integra automàticament els resums diaris que genera **cowork** (si existeixen a `daily-summaries/`):
+
+1. **Busca el resum més recent** cada dia
+2. **Extreu els 7 titulars principals** de la secció "Titulares del día"
+3. **Els afegeix a novetats.json** com a entrades de font "Cowork"
+4. **Els processa amb IA** per categoritzar i extreure metadades
+
+### Configurar escalonament automàtic
+
+Per que el scraper s'executi cada dia a les 09:00 i processi automàticament els resums:
+
+```bash
+cd feedjuridic
+chmod +x setup_daily_task.sh
+./setup_daily_task.sh
+# Trià l'opció desitjada:
+# 1) cron (Linux/macOS universal)
+# 2) launchd (macOS preferit)
+# 3) systemd (Linux moderna)
+```
+
+**Llegeix**: [COWORK_DAILY_ROUTINE.md](./COWORK_DAILY_ROUTINE.md) per a detalls complets.
+
+---
+
 ## Fonts d'informació
 
 | Font | Tipus | API disponible |
