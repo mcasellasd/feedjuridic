@@ -1,5 +1,65 @@
 [
   {
+    "id": "COWORK-12994c83",
+    "data": "2026-05-11",
+    "titol": "Acuerdo político sobre el \"AI Omnibus\": la UE simplifica y retrasa parte del Reglamento de IA",
+    "font": "Cowork",
+    "tipus": "Cowork",
+    "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+    "resum_executiu": "El nou acord polític sobre el Reglament d'IA retrasa l'aplicació d'obligacions per a sistemes d'IA de major risc fins a 16 mesos, mentre que els sandboxes reguladors haurien d'esperar fins al 2027. Les dates límit per a la transparència del contingut generat per IA s'han reduït a 3 mesos.",
+    "impacte_practic": "Les empreses hauran de reajustar els seus plans de compliment normatiu, donant més temps per implementar les mesures requerides. Això pot afectar la seva capacitat per innovar i adaptar-se a les noves exigències legals.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "Reglament d'IA",
+      "compliance",
+      "transparència",
+      "sistemes d'IA"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Cowork",
+    "comarques": []
+  },
+  {
+    "id": "COWORK-e23e10d6",
+    "data": "2026-05-11",
+    "titol": "TSJ Navarra confirma 8 años de prisión por acceso ilícito al historial médico de familiares (1.329 accesos)",
+    "font": "Cowork",
+    "tipus": "Cowork",
+    "url": "https://noticias.juridicas.com/",
+    "resum_executiu": "La sentència del TSJ de Navarra confirma la condemna d'una administrativa sanitària a vuit anys de presó per accés il·legítim al historial mèdic de familiars en més d'un miler d'ocasions. Aquesta decisió reforça la protecció del dada de salut com a informació especialment protegida segons la normativa del RGPD i la LOPDGDD.",
+    "impacte_practic": "L'efecte real d'aquesta decisió afecta directament els empleats públics i estableix un precedent sobre les conseqüències penals d'accés no autoritzat a dades sensibles. Així, es reforça la confiança dels ciutadans en la privacitat de les seves dades de salut.",
+    "categoria": "penal",
+    "paraules_clau": [
+      "dades de salut",
+      "accés il·legítim",
+      "protecció de dades",
+      "penalització"
+    ],
+    "urgencia": "alta",
+    "font_web": "Cowork",
+    "comarques": []
+  },
+  {
+    "id": "COWORK-4faf3b11",
+    "data": "2026-05-11",
+    "titol": "CGPJ — Instrucción 2/2026 sobre uso de IA en la actividad jurisdiccional (publicada en el BOE)",
+    "font": "Cowork",
+    "tipus": "Cowork",
+    "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2205",
+    "resum_executiu": "La Instrucción 2/2026 del CGPJ regula l'ús de sistemes d'intel·ligència artificial en l'activitat jurisdiccional, establint garanties i vigilància per assegurar la transparència i la imparcialitat judicial. Aquesta norma busca complir amb els estàndards europeus de seguretat en l'ús d'IA dins del sistema de justícia.",
+    "impacte_practic": "La norma impacta directament en la gestió judicial, millorant l'eficiència del sistema legal i augmentant la protecció de drets dels ciutadans. Les empreses que interactuen amb el sistema judicial també es veuran afectades per la integració de l'IA en els procediments judicials.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "justícia",
+      "transparència",
+      "governança"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Cowork",
+    "comarques": []
+  },
+  {
     "id": "ACT-https://almacendederecho.org/?p=59795",
     "data": "2026-05-07",
     "titol": "Gestión del conocimiento en la era de la IA (2)",
