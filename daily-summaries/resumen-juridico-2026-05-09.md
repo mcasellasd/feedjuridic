@@ -1,0 +1,43 @@
+# Resumen jurídico diario — 2026-05-09
+
+_España + UE · generado automáticamente_
+
+---
+
+## Titulares del día
+
+1. **Acuerdo político sobre el "AI Act Omnibus": la UE reforma y simplifica el Reglamento de IA** — El Consejo y el Parlamento Europeo alcanzaron el 7 de mayo un acuerdo provisional para modificar el Reglamento de IA (AI Act). Los cambios más importantes son: ampliación del plazo de cumplimiento para sistemas de IA de alto riesgo (infraestructuras críticas, empleo, justicia…) del 2 de agosto al **2 de diciembre de 2026**; extensión de las exenciones para pymes a empresas medianas pequeñas; prohibición expresa de apps "desnudificadoras" de IA; y retraso hasta agosto de 2027 para los *sandboxes* regulatorios nacionales. El acuerdo debe ser ratificado formalmente por ambas instituciones en las próximas semanas. Es la noticia de mayor impacto para cualquier empresa o despacho que trabaje con IA en Europa. [Fuente – Consejo de la UE](https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/)
+
+2. **El Tribunal Constitucional resuelve recursos contra la Ley de Amnistía de Cataluña** — El TC dictó en marzo de 2026 varias sentencias (STC 25/2026 y conexas) desestimando los recursos de inconstitucionalidad presentados por La Rioja, Cantabria y Baleares contra la Ley Orgánica 1/2024 de amnistía. Los recursos alegaban vulneración de los principios de igualdad, seguridad jurídica, separación de poderes y monopolio jurisdiccional. La publicación de estas sentencias en el BOE consolida la constitucionalidad de la norma, aunque el debate político y jurídico sigue abierto ante los tribunales europeos y en la doctrina. [Fuente – BOE](https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8280)
+
+3. **El TJUE condena a Hungría por violar los valores de la UE (art. 2 TUE) — primera vez en la historia** — La Gran Sala del Tribunal de Justicia de la UE falló el 21 de abril de 2026 (asunto C-769/22) contra Hungría por haber vulnerado sistemáticamente los valores del artículo 2 del TUE: democracia, Estado de derecho e independencia judicial. Es la **primera condena directa por incumplimiento de los valores fundacionales** de la UE, lo que abre una nueva vía de control sobre los Estados miembros. Para un estudiante de Derecho, esta sentencia es un hito en Derecho Constitucional Europeo y Derecho Internacional Público. [Fuente – HayDerecho](https://www.hayderecho.com/2026/05/06/las-consecuencias-de-una-union-de-valores-condena-a-hungria-en-c-769-22/)
+
+4. **TJUE: nueva sentencia contra el modelo español de temporalidad en el empleo público** — El 14 de abril de 2026, la Gran Sala del TJUE dictó sentencia en una cuestión prejudicial que supone un nuevo varapalo al sistema español de interinidad en las Administraciones Públicas. El tribunal europeo vuelve a exigir a España medidas equivalentes de protección frente al abuso de la contratación temporal en el sector público, con posibles consecuencias para la conversión de interinos en fijos o el reconocimiento de indemnizaciones. Afecta directamente a cientos de miles de empleados públicos temporales en España. [Fuente – LawAndTrends](https://www.lawandtrends.com/noticias/laboral/la-sentencia-del-tjue-de-14-de-abril-de-2026-un-nuevo-golpe-al-modelo-espanol-de-temporalidad-publica-1.html)
+
+5. **BOE publica el Real Decreto de regularización extraordinaria de migrantes** — El Real Decreto 316/2026, de 14 de abril, modifica el Reglamento de Extranjería para facilitar autorizaciones de residencia por circunstancias excepcionales a personas migrantes en situación irregular. La norma amplía el acceso a la regularización y ha generado recursos ante el Tribunal Supremo (vista pendiente) por parte de asociaciones que impugnan su legalidad. Es una de las medidas sociales más polémicas del Gobierno en esta legislatura desde el punto de vista del Derecho Administrativo y de Extranjería. [Fuente – Noticias Obreras](https://noticiasobreras.es/2026/04/el-boe-publica-el-real-decreto-que-articula-la-regularizacion-extraordinaria-de-personas-migrantes-aprobada-por-el-gobierno/)
+
+6. **Tribunal Supremo avala el ERE de MasOrange (609 despidos)** — La Sala de lo Social del Tribunal Supremo desestimó los recursos de USO y CCOO y confirmó la validez del despido colectivo que afectó a 609 trabajadores de MasOrange en 2025, apreciando la causa económica alegada por la empresa. La sentencia es relevante en Derecho Laboral porque precisa los estándares de justificación de las causas objetivas en despidos colectivos en el sector de las telecomunicaciones. [Fuente – Cantabria Económica](https://www.cantabriaeconomica.com/la-economia-hoy/el-tribunal-supremo-avala-el-ere-para-609-personas-de-masorange/)
+
+7. **El Parlamento Europeo advierte a España del abuso del decreto-ley** — En un informe presentado el 7 de mayo, el Parlamento Europeo alerta sobre la excesiva utilización del decreto-ley por parte del Gobierno español, señalando riesgos para el Estado de derecho y la calidad democrática de la legislación. El informe llega en un contexto en que el Real Decreto-ley 10/2026 (medidas tributarias urgentes por la DANA) vuelve a poner sobre la mesa el debate sobre los límites constitucionales del artículo 86 CE. [Fuente – Servimedia](https://www.servimedia.es/noticias/parlamento-europeo-avisa-espana-riesgo-abusar-decreto-ley-alerta-clima-polarizacion/1412844783)
+
+---
+
+## 🤖 IA-LegalTech
+
+- **AI Act Omnibus: ampliación de plazos y oportunidad para el compliance legal** — El acuerdo del 7 de mayo extiende el plazo para sistemas de IA de alto riesgo hasta diciembre de 2026, dando más tiempo a empresas y despachos para adaptarse. Para las pymes y startups LegalTech, es una ventana crucial para desarrollar soluciones de cumplimiento. Además, el AI Omnibus prohíbe expresamente las "nudifier apps" y refuerza la regulación de IA en ámbitos sensibles como la justicia y el empleo. [Fuente – Consejo UE](https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/) · [Análisis IAPP](https://iapp.org/news/a/ai-act-omnibus-what-just-happened-and-what-comes-next)
+
+- **Maite.ai: primera IA del mundo en superar el test de acceso a la categoría de juez en España** — La startup española Maite.ai ha alcanzado un hito histórico al ser el primer sistema de inteligencia artificial en superar las pruebas de acceso a la carrera judicial española. Aunque esto no implica que la IA pueda ejercer como juez (la Instrucción 2/2026 del CGPJ lo prohíbe expresamente), demuestra el nivel de sofisticación que están alcanzando los modelos jurídicos especializados en Derecho español. Es un indicador muy relevante de hacia dónde va el sector. [Fuente – Derecho Práctico](https://derechopractico.es/la-legaltech-maite-ai-primera-ia-del-mundo-en-superar-el-test-de-acceso-a-la-categoria-de-juez/)
+
+- **CGPJ: Instrucción 2/2026 — la IA en la judicatura, solo como asistencia** — El Consejo General del Poder Judicial aprobó a principios de año la Instrucción 2/2026, que regula el uso de sistemas de IA por jueces y magistrados. La norma establece que la IA únicamente puede emplearse como herramienta de apoyo o asistencia, quedando excluida cualquier sustitución de la función jurisdiccional. Esto delimita el marco regulatorio interno para el uso de LegalTech en los juzgados y es una referencia obligada para cualquier empresa que quiera vender soluciones a la Administración de Justicia. [Fuente – INEAF](https://www.ineaf.es/tribuna/aplicaciones-de-la-inteligencia-artificial-en-el-derecho/)
+
+---
+
+## 💡 Para profundizar
+
+- **Estudia el AI Act Omnibus en detalle**: Busca el texto del acuerdo provisional en el sitio del Consejo de la UE y compáralo con el AI Act original (Reglamento 2024/1689). Fíjate especialmente en el Anexo III (sistemas de alto riesgo) y en el nuevo artículo sobre prohibiciones. Entender este reglamento de memoria es una ventaja competitiva enorme para cualquier abogado que quiera trabajar en cumplimiento normativo IA.
+
+- **Ángulo emprendedor — compliance IA para pymes**: Con el AI Act Omnibus ampliando plazos pero manteniendo obligaciones, existe una oportunidad de negocio clara: herramientas de *self-assessment* y documentación técnica para que pymes europeas cumplan con el reglamento sin necesidad de contratar a grandes despachos. Explora qué ofrecen ya actores como legalnodes.com o conformityai.com, e identifica qué nichos quedan sin cubrir en el mercado español.
+
+---
+
+_Nota: generado con búsquedas web automáticas; verifica siempre las fuentes antes de citar._
