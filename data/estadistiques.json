@@ -1,6 +1,6 @@
 {
-  "data": "2026-05-11",
-  "total_avui": 3,
+  "data": "2026-05-12",
+  "total_avui": 0,
   "dogc": 0,
   "boe": 0,
   "doue": 0,
@@ -8,14 +8,8 @@
   "email": 0,
   "actualitat": 0,
   "eurlex": 0,
-  "per_categoria": {
-    "administratiu": 2,
-    "penal": 1
-  },
-  "urgents": 1,
-  "resum_diari": "**Novetats jurídiques destacades del dia: regulacions sobre IA i sentències penals rellevants**\n\nEl dia d'avui, 11 de maig de 2026, es presenten novetats significatives en els àmbits del dret administratiu i penal. En primer lloc, cal destacar l'acord polític recent sobre el Reglament d'Intel·ligència Artificial de la Unió Europea, conegut com \"AI Omnibus\". Aquest acord introdueix un ajornament en l'aplicació d'algunes de les obligacions imposades als sistemes d'IA de major risc, amb l'objectiu de simplificar la normativa i garantir una implementació més efectiva a nivell europeu. Aquesta iniciativa reflecteix una tendència cap a una regulació més flexible en l'àmbit de les tecnologies emergents, un aspecte que tindrà repercussions notòries en el dret administratiu i la supervisió d'aquestes eines.\n\nParal·lelament, el Tribunal Superior de Justícia de Navarra ha confirmat una condemna de vuit anys de presó per a una administrativa sanitària que va accedir il·legalment al historial mèdic de més de 1.300 familiars. Aquesta sentència posa de manifest la importància de la protecció de dades personals i la responsabilitat penal associada a la violació de la privacitat en el sector sanitari. La resolució subratlla el compromís del sistema judicial davant dels delictes que afecten drets fonamentals, un tema que continua essent d'actualitat en el dret penal.\n\nFinalment, en relació amb l'ús d'intel·ligència artificial en l'activitat jurisdiccional, el Consell General del Poder Judicial ha publicat la Instrucció 2/2026, que estableix les pautes per a la implementació d'aquests sistemes dins el seu funcionament. Aquesta normativa pretén garantir que l'ús d'IA es realitzi de manera ètica i correcta, assegurant que els principis de justícia contínuïn sent respectats.\n\nLes tendències observades en aquestes novetats reflecteixen un moment de transformació en el paisatge legal català i europeu, amb un enfocament clar en adaptar les regulacions a les noves realitats tecnològiques i la protecció dels drets individuals. Sens dubte, seguirem amb interès els desenvolupaments futurs en aquestes àrees.",
-  "resums_categoria": {
-    "administratiu": "El 11 de maig de 2026, es va fer públic un nou acord polític sobre el Reglament d'Intel·ligència Artificial (IA) que suposa un ajornament significatiu en la implementació d'obligacions per a sistemes d'IA de major risc dins la Unió Europea. Aquesta decisió busca facilitar la transició cap a un marc normatiu més estructurat, tot assegurant el compliment d'estàndards de seguretat i protecció dels drets fonamentals per a tots els països membres.\n\nA més, el Consell General del Poder Judicial (CGPJ) ha publicat la Instrucció 2/2026, que estableix directrius sobre l'ús de sistemes d'intel·ligència artificial en l'activitat jurisdiccional. Aquesta normativa pretén regular com s'integraran aquestes tecnologies en els processos judicials, garantint la transparència i la imparcialitat en l'aplicació de la justícia. Les novetats anunciades obren noves perspectives i reptes per als juristes catalans en el context d'un dret administratiu cada cop més influenciat per les noves tecnologies.",
-    "penal": "El Tribunal Superior de Justícia de Navarra ha confirmat una condemna a vuit anys de presó per a una administrativa sanitària per accedir illicitament al historial mèdic de diversos familiars, amb un total de 1.329 accesos no autoritzats. Aquesta sentència posa de manifest la gravetat de les infraccions contra la protecció de dades sanitàries i subratlla la responsabilitat penal que comporta l'abús d'informació confidencial.\n\nA més, aquest cas marca un precedent important en el dret penal català, ja que ressalta la necessitat de defensar la privadesa i la seguretat de les dades personals en el sector sanitari. La sentència pot influir en futures interpretacions sobre l'accés il·legal a informació sensible i les repercussions penals associades, tot ressaltant la importància d'un rigorós compliment de la normativa sobre protecció de dades."
-  }
+  "per_categoria": {},
+  "urgents": 0,
+  "resum_diari": "",
+  "resums_categoria": {}
 }
