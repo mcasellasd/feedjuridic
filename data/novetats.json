@@ -1,5 +1,25 @@
 [
   {
+    "id": "ACT-https://almacendederecho.org/?p=59798",
+    "data": "2026-05-13",
+    "titol": "Gestión del conocimiento jurídico en la era de la IA (3)",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://almacendederecho.org/gestion-del-conocimiento-juridico-en-la-era-de-la-ia-3",
+    "resum_executiu": "L'article analitza la importància de la metacognició en el dret i la seva relació amb la intel·ligència artificial (IA). Es discuteix com les habilitats de raonament i revisió humanes són clau per a un bon assessorament legal davant les limitacions de les màquines.",
+    "impacte_practic": "L'aplicació de la metacognició pot millorar la qualitat del servei legal, ja que permet als advocats evitar biaixos en el seu pensament. Això pot beneficiïar tant clients individuals com empreses que busquen assessorament legal precís i actualitzat.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "metacognició",
+      "intel·ligència artificial",
+      "dret",
+      "advocats"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Almacén de Derecho",
+    "comarques": []
+  },
+  {
     "id": "COWORK-12994c83",
     "data": "2026-05-11",
     "titol": "Acuerdo político sobre el \"AI Omnibus\": la UE simplifica y retrasa parte del Reglamento de IA",
