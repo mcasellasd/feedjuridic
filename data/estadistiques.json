@@ -1,19 +1,15 @@
 {
-  "data": "2026-05-13",
-  "total_avui": 1,
+  "data": "2026-05-14",
+  "total_avui": 0,
   "dogc": 0,
   "boe": 0,
   "doue": 0,
   "parlament": 0,
   "email": 0,
-  "actualitat": 1,
+  "actualitat": 0,
   "eurlex": 0,
-  "per_categoria": {
-    "civil": 1
-  },
+  "per_categoria": {},
   "urgents": 0,
-  "resum_diari": "**Novetats jurídiques del dia: La metacognició legal i la seva interrelació amb la intel·ligència artificial**\n\nAvui, 13 de maig de 2026, el món del dret continua evolucionant sota l'impacte de les noves tecnologies, amb una especial atenció a la manera com la intel·ligència artificial (IA) transforma la pràctica jurídica. En aquest context, un article destacat analitza la gestió del coneixement jurídic en l'era de la IA, centrant-se en la importància de la metacognició en el dret.\n\nLa metacognició, és a dir, la capacitat d'analitzar i reflexionar sobre els propis processos de pensament, es presenta com una eina fonamental per als juristes en un entorn cada cop més digitalitzat. L'estudi posarà de manifest com aquesta habilitat pot ser un valor afegit a l’hora d'integrar tecnologies com la IA en la pràctica legal quotidiana, facilitant una millor decisió en la utilització d’eines automatitzades i l'optimització dels recursos legals. Així, la formació en metacognició no sols es converteix en una necessitat per als professionals del dret, sinó que també obre noves vies per a la recerca i el desenvolupament en el sector jurídic.\n\nDes del punt de vista civil, aquesta interacció entre el coneixement jurídic i la tecnologia no només implica un canvi metodològic, sinó que també pot transformar profundament les dinàmiques de treball i la manera en què es gestionen els casos. La capacitat de reflexió crítica davant de les eines d’IA no només millora la qualitat del servei, sinó que també promou una ètica professional més robusta i comprometida amb la justícia.\n\nEn resum, la capacitació en metacognició en el context de les noves tecnologies com la intel·ligència artificial es presenta com un tema central en la formació jurídica actual, amb implicacions significatives per al futur de la professió. Les organitzacions i institucions del sector haurien de considerar aquesta formació com una prioritat per preparar els juristes davant dels reptes que planteja l'era digital.",
-  "resums_categoria": {
-    "civil": "El 13 de maig de 2026, destaca la rellevància de la metacognició en el dret civil català, especialment en el marc de la responsabilitat jurídica derivada de l'ús de la intel·ligència artificial (IA). L'article proposa que els juristes han de desenvolupar una consciència crítica sobre els coneixements legals que utilitzen, permetent així una millor integració de la IA en la pràctica jurídica. Aquesta reflexió no només pot millorar la presa de decisions, sinó que també ajuda a preveure els possibles riscos legals associats a l'aplicació de sistemes intel·ligents en el procés judicial.\n\nA mesura que la tecnologia evoluciona, els professionals del dret han de ser capaces d'articular els límits de la responsabilitat civil i les implicacions ètiques que implica confiar en la IA per a la resolució de conflictes legals. La metacognició, per tant, esdevé essencial per assegurar un ús responsable i conscient d'aquestes noves eines en el context jurídic."
-  }
+  "resum_diari": "",
+  "resums_categoria": {}
 }
