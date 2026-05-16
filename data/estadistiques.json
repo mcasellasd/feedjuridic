@@ -1,6 +1,6 @@
 {
-  "data": "2026-05-15",
-  "total_avui": 0,
+  "data": "2026-05-16",
+  "total_avui": 1,
   "dogc": 0,
   "boe": 0,
   "doue": 0,
@@ -8,8 +8,12 @@
   "email": 0,
   "actualitat": 0,
   "eurlex": 0,
-  "per_categoria": {},
+  "per_categoria": {
+    "administratiu": 1
+  },
   "urgents": 0,
-  "resum_diari": "",
-  "resums_categoria": {}
+  "resum_diari": "**La Generalitat impulsa la formació en intel·ligència artificial per als treballadors públics**\n\nAvui, 16 de maig de 2026, destaca una iniciativa significativa en l'àmbit administratiu amb la nova inversió de la Generalitat de Catalunya en la formació en intel·ligència artificial (IA). Amb un pressupost de cinc milions d’euros, el govern català busca capacitar fins a 250.000 treballadors públics en aquesta tecnologia emergent que està transformant tots els sectors, incloent-hi el món jurídic.\n\n aquesta formació no només pretén millorar l’eficiència operativa de les administracions públiques, sinó també garantir que els professionals del sector públic s'adaptin als nous reptes que comporta la digitalització. La incorporació de la IA en els processos administratius pot conduir a una major transparència i efectivitat en la gestió de serveis públics, factors clau per a la millora de la confiança ciutadana en les institucions.\n\nEl desenvolupament i l’aplicació de la IA en l’àmbit jurídic, per tant, esdevé una qüestió central que els juristes catalans han de tenir present. La comprensió i l’ús adequat de les eines digitals seran fonamentals per afrontar els nous escenaris jurídics que s’obre davant nostre. Així, els professionals del dret han de preparar-se per integrar la tecnologia en la seva pràctica diària, així com per abordar les implicacions legals i ètiques que aquest canvi comporta.\n\nAmb aquesta iniciativa, la Generalitat no només promou la innovació i la modernització dins de l'administració pública, sinó que també reforça la importància d'una formació contínua i adaptativa pels treballadors del sector. La nova realitat laboral que comporta l'ús de la IA requereix professionals ben formats i capacitats per aportar solucions eficaces en un entorn cada vegada més complex i digitalitzat.",
+  "resums_categoria": {
+    "administratiu": "El 16 de maig de 2026, la Generalitat de Catalunya va anunciar una inversió de cinc milions d’euros destinada a un programa de formació en intel·ligència artificial que beneficiarà fins a 250.000 treballadors públics. Aquesta iniciativa busca millorar les competències digitals dels empleats del sector públic, permetent així una adaptació més eficient a les noves tecnologies que transformen l'administració pública.\n\nAquesta aposta per la formació en IA no només fomenta la capacitació professional, sinó que també apunta a una administració més transparent, eficient i accessible, en línia amb les necessitats de la societat actual. En un context marcat pel ràpid desenvolupament tecnològic, la formació en IA es converteix en una peça clau per garantir un servei públic de qualitat i a l'avantguarda de les tendències globals."
+  }
 }

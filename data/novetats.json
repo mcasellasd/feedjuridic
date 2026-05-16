@@ -1,5 +1,27 @@
 [
   {
+    "id": "COM-e74f0a2da38e",
+    "data": "2026-05-16",
+    "titol": "La Generalitat destina cinc milions d’euros a la formació en IA de fins a 250.000 treballadors públics",
+    "font": "Regio7",
+    "tipus": "Premsa comarcal",
+    "url": "https://www.regio7.cat/arreu-catalunya-espanya-mon/2026/05/16/generalitat-destina-cinc-milions-euros-formacio-intelligencia-artificial-funcionaris-catalunya-salvador-illa-ia-microsoft-130286894.html",
+    "resum_executiu": "La Generalitat de Catalunya inverteix cinc milions d’euros en un programa de formació en intel·ligència artificial per a fins a 250.000 treballadors públics. Els cursos se centraran en el seu ús responsable i eficient dins l'administració pública.",
+    "impacte_practic": "Aquesta iniciativa permetrà millorar l'eficiència i la capacitat d'adaptació dels treballadors públics, impactant positivament en la qualitat dels serveis ofrecits als ciutadans. Les empreses també es beneficiaran indirectament de funcionaris més formats.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "formació",
+      "intel·ligència artificial",
+      "funcionaris",
+      "govern"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
     "id": "ACT-https://almacendederecho.org/?p=59798",
     "data": "2026-05-13",
     "titol": "Gestión del conocimiento jurídico en la era de la IA (3)",
