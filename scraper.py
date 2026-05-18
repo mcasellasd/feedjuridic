@@ -53,6 +53,11 @@ CATEGORIES = {
 
 TODAY = datetime.date.today()
 TODAY_STR = TODAY.strftime("%Y-%m-%d")
+CLAUDE_SCHEDULED_DIR = Path("/Users/marccasellas/Documents/Claude/Scheduled")
+CLAUDE_EXTRA_DIRS = [
+    Path("/Users/marccasellas/Documents/Claude/Projects/legaltech"),
+    Path("/Users/marccasellas/Documents/Claude/Projects/legaltech/resumen-juridico-diario"),
+]
 
 # Feeds RSS d'actualitat jurídica
 FEEDS_ACTUALITAT = [
@@ -735,6 +740,118 @@ def fetch_cowork_daily_summary():
     return entrades
 
 
+def fetch_claude_scheduled() -> list:
+    """
+        Llegeix els fitxers Markdown de Claude Scheduled i extreu titulars juridics
+    en dos formats suportats:
+            1) "## Titulares del dia" amb linies numerades i [Fuente](URL)
+      2) "### n. **...**" amb bullets i [Consultar norma](URL)
+    """
+    print("[CLAUDE] Processant outputs programats...")
+    all_dirs = [CLAUDE_SCHEDULED_DIR] + CLAUDE_EXTRA_DIRS
+    existing_dirs = [d for d in all_dirs if d.exists()]
+    if not existing_dirs:
+        print("[CLAUDE] Cap carpeta de fonts Claude trobada.")
+        return []
+
+    md_files = []
+    for root_dir in existing_dirs:
+        for p in root_dir.rglob("*.md"):
+            name = p.name.lower()
+            if name in {"skill.md", "claude.md"}:
+                continue
+            # Evitar markdowns de projecte no periodistics
+            if not (name.startswith("resumen-") or name.startswith("resum-")):
+                continue
+            md_files.append(p)
+
+    md_files = sorted(md_files, reverse=True)
+    if not md_files:
+        print("[CLAUDE] Cap fitxer markdown trobat.")
+        return []
+
+    entrades = []
+    used_ids = set()
+    used_files = 0
+
+    for md_file in md_files:
+        try:
+            contingut = md_file.read_text(encoding="utf-8")
+        except Exception as ex:
+            print(f"[CLAUDE] Error llegint {md_file.name}: {ex}")
+            continue
+
+        used_files += 1
+        file_date_match = re.search(r"(\d{4}-\d{2}-\d{2})", md_file.name)
+        data_fitxer = file_date_match.group(1) if file_date_match else TODAY_STR
+        font_web = f"Claude/{md_file.parent.name}"
+
+        # Format 1: 1. **Titol** - Descripcio [Fuente](URL)
+        patro_titulars = re.compile(
+            r"^\d+\.\s+\*\*(.+?)\*\*\s+[—-]\s+(.+?)\s+\[Fuente\]\((https?://[^)]+)\)",
+            re.MULTILINE,
+        )
+        for m in patro_titulars.finditer(contingut):
+            titol = m.group(1).strip()
+            resum = m.group(2).strip()
+            url = m.group(3).strip()
+            id_entrada = f"CLAUDE-{hashlib.md5((titol + url + data_fitxer).encode()).hexdigest()[:10]}"
+            if id_entrada in used_ids:
+                continue
+            used_ids.add(id_entrada)
+            entrades.append({
+                "id": id_entrada,
+                "data": data_fitxer,
+                "titol": titol,
+                "resum": resum or titol,
+                "url": url,
+                "font": "Claude-Scheduled",
+                "tipus": "Resum jurídic",
+                "font_web": font_web,
+                "comarques": [],
+            })
+
+        # Format 2: ### n. **Titular** ... [Consultar norma](URL)
+        patro_blocs = re.compile(
+            r"^###\s+\d+\.\s+\*\*(.+?)\*\*(.*?)(?=^###\s+\d+\.\s+\*\*|\Z)",
+            re.MULTILINE | re.DOTALL,
+        )
+        for m in patro_blocs.finditer(contingut):
+            titol_heading = m.group(1).strip()
+            bloc = m.group(2)
+            titol_match = re.search(r"-\s+\*\*T[ií]tol\*\*:\s*(.+)", bloc)
+            titol = titol_match.group(1).strip() if titol_match else titol_heading
+            resum_match = re.search(r"-\s+\*\*Significaci[oó]\*\*:\s*(.+)", bloc)
+            resum = resum_match.group(1).strip() if resum_match else titol_heading
+            url_match = re.search(
+                r"\[(?:Consultar norma|Enlla[cç]|Fuente)\]\((https?://[^)]+)\)",
+                bloc,
+                re.IGNORECASE,
+            )
+            url = url_match.group(1).strip() if url_match else ""
+            if not url:
+                continue
+
+            id_entrada = f"CLAUDE-{hashlib.md5((titol + url + data_fitxer).encode()).hexdigest()[:10]}"
+            if id_entrada in used_ids:
+                continue
+            used_ids.add(id_entrada)
+            entrades.append({
+                "id": id_entrada,
+                "data": data_fitxer,
+                "titol": titol,
+                "resum": resum or titol,
+                "url": url,
+                "font": "Claude-Scheduled",
+                "tipus": "Resum DOGC",
+                "font_web": font_web,
+                "comarques": [],
+            })
+
+    print(f"[CLAUDE] {len(entrades)} entrades extretes de {used_files} fitxers.")
+    return entrades
+
+
 # ── 7. Pipeline principal ─────────────────────────────────
 def main():
     print(f"\n{'='*50}")
@@ -760,7 +877,15 @@ def main():
     entrades_eurlex = fetch_eurlex(dies_enrere=2)
     entrades_comarcals = fetch_comarques(dies_enrere=3)
     entrades_cowork = fetch_cowork_daily_summary()
-    totes_entrades = entrades_dogc + entrades_boe + entrades_parlament + entrades_email + entrades_actualitat + entrades_eurlex + entrades_comarcals + entrades_cowork
+    entrades_claude = fetch_claude_scheduled()
+
+    # Normalitzar dates de Claude-Scheduled ja guardades, segons la data del fitxer font
+    claude_dates = {e["id"]: e.get("data", TODAY_STR) for e in entrades_claude}
+    for n in totes_novetats:
+        if n.get("font") == "Claude-Scheduled" and n.get("id") in claude_dates:
+            n["data"] = claude_dates[n["id"]]
+
+    totes_entrades = entrades_dogc + entrades_boe + entrades_parlament + entrades_email + entrades_actualitat + entrades_eurlex + entrades_comarcals + entrades_cowork + entrades_claude
 
     noves_per_id = [e for e in totes_entrades if e["id"] not in ids_existents]
     # Deduplicar per títol normalitzat (mateix document pot venir de BOE + DOUE email)
@@ -770,10 +895,10 @@ def main():
         titol_norm = re.sub(r"\s+", " ", e["titol"]).strip().lower()[:120]
         if titol_norm not in titols_vistos:
             titols_vistos.add(titol_norm)
-            # Aplicar el filtre estricte per IA i Dret Digital
-            if es_ia(e["titol"], e.get("resum", "")):
+            # Mantenir filtre IA general, pero incloure sempre el material programat de Claude
+            if e.get("font") == "Claude-Scheduled" or es_ia(e["titol"], e.get("resum", "")):
                 noves.append(e)
-    print(f"\n→ {len(noves)} entrades noves sobre IA per analitzar.\n")
+    print(f"\n→ {len(noves)} entrades noves (IA + Claude Scheduled) per analitzar.\n")
 
     novetats_analitzades = []
     for i, entrada in enumerate(noves, 1):
@@ -784,7 +909,7 @@ def main():
 
         novetat = {
             "id": entrada["id"],
-            "data": TODAY_STR,
+            "data": entrada.get("data", TODAY_STR),
             "titol": entrada["titol"],
             "font": entrada["font"],
             "tipus": entrada["tipus"],
@@ -821,6 +946,7 @@ def main():
         "email": sum(1 for n in novetats_analitzades if "email" in n["font"].lower()),
         "actualitat": sum(1 for n in novetats_analitzades if n["font"] == "Actualitat"),
         "eurlex": sum(1 for n in novetats_analitzades if n["font"] in ("EUR-Lex", "TJUE")),
+        "claude_scheduled": sum(1 for n in novetats_analitzades if n["font"] == "Claude-Scheduled"),
         "per_categoria": {},
         "urgents": sum(1 for n in novetats_analitzades if n["urgencia"] == "alta"),
         "resum_diari": "",

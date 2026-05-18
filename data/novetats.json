@@ -6,18 +6,341 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://www.abogacia.es/actualidad/noticias/abogacia-espanola-impulsa-dos-masterclass-de-ia-juridica-y-licencias-gratuitas-de-tirant-lo-blanch-y-vlex/",
-    "resum_executiu": "La Abogacía Española impulsa dues masterclass sobre la intel·ligència artificial jurídica per als professionals de la llei. Els assistents també poden optar a llicències gratuïtes de Tirant lo Blanch i vLex mitjançant un sorteig.",
-    "impacte_practic": "Aquesta iniciativa permet als advocats millorar les seves habilitats en l'ús d'eines d'IA, millorant així l'eficiència en la seva labor diària. Els ciutadans podrien beneficiar-se d'un servei legal més preparat i eficient.",
+    "resum_executiu": "L'Abogacía Española ha iniciat dues masterclass centrades en la intel·ligència artificial aplicada al dret, a més d'oferir llicències gratuïtes de recursos jurídics. Aquesta iniciativa busca millorar la formació dels professionals del sector legal en noves tecnologies.",
+    "impacte_practic": "Els advocats tindran accés a formació actualitzada en IA, potenciant la seva capacitat per afrontar els reptes del mercat. Això pot beneficiar també els ciutadans, amb serveis legals més eficients.",
     "categoria": "administratiu",
     "paraules_clau": [
-      "IA jurídica",
+      "IA",
       "formació",
       "advocats",
-      "licències"
+      "tecnologia"
     ],
-    "urgencia": "mitjana",
+    "urgencia": "baixa",
     "font_web": "Abogacía Española",
     "comarques": []
+  },
+  {
+    "id": "CLAUDE-94da955669",
+    "data": "2026-05-17",
+    "titol": "Tribunal Supremo establece nuevos criterios para prestación por cuidado de menores con enfermedad grave",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://www.menorca.info/actualidad/dudas-respuestas/2026/05/16/2623311/tribunal-supremo-cambia-reglas-nuevos-criterios-para-pedir-ayuda-por-enfermedad-grave-menores.html",
+    "resum_executiu": "El Tribunal Supremo estableix nous criteris per accedir a la prestació econòmica per cuidar menors amb malalties greus, eliminant requisits que dificultaven l'accés a moltes famílies. La sentència unifica criteris a nivell estatal, centrant-se en les necessitats reals del menor en compte de requisits formals.",
+    "impacte_practic": "Aquesta reforma beneficia milers de famílies amb menors malalts, facilitant l'accés a ajudes econòmiques necessàries. També implica la revisió de les sol·licituds denegades anteriorment per criteris restrictius.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "prestació econòmica",
+      "menors",
+      "malaltia greu",
+      "Tribunal Suprem"
+    ],
+    "urgencia": "alta",
+    "font_web": "Claude/resumen-juridico-diario",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-c3edad2bb2",
+    "data": "2026-05-17",
+    "titol": "Real Decreto-ley 11/2026: reforma integral del copago farmacéutico",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://www.boe.es/",
+    "resum_executiu": "El Real Decreto-ley 11/2026 implementa una reforma integral del sistema de copago farmacéutico, buscant una major equitat en l'accés als medicaments. La normativa redefineix els mecanismes de finançament i repartiment de costos entre l'estat i els ciutadans.",
+    "impacte_practic": "Aquesta reforma pot reduir la càrrega financera per a nombrosos ciutadans, especialment aquells amb necessitats mèdiques elevades. Les empreses farmacèutiques també podran veure afectades les seves dinàmiques de preus i vendes.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "copago farmacèutico",
+      "reforma",
+      "equitat",
+      "medicaments"
+    ],
+    "urgencia": "alta",
+    "font_web": "Claude/resumen-juridico-diario",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-b273d8db16",
+    "data": "2026-05-17",
+    "titol": "Parlamento Europeo advierte sobre influencia política en nombramiento de jueces",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://www.infobae.com/espana/2026/04/30/el-parlamento-europeo-aprueba-un-informe-que-advierte-de-la-excesiva-influencia-politica-en-el-nombramiento-de-los-jueces/",
+    "resum_executiu": "El Parlament Europeu ha aprovat un informe que denuncia la influència política excessiva en el nomenament de jutges a la UE, destacant els riscos per la independència judicial i la confiança ciutadana. L'informe proposa mesures per garantir la imparcialitat i l'eficàcia dels sistemes judicials dels Estats membres.",
+    "impacte_practic": "Aquesta disposició pot reforçar la independència judicial, millorant l'accés a la justícia i la protecció dels drets fonamentals per als ciutadans. Les empreses poden beneficiar-se d'un entorn legal més just i previsible.",
+    "categoria": "constitucional",
+    "paraules_clau": [
+      "independència judicial",
+      "influència política",
+      "justícia",
+      "drets fonamentals"
+    ],
+    "urgencia": "alta",
+    "font_web": "Claude/resumen-juridico-diario",
+    "comarques": [
+      "catalunya"
+    ]
+  },
+  {
+    "id": "CLAUDE-aa4d873980",
+    "data": "2026-05-17",
+    "titol": "Real Decreto 371/2026: creación del Foro de Gobierno Abierto",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://www.boe.es/",
+    "resum_executiu": "El Real Decreto 371/2026 estableix el Foro de Gobierno Abierto amb l'objectiu de fomentar la participació ciutadana en la presa de decisions. Aquesta iniciativa busca millorar la transparència del govern i l'eficàcia de les polítiques públiques.",
+    "impacte_practic": "La creació d'aquest fòrum pot facilitar una major interacció entre els ciutadans i l'administració, millorant la seva confiança en les institucions. Les empreses també podrien beneficiar-se d'una normativa més clara i accessible.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "govern obert",
+      "participació ciutadana",
+      "transparència",
+      "polítiques públiques"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Claude/resumen-juridico-diario",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-8cb3414825",
+    "data": "2026-05-17",
+    "titol": "TJUE: residencias de mayores pueden retransmitir contenido audiovisual sin pagar derechos",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://www.poderjudicial.es/",
+    "resum_executiu": "El Tribunal de Justicia de la Unió Europea (TJUE) ha dictat que les residències de majors poden retransmetre contingut audiovisual sense haver de pagar drets. Aquesta decisió s'emmarca en la protecció dels drets dels residents i l'accés a la cultura.",
+    "impacte_practic": "Els ciutadans que viuen en residències tindran un accés més ampli a continguts audiovisuals sense que les institucions hagin de preocupar-se pel cost de drets d'autor. Les empreses gestionadores de residències podran millorar l'oferta cultural sense càrrecs addicionals.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "residències",
+      "contingut audiovisual",
+      "drets d'autor"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Claude/resumen-juridico-diario",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-64b8dfee00",
+    "data": "2026-05-18",
+    "titol": "Instrucción 2/2026 del CGPJ sobre IA en la actividad jurisdiccional",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://ajtapia.com/2026/02/inteligencia-artificial-y-justicia-la-instruccion-2-2026-del-cgpj-sobre-la-utilizacion-de-sistemas-de-inteligencia-artificial-en-el-ejercicio-de-la-actividad-jurisdiccional/",
+    "resum_executiu": "La Instrucció 2/2026 del CGPJ estableix criteris i principis per a l'ús de sistemes d'intel·ligència artificial en l'exercici de l'activitat jurisdiccional, amb l'objectiu de garantir la independència judicial i protegir els drets i llibertats. Aquesta normativa és essencial per regular l'ús d'IA en el sistema judicial i prevenir riscos associats, com les 'alucinacions judicials'.",
+    "impacte_practic": "L'aplicació d'aquesta instrucció pot influir directament en la manera com els jutges utilitzin la IA, assegurant que es respectin els drets fonamentals dels ciutadans. Això genera un entorn més segur i fiable per a les decisions judicials, amb potencials conseqüències per a les empreses que operen en sectors regulats per aquestes tecnologies.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "justícia",
+      "principis",
+      "jurisdicció"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Claude/legaltech",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-580e3fc175",
+    "data": "2026-05-18",
+    "titol": "AI Act entra en vigor en agosto de 2026",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://www.iebschool.com/hub/ai-act-2026-la-ue-retrasa-el-cumplimiento-de-la-ia-de-alto-riesgo-a-diciembre-de-2027/",
+    "resum_executiu": "El AI Act de la UE ha ajornat l'aplicació de les obligacions més exigents fins al desembre de 2027, oferint un temps addicional a les empreses per adaptar-se. És crucial que les empreses compleixin amb la formació i les exigències de transparència abans de la nova data límit.",
+    "impacte_practic": "Els ciutadans i empreses tindran més temps per preparar-se a les exigències legals sobre IA, però les obligacions crítiques, com la formació del personal, han de ser rebutjades immediatament. Això podria reduir la càrrega administrativa i fomentar el compliment normatiu.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "AI Act",
+      "regulació IA",
+      "compliment",
+      "formació"
+    ],
+    "urgencia": "alta",
+    "font_web": "Claude/legaltech",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-dcb7ad8813",
+    "data": "2026-05-18",
+    "titol": "Real Decreto-ley 11/2026 modifica copagos farmacéuticos",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://noticias.juridicas.com/",
+    "resum_executiu": "El Real Decreto-ley 11/2026 modifica els copagos farmacèutics, establint nous nivells d'aportació per a persones actives i pensionistes, així com topes màximes per a aquells amb ingressos anuals inferiors a 35.000 euros. Aquesta norma implica un ajustament significatiu en l'accés a la prestació farmacèutica i als drets socials relacionats.",
+    "impacte_practic": "La modificació dels copagos pot facilitar l'accés a medicaments per a persones amb ingressos baixos, millorant la seva situació econòmica i sanitària. És probable que això redueixi la càrrega econòmica sobre les llars afectades.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "copagos",
+      "farmacèutics",
+      "prestació",
+      "socials"
+    ],
+    "urgencia": "alta",
+    "font_web": "Claude/legaltech",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-c617a5b26a",
+    "data": "2026-05-18",
+    "titol": "Lexroom (legaltech italiana) expande en España",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://www.elespanol.com/invertia/disruptores/ecosistema-startup/startups/20260227/legaltech-italiana-lexroom-entra-espana-acumular-millones-rondas-financiacion/1003744147221_0.html",
+    "resum_executiu": "Lexroom, una 'legaltech' italiana, comença a operar a Espanya després de recaptar més de 20 milions d'euros. L'empresa utilitza intel·ligència artificial per optar a simplificar i reduir el temps dedicat a tasques jurídiques en un 70%.",
+    "impacte_practic": "Els advocats i bufets d'Espanya podran optimitzar la seva feina amb la plataforma de Lexroom, la qual ofereix solucions adaptatives i serveis personalitzats. Aquesta innovació pot modificar la manera com els professionals jurídics gestionen els seus recursos i temps.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "legaltech",
+      "intel·ligència artificial",
+      "espanya",
+      "advocats"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Claude/legaltech",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-62e8fb7983",
+    "data": "2026-05-18",
+    "titol": "TJUE resuelve sobre derechos de propiedad inmueble",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://infoeuropa.uv.es/sentencia-tjue-asunto-c-286-25-brandl-de-13-de-mayo-de-2026/",
+    "resum_executiu": "La Sentència del TJUE en l'assumpte C-286/25 determina que la supressió dels drets d'usufructe sobre béns immobles contraresta el dret de la Unió Europea, requerint que els Estats membres restablissin aquests drets i reparin els perjudicis causats. La normativa nacional que limita la compensació econòmica al valor de mercat és considerada insuficient.",
+    "impacte_practic": "Aquesta sentència pot afectar a molts ciutadans i empreses que han perdut drets d'usufructe, ja que obliga a les autoritats a compensar adequadament per les pèrdues econòmiques. Això implica la possibilitat de revisar les compensacions per assegurar que siguin justes i adequades.",
+    "categoria": "civil",
+    "paraules_clau": [
+      "usufructe",
+      "TJUE",
+      "compensació",
+      "béns immobles"
+    ],
+    "urgencia": "alta",
+    "font_web": "Claude/legaltech",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-bed2ae6520",
+    "data": "2026-05-18",
+    "titol": "Tribunal Supremo flexibiliza acceso a subsidio por enfermedad grave en menores",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://www.menorca.info/actualidad/dudas-respuestas/2026/05/16/2623311/tribunal-supremo-cambia-reglas-nuevos-criterios-para-pedir-ayuda-por-enfermedad-grave-menores.html",
+    "resum_executiu": "El Tribunal Suprem ha flexibilitzat l'accés a la prestació econòmica per a cuidar menors amb malalties greus, eliminant requisits restrictius que dificultaven la seva concessió. Ara, el dret a la prestació es basa en la necessitat de cura del menor i no en criteris formals com l'hospitalització.",
+    "impacte_practic": "Aquesta decisió beneficiarà milers de famílies que necessiten suport econòmic per a poder atendre als seus fills amb malalties greus. S'espera una disminució en la litigiositat vinculada a la denegació de prestacions per interpretacions no uniformes.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "prestació econòmica",
+      "menors",
+      "malalties greus",
+      "Tribunal Suprem"
+    ],
+    "urgencia": "alta",
+    "font_web": "Claude/legaltech",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-96797c2844",
+    "data": "2026-05-18",
+    "titol": "Sanciones a abogados por uso incorrecto de IA",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://raymondorta.com/sancion-judicial-por-uso-inapropiado-de-inteligencia-artificial-en-espana/",
+    "resum_executiu": "La Sala de lo Penal del TSJC ha multat a un advocat per acusacions de cites falses generades per IA, imposant una sanció de 420 euros. Això destaca la importància de la responsabilitat professional davant l'ús de tecnologies avançades.",
+    "impacte_practic": "Els advocats han de ser cauts en l'ús d'eines d'IA per evitar responsabilitats i sancions. Aquesta situació pot afectar la confiança dels ciutadans en la professió legal.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "IA",
+      "sancions",
+      "responsabilitat",
+      "advocats"
+    ],
+    "urgencia": "alta",
+    "font_web": "Claude/legaltech",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-d27238f825",
+    "data": "2026-05-18",
+    "titol": "Gobierno activa reforma de sede del Tribunal Constitucional",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum jurídic",
+    "url": "https://www.elcorreogallego.es/economia/2026/05/06/reforma-sede-tribunal-constitucional-129894466.html",
+    "resum_executiu": "El Govern ha iniciat els tràmits per a la reforma i ampliació de la seu del Tribunal Constitucional a Madrid. La inversió prevista és de 35 milions d'euros, incrementant la superfície del complex en un 20%, fins als 41.000 metres quadrats.",
+    "impacte_practic": "La reforma tindrà un impacte directe en la funcionalitat i eficiència del Tribunal Constitucional, afectant el seu rendiment i la seva imatge institucional. Això pot millorar l'accessibilitat i l'ús dels espais per part dels ciutadans i professionals del dret.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "reforma",
+      "Tribunal Constitucional",
+      "Madrid",
+      "inversió"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Claude/legaltech",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-5afacabd89",
+    "data": "2026-05-18",
+    "titol": "Reestructuració del Departament de Recerca i Universitats",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum DOGC",
+    "url": "https://portaljuridic.gencat.cat/eli/es-ct/d/2026/05/12/80",
+    "resum_executiu": "La reestructuració del Departament de Recerca i Universitats busca optimitzar els recursos i millorar l'eficiència administrativa en el sector universitari. Aquesta disposició estableix canvis organitzatius per fomentar la col·laboració entre institucions i potenciar la innovació.",
+    "impacte_practic": "Els ciutadans podran beneficiar-se d'un sistema universitari més àgil i adaptat a les necessitats del mercat. Les empreses tindran accés a una investigació més efectiva i col·laborativa.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "reestructuració",
+      "universitats",
+      "investigació",
+      "eficiència"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Claude/novetats",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-894ca952d4",
+    "data": "2026-05-18",
+    "titol": "Bases reguladores per a convocatòria d'ajuts a inversions per a explotacions agràries (Fons de Transició Nuclear)",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum DOGC",
+    "url": "https://portaljuridic.gencat.cat/eli/es-ct/o/2026/05/11/arp76",
+    "resum_executiu": "La norma estableix les bases per a la convocatòria d'ajuts a inversions destinades a explotacions agràries, amb l'objectiu de fomentar l'economia agrària i facilitar la transició nuclear. S'estructura en un conjunt de criteris i requisits que els interessats han de complir per accedir a aquests ajuts.",
+    "impacte_practic": "Aquests ajuts podrien millorar la viabilitat econòmica de les explotacions agràries i promoure inversions sostenibles. Això pot repercutir positivament en el desenvolupament rural i l'activitat econòmica local.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "ajuts",
+      "explotacions agràries",
+      "inversions",
+      "transició nuclear"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Claude/novetats",
+    "comarques": []
+  },
+  {
+    "id": "CLAUDE-6ceb855bd7",
+    "data": "2026-05-18",
+    "titol": "Llei de l'Institut de la Filmoteca Nacional de Catalunya",
+    "font": "Claude-Scheduled",
+    "tipus": "Resum DOGC",
+    "url": "https://portaljuridic.gencat.cat/eli/es-ct/l/2026/05/11/4",
+    "resum_executiu": "La Llei de l'Institut de la Filmoteca Nacional de Catalunya estableix un marc legal per a la creació i funcionament d'una institució dedicada a la preservació i difusió del patrimoni cinematogràfic. Aquesta norma regula les seves competències, organització i financament.",
+    "impacte_practic": "Aquesta llei facilita l'accés del públic a materials cinematogràfics i promou la cultura audiovisual, beneficiant tant a ciutadans com a professionals del sector. Això pot potenciar la indústria cinematogràfica local i estimular el turisme cultural.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "filmoteca",
+      "patrimoni",
+      "cultura",
+      "cinema"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Claude/novetats",
+    "comarques": [
+      "catalunya"
+    ]
   },
   {
     "id": "ACT-https://www.economistjurist.es/?p=245749",
@@ -26,40 +349,18 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://www.economistjurist.es/articulos-juridicos-destacados/registrar-tu-cara-como-marca-una-herramienta-preventiva-ante-el-desarrollo-de-la-ia/",
-    "resum_executiu": "La registre de la imatge i la veu com a marca pot oferir una protecció jurídica addicional davant l'ús indegut per part de la intel·ligència artificial. Aquesta estratègia s'emmarca en un context jurídic que intenta abordar la fragmentació de drets sobre la identitat personal i comercial.",
-    "impacte_practic": "Els ciutadans, com Taylor Swift, poden utilitzar aquesta eina per controlar l'ús comercial de la seva identitat, ampliant la seva protecció legal. Les empreses també poden veure's beneficiades per la possibilitat de registrar aspectes distintius de la seva marca.",
+    "resum_executiu": "La recent estratègia de Taylor Swift de registrar elements de la seva identitat com a marques busca protegir-se contra l'ús indegut per part de la intel·ligència artificial. Aquesta acció revela la intersecció entre drets d'imatge, drets d'autor i el dret de marca en un entorn digital emergent.",
+    "impacte_practic": "Els ciutadans i empreses poden veure's més protegits en el seu dret a la seva imatge i identitat comercial, especialment amb l'augment de l'ús d'IA. Això també pot obrir nous camins per al registre de marques en el sector creatiu.",
     "categoria": "mercantil",
     "paraules_clau": [
-      "registre marca",
+      "dret de marca",
       "intel·ligència artificial",
-      "drets d'imatge",
-      "identitat"
+      "identitat",
+      "protecció"
     ],
-    "urgencia": "mitjana",
+    "urgencia": "alta",
     "font_web": "Economist & Jurist",
     "comarques": []
-  },
-  {
-    "id": "COM-e74f0a2da38e",
-    "data": "2026-05-16",
-    "titol": "La Generalitat destina cinc milions d’euros a la formació en IA de fins a 250.000 treballadors públics",
-    "font": "Regio7",
-    "tipus": "Premsa comarcal",
-    "url": "https://www.regio7.cat/arreu-catalunya-espanya-mon/2026/05/16/generalitat-destina-cinc-milions-euros-formacio-intelligencia-artificial-funcionaris-catalunya-salvador-illa-ia-microsoft-130286894.html",
-    "resum_executiu": "La Generalitat de Catalunya inverteix cinc milions d’euros en un programa de formació en intel·ligència artificial per a fins a 250.000 treballadors públics. Els cursos se centraran en el seu ús responsable i eficient dins l'administració pública.",
-    "impacte_practic": "Aquesta iniciativa permetrà millorar l'eficiència i la capacitat d'adaptació dels treballadors públics, impactant positivament en la qualitat dels serveis ofrecits als ciutadans. Les empreses també es beneficiaran indirectament de funcionaris més formats.",
-    "categoria": "administratiu",
-    "paraules_clau": [
-      "formació",
-      "intel·ligència artificial",
-      "funcionaris",
-      "govern"
-    ],
-    "urgencia": "mitjana",
-    "font_web": "",
-    "comarques": [
-      "catalunya"
-    ]
   },
   {
     "id": "ACT-https://almacendederecho.org/?p=59798",
@@ -68,13 +369,13 @@
     "font": "Actualitat",
     "tipus": "Article",
     "url": "https://almacendederecho.org/gestion-del-conocimiento-juridico-en-la-era-de-la-ia-3",
-    "resum_executiu": "L'article analitza la importància de la metacognició en el dret i la seva relació amb la intel·ligència artificial (IA). Es discuteix com les habilitats de raonament i revisió humanes són clau per a un bon assessorament legal davant les limitacions de les màquines.",
-    "impacte_practic": "L'aplicació de la metacognició pot millorar la qualitat del servei legal, ja que permet als advocats evitar biaixos en el seu pensament. Això pot beneficiïar tant clients individuals com empreses que busquen assessorament legal precís i actualitzat.",
-    "categoria": "civil",
+    "resum_executiu": "L'article analitza la importància de la metacognició en la pràctica jurídica en l'era de la intel·ligència artificial. S'argumenta que la capacitat d'un advocat per reflexionar sobre el seu procés de raonament permet diferenciar-se de les solucions automàtiques ofertes per la IA.",
+    "impacte_practic": "Els advocats han de desenvolupar habilitats metacognitives per a millorar la qualitat del seu servei i evitar errors derivats de dependències excessives de les tecnologies. Això pot provocar una major diferenciació en la qualitat dels serveis legals oferts.",
+    "categoria": "administratiu",
     "paraules_clau": [
       "metacognició",
       "intel·ligència artificial",
-      "dret",
+      "pràctica jurídica",
       "advocats"
     ],
     "urgencia": "mitjana",
@@ -83,39 +384,41 @@
   },
   {
     "id": "COWORK-12994c83",
-    "data": "2026-05-11",
+    "data": "2026-05-13",
     "titol": "Acuerdo político sobre el \"AI Omnibus\": la UE simplifica y retrasa parte del Reglamento de IA",
     "font": "Cowork",
     "tipus": "Cowork",
     "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
-    "resum_executiu": "El nou acord polític sobre el Reglament d'IA retrasa l'aplicació d'obligacions per a sistemes d'IA de major risc fins a 16 mesos, mentre que els sandboxes reguladors haurien d'esperar fins al 2027. Les dates límit per a la transparència del contingut generat per IA s'han reduït a 3 mesos.",
-    "impacte_practic": "Les empreses hauran de reajustar els seus plans de compliment normatiu, donant més temps per implementar les mesures requerides. Això pot afectar la seva capacitat per innovar i adaptar-se a les noves exigències legals.",
+    "resum_executiu": "El Parlament Europeu i el Consell han acordat modificar el Reglament de IA, ajornant l'aplicació de requisits per a sistemes d'IA d'alt risc i els sandboxes regulatoris nacionals. Això reordena el calendari de compliment per a empreses i despatxos jurídics.",
+    "impacte_practic": "Els ciutadans i empreses veuran un allargament dels terminis per adaptar-se a les noves exigències de regulació d'IA, permetent més temps per complir amb les noves normatives. Això pot facilitar la seva implementació i reduir la pressió immediata sobre les organitzacions.",
     "categoria": "administratiu",
     "paraules_clau": [
-      "Reglament d'IA",
-      "compliance",
+      "Reglament de IA",
+      "ajornament",
       "transparència",
-      "sistemes d'IA"
+      "empresa"
     ],
     "urgencia": "mitjana",
     "font_web": "Cowork",
-    "comarques": []
+    "comarques": [
+      "catalunya"
+    ]
   },
   {
     "id": "COWORK-e23e10d6",
-    "data": "2026-05-11",
+    "data": "2026-05-13",
     "titol": "TSJ Navarra confirma 8 años de prisión por acceso ilícito al historial médico de familiares (1.329 accesos)",
     "font": "Cowork",
     "tipus": "Cowork",
     "url": "https://noticias.juridicas.com/",
-    "resum_executiu": "La sentència del TSJ de Navarra confirma la condemna d'una administrativa sanitària a vuit anys de presó per accés il·legítim al historial mèdic de familiars en més d'un miler d'ocasions. Aquesta decisió reforça la protecció del dada de salut com a informació especialment protegida segons la normativa del RGPD i la LOPDGDD.",
-    "impacte_practic": "L'efecte real d'aquesta decisió afecta directament els empleats públics i estableix un precedent sobre les conseqüències penals d'accés no autoritzat a dades sensibles. Així, es reforça la confiança dels ciutadans en la privacitat de les seves dades de salut.",
+    "resum_executiu": "El TSJ de Navarra ha confirmat una condemna de vuit anys de presó per l'accés il·legal a l'historial mèdic de familiars, destacant la importància de la protecció de dades de salut. Aquesta sentència afirma la doctrina sobre la tutela de dades com a informació especialment protegida segons la normativa vigent.",
+    "impacte_practic": "La decisió subratlla les conseqüències legals greus per a empleats públics que vulnerin la privacitat de dades sensibles. Això afecta directament la confiança dels ciutadans en la gestió de la seva informació sanitària.",
     "categoria": "penal",
     "paraules_clau": [
-      "dades de salut",
-      "accés il·legítim",
-      "protecció de dades",
-      "penalització"
+      "privacitat",
+      "dades",
+      "sanitat",
+      "condemna"
     ],
     "urgencia": "alta",
     "font_web": "Cowork",
@@ -123,19 +426,19 @@
   },
   {
     "id": "COWORK-4faf3b11",
-    "data": "2026-05-11",
+    "data": "2026-05-13",
     "titol": "CGPJ — Instrucción 2/2026 sobre uso de IA en la actividad jurisdiccional (publicada en el BOE)",
     "font": "Cowork",
     "tipus": "Cowork",
     "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2205",
-    "resum_executiu": "La Instrucción 2/2026 del CGPJ regula l'ús de sistemes d'intel·ligència artificial en l'activitat jurisdiccional, establint garanties i vigilància per assegurar la transparència i la imparcialitat judicial. Aquesta norma busca complir amb els estàndards europeus de seguretat en l'ús d'IA dins del sistema de justícia.",
-    "impacte_practic": "La norma impacta directament en la gestió judicial, millorant l'eficiència del sistema legal i augmentant la protecció de drets dels ciutadans. Les empreses que interactuen amb el sistema judicial també es veuran afectades per la integració de l'IA en els procediments judicials.",
+    "resum_executiu": "La Instrucción 2/2026 del CGPJ estableix un marc normatiu per a la utilització de sistemes d'intel·ligència artificial en l'activitat jurisdiccional, cercant garantir drets i llibertats. Aquesta norma s'emmarca dins del Reglament Europeu d'IA, que imposeix responsabilitats a l'ús d'IA de risc elevat en el sistema judicial.",
+    "impacte_practic": "Els ciutadans i empreses afectats per processos judicials veuran un augment en l'eficiència i transparència judicial, tot i que també s'hauran de considerar les garanties de privacitat en el tractament de dades. Les empreses tecnològiques involucrades en la IA podran tenir noves oportunitats de contractes governamentals.",
     "categoria": "administratiu",
     "paraules_clau": [
       "intel·ligència artificial",
-      "justícia",
-      "transparència",
-      "governança"
+      "jursidicció",
+      "CGPJ",
+      "rigor"
     ],
     "urgencia": "mitjana",
     "font_web": "Cowork",
