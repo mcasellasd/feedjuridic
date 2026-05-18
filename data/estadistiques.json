@@ -1,15 +1,21 @@
 {
-  "data": "2026-05-17",
-  "total_avui": 0,
+  "data": "2026-05-18",
+  "total_avui": 2,
   "dogc": 0,
   "boe": 0,
   "doue": 0,
   "parlament": 0,
   "email": 0,
-  "actualitat": 0,
+  "actualitat": 2,
   "eurlex": 0,
-  "per_categoria": {},
+  "per_categoria": {
+    "administratiu": 1,
+    "mercantil": 1
+  },
   "urgents": 0,
-  "resum_diari": "",
-  "resums_categoria": {}
+  "resum_diari": "**Novetats jurídiques destacades del dia: Intel·ligència artificial i protecció de la imatge en el dret mercantil**\n\nAvui, 18 de maig de 2026, el panorama jurídic català se veu influenciat per dues iniciatives que posen de manifest la rellevància creixent de la intel·ligència artificial i la necessitat de protegir la imatge personal en un entorn jurídic en constant evolució. Aquestes novetats ja s'estan debatent i implementant, destacant-se en les àrees del dret administratiu i mercantil.\n\nLa Abogacía Española ha impulsat dues masterclass enfocades en la intel·ligència artificial aplicada a la pràctica jurídica. Aquestes sessions pretenen capacitar els professionals del dret, oferint-los eines per integrar la tecnologia en el seu treball diari. A més, els participants tindran accés a llicències gratuïtes de recursos jurídics de renom com Tirant lo Blanch i vLex, una oportunitat valuosa per ampliar coneixements i millorar l'assessorament legal en un context on la digitalització és essencial.\n\nD'altra banda, el registre de la imatge i la veu com a marca s'ha posat de manifest com una eina preventiva fonamental contra possibles usos indeguts generats per la intel·ligència artificial. Aquesta iniciativa en el dret mercantil no només busca defensar els drets de les persones, sinó que també proporciona una capa de seguretat jurídica per als individus i empreses en relació amb la seva marca personal. Aquesta tendència reforça la idea que, davant el ràpid desenvolupament tecnològic, és vital establir mecanismes legals que protegeixin els interessos dels ciutadans i professionals en un entorn cada vegada més complex.\n\nAmbdues novetats mostren un impuls cap a la formació i la protecció jurídica davant un futur on la intel·ligència artificial jugarà un paper encara més preponderant. Els juristes catalans han d'estar preparats per afrontar aquests reptes i aprofitar les oportunitats que ofereixen les noves tecnologies, tant en la seva formació com en la defensa dels drets dels seus clients.",
+  "resums_categoria": {
+    "administratiu": "El 18 de maig de 2026, la Abogacía Española va anunciar la implementació de dues masterclass sobre intel·ligència artificial aplicada al dret, adreçades als professionals del sector legal, amb l'objectiu de millorar les competències digitals en un entorn legal cada vegada més tecnificat. Aquesta iniciativa és especialment rellevant per al dret administratiu català, ja que l'ús de la tecnologia pot facilitar la gestió de procediments administratius i la interpretació normativa.\n\nA més, es van posar a disposició llicències gratuïtes de les plataformes Tirant lo Blanch i vLex, que ofereixen recursos i eines legals en línia. Aquestes accions promouen la innovació i l'aprenentatge continu entre els juristes catalans, fomentant l'adaptació a les noves realitats del sector.",
+    "mercantil": "El 18 de maig de 2026 es va introduir una novetat significativa en el dret mercantil català: la possibilitat de registrar la imatge i la veu de les persones com a marques. Aquesta mesura respon a la necessitat de protegir la identitat personal davant el desenvolupament de la intel·ligència artificial (IA) i l'ús indegut d'aquestes imatges i dades. El registre de la imatge i la veu proporciona una eina jurídica que reforça els drets de les persones en un entorn cada vegada més digitalitzat i vulnerable.\n\nAquesta innovació legal no només ofereix una capa de protecció addicional a les identitats individuals, sinó que també obre la porta a noves formes de comercialització i explotació de la personalitat. Els juristes catalans han de considerar aquesta nova normativa en els seus assessoraments i estratègies comercials, ja que pot transformar significativament les dinàmiques de marca i reputació en el mercat modern."
+  }
 }

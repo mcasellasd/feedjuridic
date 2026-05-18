@@ -1,5 +1,45 @@
 [
   {
+    "id": "ACT-https://www.abogacia.es/?p=270747",
+    "data": "2026-05-18",
+    "titol": "Abogacía Española impulsa dos masterclass de IA jurídica y licencias gratuitas de Tirant lo Blanch y vLex",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/noticias/abogacia-espanola-impulsa-dos-masterclass-de-ia-juridica-y-licencias-gratuitas-de-tirant-lo-blanch-y-vlex/",
+    "resum_executiu": "La Abogacía Española impulsa dues masterclass sobre la intel·ligència artificial jurídica per als professionals de la llei. Els assistents també poden optar a llicències gratuïtes de Tirant lo Blanch i vLex mitjançant un sorteig.",
+    "impacte_practic": "Aquesta iniciativa permet als advocats millorar les seves habilitats en l'ús d'eines d'IA, millorant així l'eficiència en la seva labor diària. Els ciutadans podrien beneficiar-se d'un servei legal més preparat i eficient.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "IA jurídica",
+      "formació",
+      "advocats",
+      "licències"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=245749",
+    "data": "2026-05-18",
+    "titol": "Registrar tu cara como marca; una herramienta preventiva ante el desarrollo de la IA",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/registrar-tu-cara-como-marca-una-herramienta-preventiva-ante-el-desarrollo-de-la-ia/",
+    "resum_executiu": "La registre de la imatge i la veu com a marca pot oferir una protecció jurídica addicional davant l'ús indegut per part de la intel·ligència artificial. Aquesta estratègia s'emmarca en un context jurídic que intenta abordar la fragmentació de drets sobre la identitat personal i comercial.",
+    "impacte_practic": "Els ciutadans, com Taylor Swift, poden utilitzar aquesta eina per controlar l'ús comercial de la seva identitat, ampliant la seva protecció legal. Les empreses també poden veure's beneficiades per la possibilitat de registrar aspectes distintius de la seva marca.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "registre marca",
+      "intel·ligència artificial",
+      "drets d'imatge",
+      "identitat"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
     "id": "COM-e74f0a2da38e",
     "data": "2026-05-16",
     "titol": "La Generalitat destina cinc milions d’euros a la formació en IA de fins a 250.000 treballadors públics",
