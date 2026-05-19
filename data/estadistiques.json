@@ -1,24 +1,16 @@
 {
-  "data": "2026-05-18",
-  "total_avui": 14,
+  "data": "2026-05-19",
+  "total_avui": 0,
   "dogc": 0,
   "boe": 0,
   "doue": 0,
   "parlament": 0,
   "email": 0,
-  "actualitat": 1,
+  "actualitat": 0,
   "eurlex": 0,
-  "claude_scheduled": 13,
-  "per_categoria": {
-    "administratiu": 11,
-    "constitucional": 1,
-    "civil": 2
-  },
-  "urgents": 8,
-  "resum_diari": "**Novetats jurídiques destacades del dia: canvis importants en dret administratiu i civil**\n\nEn el dia d'avui, 18 de maig de 2026, el panorama jurídic català s'ha vist marcat per una sèrie de novetats significatives, que abasten diverses àrees del dret. Les mesures adoptades pel Tribunal Suprem i les reformes en matèria de copagament farmacèutic són dos dels aspectes que destaquen per la seva importància immediata i que tindran un impacte directe en la vida quotidiana dels ciutadans.\n\nEn el camp del dret administratiu, el Tribunal Suprem ha flexibilitzat l'accés a les prestacions econòmiques per a la cura de menors amb malalties greus, eliminant alguns requisits que dificultaven l'accés a aquestes ajudes. Aquesta decisió busca millorar el suport a les famílies en situacions delicades i respondre a les necessitats immediates de la societat. D'altra banda, el Reial decret-lei 11/2026 ha introduït una reforma integral del copagament farmacèutic, amb l'objectiu de garantir una major equitat en l'accés a medicaments. Aquestes mesures responen a les necessitats actuals de l'assistència sanitària i posen de manifest un compromís amb la justícia social.\n\nPel que fa al dret civil, el Tribunal de Justicia de la Unió Europea (TJUE) ha dictat una sentència que permet a les residències de persones grans retransmetre contingut audiovisual sense necessitat de pagar drets d'autor, un determinant pas per a la cultura i el benestar d'aquest col·lectiu. A més, el TJUE també ha resolt un cas important relacionat amb els drets de propietat immobiliària, subratllant la protecció dels drets d'usufructe.\n\nFinalment, és rellevant mencionar mesures que aborden la integració de la intel·ligència artificial en el sistema jurídic. La Instrucció 2/2026 del Consell General del Poder Judicial (CGPJ) estableix criteris per a l'ús de la IA en l'activitat jurisdiccional, assegurant que la tecnologia esdevingui un aliat en la millora dels processos judicials, i no un obstacle. La proliferació d'initiatives com les masterclass sobre IA per a professionals del dret demostra un interès creixent per integrar les noves tecnologies en el sector. Les sancions recentment imposades per l'ús incorrecte de la IA a l'exercici de la professió legal posen de manifest la necessitat d'un coneixement adequat i responsable de les seves aplicacions.\n\nEn resum, el dia d'avui ha estat testimoni d'importants transformacions legals que afecten tant el dret administratiu com el civil, reflectint una voluntat de millora i adaptació al context social actual. Les decisions preses i les iniciatives en curs només poden augurar un futur més just i equitatiu en el sistema jurídic català.",
-  "resums_categoria": {
-    "administratiu": "El Tribunal Suprem ha establert nous criteris per accedir a la prestació econòmica destinada a la cura de menors amb malalties greus, una mesura que marca un canvi significatiu en la regulació d'aquesta ajuda, fent-la més accessible. A més, el Real Decreto-ley 11/2026 ha introduït una reforma integral del sistema de copago farmacèutic, buscant una major equitat en les aportacions dels ciutadans.\n\nParal·lelament, l'Abogacía Española ha llançat dues masterclass sobre intel·ligència artificial aplicada al dret, juntament amb l'oferta de llicències gratuïtes de les plataformes Tirant lo Blanch i vLex, que poden potenciar l'ús d'eines digitals en el camp jurídic. D'altra banda, la Instrucció 2/2026 del CGPJ ha establert criteris per a la incorporació de la intel·ligència artificial en l'activitat jurisdiccional, anticipant-se a l'entrada en vigor del AI Act de la UE a l'agost de 2026.",
-    "constitucional": "El 18 de maig de 2026, el Parlament Europeu va aprovar un informe que posava de manifest la preocupació per la influència política excessiva en el nomenament de jutges, una qüestió que afecta directament la independència judicial i, per tant, la salut democràtica dels estats membres de la Unió Europea. Aquesta advertència subratlla la necessitat urgent de garantir la imparcialitat i la transparència en els processos de selecció judicial, que podrien tenir impactes significatius en l'aplicació del dret a nivell europeu i en la confiança pública en les institucions judicials.\n\nA Catalunya, els juristes han de considerar aquestes recomanacions en el context del sistema judicial català, debatent sobre possibles reformes que assegurin la separació de poders i minimitzin les interferències polítiques en la justícia. La situació actual requereix un anàlisi detallat per alinear les pràctiques de nomenament amb els estàndards europeus acceptats.",
-    "civil": "El Tribunal de Justicia de la Unión Europea (TJUE) ha dictat una sentència significativa pel que fa als drets de propietat immobiliària i la transmissió de continguts audiovisuals a residències de majors. En relació a la retransmissió, el TJUE ha establert que aquestes institucions poden fer-ho sense la necessitat de pagar drets d'autor, un rulament que pot tenir un impacte important en les polítiques d'accés a la cultura per a la població gran. \n\nA més, en l'assumpte C-286/25, el TJUE ha resolt que la supressió dels drets d'usufructe sobre béns immobles contravé les normatives de la Unió Europea, reafirmant així la protecció dels drets de propietat i posant de manifest la importància d'una correcta regulació de les condicions de transmissió i usufructe, que poden afectar molts ciutadans a escala local i nacional."
-  }
+  "claude_scheduled": 0,
+  "per_categoria": {},
+  "urgents": 0,
+  "resum_diari": "",
+  "resums_categoria": {}
 }
