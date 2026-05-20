@@ -1,5 +1,25 @@
 [
   {
+    "id": "ACT-https://www.economistjurist.es/?p=245899",
+    "data": "2026-05-20",
+    "titol": "Máximos históricos con mensaje oculto: la IA dispara beneficios mientras el bono a 30 años enciende las alarmas",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/premium/la-firma/maximos-historicos-con-mensaje-oculto-la-ia-dispara-beneficios-mientras-el-bono-a-30-anos-enciende-las-alarmas/",
+    "resum_executiu": "L'article analitza com la intel·ligència artificial (IA) està impulsant beneficis a les empreses, especialment entre un grup selecte que realitza millores tangibles. Malgrat el creixement del S P 500, la majoria de les companyies no gaudeixen dels mateixos avantatges, evidenciant una concentració dels guanys en sectors lligats a la IA.",
+    "impacte_practic": "Els ciutadans i empreses que operen en sectors tecnològics i d'IA poden experimentar millores substancials en beneficis, mentre que la resta podrien quedar enrere. Això pot limitar oportunitats per a les empreses que no adopten tecnologies d'IA.",
+    "categoria": "mercantil",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "beneficis empresarials",
+      "S P 500",
+      "renda"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
     "id": "ACT-https://www.abogacia.es/?p=270747",
     "data": "2026-05-18",
     "titol": "Abogacía Española impulsa dos masterclass de IA jurídica y licencias gratuitas de Tirant lo Blanch y vLex",
