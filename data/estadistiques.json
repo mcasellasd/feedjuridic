@@ -1,20 +1,16 @@
 {
-  "data": "2026-05-20",
-  "total_avui": 1,
+  "data": "2026-05-21",
+  "total_avui": 0,
   "dogc": 0,
   "boe": 0,
   "doue": 0,
   "parlament": 0,
   "email": 0,
-  "actualitat": 1,
+  "actualitat": 0,
   "eurlex": 0,
   "claude_scheduled": 0,
-  "per_categoria": {
-    "mercantil": 1
-  },
+  "per_categoria": {},
   "urgents": 0,
-  "resum_diari": "**Novetats significatives en el dret mercantil: l’impacte de la intel·ligència artificial en els beneficis empresarials**\n\nAvui, 20 de maig de 2026, analitzem com la intel·ligència artificial (IA) s’ha convertit en un factor clau a l’hora d'augmentar els beneficis empresarials en el mercat actual. Un article recent destaca que les companyies que han integrat encaixos d’IA en els seus processos operatius han experimentat un increment notable en els seus guanys, fet que podria marcar una tendència irreversible en l’àmbit mercantil. No obstant això, aquest ascens també ve acompanyat d'alertes sobre els riscos associats, com és el cas de l'augment dels rendiments dels bons a 30 anys, que podria indicar tensions econòmiques futures.\n\nLes dades revelen que, malgrat un escenari econòmic de certa incertesa, l’ús d’eines d'IA ha permès a moltes empreses optimitzar la seva eficàcia operativa, estalviant costos i millorant la seva competitivitat. Tanmateix, l’article també fa una referència crucial a la necessitat d'un marc normatiu que reguli aquestes noves tecnologies. La incorporació de la IA en el món empresarial planteja desafiaments legals i ètics que exigiran l'atenció d'experts en dret mercantil, així com dels legisladors.\n\nEn conseqüència, el sector jurídic ha de ser proactiu en l’estudi de com aquestes innovacions tecnològiques estan canviant la dinàmica del mercat i, per extensió, el dret mercantil. Les empreses no només s'han d'adaptar a l'ús de la IA, sinó que també han d'encarar les implicacions legals que derivaran d'aquesta adaptació. La coordinació entre juristes i professionals de la tecnologia esdevindrà fonamental per garantir una transició segura i efectiva cap a un entorn empresarial més automatitzat. \n\nEn síntesi, l’agitada escena financera actual, marcada per l’ascens de la IA i l’augment dels rendiments dels bons, obre un debat essencial sobre les regulacions que requerirem per fer front a aquestes transformacions. Els juristes han de preparar-se per afrontar les noves realitats legals i mercantils que sorgiran d’aquest panorama en constant evolució.",
-  "resums_categoria": {
-    "mercantil": "El 20 de maig de 2026, s'ha destacat una important tendència en el dret mercantil relacionada amb la intel·ligència artificial (IA), que està generant beneficis històrics per a les empreses. Aquesta situació presenta un missatge ocult que pot afectar la sostenibilitat i la regulació del mercat, especialment amb l'augment de les preocupacions envers els bons a 30 anys, que s'han convertit en un indicator crític de l'estabilitat econòmica. \n\nEls juristes catalans han d'estar atents a les implicacions legals de l'ús de la IA, ja que pot modificar les dinàmiques tradicionals del mercat i crear nous reptes sobre la responsabilitat i la regulació dels beneficis generats. Així, és fonamental considerar com la normativa mercantil s'adapta a aquesta realitat emergent, assegurant un entorn empresarial just i equilibrat."
-  }
+  "resum_diari": "",
+  "resums_categoria": {}
 }
