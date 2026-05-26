@@ -1,16 +1,20 @@
 {
-  "data": "2026-05-25",
-  "total_avui": 0,
+  "data": "2026-05-26",
+  "total_avui": 1,
   "dogc": 0,
   "boe": 0,
   "doue": 0,
   "parlament": 0,
   "email": 0,
-  "actualitat": 0,
+  "actualitat": 1,
   "eurlex": 0,
   "claude_scheduled": 0,
-  "per_categoria": {},
-  "urgents": 0,
-  "resum_diari": "",
-  "resums_categoria": {}
+  "per_categoria": {
+    "administratiu": 1
+  },
+  "urgents": 1,
+  "resum_diari": "**Novetats jurídiques del 26 de maig de 2026: Direcció clara per a la regulació de la Intel·ligència Artificial d'alt risc**\n\nA l'actualitat jurídica, destaca com a novetat rellevant la recent publicació per part de la Comissió Europea d'un borrador de directrius que estableixen criteris per a la classificació de sistemes d'Intel·ligència Artificial (IA) d'alt risc. Aquesta iniciativa está en línia amb l'aprovació de l'AI Act, una norma que busca garantir la seguretat i la transparència en l'ús de les tecnologies d'IA, especialment en àrees que podrien afectar drets fonamentals i la seguretat pública. L'objectiu d'aquestes directrius és proporcionar un marc jurídic clar que permeti identificar i gestionar adequadament els riscos associats a aquestes tecnologies avançades.\n\nL'impacte d'aquestes novetats és especialment significatiu en el dret administratiu, ja que la regulació de les tecnologies emergents s'introdueix de manera progressiva en les lleis i normes que regeixen l'activitat pública. Els juristes catalans han de prestar especial atenció a com aquestes directrius influiran en les polítiques públiques i en la responsabilitat dels agents administratius pel que fa a l'ús d'IA en la seva gestió. A més, és probable que les autoritats locals hagin d'adaptar els seus protocols i normatives en consonància amb aquestes noves directrius europees.\n\nLa tendència general ens indica una voluntat de dots més gran de seguretat jurídica i adaptació a la realitat tecnològica actual, un factor que va guanyant rellevància a mesura que la societat es transforma. Les implicacions d'aquesta regulació seran crucials no només per a les administracions públiques sinó també per a les empreses privades que desenvolupen o utilitzen sistemes d'IA d'alt risc. La necessitat de garantir la legalitat, l'ètica i la seguretat en l'ús d'aquestes tecnologies es converteix així en un repte central per al futur pròxim. \n\nEn síntesi, avui hem estat testimonis d'una passa més en la construcció d'un entorn regulatori que busca equilibrar la innovació amb la seguretat, un àmbit que exigirà la nostra atenció i implicació en els propers mesos.",
+  "resums_categoria": {
+    "administratiu": "El 26 de maig de 2026 ha estat marcada per la publicació per part de la Comissió Europea d'un borrador de directrius relatives a l'AI Act, que estableix una frontera jurídica per als sistemes d'intel·ligència artificial (IA) d'alt risc. Aquestes directrius tenen com a objectiu classificar i regular els sistemes d'IA que presenten un potencial elevat de perill, abordant aspectes com la transparència, la responsabilitat i la seguretat. Aquesta iniciativa representa un avanç significatiu en la regulació de la IA, en un moment en què la seva adopció creix de manera exponencial en diversos àmbits.\n\nA Catalunya, aquest nou marc jurídic proporcionarà una orientació fonamental per als juristes en la formulació de règims legals que assegurin la protecció dels drets fonamentals i promoguin la integració de la tecnologia d'IA en el sector públic i privat de manera responsable."
+  }
 }

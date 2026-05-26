@@ -1,5 +1,25 @@
 [
   {
+    "id": "ACT-https://www.economistjurist.es/?p=246220",
+    "data": "2026-05-26",
+    "titol": "AI Act: Bruselas fija la frontera jurídica de la IA de alto riesgo",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/ai-act-bruselas-fija-la-frontera-juridica-de-la-ia-de-alto-riesgo/",
+    "resum_executiu": "La Comissió Europea ha publicat un borrador de directrius per classificar sistemes d'IA d'alt risc. Aquestes directrius estableixen criteris per determinar quan un sistema es consideri d'alt risc i afectaran la documentació i supervisió necessàries per al seu desplegament.",
+    "impacte_practic": "Els ciutadans i empreses que desenvolupen o utilitzin sistemes d'IA veuran afectades les seves responsabilitats i requisits de seguretat. Aquesta normativa busca garantir un ús segur i responsable de la tecnologia d'IA en sectors sensibles.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "IA",
+      "alt risc",
+      "directrius",
+      "comissió europea"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
     "id": "ACT-https://www.economistjurist.es/?p=245899",
     "data": "2026-05-20",
     "titol": "Máximos históricos con mensaje oculto: la IA dispara beneficios mientras el bono a 30 años enciende las alarmas",
