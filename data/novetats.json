@@ -1,5 +1,45 @@
 [
   {
+    "id": "ACT-https://www.economistjurist.es/?p=246380",
+    "data": "2026-05-27",
+    "titol": "La automatización del apud acta se afianza en el sector legal de la mano de ApudActa",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/zreportaje/la-automatizacion-del-apud-acta-se-afianza-en-el-sector-legal-de-la-mano-de-apudacta/",
+    "resum_executiu": "La digitalització del procediment de poder apud acta s'està consolidant en el sector legal amb la introducció de solucions com ApudActa, que permeten la videoidentificació i la gestió remota dels poders. Aquesta evolució busca incrementar l'eficiència operativa dels despatxos sense comprometre la seguretat jurídica.",
+    "impacte_practic": "Els ciutadans i empreses poden formalitzar apoderaments de manera ràpida i sense desplaçaments, facilitant així la gestió legal. Això pot reduir els costos i els temps associats als tràmits legals.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "poder apud acta",
+      "digitalització",
+      "videoidentificació",
+      "eficiència operativa"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=246370",
+    "data": "2026-05-27",
+    "titol": "‘Magnifica Humanitas’, el AI Act y la nueva cuestión social de la inteligencia artificial",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/magnifica-humanitas-el-ai-act-y-la-nueva-cuestion-social-de-la-inteligencia-artificial/",
+    "resum_executiu": "L'article analitza la influència de la intel·ligència artificial (IA) en la societat actual, destacant que no és només una qüestió tècnica sinó un nou repte social que afecta la dignitat i els drets humans. Es destaca la necessitat d'un regulador europeu (AI Act) que vagi més enllà de l'eficiència i consideri l'impacte sobre les persones.",
+    "impacte_practic": "La reflexió sobre la IA afecta directament a treballadors i consumidors, ja que pot transformar la manera com s'organitzen les relacions laborals i socials. Això implica una responsabilitat col·lectiva en la manera de gestionar i integrar aquestes tecnologies.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "drets humans",
+      "regulació",
+      "responsabilitat"
+    ],
+    "urgencia": "alta",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
     "id": "ACT-https://www.economistjurist.es/?p=246220",
     "data": "2026-05-26",
     "titol": "AI Act: Bruselas fija la frontera jurídica de la IA de alto riesgo",
