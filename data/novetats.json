@@ -1,5 +1,65 @@
 [
   {
+    "id": "ACT-https://www.abogacia.es/?p=270892",
+    "data": "2026-05-28",
+    "titol": "La Abogacía Española lanza un decálogo sobre el uso ético de la IA en la práctica jurídica",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/noticias/la-abogacia-espanola-lanza-un-decalogo-sobre-el-uso-etico-de-la-ia-en-la-practica-juridica/",
+    "resum_executiu": "La Abogacía Española ha publicat un decàleg que estableix normes ètiques per a l'ús de la intel·ligència artificial (IA) en la pràctica jurídica. Aposta pel control humà i la formació contínua dels professionals per garantir la responsabilitat i evitar sesgos.",
+    "impacte_practic": "Aquest decàleg afectarà els advocats i les seves relacions amb els clients, assegurant una utilització més transparent i responsable de les tecnologies d'IA. També fomenta la confiança dels ciutadans en la capacitat dels advocats per gestionar les noves eines tecnològiques.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "ètica",
+      "advocats",
+      "responsabilitat"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=246419",
+    "data": "2026-05-28",
+    "titol": "Hacia el constitucionalismo de la abundancia: nuevos derechos fundamentales en la era de la automatización",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/articulos-juridicos-destacados/hacia-el-constitucionalismo-de-la-abundancia-nuevos-derechos-fundamentales-en-la-era-de-la-automatizacion/",
+    "resum_executiu": "L'article aborda la necessitat d'evolucionar el dret constitucional davant l'impacte de l'automatització, proposant nous drets fonamentals que garanteixin la dignitat i la cohesió social en un context de abundància. Es destaca que el treball no hauria de ser el center de la vida humana en futurs escenaris socioeconòmics.",
+    "impacte_practic": "Els ciutadans podrien veure reconeguts nous drets que garanteixin condicions dignes de vida independentment de l'ocupació. Les empreses hauran d'adaptar-se a un nou ordenament jurídic que prioritzi la sostenibilitat i el benestar social.",
+    "categoria": "constitucional",
+    "paraules_clau": [
+      "drets fonamentals",
+      "abundància",
+      "automatització",
+      "constitucionalisme"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
+    "id": "ACT-https://www.economistjurist.es/?p=246195",
+    "data": "2026-05-28",
+    "titol": "Mientras lees esto, la IA ya está trabajando en otros despachos",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.economistjurist.es/wolters-kluwers/mientras-lees-esto-la-ia-ya-esta-trabajando-en-otros-despachos/",
+    "resum_executiu": "La irrupció de la intel·ligència artificial (IA) està transformant la manera com els despatxos d'advocats treballen i competeixen, amb un focus en la productivitat i l'optimització de processos. El webinar organitzat per Wolters Kluwer abordarà aquestes tendències i oferirà solucions pràctiques per als professionals del sector legal.",
+    "impacte_practic": "Els advocats podran millorar la seva eficiència i adaptar-se a un mercat legal canviant. La implementació de tecnologies d'IA pot reduir el temps dedicat a tasques repetitives, beneficiant tant a professionals com a clients.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "advocats",
+      "webinar",
+      "productivitat"
+    ],
+    "urgencia": "mitjana",
+    "font_web": "Economist & Jurist",
+    "comarques": []
+  },
+  {
     "id": "ACT-https://www.economistjurist.es/?p=246380",
     "data": "2026-05-27",
     "titol": "La automatización del apud acta se afianza en el sector legal de la mano de ApudActa",
