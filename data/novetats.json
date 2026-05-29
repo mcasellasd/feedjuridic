@@ -1,5 +1,25 @@
 [
   {
+    "id": "ACT-https://www.abogacia.es/?p=270896",
+    "data": "2026-05-29",
+    "titol": "Abogacía Española y Sepín acercan IA HELENA a los colegiados y alumnos de Upro con condiciones exclusivas",
+    "font": "Actualitat",
+    "tipus": "Article",
+    "url": "https://www.abogacia.es/actualidad/noticias/abogacia-espanola-y-sepin-acercan-ia-helena-a-los-colegiados-y-alumnos-de-upro-con-condiciones-exclusivas/",
+    "resum_executiu": "Abogacía Española i Sepín han acordat facilitar l'accés a la IA Helena per a col·legiats i alumnes d'Upro amb condicions exclusives. A través d'aquest acord, els usuaris podran gaudir d'un període gratuït durant dos mesos o trenta usos, amb un descompte posterior del 20%.",
+    "impacte_practic": "Aquesta mesura permetrà als advocats i estudiants d'accés a eines d'intel·ligència artificial, millorant la seva formació i eficiència professional. Es preveu un augment en l'ús d'aquestes tecnologies en el sector legal.",
+    "categoria": "administratiu",
+    "paraules_clau": [
+      "intel·ligència artificial",
+      "abogacía",
+      "formació",
+      "descompte"
+    ],
+    "urgencia": "baixa",
+    "font_web": "Abogacía Española",
+    "comarques": []
+  },
+  {
     "id": "ACT-https://www.abogacia.es/?p=270892",
     "data": "2026-05-28",
     "titol": "La Abogacía Española lanza un decálogo sobre el uso ético de la IA en la práctica jurídica",
