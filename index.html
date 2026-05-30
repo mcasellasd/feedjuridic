@@ -1131,6 +1131,12 @@
         <h3>Focus sectorial</h3>
         <div class="summary-list" id="category-summaries"></div>
       </section>
+
+      <section class="side-block">
+        <div class="label">Històric</div>
+        <h3>Digests guardats</h3>
+        <div class="summary-list" id="digest-history-list"></div>
+      </section>
     </aside>
   </div>
 </main>
@@ -1696,8 +1702,11 @@
         <p><strong>${esc(labelFor(category))}</strong>${esc(stripMarkdown(summary)).slice(0, 160)}...</p>
       </div>`).join("") || '<p class="tiny-meta">Sense resums sectorials per avui.</p>';
 
+    const historyList = document.getElementById("digest-history-list");
+    if (!historyList) return;
+
     const historyItems = Array.isArray(state.digestHistory) ? state.digestHistory.slice(0, 8) : [];
-    document.getElementById("digest-history-list").innerHTML = historyItems.map((digest, index) => {
+    historyList.innerHTML = historyItems.map((digest, index) => {
       const date = digest.data || "";
       const headline = stripMarkdown(digest.titular || digest.resum_diari || "Sense resum").slice(0, 130);
       const isActive = date && date === state.selectedDigestDate;
