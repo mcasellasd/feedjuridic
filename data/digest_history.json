@@ -1,11 +1,545 @@
 [
-	{
-		"data": "2026-05-30",
-		"total_avui": 0,
-		"urgents": 0,
-		"per_categoria": {},
-		"resum_diari": "**Jornada de seguiment sense noves altes d'IA (30 maig 2026)**\n\nDurant l'actualització del 30 de maig no s'han incorporat noves peces jurídiques sobre intel·ligència artificial o dret digital que superessin els criteris editorials del feed. Tot i això, s'ha completat la validació diària de les fonts monitoritzades i la coherència de les dades publicades.\n\nA nivell operatiu, aquesta jornada es considera de manteniment: el sistema conserva la traçabilitat del dia, manté la continuïtat de l'històric i prepara la següent execució automàtica per captar qualsevol canvi normatiu o jurisprudencial rellevant.\n\nPer als lectors professionals, això implica absència de novetats crítiques immediates, però no una interrupció del servei: la vigilància jurídica continua activa i les actualitzacions es reprendran tan aviat com apareguin noves publicacions significatives.",
-		"titular": "Jornada de seguiment sense noves altes d'IA (30 maig 2026)",
-		"top_peces": []
-	}
+  {
+    "data": "2026-05-30",
+    "total_avui": 0,
+    "urgents": 0,
+    "per_categoria": {},
+    "resum_diari": "**Jornada de seguiment sense noves altes d'IA (30 maig 2026)**\n\nDurant l'actualització del 30 de maig no s'han incorporat noves peces jurídiques sobre intel·ligència artificial o dret digital que superessin els criteris editorials del feed. Tot i això, s'ha completat la validació diària de les fonts monitoritzades i la coherència de les dades publicades.\n\nA nivell operatiu, aquesta jornada es considera de manteniment: el sistema conserva la traçabilitat del dia, manté la continuïtat de l'històric i prepara la següent execució automàtica per captar qualsevol canvi normatiu o jurisprudencial rellevant.\n\nPer als lectors professionals, això implica absència de novetats crítiques immediates, però no una interrupció del servei: la vigilància jurídica continua activa i les actualitzacions es reprendran tan aviat com apareguin noves publicacions significatives.",
+    "titular": "Jornada de seguiment sense noves altes d'IA (30 maig 2026)",
+    "top_peces": []
+  },
+  {
+    "data": "2026-05-29",
+    "total_avui": 1,
+    "urgents": 0,
+    "per_categoria": {
+      "administratiu": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-29**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (0 d'urgència alta), amb pes principal de les àrees administratiu. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: Abogacía Española y Sepín acercan IA HELENA a los colegiados y alumnos de Upro con condiciones exclusivas.",
+    "titular": "Panoràmica jurídica IA del 2026-05-29",
+    "top_peces": [
+      {
+        "titol": "Abogacía Española y Sepín acercan IA HELENA a los colegiados y alumnos de Upro con condiciones exclusivas",
+        "categoria": "administratiu",
+        "font": "Abogacía Española",
+        "urgencia": "baixa",
+        "url": "https://www.abogacia.es/actualidad/noticias/abogacia-espanola-y-sepin-acercan-ia-helena-a-los-colegiados-y-alumnos-de-upro-con-condiciones-exclusivas/"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-28",
+    "total_avui": 3,
+    "urgents": 0,
+    "per_categoria": {
+      "administratiu": 2,
+      "constitucional": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-28**\n\nEn aquesta jornada s'han registrat 3 peces rellevants (0 d'urgència alta), amb pes principal de les àrees administratiu, constitucional. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: Mientras lees esto, la IA ya está trabajando en otros despachos; La Abogacía Española lanza un decálogo sobre el uso ético de la IA en la práctica jurídica; Hacia el constitucionalismo de la abundancia: nuevos derechos fundamentales en la era de la automatización.",
+    "titular": "Panoràmica jurídica IA del 2026-05-28",
+    "top_peces": [
+      {
+        "titol": "Mientras lees esto, la IA ya está trabajando en otros despachos",
+        "categoria": "administratiu",
+        "font": "Economist & Jurist",
+        "urgencia": "mitjana",
+        "url": "https://www.economistjurist.es/wolters-kluwers/mientras-lees-esto-la-ia-ya-esta-trabajando-en-otros-despachos/"
+      },
+      {
+        "titol": "La Abogacía Española lanza un decálogo sobre el uso ético de la IA en la práctica jurídica",
+        "categoria": "administratiu",
+        "font": "Abogacía Española",
+        "urgencia": "mitjana",
+        "url": "https://www.abogacia.es/actualidad/noticias/la-abogacia-espanola-lanza-un-decalogo-sobre-el-uso-etico-de-la-ia-en-la-practica-juridica/"
+      },
+      {
+        "titol": "Hacia el constitucionalismo de la abundancia: nuevos derechos fundamentales en la era de la automatización",
+        "categoria": "constitucional",
+        "font": "Economist & Jurist",
+        "urgencia": "mitjana",
+        "url": "https://www.economistjurist.es/articulos-juridicos-destacados/hacia-el-constitucionalismo-de-la-abundancia-nuevos-derechos-fundamentales-en-la-era-de-la-automatizacion/"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-27",
+    "total_avui": 2,
+    "urgents": 2,
+    "per_categoria": {
+      "administratiu": 2
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-27**\n\nEn aquesta jornada s'han registrat 2 peces rellevants (2 d'urgència alta), amb pes principal de les àrees administratiu. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: ‘Magnifica Humanitas’, el AI Act y la nueva cuestión social de la inteligencia artificial; La automatización del apud acta se afianza en el sector legal de la mano de ApudActa.",
+    "titular": "Panoràmica jurídica IA del 2026-05-27",
+    "top_peces": [
+      {
+        "titol": "‘Magnifica Humanitas’, el AI Act y la nueva cuestión social de la inteligencia artificial",
+        "categoria": "administratiu",
+        "font": "Economist & Jurist",
+        "urgencia": "alta",
+        "url": "https://www.economistjurist.es/articulos-juridicos-destacados/magnifica-humanitas-el-ai-act-y-la-nueva-cuestion-social-de-la-inteligencia-artificial/"
+      },
+      {
+        "titol": "La automatización del apud acta se afianza en el sector legal de la mano de ApudActa",
+        "categoria": "administratiu",
+        "font": "Economist & Jurist",
+        "urgencia": "alta",
+        "url": "https://www.economistjurist.es/zreportaje/la-automatizacion-del-apud-acta-se-afianza-en-el-sector-legal-de-la-mano-de-apudacta/"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-26",
+    "total_avui": 1,
+    "urgents": 1,
+    "per_categoria": {
+      "administratiu": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-26**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (1 d'urgència alta), amb pes principal de les àrees administratiu. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: AI Act: Bruselas fija la frontera jurídica de la IA de alto riesgo.",
+    "titular": "Panoràmica jurídica IA del 2026-05-26",
+    "top_peces": [
+      {
+        "titol": "AI Act: Bruselas fija la frontera jurídica de la IA de alto riesgo",
+        "categoria": "administratiu",
+        "font": "Economist & Jurist",
+        "urgencia": "alta",
+        "url": "https://www.economistjurist.es/articulos-juridicos-destacados/ai-act-bruselas-fija-la-frontera-juridica-de-la-ia-de-alto-riesgo/"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-20",
+    "total_avui": 1,
+    "urgents": 0,
+    "per_categoria": {
+      "mercantil": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-20**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (0 d'urgència alta), amb pes principal de les àrees mercantil. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: Máximos históricos con mensaje oculto: la IA dispara beneficios mientras el bono a 30 años enciende las alarmas.",
+    "titular": "Panoràmica jurídica IA del 2026-05-20",
+    "top_peces": [
+      {
+        "titol": "Máximos históricos con mensaje oculto: la IA dispara beneficios mientras el bono a 30 años enciende las alarmas",
+        "categoria": "mercantil",
+        "font": "Economist & Jurist",
+        "urgencia": "mitjana",
+        "url": "https://www.economistjurist.es/premium/la-firma/maximos-historicos-con-mensaje-oculto-la-ia-dispara-beneficios-mientras-el-bono-a-30-anos-enciende-las-alarmas/"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-18",
+    "total_avui": 13,
+    "urgents": 6,
+    "per_categoria": {
+      "administratiu": 11,
+      "civil": 1,
+      "mercantil": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-18**\n\nEn aquesta jornada s'han registrat 13 peces rellevants (6 d'urgència alta), amb pes principal de les àrees administratiu, civil, mercantil. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: Tribunal Supremo flexibiliza acceso a subsidio por enfermedad grave en menores; TJUE resuelve sobre derechos de propiedad inmueble; Sanciones a abogados por uso incorrecto de IA.",
+    "titular": "Panoràmica jurídica IA del 2026-05-18",
+    "top_peces": [
+      {
+        "titol": "Tribunal Supremo flexibiliza acceso a subsidio por enfermedad grave en menores",
+        "categoria": "administratiu",
+        "font": "Claude/legaltech",
+        "urgencia": "alta",
+        "url": "https://www.menorca.info/actualidad/dudas-respuestas/2026/05/16/2623311/tribunal-supremo-cambia-reglas-nuevos-criterios-para-pedir-ayuda-por-enfermedad-grave-menores.html"
+      },
+      {
+        "titol": "TJUE resuelve sobre derechos de propiedad inmueble",
+        "categoria": "civil",
+        "font": "Claude/legaltech",
+        "urgencia": "alta",
+        "url": "https://infoeuropa.uv.es/sentencia-tjue-asunto-c-286-25-brandl-de-13-de-mayo-de-2026/"
+      },
+      {
+        "titol": "Sanciones a abogados por uso incorrecto de IA",
+        "categoria": "administratiu",
+        "font": "Claude/legaltech",
+        "urgencia": "alta",
+        "url": "https://raymondorta.com/sancion-judicial-por-uso-inapropiado-de-inteligencia-artificial-en-espana/"
+      },
+      {
+        "titol": "Registrar tu cara como marca; una herramienta preventiva ante el desarrollo de la IA",
+        "categoria": "mercantil",
+        "font": "Economist & Jurist",
+        "urgencia": "alta",
+        "url": "https://www.economistjurist.es/articulos-juridicos-destacados/registrar-tu-cara-como-marca-una-herramienta-preventiva-ante-el-desarrollo-de-la-ia/"
+      },
+      {
+        "titol": "Real Decreto-ley 11/2026 modifica copagos farmacéuticos",
+        "categoria": "administratiu",
+        "font": "Claude/legaltech",
+        "urgencia": "alta",
+        "url": "https://noticias.juridicas.com/"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-17",
+    "total_avui": 5,
+    "urgents": 3,
+    "per_categoria": {
+      "administratiu": 3,
+      "constitucional": 1,
+      "civil": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-17**\n\nEn aquesta jornada s'han registrat 5 peces rellevants (3 d'urgència alta), amb pes principal de les àrees administratiu, constitucional, civil. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: Tribunal Supremo establece nuevos criterios para prestación por cuidado de menores con enfermedad grave; Real Decreto-ley 11/2026: reforma integral del copago farmacéutico; Parlamento Europeo advierte sobre influencia política en nombramiento de jueces.",
+    "titular": "Panoràmica jurídica IA del 2026-05-17",
+    "top_peces": [
+      {
+        "titol": "Tribunal Supremo establece nuevos criterios para prestación por cuidado de menores con enfermedad grave",
+        "categoria": "administratiu",
+        "font": "Claude/resumen-juridico-diario",
+        "urgencia": "alta",
+        "url": "https://www.menorca.info/actualidad/dudas-respuestas/2026/05/16/2623311/tribunal-supremo-cambia-reglas-nuevos-criterios-para-pedir-ayuda-por-enfermedad-grave-menores.html"
+      },
+      {
+        "titol": "Real Decreto-ley 11/2026: reforma integral del copago farmacéutico",
+        "categoria": "administratiu",
+        "font": "Claude/resumen-juridico-diario",
+        "urgencia": "alta",
+        "url": "https://www.boe.es/"
+      },
+      {
+        "titol": "Parlamento Europeo advierte sobre influencia política en nombramiento de jueces",
+        "categoria": "constitucional",
+        "font": "Claude/resumen-juridico-diario",
+        "urgencia": "alta",
+        "url": "https://www.infobae.com/espana/2026/04/30/el-parlamento-europeo-aprueba-un-informe-que-advierte-de-la-excesiva-influencia-politica-en-el-nombramiento-de-los-jueces/"
+      },
+      {
+        "titol": "TJUE: residencias de mayores pueden retransmitir contenido audiovisual sin pagar derechos",
+        "categoria": "civil",
+        "font": "Claude/resumen-juridico-diario",
+        "urgencia": "mitjana",
+        "url": "https://www.poderjudicial.es/"
+      },
+      {
+        "titol": "Real Decreto 371/2026: creación del Foro de Gobierno Abierto",
+        "categoria": "administratiu",
+        "font": "Claude/resumen-juridico-diario",
+        "urgencia": "mitjana",
+        "url": "https://www.boe.es/"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-13",
+    "total_avui": 4,
+    "urgents": 1,
+    "per_categoria": {
+      "penal": 1,
+      "administratiu": 3
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-13**\n\nEn aquesta jornada s'han registrat 4 peces rellevants (1 d'urgència alta), amb pes principal de les àrees administratiu, penal. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: TSJ Navarra confirma 8 años de prisión por acceso ilícito al historial médico de familiares (1.329 accesos); Gestión del conocimiento jurídico en la era de la IA (3); CGPJ — Instrucción 2/2026 sobre uso de IA en la actividad jurisdiccional (publicada en el BOE).",
+    "titular": "Panoràmica jurídica IA del 2026-05-13",
+    "top_peces": [
+      {
+        "titol": "TSJ Navarra confirma 8 años de prisión por acceso ilícito al historial médico de familiares (1.329 accesos)",
+        "categoria": "penal",
+        "font": "Cowork",
+        "urgencia": "alta",
+        "url": "https://noticias.juridicas.com/"
+      },
+      {
+        "titol": "Gestión del conocimiento jurídico en la era de la IA (3)",
+        "categoria": "administratiu",
+        "font": "Almacén de Derecho",
+        "urgencia": "mitjana",
+        "url": "https://almacendederecho.org/gestion-del-conocimiento-juridico-en-la-era-de-la-ia-3"
+      },
+      {
+        "titol": "CGPJ — Instrucción 2/2026 sobre uso de IA en la actividad jurisdiccional (publicada en el BOE)",
+        "categoria": "administratiu",
+        "font": "Cowork",
+        "urgencia": "mitjana",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2205"
+      },
+      {
+        "titol": "Acuerdo político sobre el \"AI Omnibus\": la UE simplifica y retrasa parte del Reglamento de IA",
+        "categoria": "administratiu",
+        "font": "Cowork",
+        "urgencia": "mitjana",
+        "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-11",
+    "total_avui": 5,
+    "urgents": 3,
+    "per_categoria": {
+      "penal": 1,
+      "social": 1,
+      "administratiu": 1,
+      "tecnologia": 2
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-11**\n\nEn aquesta jornada s'han registrat 5 peces rellevants (3 d'urgència alta), amb pes principal de les àrees tecnologia, penal, social. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: TSJ Navarra: 8 anys de presó per accés il·lícit al historial mèdic de familiars (1.329 accesos); TJUE: exigir 10 anys de residència per a ajudes socials és discriminació indirecta (C-747/22); Acuerdo político sobre el \"AI Omnibus\": la UE simplifica y retrasa parte del Reglamento de IA.",
+    "titular": "Panoràmica jurídica IA del 2026-05-11",
+    "top_peces": [
+      {
+        "titol": "TSJ Navarra: 8 anys de presó per accés il·lícit al historial mèdic de familiars (1.329 accesos)",
+        "categoria": "penal",
+        "font": "Noticias Jurídicas",
+        "urgencia": "alta",
+        "url": "https://noticias.juridicas.com/"
+      },
+      {
+        "titol": "TJUE: exigir 10 anys de residència per a ajudes socials és discriminació indirecta (C-747/22)",
+        "categoria": "social",
+        "font": "TJUE",
+        "urgencia": "alta",
+        "url": "https://infoeuropa.uv.es/sentencia-tjue-asunto-c-747-22-inps-asistencia-social-y-acceso-al-empleo-discriminacion-indirecta-de-7-de-mayo-de-2026/"
+      },
+      {
+        "titol": "Acuerdo político sobre el \"AI Omnibus\": la UE simplifica y retrasa parte del Reglamento de IA",
+        "categoria": "administratiu",
+        "font": "Consell de la UE",
+        "urgencia": "alta",
+        "url": "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/"
+      },
+      {
+        "titol": "Álex (Legálitas) supera els 600.000 usuaris com a assistent legal de IA a Espanya",
+        "categoria": "tecnologia",
+        "font": "Ecosistema Startup",
+        "urgencia": "mitjana",
+        "url": "https://ecosistemastartup.com/alex-asistente-legal-de-ia-en-espana-con-mas-de-600-000-usuarios/"
+      },
+      {
+        "titol": "Lexroom (LegalTech) desembarca a Espanya amb més de €20M levantats",
+        "categoria": "tecnologia",
+        "font": "El Español",
+        "urgencia": "mitjana",
+        "url": "https://www.elespanol.com/invertia/disruptores/ecosistema-startup/startups/20260227/legaltech-italiana-lexroom-entra-espana-acumular-millones-rondas-financiacion/1003744147221_0.html"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-07",
+    "total_avui": 1,
+    "urgents": 0,
+    "per_categoria": {
+      "civil": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-07**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (0 d'urgència alta), amb pes principal de les àrees civil. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: Gestión del conocimiento en la era de la IA (2).",
+    "titular": "Panoràmica jurídica IA del 2026-05-07",
+    "top_peces": [
+      {
+        "titol": "Gestión del conocimiento en la era de la IA (2)",
+        "categoria": "civil",
+        "font": "Almacén de Derecho",
+        "urgencia": "mitjana",
+        "url": "https://almacendederecho.org/gestion-del-conocimiento-en-la-era-de-la-ia-2"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-06",
+    "total_avui": 1,
+    "urgents": 1,
+    "per_categoria": {
+      "administratiu": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-06**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (1 d'urgència alta), amb pes principal de les àrees administratiu. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: CGPJ — Instrucció 2/2026 sobre ús de IA en l'activitat jurisdiccional.",
+    "titular": "Panoràmica jurídica IA del 2026-05-06",
+    "top_peces": [
+      {
+        "titol": "CGPJ — Instrucció 2/2026 sobre ús de IA en l'activitat jurisdiccional",
+        "categoria": "administratiu",
+        "font": "BOE / CGPJ",
+        "urgencia": "alta",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-2205"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-04",
+    "total_avui": 1,
+    "urgents": 0,
+    "per_categoria": {
+      "administratiu": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-04**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (0 d'urgència alta), amb pes principal de les àrees administratiu. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: Corrección de errores del Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo, de 13 de junio de 2024, por el que se establecen normas armonizadas en materia de inteligencia artificial y por el que se modifican los Reglamentos (CE) n.° 300/2008, (UE) n.° 167/2013, (UE) n.° 168/2013, (UE) 2018/858, (UE) 2018/1139 y (UE) 2019/2144 y las Directivas 2014/90/UE, (UE) 2016/797 y (UE) 2020/1828..",
+    "titular": "Panoràmica jurídica IA del 2026-05-04",
+    "top_peces": [
+      {
+        "titol": "Corrección de errores del Reglamento (UE) 2024/1689 del Parlamento Europeo y del Consejo, de 13 de junio de 2024, por el que se establecen normas armonizadas en materia de inteligencia artificial y por el que se modifican los Reglamentos (CE) n.° 300/2008, (UE) n.° 167/2013, (UE) n.° 168/2013, (UE) 2018/858, (UE) 2018/1139 y (UE) 2019/2144 y las Directivas 2014/90/UE, (UE) 2016/797 y (UE) 2020/1828.",
+        "categoria": "administratiu",
+        "font": "DOUE-email",
+        "urgencia": "mitjana",
+        "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-80650"
+      }
+    ]
+  },
+  {
+    "data": "2026-05-01",
+    "total_avui": 2,
+    "urgents": 0,
+    "per_categoria": {
+      "administratiu": 1,
+      "civil": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-05-01**\n\nEn aquesta jornada s'han registrat 2 peces rellevants (0 d'urgència alta), amb pes principal de les àrees administratiu, civil. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: RD 326/2026: Plan Estatal de Vivienda 2026-2030; Gestión del conocimiento jurídico en la era de la IA (1).",
+    "titular": "Panoràmica jurídica IA del 2026-05-01",
+    "top_peces": [
+      {
+        "titol": "RD 326/2026: Plan Estatal de Vivienda 2026-2030",
+        "categoria": "administratiu",
+        "font": "BOE",
+        "urgencia": "mitjana",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8872"
+      },
+      {
+        "titol": "Gestión del conocimiento jurídico en la era de la IA (1)",
+        "categoria": "civil",
+        "font": "Almacén de Derecho",
+        "urgencia": "mitjana",
+        "url": "https://almacendederecho.org/gestion-del-conocimiento-juridico-en-la-era-de-la-ia"
+      }
+    ]
+  },
+  {
+    "data": "2026-04-29",
+    "total_avui": 4,
+    "urgents": 1,
+    "per_categoria": {
+      "civil": 2,
+      "administratiu": 2
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-04-29**\n\nEn aquesta jornada s'han registrat 4 peces rellevants (1 d'urgència alta), amb pes principal de les àrees civil, administratiu. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: ¿Quién responde cuando se equivoca la inteligencia artificial? La crisis del sistema clásico de responsabilidad; Reglamento Delegado (UE) 2026/339 de la Comisión, de 16 de febrero de 2026, por el que se deroga el Reglamento Delegado (UE) 2022/30.; Portal del DOGC: Avís de l'Alerta DOGC núm. 9654, de 28.04.2026, \"Cerdanya\".",
+    "titular": "Panoràmica jurídica IA del 2026-04-29",
+    "top_peces": [
+      {
+        "titol": "¿Quién responde cuando se equivoca la inteligencia artificial? La crisis del sistema clásico de responsabilidad",
+        "categoria": "civil",
+        "font": "Economist & Jurist",
+        "urgencia": "alta",
+        "url": "https://www.economistjurist.es/articulos-juridicos-destacados/quien-responde-cuando-se-equivoca-la-inteligencia-artificial-la-crisis-del-sistema-clasico-de-responsabilidad/"
+      },
+      {
+        "titol": "Reglamento Delegado (UE) 2026/339 de la Comisión, de 16 de febrero de 2026, por el que se deroga el Reglamento Delegado (UE) 2022/30.",
+        "categoria": "administratiu",
+        "font": "DOUE-email",
+        "urgencia": "mitjana",
+        "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-80634"
+      },
+      {
+        "titol": "Portal del DOGC: Avís de l'Alerta DOGC núm. 9654, de 28.04.2026, \"Cerdanya\"",
+        "categoria": "administratiu",
+        "font": "DOGC-email",
+        "urgencia": "mitjana",
+        "url": "https://dogc.gencat.cat/ca/document-del-dogc/?documentId=1042909>"
+      },
+      {
+        "titol": "Inteligencia artificial: la tentación de delegar el pensamiento",
+        "categoria": "civil",
+        "font": "Abogacía Española",
+        "urgencia": "mitjana",
+        "url": "https://www.abogacia.es/actualidad/opinion-y-analisis/inteligencia-artificial-la-tentacion-de-delegar-el-pensamiento/"
+      }
+    ]
+  },
+  {
+    "data": "2026-04-28",
+    "total_avui": 1,
+    "urgents": 1,
+    "per_categoria": {
+      "mercantil": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-04-28**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (1 d'urgència alta), amb pes principal de les àrees mercantil. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: De la montaña de papeles al ‘Advisory’: lo que aprendí al cambiar la asesoría por el ‘software’.",
+    "titular": "Panoràmica jurídica IA del 2026-04-28",
+    "top_peces": [
+      {
+        "titol": "De la montaña de papeles al ‘Advisory’: lo que aprendí al cambiar la asesoría por el ‘software’",
+        "categoria": "mercantil",
+        "font": "Economist & Jurist",
+        "urgencia": "alta",
+        "url": "https://www.economistjurist.es/premium/la-firma/de-la-montana-de-papeles-al-advisory-lo-que-aprendi-al-cambiar-la-asesoria-por-el-software/"
+      }
+    ]
+  },
+  {
+    "data": "2026-04-25",
+    "total_avui": 1,
+    "urgents": 1,
+    "per_categoria": {
+      "administratiu": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-04-25**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (1 d'urgència alta), amb pes principal de les àrees administratiu. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: “El abogado del siglo XXI que recurra ante el Tribunal Supremo y no utilice herramientas de IA estará en desventaja competitiva frente a quienes sí lo hagan”, señala Marcos Peña, CEO y cofundador de CASIA Legal.",
+    "titular": "Panoràmica jurídica IA del 2026-04-25",
+    "top_peces": [
+      {
+        "titol": "“El abogado del siglo XXI que recurra ante el Tribunal Supremo y no utilice herramientas de IA estará en desventaja competitiva frente a quienes sí lo hagan”, señala Marcos Peña, CEO y cofundador de CASIA Legal",
+        "categoria": "administratiu",
+        "font": "Economist & Jurist",
+        "urgencia": "alta",
+        "url": "https://www.economistjurist.es/znoticia-portada2/el-abogado-del-siglo-xxi-que-recurra-ante-el-tribunal-supremo-y-no-utilice-herramientas-de-ia-estara-en-desventaja-competitiva-frente-a-quienes-si-lo-hagan-senala-marcos-pena-ceo-y/"
+      }
+    ]
+  },
+  {
+    "data": "2026-04-24",
+    "total_avui": 2,
+    "urgents": 1,
+    "per_categoria": {
+      "administratiu": 1,
+      "civil": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-04-24**\n\nEn aquesta jornada s'han registrat 2 peces rellevants (1 d'urgència alta), amb pes principal de les àrees administratiu, civil. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: Real Decreto 327/2026, de 22 de abril, por el que se modifica el Real Decreto 317/2025, de 15 de abril, por el que se regula la concesión directa de subvenciones a entidades de referencia en el ámbito de las comunicaciones cuánticas, con el fin de fomentar su colaboración en el marco de la adenda del componente 16, Estrategia Nacional de Inteligencia Artificial, del Plan de Recuperación, Transformación y Resiliencia, financiado por la Unión Europea-Next Generation EU.; Las Audiencias Provinciales delimitan el alcance de la doctrina del Supremo sobre abuso procesal en microcréditos.",
+    "titular": "Panoràmica jurídica IA del 2026-04-24",
+    "top_peces": [
+      {
+        "titol": "Real Decreto 327/2026, de 22 de abril, por el que se modifica el Real Decreto 317/2025, de 15 de abril, por el que se regula la concesión directa de subvenciones a entidades de referencia en el ámbito de las comunicaciones cuánticas, con el fin de fomentar su colaboración en el marco de la adenda del componente 16, Estrategia Nacional de Inteligencia Artificial, del Plan de Recuperación, Transformación y Resiliencia, financiado por la Unión Europea-Next Generation EU.",
+        "categoria": "administratiu",
+        "font": "BOE-email",
+        "urgencia": "alta",
+        "url": "https://www.boe.es/diario_boe/txt.php?id=BOE-A-2026-8958"
+      },
+      {
+        "titol": "Las Audiencias Provinciales delimitan el alcance de la doctrina del Supremo sobre abuso procesal en microcréditos",
+        "categoria": "civil",
+        "font": "Economist & Jurist",
+        "urgencia": "mitjana",
+        "url": "https://www.economistjurist.es/articulos-juridicos-destacados/las-audiencias-provinciales-delimitan-el-alcance-de-la-doctrina-del-supremo-sobre-abuso-procesal-en-microcreditos/"
+      }
+    ]
+  },
+  {
+    "data": "2026-04-22",
+    "total_avui": 1,
+    "urgents": 0,
+    "per_categoria": {
+      "civil": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-04-22**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (0 d'urgència alta), amb pes principal de les àrees civil. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: «Abogacía e IA, los retos probatorios que plantean los deepfakes», próxima Conferencia de los Lunes.",
+    "titular": "Panoràmica jurídica IA del 2026-04-22",
+    "top_peces": [
+      {
+        "titol": "«Abogacía e IA, los retos probatorios que plantean los deepfakes», próxima Conferencia de los Lunes",
+        "categoria": "civil",
+        "font": "Abogacía Española",
+        "urgencia": "mitjana",
+        "url": "https://www.abogacia.es/actualidad/noticias/abogacia-e-ia-los-retos-probatorios-que-plantean-los-deepfakes-proxima-conferencia-de-los-lunes/"
+      }
+    ]
+  },
+  {
+    "data": "2026-04-21",
+    "total_avui": 1,
+    "urgents": 0,
+    "per_categoria": {
+      "administratiu": 1
+    },
+    "resum_diari": "**Panoràmica jurídica IA del 2026-04-21**\n\nEn aquesta jornada s'han registrat 1 peces rellevants (0 d'urgència alta), amb pes principal de les àrees administratiu. El conjunt apunta a una evolució continuada de la regulació i la pràctica jurídica vinculada a la digitalització.\n\nEntre les peces destacades del dia: Reglamento Delegado (UE) 2026/881 de la Comisión, de 11 de diciembre de 2025, por el que se completa el Reglamento (UE) 2024/2847 del Parlamento Europeo y del Consejo mediante la especificación de las condiciones de aplicación de los motivos relacionados con la ciberseguridad en lo que respecta al aplazamiento de la difusión de notificaciones..",
+    "titular": "Panoràmica jurídica IA del 2026-04-21",
+    "top_peces": [
+      {
+        "titol": "Reglamento Delegado (UE) 2026/881 de la Comisión, de 11 de diciembre de 2025, por el que se completa el Reglamento (UE) 2024/2847 del Parlamento Europeo y del Consejo mediante la especificación de las condiciones de aplicación de los motivos relacionados con la ciberseguridad en lo que respecta al aplazamiento de la difusión de notificaciones.",
+        "categoria": "administratiu",
+        "font": "DOUE-email",
+        "urgencia": "mitjana",
+        "url": "https://www.boe.es/buscar/doc.php?id=DOUE-L-2026-80578"
+      }
+    ]
+  }
 ]
