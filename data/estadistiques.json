@@ -1,20 +1,16 @@
 {
-  "data": "2026-05-29",
-  "total_avui": 1,
+  "data": "2026-05-30",
+  "total_avui": 0,
   "dogc": 0,
   "boe": 0,
   "doue": 0,
   "parlament": 0,
   "email": 0,
-  "actualitat": 1,
+  "actualitat": 0,
   "eurlex": 0,
   "claude_scheduled": 0,
-  "per_categoria": {
-    "administratiu": 1
-  },
+  "per_categoria": {},
   "urgents": 0,
-  "resum_diari": "**Novetats en l'àmbit jurídic: la IA Helena s'acosta als professionals del dret català**\n\nEn el dia d'avui, la gran notícia que destaca en l'àmbit jurídic català és l'acord entre l'Abogacía Española i la plataforma Sepín, que facilita l'accés a la intel·ligència artificial Helena per a col·legiats i alumnes d'Upro. Aquesta iniciativa marca un pas significatiu en la incorporació de la tecnologia al sector jurídic, amb l'objectiu de millorar l'eficiència i la qualitat del servei prestat per aquests professionals.\n\nLa IA Helena representa una avançada eina que pot ajudar a optimitzar el treball dels advocats i juristes, gràcies a la seva capacitat per analitzar grans volums d'informació legal amb rapidesa i precisió. Aquestes condicions exclusives per a col·legiats i alumnes són una oportunitat perquè els professionals del dret puguin integrar aquesta tecnologia en les seves pràctiques diàries. D’aquesta manera, no només se'n beneficiaran en termes de productivitat, sinó també en la seva formació contínua i adaptació a un sector cada vegada més digitalitzat.\n\nAquesta iniciativa se suma a les tendències actuals en el dret administratiu, que cada vegada més busca modernitzar-se i adaptar-se als nous entorns tecnològics. Amb la incorporació de la IA, els juristes catalans podran afrontar de manera més efectiva els nous reptes que presenta un entorn legal en constant evolució i canvi. Sense dubte, aquest és un pas cap a una major professionalització i capacitació dins del sector, que promet transformar les dinàmiques tradicionals de la pràctica jurídica.",
-  "resums_categoria": {
-    "administratiu": "El 29 de maig de 2026, destaca la col·laboració entre l'Abogacía Española i Sepín, que han arribat a un acord per facilitar l'accés a la intel·ligència artificial Helena per a col·legiats i alumnes de Upro en condicions exclusives. Aquesta iniciativa representa un avanç significatiu en la digitalització i innovació en el sector jurídic, permetent als professionals i estudiants catalans incorporar eines d'IA avançades en la seva pràctica i estudi del dret administratiu.\n\nAquesta disponibilitat d'eines tecnològiques modernes obre noves perspectives per al millorar l'eficiència en la gestió legal i l'anàlisi de normatives, abastint també la formació contínua en un panorama legal en constant evolució. La integració de la IA en la pràctica jurídica esdevé així un element estratègic per als juristes catalans en un context cada vegada més globalitzat."
-  }
+  "resum_diari": "",
+  "resums_categoria": {}
 }
