@@ -935,37 +935,39 @@ def main():
     with open(fitxer_sortida, "w", encoding="utf-8") as f:
         json.dump(totes_novetats, f, ensure_ascii=False, indent=2)
 
-    # Guardar estadístiques del dia
+    # Estadístiques del dia: usar totes les entrades del dia (no només les noves)
+    novetats_avui = [n for n in totes_novetats if n.get("data") == TODAY_STR]
+
     stats = {
         "data": TODAY_STR,
-        "total_avui": len(novetats_analitzades),
-        "dogc": sum(1 for n in novetats_analitzades if n["font"] in ("DOGC", "DOGC-email")),
-        "boe": sum(1 for n in novetats_analitzades if n["font"] in ("BOE", "BOE-email")),
-        "doue": sum(1 for n in novetats_analitzades if n["font"] == "DOUE-email"),
-        "parlament": sum(1 for n in novetats_analitzades if n["font"] == "Parlament"),
-        "email": sum(1 for n in novetats_analitzades if "email" in n["font"].lower()),
-        "actualitat": sum(1 for n in novetats_analitzades if n["font"] == "Actualitat"),
-        "eurlex": sum(1 for n in novetats_analitzades if n["font"] in ("EUR-Lex", "TJUE")),
-        "claude_scheduled": sum(1 for n in novetats_analitzades if n["font"] == "Claude-Scheduled"),
+        "total_avui": len(novetats_avui),
+        "dogc": sum(1 for n in novetats_avui if n["font"] in ("DOGC", "DOGC-email")),
+        "boe": sum(1 for n in novetats_avui if n["font"] in ("BOE", "BOE-email")),
+        "doue": sum(1 for n in novetats_avui if n["font"] == "DOUE-email"),
+        "parlament": sum(1 for n in novetats_avui if n["font"] == "Parlament"),
+        "email": sum(1 for n in novetats_avui if "email" in n["font"].lower()),
+        "actualitat": sum(1 for n in novetats_avui if n["font"] == "Actualitat"),
+        "eurlex": sum(1 for n in novetats_avui if n["font"] in ("EUR-Lex", "TJUE")),
+        "claude_scheduled": sum(1 for n in novetats_avui if n["font"] == "Claude-Scheduled"),
         "per_categoria": {},
-        "urgents": sum(1 for n in novetats_analitzades if n["urgencia"] == "alta"),
+        "urgents": sum(1 for n in novetats_avui if n["urgencia"] == "alta"),
         "resum_diari": "",
     }
-    for n in novetats_analitzades:
+    for n in novetats_avui:
         cat = n["categoria"]
         stats["per_categoria"][cat] = stats["per_categoria"].get(cat, 0) + 1
 
     # ── Generar resum diari narratiu ──────────────────────
-    if novetats_analitzades:
+    if novetats_avui:
         print("\n[RESUM] Generant resum diari del dia...")
-        urgents = [n for n in novetats_analitzades if n["urgencia"] == "alta"]
+        urgents = [n for n in novetats_avui if n["urgencia"] == "alta"]
         categories_avui = list(stats["per_categoria"].keys())
         titols_resum = "\n".join(
             f"- [{n['categoria'].upper()}] {n['titol']}: {n['resum_executiu'][:120]}"
-            for n in novetats_analitzades[:15]
+            for n in novetats_avui[:15]
         )
         prompt_resum = f"""Ets el redactor en cap d'un diari jurídic català especialitzat. 
-Avui, {TODAY_STR}, has analitzat {len(novetats_analitzades)} novetats jurídiques de diverses fonts (DOGC, BOE, Parlament, actualitat jurídica).
+Avui, {TODAY_STR}, has analitzat {len(novetats_avui)} novetats jurídiques de diverses fonts (DOGC, BOE, Parlament, actualitat jurídica).
 
 Aquí tens les principals novetats d'avui:
 {titols_resum}
@@ -987,15 +989,23 @@ No facis llistes de punts. Escriu en català estàndard formal."""
         except Exception as ex:
             print(f"[RESUM] Error: {ex}")
             stats["resum_diari"] = ""
+    else:
+        stats["resum_diari"] = (
+            f"**Jornada sense novetats IA noves ({TODAY_STR})**\n\n"
+            "En la finestra d'actualització d'avui no s'han detectat noves peces jurídiques sobre IA o dret digital "
+            "que complissin els criteris del feed. S'ha completat igualment el procés de control diari, "
+            "i es reprendrà la vigilància automàtica a la propera execució per incorporar qualsevol novetat rellevant."
+        )
+        print("[RESUM] Sense novetats avui: resum de continuïtat generat.")
 
     # ── Generar resums per categoria ──────────────────────
     stats["resums_categoria"] = {}
-    if novetats_analitzades:
+    if novetats_avui:
         print("\n[RESUM-CAT] Generant resums per categoria...")
         for cat, count in stats["per_categoria"].items():
             if count == 0:
                 continue
-            articles_cat = [n for n in novetats_analitzades if n["categoria"] == cat]
+            articles_cat = [n for n in novetats_avui if n["categoria"] == cat]
             titols_cat = "\n".join(
                 f"- {n['titol']}: {n['resum_executiu'][:120]}"
                 for n in articles_cat[:6]
@@ -1019,6 +1029,48 @@ Escriu en català formal. Sense llistes de punts. Si hi ha una novetat especialm
 
     with open(DATA_DIR / "estadistiques.json", "w", encoding="utf-8") as f:
         json.dump(stats, f, ensure_ascii=False, indent=2)
+
+    # ── Guardar/actualitzar històric de digests ───────────────────────────
+    digest_history_file = DATA_DIR / "digest_history.json"
+    try:
+        if digest_history_file.exists():
+            with open(digest_history_file, "r", encoding="utf-8") as f:
+                digest_history = json.load(f)
+                if not isinstance(digest_history, list):
+                    digest_history = []
+        else:
+            digest_history = []
+    except Exception:
+        digest_history = []
+
+    resum_plain = re.sub(r"\*\*", "", stats["resum_diari"]).strip()
+    titular = resum_plain.split("\n", 1)[0][:220] if resum_plain else f"Resum diari {TODAY_STR}"
+    digest_entry = {
+        "data": TODAY_STR,
+        "total_avui": stats["total_avui"],
+        "urgents": stats["urgents"],
+        "per_categoria": stats["per_categoria"],
+        "resum_diari": stats["resum_diari"],
+        "titular": titular,
+        "top_peces": [
+            {
+                "titol": n.get("titol", ""),
+                "categoria": n.get("categoria", "administratiu"),
+                "font": n.get("font_web") or n.get("font", ""),
+                "urgencia": n.get("urgencia", "baixa"),
+                "url": n.get("url", ""),
+            }
+            for n in novetats_avui[:5]
+        ],
+    }
+
+    digest_history = [d for d in digest_history if d.get("data") != TODAY_STR]
+    digest_history.insert(0, digest_entry)
+    digest_history.sort(key=lambda d: d.get("data", ""), reverse=True)
+    digest_history = digest_history[:180]
+
+    with open(digest_history_file, "w", encoding="utf-8") as f:
+        json.dump(digest_history, f, ensure_ascii=False, indent=2)
 
     print(f"\n{'='*50}")
     print(f"  ✅ Fet! {len(novetats_analitzades)} novetats analitzades i guardades.")
