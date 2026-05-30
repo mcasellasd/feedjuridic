@@ -355,34 +355,25 @@
   .source-item p,
   .summary-item p,
   .side-panel p,
-  .ticker-item p,
-  .newsletter p {
+  .ticker-item p {
     margin: 0;
     color: var(--ink-2);
     font-size: 14px;
     line-height: 1.55;
   }
-
-  .layout {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 320px;
-    gap: 38px;
+  .summary-item .history-jump {
+    margin-top: 6px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--blue);
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10.5px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
   }
-  .sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 28px;
-  }
-  .side-block {
-    border-top: 2px solid var(--ink);
-    padding-top: 14px;
-  }
-  .side-block h3 {
-    margin: 0 0 12px;
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 18px;
-  }
-
+  .summary-item .history-jump:hover { text-decoration: underline; }
   .section-rule {
     display: flex;
     align-items: baseline;
@@ -619,6 +610,43 @@
     text-transform: uppercase;
     color: #f09884;
   }
+  .digest-history-tools {
+    margin-top: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+  }
+  .digest-history-tools label {
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 253, 248, 0.72);
+  }
+  .digest-history-tools select {
+    min-width: 190px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    color: rgba(255, 253, 248, 0.94);
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+  .digest-history-tools button {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.28);
+    color: rgba(255, 253, 248, 0.88);
+    padding: 6px 10px;
+    font-family: "IBM Plex Mono", ui-monospace, monospace;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  .digest-history-tools button:hover {
+    border-color: rgba(255, 255, 255, 0.6);
+    color: #fff;
+  }
   .digest-prefs-toggle {
     flex-shrink: 0;
     display: inline-flex;
@@ -809,40 +837,6 @@
     color: var(--muted);
   }
 
-  .newsletter {
-    background: var(--paper-2);
-    padding: 22px;
-    border: 1px solid var(--rule-soft);
-  }
-  .newsletter h3 {
-    margin: 0 0 8px;
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 22px;
-  }
-  .newsletter form {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  .newsletter input {
-    padding: 11px 12px;
-    border: 1px solid var(--rule);
-    background: var(--paper-3);
-    color: var(--ink);
-    outline: none;
-  }
-  .newsletter button {
-    padding: 11px 14px;
-    border: 1px solid var(--ink);
-    background: var(--ink);
-    color: var(--paper-3);
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-family: "IBM Plex Mono", ui-monospace, monospace;
-    font-size: 11px;
-    cursor: pointer;
-  }
-
   .empty-state {
     padding: 40px 24px;
     border: 1px dashed var(--rule-dashed);
@@ -1031,6 +1025,11 @@
             <div class="label">Resum diari personalitzat</div>
             <h2 id="digest-title">Context, no només titulars.</h2>
             <div class="digest-active-filters" id="digest-active-filters"></div>
+            <div class="digest-history-tools">
+              <label for="digest-date-select">Dia</label>
+              <select id="digest-date-select" aria-label="Selecciona digest per data"></select>
+              <button type="button" id="digest-reset-date" hidden>Tornar a avui</button>
+            </div>
           </div>
           <button class="digest-prefs-toggle" id="digest-prefs-toggle" aria-expanded="false" aria-controls="digest-prefs-panel">
             <span class="prefs-icon">⚙</span> Personalitza
@@ -1127,16 +1126,6 @@
         <div class="source-list" id="source-list"></div>
       </section>
 
-      <section class="side-block newsletter">
-        <div class="kicker">Cada actualització</div>
-        <h3>Dret al dIA, ara com a portada</h3>
-        <p>Aquesta home ja no és una maqueta: es nodreix del feed jurídic real i et deixa saltar al detall quan cal.</p>
-        <form onsubmit="return fakeSubmit(event, this)">
-          <input type="email" placeholder="el-teu@correu.cat" required />
-          <button type="submit">Rebre els destacats</button>
-        </form>
-      </section>
-
       <section class="side-block">
         <div class="label">Resums per àmbit</div>
         <h3>Focus sectorial</h3>
@@ -1186,13 +1175,20 @@
 <script>
   const ALL_CATEGORIES = ["civil","penal","laboral","administratiu","mercantil","fiscal","constitucional","educatiu"];
   const PREFS_KEY = "lexia_preferences";
+  const FEED_CACHE_KEY = "lexia_feed_cache_v1";
+  const DIGEST_CACHE_KEY = "lexia_digest_cache_v1";
+  const AUTO_REFRESH_MS = 5 * 60 * 1000;
 
   const state = {
     items: [],
     stats: {},
+    digestHistory: [],
+    selectedDigestDate: "",
     activeCategory: "tots",
     query: "",
     userPreferences: { categories: [...ALL_CATEGORIES], comarca: "" },
+    prefsListenersReady: false,
+    autoRefreshId: null,
   };
 
   const LABELS = {
@@ -1283,6 +1279,103 @@
 
   function featuredItem(items) {
     return items.find((item) => item.urgencia === "alta") || items[0] || null;
+  }
+
+  function dayValue(dateString) {
+    if (!dateString) return 0;
+    const value = new Date(`${dateString}T12:00:00`).getTime();
+    return Number.isFinite(value) ? value : 0;
+  }
+
+  function readJsonCache(key) {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(key) || "null");
+      return parsed;
+    } catch (_) {
+      return null;
+    }
+  }
+
+  function writeJsonCache(key, value) {
+    try {
+      localStorage.setItem(key, JSON.stringify(value));
+    } catch (_) {}
+  }
+
+  function mergeItemsById(primary, fallback) {
+    const map = new Map();
+    [...fallback, ...primary].forEach((item) => {
+      if (!item || !item.id) return;
+      map.set(item.id, item);
+    });
+    return Array.from(map.values()).sort((a, b) => dayValue(b.data) - dayValue(a.data));
+  }
+
+  function mergeDigestHistory(primary, fallback) {
+    const map = new Map();
+    [...fallback, ...primary].forEach((entry) => {
+      if (!entry || !entry.data) return;
+      map.set(entry.data, entry);
+    });
+    return Array.from(map.values()).sort((a, b) => dayValue(b.data) - dayValue(a.data));
+  }
+
+  function todayDigestDate() {
+    return state.stats && state.stats.data ? state.stats.data : "";
+  }
+
+  function getDigestEntryByDate(date) {
+    if (!date) return null;
+
+    const liveDate = todayDigestDate();
+    if (date === liveDate) {
+      return {
+        data: liveDate,
+        resum_diari: state.stats.resum_diari || "",
+        top_peces: state.items.slice(0, 5).map((item) => ({
+          titol: item.titol,
+          categoria: item.categoria,
+          font: item.font_web || item.font || "Font",
+        })),
+      };
+    }
+
+    return state.digestHistory.find((entry) => entry.data === date) || null;
+  }
+
+  function renderDigestDateSelector() {
+    const select = document.getElementById("digest-date-select");
+    const resetBtn = document.getElementById("digest-reset-date");
+    const liveDate = todayDigestDate();
+
+    const allDates = new Set();
+    if (liveDate) allDates.add(liveDate);
+    state.digestHistory.forEach((entry) => {
+      if (entry && entry.data) allDates.add(entry.data);
+    });
+
+    const orderedDates = Array.from(allDates).sort((a, b) => dayValue(b) - dayValue(a));
+    if (!orderedDates.length) {
+      select.innerHTML = "<option value=''>Sense històric</option>";
+      select.value = "";
+      resetBtn.hidden = true;
+      return;
+    }
+
+    const preferredDate = state.selectedDigestDate || liveDate || orderedDates[0];
+    if (!orderedDates.includes(preferredDate)) {
+      state.selectedDigestDate = liveDate || orderedDates[0];
+    } else {
+      state.selectedDigestDate = preferredDate;
+    }
+
+    select.innerHTML = orderedDates.map((date) => {
+      const tag = date === liveDate ? " (avui)" : "";
+      return `<option value="${esc(date)}">${esc(formatDate(date))}${tag}</option>`;
+    }).join("");
+    select.value = state.selectedDigestDate;
+
+    resetBtn.hidden = !liveDate || state.selectedDigestDate === liveDate;
   }
 
   function filteredItems() {
@@ -1399,7 +1492,7 @@
     }
 
     empty.classList.add("hidden");
-    grid.innerHTML = items.slice(0, 10).map((item) => `
+    grid.innerHTML = items.slice(0, 12).map((item) => `
       <article class="card">
         <div class="meta-row">
           <span class="pillar-tag ${toneFor(item.categoria)}">${esc(labelFor(item.categoria))}</span>
@@ -1504,19 +1597,29 @@
   function renderDigest() {
     renderDigestActiveFilters();
     initDigestPreferences();
+    renderDigestDateSelector();
 
     const { categories, comarca } = state.userPreferences;
-    const resums = state.stats.resums_categoria || {};
+    const selectedDigest = getDigestEntryByDate(state.selectedDigestDate || todayDigestDate());
+    const isLiveDigest = !!selectedDigest && selectedDigest.data === todayDigestDate();
+    const resums = isLiveDigest ? (state.stats.resums_categoria || {}) : {};
+
+    const digestTitle = document.getElementById("digest-title");
+    if (selectedDigest && selectedDigest.data) {
+      digestTitle.textContent = isLiveDigest
+        ? "Context, no només titulars."
+        : `Arxiu del ${formatDate(selectedDigest.data)}.`;
+    }
 
     // Narrativa filtrada per categories
-    const narratives = categories
-      .filter(c => resums[c])
-      .map(c => resums[c]);
+    const narratives = isLiveDigest
+      ? categories.filter(c => resums[c]).map(c => resums[c])
+      : [];
 
     if (narratives.length === 0) {
       document.getElementById("digest-copy").innerHTML =
-        state.stats.resum_diari
-          ? markdownParagraphs(state.stats.resum_diari)
+        (selectedDigest && selectedDigest.resum_diari)
+          ? markdownParagraphs(selectedDigest.resum_diari)
           : "<p class=\"digest-no-content\">Encara no hi ha resum narratiu disponible per a aquest dia.</p>";
     } else {
       document.getElementById("digest-copy").innerHTML = narratives
@@ -1524,14 +1627,26 @@
         .join("<hr style=\"border:none;border-top:1px solid rgba(255,255,255,0.12);margin:18px 0\">");
     }
 
-    // Llista d'items filtrada per categories i comarca
-    let digestItems = state.items
-      .filter(item => categories.includes(item.categoria))
-      .filter(item => {
-        if (!comarca) return true;
-        return (item.comarques || []).some(c => c.trim().toLowerCase() === comarca.toLowerCase());
-      })
-      .slice(0, 5);
+    let digestItems = [];
+    if (isLiveDigest) {
+      // Llista d'items filtrada per categories i comarca per al dia actual.
+      digestItems = state.items
+        .filter(item => categories.includes(item.categoria))
+        .filter(item => {
+          if (!comarca) return true;
+          return (item.comarques || []).some(c => c.trim().toLowerCase() === comarca.toLowerCase());
+        })
+        .slice(0, 5)
+        .map((item) => ({
+          titol: item.titol,
+          categoria: item.categoria,
+          font: item.font_web || item.font || "Font",
+        }));
+    } else {
+      digestItems = ((selectedDigest && selectedDigest.top_peces) || [])
+        .filter(item => categories.includes((item.categoria || "").toLowerCase()))
+        .slice(0, 5);
+    }
 
     document.getElementById("digest-list").innerHTML = digestItems.length
       ? digestItems.map((item) => `
@@ -1580,6 +1695,39 @@
         <span class="num">0${index + 1}</span>
         <p><strong>${esc(labelFor(category))}</strong>${esc(stripMarkdown(summary)).slice(0, 160)}...</p>
       </div>`).join("") || '<p class="tiny-meta">Sense resums sectorials per avui.</p>';
+
+    const historyItems = Array.isArray(state.digestHistory) ? state.digestHistory.slice(0, 8) : [];
+    document.getElementById("digest-history-list").innerHTML = historyItems.map((digest, index) => {
+      const date = digest.data || "";
+      const headline = stripMarkdown(digest.titular || digest.resum_diari || "Sense resum").slice(0, 130);
+      const isActive = date && date === state.selectedDigestDate;
+      return `
+      <div class="summary-item">
+        <span class="num">0${index + 1}</span>
+        <p>
+          <strong>${esc(formatDate(date))}</strong>
+          ${esc(headline)}${headline.length >= 130 ? "..." : ""}<br>
+          <button class="history-jump" type="button" data-history-date="${esc(date)}">${isActive ? "Vista actual" : "Consulta aquest digest"}</button>
+        </p>
+      </div>`;
+    }).join("") || '<p class="tiny-meta">Sense històric disponible encara.</p>';
+  }
+
+  async function fetchJsonWithFallback(paths) {
+    let lastError = null;
+    for (const path of paths) {
+      try {
+        const response = await fetch(path);
+        if (!response.ok) {
+          lastError = new Error(`HTTP ${response.status} a ${path}`);
+          continue;
+        }
+        return await response.json();
+      } catch (error) {
+        lastError = error;
+      }
+    }
+    throw lastError || new Error("No s'ha pogut carregar el recurs JSON");
   }
 
   function renderAll() {
@@ -1594,6 +1742,7 @@
 
   // --- Event listeners del panell de preferències ---
   function setupDigestPrefsListeners() {
+    if (state.prefsListenersReady) return;
     const toggle = document.getElementById("digest-prefs-toggle");
     const panel = document.getElementById("digest-prefs-panel");
     const select = document.getElementById("prefs-comarca-select");
@@ -1628,32 +1777,66 @@
       initDigestPreferences();
       renderDigest();
     });
+
+    document.getElementById("digest-date-select").addEventListener("change", (event) => {
+      state.selectedDigestDate = event.target.value || todayDigestDate();
+      renderDigest();
+      renderSidebar();
+    });
+
+    document.getElementById("digest-reset-date").addEventListener("click", () => {
+      state.selectedDigestDate = todayDigestDate();
+      renderDigest();
+      renderSidebar();
+    });
+
+    state.prefsListenersReady = true;
   }
 
   async function loadData() {
     loadUserPreferences();
     try {
       const cacheBust = Date.now();
-      const [itemsResponse, statsResponse] = await Promise.all([
-        fetch(`data/novetats.json?t=${cacheBust}`),
-        fetch(`data/estadistiques.json?t=${cacheBust}`),
+      const [rawItems, statsData, digestHistoryData] = await Promise.all([
+        fetchJsonWithFallback([
+          `data/novetats.json?t=${cacheBust}`,
+          `./data/novetats.json?t=${cacheBust}`,
+          `/feedjuridic/data/novetats.json?t=${cacheBust}`,
+        ]),
+        fetchJsonWithFallback([
+          `data/estadistiques.json?t=${cacheBust}`,
+          `./data/estadistiques.json?t=${cacheBust}`,
+          `/feedjuridic/data/estadistiques.json?t=${cacheBust}`,
+        ]).catch(() => ({})),
+        fetchJsonWithFallback([
+          `data/digest_history.json?t=${cacheBust}`,
+          `./data/digest_history.json?t=${cacheBust}`,
+          `/feedjuridic/data/digest_history.json?t=${cacheBust}`,
+        ]).catch(() => ([])),
       ]);
 
-      if (!itemsResponse.ok) throw new Error("No s'ha pogut carregar data/novetats.json");
-
-      const rawItems = await itemsResponse.json();
       const NORM = { mercanitl: "mercantil", adminsitrau: "administratiu", constitutional: "constitucional" };
-      state.items = rawItems.map((item) => ({
+      const normalizedItems = rawItems.map((item) => ({
         ...item,
         categoria: (NORM[(item.categoria || "").trim().toLowerCase()] || (item.categoria || "administratiu").trim().toLowerCase())
       }));
-      state.stats = statsResponse.ok ? await statsResponse.json() : {};
-      // Prioritzar items del dia (stats.data) mantenint la resta si no n'hi ha
-      const todayStr = state.stats.data || "";
-      if (todayStr) {
-        const todayItems = state.items.filter((i) => i.data === todayStr);
-        if (todayItems.length > 0) state.items = todayItems;
-      }
+
+      const cachedItemsRaw = readJsonCache(FEED_CACHE_KEY);
+      const cachedItems = Array.isArray(cachedItemsRaw) ? cachedItemsRaw : [];
+      state.items = mergeItemsById(normalizedItems, cachedItems).slice(0, 600);
+
+      state.stats = statsData || {};
+
+      const apiHistory = Array.isArray(digestHistoryData) ? digestHistoryData : [];
+      const cachedHistoryRaw = readJsonCache(DIGEST_CACHE_KEY);
+      const cachedHistory = Array.isArray(cachedHistoryRaw) ? cachedHistoryRaw : [];
+      state.digestHistory = mergeDigestHistory(apiHistory, cachedHistory).slice(0, 120);
+      const candidateDate = state.selectedDigestDate || todayDigestDate() || (state.digestHistory[0] && state.digestHistory[0].data) || "";
+      const validDates = new Set([todayDigestDate(), ...state.digestHistory.map((entry) => entry.data)]);
+      state.selectedDigestDate = validDates.has(candidateDate) ? candidateDate : (todayDigestDate() || (state.digestHistory[0] && state.digestHistory[0].data) || "");
+
+      writeJsonCache(FEED_CACHE_KEY, state.items);
+      writeJsonCache(DIGEST_CACHE_KEY, state.digestHistory);
       renderAll();
       setupDigestPrefsListeners();
     } catch (error) {
@@ -1665,6 +1848,17 @@
       document.getElementById("ticker-list").innerHTML = "";
       setupDigestPrefsListeners();
     }
+  }
+
+  function initAutoRefresh() {
+    if (state.autoRefreshId) clearInterval(state.autoRefreshId);
+    state.autoRefreshId = setInterval(() => {
+      loadData();
+    }, AUTO_REFRESH_MS);
+
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") loadData();
+    });
   }
 
   document.addEventListener("click", (event) => {
@@ -1681,6 +1875,16 @@
       state.activeCategory = cloudButton.dataset.cloudCategory;
       renderFilters();
       renderCards();
+      return;
+    }
+
+    const historyButton = event.target.closest("[data-history-date]");
+    if (historyButton) {
+      state.selectedDigestDate = historyButton.dataset.historyDate || todayDigestDate();
+      renderDigest();
+      renderSidebar();
+      const digestSection = document.getElementById("digest");
+      if (digestSection) digestSection.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
 
@@ -1689,22 +1893,7 @@
     renderCards();
   });
 
-  function fakeSubmit(event, form) {
-    event.preventDefault();
-    const button = form.querySelector("button");
-    button.textContent = "Fet";
-    button.style.background = "var(--green)";
-    button.style.borderColor = "var(--green)";
-    form.reset();
-    setTimeout(() => {
-      button.textContent = "Rebre els destacats";
-      button.style.background = "";
-      button.style.borderColor = "";
-    }, 2200);
-    return false;
-  }
-
-  window.fakeSubmit = fakeSubmit;
+  initAutoRefresh();
   loadData();
 </script>
 </body>
