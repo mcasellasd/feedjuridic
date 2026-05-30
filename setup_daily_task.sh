@@ -185,9 +185,9 @@ echo "3) systemd (Linux moderna)"
 echo "4) Sortir"
 echo ""
 
-read -p "Opció [1-4]: " opció
+read -r -p "Opció [1-4]: " opcio
 
-case $opció in
+case $opcio in
     1) setup_cron ;;
     2) setup_launchd ;;
     3) setup_systemd ;;
@@ -197,5 +197,5 @@ esac
 
 echo ""
 echo "ℹ️  Comprova els logs a: ${PROJECT_DIR}/logs/"
-echo "   Per provar manualmente: cd ${PROJECT_DIR} && ${PYTHON} scraper.py"
+echo "   Per provar manualment: cd ${PROJECT_DIR} && ${PYTHON} scraper.py"
 echo ""

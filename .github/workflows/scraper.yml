@@ -47,7 +47,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
 
-          git add data/
+          git add data/ daily-digests/
 
           # Comprova si hi ha hagut canvis. Si n'hi ha, fa el commit i els puja.
           if git diff --quiet && git diff --staged --quiet; then
@@ -55,7 +55,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Automated update: novetats.json i estadistiques.json"
+          git commit -m "Automated update: feed data + daily digests"
 
           # Retry loop: fins a 3 intents per si hi ha race condition
           pushed=0
